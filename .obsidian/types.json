@@ -1,0 +1,15 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "hola": "number",
+    "status": "multitext",
+    "date": "datetime",
+    "references": "multitext",
+    "source": "date",
+    "publication-date": "date",
+    "src-date": "date",
+    "src-author": "multitext"
+  }
+}
