@@ -7,7 +7,6 @@ src-author:
 src-link: https://youtu.be/xQp-D_AaUqM
 ---
 # Don't get ahead of yourself in math courses in college. Treat it like a musical instrument.
----
 
 - You *need* to know algebra very well in order to do good in calculus.
 - Math majors are trained to understand math as a language. A good portion of the math you might learn in a math major isn't directly applicable to physics or engineering.

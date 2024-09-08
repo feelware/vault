@@ -10,7 +10,6 @@ src-author:
 src-link: "[[os-principles-practice.pdf]]"
 ---
 # Operating Systems: Principle and Practice
----
 
 ## Chapter 1: Introduction
 
@@ -113,8 +112,6 @@ An operating system plays three roles:
 - Physical structure coordination, among other processes, could benefit greatly from being controlled by secure, reliable computers
 - The future of OS design is conditioned by the future of hardware design
 
----
-
 ## Chapter 2: The Kernel Abstraction
 
 The OS needs to restrict applications from doing certain things to ensure:
@@ -179,8 +176,6 @@ There are multiple things the hardware must support in order to achieve dual-mod
 The processor needs to switch from kernel to process execution (and vice versa) *very* often, reaching thousands of times a second. These switches need to be both fast (given how often they happen) and safe (giving a process full access to hardware can be disastrous).
 
 #wip
-
----
 
 ## Chapter 3: The Programming Interface
 

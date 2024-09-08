@@ -7,7 +7,6 @@ src-author:
 src-link: Databases I
 ---
 # Databases I - Session 3
----
 
 - programmers should get involved in the design of the database
 - nowadays, many business rules can be implemented in the DBMS itself

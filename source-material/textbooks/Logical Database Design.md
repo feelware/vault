@@ -8,7 +8,6 @@ src-author:
 src-link: "[[diseño-logico-db.pdf]]"
 ---
 # Logical Database Design
----
 
 - Conceptual design produces a **specification** based on the **conceptual scheme**, which in turn is based on requirements and the analysis of the application domain.
 

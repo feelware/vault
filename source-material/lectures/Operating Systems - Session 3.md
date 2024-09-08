@@ -6,7 +6,6 @@ src-author:
 src-link:
 ---
 # Operating Systems - Session 3
----
 
 ## Syscalls
 

@@ -7,7 +7,6 @@ src-author:
 src-link: https://youtu.be/GFQaEYEc8_8
 ---
 # Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF
----
 
 ## Second normal form
 

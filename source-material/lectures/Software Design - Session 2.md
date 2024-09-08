@@ -6,7 +6,6 @@ src-author:
 src-link:
 ---
 # Software Design - Session 2
----
 
 # Unified Design Process
 
