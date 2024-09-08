@@ -15,40 +15,37 @@
 
 ## databases
 
-* (!) follow syllabus
+* (!) have a look at the books in google classroom
 
 ## operating systems
 
 * (!) read [Operating Systems: Principles and Practice](os-principles-practice.pdf)
+* (!) have a look at [pintos docs](https://pkuflyingpig.gitbook.io/pintos)
 * read [Operating Systems Concepts](os-concepts.pdf)
 * read [Operating Systems: From 0 to 1](Operating_Systems_From_0_to_1.pdf)
 
 ## software quality assurance
 
-## [work](#work)
+- 
 
 ## human computer interaction
 
-- (!) build a basic museum/gallery generator using react three fiber
-- (!) work on group essay
+- build a basic museum/gallery generator using react three fiber
 
 ## software design
 
-## software business
+- find out what the homework is
 
-- read book
+## software business (?)
 
-## free time
+- (!) read [[Generacion-de-modelos-de-negocio.pdf]]
 
-### math
+## math/dsp/music
 
 * (!) read think dsp
 * (!) solve Blitzer's college algebra
 * solve Stewart's algebra and trigonometry
 * solve Stewart's calculus
-
-### music / dsp
-
 * (!) try out different sound design plugins and audio programming environments
 * (!) follow justinguitar's [guitar courses](https://www.justinguitar.com/classes/beginner-guitar-course-grade-one)
 * follow Berklee's [songwriting specialization](https://www.coursera.org/specializations/songwriting)

@@ -4,22 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "73d3cc1306cb7e63",
+        "id": "2e325f271ce2a46d",
         "type": "tabs",
         "children": [
           {
-            "id": "e477f8057c931402",
+            "id": "300c01676e5d84c8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "source-material/textbooks/Generacion-de-modelos-de-negocio.pdf"
+              }
+            }
+          },
+          {
+            "id": "5fb8e5d70f668d1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/textbooks/Operating Systems - Principle and Practice.md",
+                "file": "source-material/textbooks/Generación de modelos de negocio.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:atomic-note",
+                "query": "tag:lecture-notes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5,
+    "width": 284.5,
     "collapsed": true
   },
   "right": {
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source-material/textbooks/Operating Systems - Principle and Practice.md",
+                "file": "source-material/textbooks/Generación de modelos de negocio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source-material/textbooks/Operating Systems - Principle and Practice.md",
+                "file": "source-material/textbooks/Generación de modelos de negocio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,12 +137,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/textbooks/Operating Systems - Principle and Practice.md"
+                "file": "source-material/textbooks/Generación de modelos de negocio.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,21 +158,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e477f8057c931402",
+  "active": "5fb8e5d70f668d1d",
   "lastOpenFiles": [
-    "source-material/textbooks/os-principles-practice.pdf",
+    "source-material/textbooks/Generacion-de-modelos-de-negocio.pdf",
+    "source-material/textbooks/Generación de modelos de negocio.md",
+    "attachments/Pasted image 20240907202356.png",
+    "atomic-notes/Pasted.md",
+    "attachments/Pasted image 20240907202131.png",
+    "source-material/videos/Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF.md",
+    "attachments/Pasted image 20240907185820.png",
+    "rough-notes/tasks.md",
+    "source-material/manuals/Harmor.pdf",
+    "source-material/textbooks/Logical Database Design.md",
+    "source-material/textbooks/diseño-logico-db.pdf",
     "source-material/textbooks/Operating Systems - Principle and Practice.md",
+    "source-material/lectures/Software Design - Session 2.md",
+    "attachments/Pasted image 20240907083213.png",
+    "attachments/Pasted image 20240907082608.png",
+    "attachments/Pasted image 20240907082542.png",
+    "source-material/articles/usabilidad-ingenieria-software.pdf",
+    "atomic-notes/[[Generacion-de-modelos-de-negocio.pdf]].md",
+    "source-material/manuals",
+    "source-material/etc",
+    "source-material/textbooks/os-principles-practice.pdf",
+    "free-recall/os-principles-practice free-recall sep-6-2024.md",
+    "free-recall/os-principles-practice free-recall sep-1-2024.md",
+    "source-material/lectures/Operating Systems - Session 3.md",
+    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
     "source-material/lectures/Databases I - Session 3.md",
-    "Pasted image 20240902154954.png",
-    "Pasted image 20240902154935.png",
-    "Pasted image 20240902154933.png",
-    "Pasted image 20240902154422.png",
-    "Pasted image 20240902154254.png",
-    "Pasted image 20240902154115.png",
-    "Pasted image 20240902153703.png",
-    "Pasted image 20240902153638.png",
-    "Pasted image 20240902153058.png",
-    "Pasted image 20240902152913.png",
+    "source-material/videos",
+    "attachments/Pasted image 20240901142243.png",
+    "attachments",
+    "source-material/lectures/Software Quality Assurance - Season 2.md",
+    "attachments/Pasted image 20240904160247.png",
+    "attachments/Pasted image 20240904155930.png",
+    "attachments/Pasted image 20240904145544.png",
+    "atomic-notes/kernel.md",
     "atomic-notes/SQL.md",
     "atomic-notes/database transactions.md",
     "atomic-notes/database.md",
@@ -172,25 +203,7 @@
     "atomic-notes/process (computing).md",
     "atomic-notes/process-(computing).md",
     "atomic-notes/operating system.md",
-    "atomic-notes/kernel.md",
-    "free-recall/os-principles-practice free-recall sep 1.md",
-    "source-material/articles/usabilidad-ingenieria-software.pdf",
-    "tasks.md",
     "source-material/textbooks/os-concepts.pdf",
-    "atomic-notes/os_concepts.pdf.md",
-    "source-material/textbooks/Operating_Systems_From_0_to_1.pdf",
-    "atomic-notes/os.md",
-    "[[os-principles-practice.pdf]].md",
-    "source-material/textbooks/linux-kernel-development.pdf",
-    "source-material/textbooks/Untitled.md",
-    "free-recall",
-    "templates/lecture-notes.md",
-    "templates/textbook-notes.md",
-    "source-material/textbooks/silabo.pdf",
-    "2024-08-31.md",
-    "Untitled.md",
-    "source-material/textbooks",
-    "source-material/lectures",
-    "atomic-notes"
+    "atomic-notes/os_concepts.pdf.md"
   ]
 }

@@ -127,32 +127,71 @@ The [[kernel]], with full access to hardware, is responsible for restricting the
 
 ![[Pasted image 20240901142243.png]]
 
-A [[process (computing)|process]] is an instance of an application running with **restricted access** to hardware, which the kernel mediates with assistance from the hardware.
+A [[process (computing)|process]] is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
 
-### The Process Concept
+### The process concept
 
-- There can be multiple instances of the same program running on a computer. For every open process, the OS loads a copy (sorta) of the running program in memory.
+- There can be multiple instances of the same program running on a computer. For every open process, the OS loads a copy of the running program in memory.
 - The [[process control block]] (PCB) is a data structure that stores everything the OS needs to know about a certain process (location in memory, privileges, location of the executable image, etc).
 - Most processes have multiple activities running in parallel. We're talking about [[thread|threads]].
 
 ### Dual-mode operation
 
-- The processor is able to execute many sorts of instructions. Although some are relatively innocuous (like multiplying numbers), some others are *very* critical (writing to memory or disk, for instance) and pose a danger to other processes or even the OS.
-- A *hypothetical* solution would be to analyze/simulate every instruction in an user process before actually executing it on bare metal. If a certain process is overstepping its bounds, we could just halt it.
-- A more realistic approach to this idea is [[dual-mode operation]]: running kernel-issued instructions directly on hardware, while performing safety checks on every other instruction.
-- A single bit in the status register indicates whether the current instruction comes from the kernel or an user-level process.
+- The processor is able to execute many sorts of instructions. Although some are relatively innocuous (like multiplying numbers), some others are *very* critical (writing to memory or disk, for instance) and pose a danger to other processes and even the OS.
+- A *hypothetical* solution would be to analyze/simulate every instruction that comes from a process before actually executing it on bare metal. If a certain process is overstepping its bounds, we could just halt it.
+- A more realistic approach to this idea is [[dual-mode operation]]: running kernel-issued instructions directly on hardware, while performing safety checks on every other instruction. A single bit in the status register indicates whether the current instruction comes from the kernel or a process.
 
-There are multiple things the hardware must provide in order to achieve dual-mode operation:
+There are multiple things the hardware must support in order to achieve dual-mode operation:
 
 #### Privileged instructions
 
-- Processes must be forbidden from:
-	- Changing their privilege *directly* (without [[syscall|syscalls]]). Protection measures are useless if perpetrators can get around them.
-	- Changing their memory-access bounds, otherwise they'd be able to corrupt other processes or even the OS.
-	- Disabling processor interrupts
-- On the other hand, the kernel must be *allowed* to do these, otherwise it wouldn't be able to do its job.
-- If a process attempts to execute a privileged instruction, a **processor exception** will be triggered. The kernel handles these exceptions, usually by just halting the perpetrating process.
+- Among other things, processes are forbidden from executing instructions that:
+	- Change their privilege *directly* (without [[syscall|syscalls]]). Only the kernel is allowed to change the mode bit (See [[#Safe control transfer]]).
+	- Allow them to access memory outside the bounds set *only* by the kernel (see [[#Memory protection]]).
+	- Disable processor interrupts (see [[#Timer interrupts]]).
+- On the other hand, the kernel must be allowed to do these, otherwise it wouldn't be able to do its job.
+- If a process attempts to execute a privileged instruction, a **processor exception** will be triggered. The kernel handles these exceptions, usually by just halting such process.
 
 #### Memory protection
 
-- Both the OS and the current processes have tasks that require them to be in memory, at the same time.
+- Since both the OS and the current processes need to be in memory at the same time, processes' memory access must be restricted to certain kernel-defined regions.
+- Early OSes implemented memory protection using **base** and **bound** registers, which indicate the start and length of the current process' memory area, respectively.
+- The processes, unable to access memory that isn't theirs, need the kernel to take care of their input and output operations.
+
+![[Pasted image 20240903131941.png]]
+
+- This approach has multiple limitations:
+	- Neither the stack nor the heap can expand dynamically.
+	- Processes can't share memory with each other.
+	- Over time, physical memory starts to fragment, not leaving enough contiguous space to allocate processes.
+- **Virtual addresses** abstract away physical addresses from processes, giving them the illusion of starting at address zero.
+- Complex algorithms are used to translate virtual addresses to physical locations, allowing the OS to manage memory more efficiently.
+- Imagine a simple program that assigns a random value to a static variable and waits a couple of seconds to print both the value and address of said variable. Running multiple instances of this program (in a modern OS) will show the same address but a different value on each instance.
+- Evidently, each process has its own "sandbox" where all memory accesses happen in a virtual space. This renders processes unable to access memory that isn't theirs.
+
+#### Timer interrupts
+
+- The kernel needs to regain control periodically, regardless of what the current process is doing, so it can decide whether to keep running said process, pay attention to other processes, respond to user input, among other things.
+- A hardware timer is responsible for interrupting the processor every ten milliseconds or so.
+
+### Safe control transfer
+
+The processor needs to switch from kernel to process execution (and vice versa) *very* often, reaching thousands of times a second. These switches need to be both fast (given how often they happen) and safe (giving a process full access to hardware can be disastrous).
+
+#wip
+
+---
+
+## Chapter 3: The Programming Interface
+
+- There are many services the operating system can provide to applications: some of the most important, yet surprisingly minimal to implement, are process management and input/output.
+- Whether we implement these services as user-level apps, user-level libraries, or part of the kernel through syscalls, is a matter of balancing:
+	- Security: The kernel must implement resource management and protection (see [[#Chapter 2 The Kernel Abstraction]])
+	- Flexibility: Allow applications and hardware to evolve independently by exposing a mostly transparent interface.
+	- Reliability: A bug in the kernel can be fatal. As seen in [[#Chapter 2 The Kernel Abstraction|Chapter 2]], the hardware trusts the kernel not to crash the entire system. The least responsibility we give to the kernel, the more reliable the system will be. 
+	- Performance: On the other hand, delegating too many OS tasks to user processes can slow things down due to excessive syscalls, which tend to be expensive.
+
+### Process management
+
+- Early OSes were forced to manage processes at kernel-level. Nowadays, many user-level applications can manage other processes. The shell is one of such applications.
+- 
