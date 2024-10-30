@@ -16,7 +16,8 @@
   "promptDelete": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "atomic-notes",
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "utilities/attachments",
   "newLinkFormat": "absolute",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
 }

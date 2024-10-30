@@ -1,13 +1,14 @@
 ---
 tags:
   - "#lecture-notes"
-src-date: 
-src-author: 
+src-date: 2024-09-07
+src-author:
+  - Rosa Menendez
 src-link:
 ---
 # Software Design - Session 2
 
-# Unified Design Process
+## Unified Design Process
 
 - Set of methods oriented to large-scale projects
 - Provide certainty that [[software artifacts]] will be completed
@@ -15,7 +16,7 @@ src-link:
 - [[use case (software engineering)|use case]] driven
 - Architecture centered
 
-![[Pasted image 20240907082542.png]]
+![[utilities/attachments/Pasted image 20240907082542.png]]
 
 ### Structure
 
@@ -32,8 +33,8 @@ src-link:
 		9. Procurement
 		10. Stakeholder
 
-![[Pasted image 20240907083213.png]]
+![[utilities/attachments/Pasted image 20240907083213.png]]
 
-![[Pasted image 20240907082608.png]]
+![[utilities/attachments/Pasted image 20240907082608.png]]
 
 - After *every* iteration (vertical lines), an deliverable must be produced

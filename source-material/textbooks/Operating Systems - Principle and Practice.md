@@ -7,7 +7,7 @@ src-date: 2014-08-21
 src-author:
   - Thomas Anderson
   - Michael Dahlin
-src-link: "[[os-principles-practice.pdf]]"
+src-link: "[[source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf|Operating_systems__principles_and_practice (Anderson og Dahlin)_text]]"
 ---
 # Operating Systems: Principle and Practice
 
@@ -122,7 +122,7 @@ The OS needs to restrict applications from doing certain things to ensure:
 
 The [[kernel]], with full access to hardware, is responsible for restricting these apps.
 
-![[Pasted image 20240901142243.png]]
+![[utilities/attachments/Pasted image 20240901142243.png]]
 
 A [[process (computing)|process]] is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
 
@@ -155,7 +155,7 @@ There are multiple things the hardware must support in order to achieve dual-mod
 - Early OSes implemented memory protection using **base** and **bound** registers, which indicate the start and length of the current process' memory area, respectively.
 - The processes, unable to access memory that isn't theirs, need the kernel to take care of their input and output operations.
 
-![[Pasted image 20240903131941.png]]
+![[utilities/attachments/Pasted image 20240903131941.png]]
 
 - This approach has multiple limitations:
 	- Neither the stack nor the heap can expand dynamically.
@@ -173,7 +173,18 @@ There are multiple things the hardware must support in order to achieve dual-mod
 
 ### Safe control transfer
 
-The processor needs to switch from kernel to process execution (and vice versa) *very* often, reaching thousands of times a second. These switches need to be both fast (given how often they happen) and safe (giving a process full access to hardware can be disastrous).
+#### User to kernel
+
+- **Hardware interrupts** (asynchronous signals sent to the processor by external devices, like I/O devices, the timer clock or even other processors)
+- **Processor exceptions** (illegal conditions in user programs that cause the CPU to halt such process)
+- **Syscalls**
+
+#### Kernel to user
+
+- Creating a new process
+- Resuming a process' execution (after an exception, interrupt or syscall)
+- Switching to a different process (like pintos' context switches)
+- User-level upcalls #wip
 
 #wip
 
@@ -189,4 +200,10 @@ The processor needs to switch from kernel to process execution (and vice versa) 
 ### Process management
 
 - Early OSes were forced to manage processes at kernel-level. Nowadays, many user-level applications can manage other processes. The shell is one of such applications.
+
+#wip 
+
+## Chapter 4: Concurrency and Threads
+
+- Threads are pieces of code written in **sequence** but executed in **parallel**. They give the illusion of infinite processors by multiplexing the current tasks on a finite number of processors, running a small portion of these tasks at the time.
 - 

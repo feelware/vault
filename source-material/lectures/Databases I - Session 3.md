@@ -25,7 +25,7 @@ src-link: Databases I
 - the database is just the repository
 - the DBMS is a *program* that works as an **interface** between the database and its administrators, allowing to store, query, and manipulate data in a safe and efficient manner
 
-![[Pasted image 20240902134845.png]]
+![[utilities/attachments/Pasted image 20240902134845.png]]
 
 - they implement [[SQL]] as a means to query data
 - controls who can access certain elements and how
@@ -50,7 +50,7 @@ src-link: Databases I
 - All attributes are indivisible, no field has multiple values
 
 
-![[Pasted image 20240902153058.png]]
+![[utilities/attachments/Pasted image 20240902153058.png]]
 
 ### Second normal form
 

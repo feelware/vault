@@ -4,15 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5eb10c51cbbaeffe",
+        "id": "b716119c88b6cd80",
         "type": "tabs",
         "children": [
           {
-            "id": "7be50176d0c851f6",
+            "id": "d5a4a99572a2de5c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "source-material/lectures/Guión.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Guión"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,14 +68,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 292.5
   },
   "right": {
     "id": "8090f1a6a0490b1c",
@@ -81,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "other-notes/presentations/Metagallery FODA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Metagallery FODA"
             }
           },
           {
@@ -97,9 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "other-notes/presentations/Metagallery FODA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Metagallery FODA"
             }
           },
           {
@@ -110,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,10 +138,15 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "other-notes/presentations/Metagallery FODA.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Metagallery FODA"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -138,52 +163,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7be50176d0c851f6",
+  "active": "d5a4a99572a2de5c",
   "lastOpenFiles": [
-    "templates/atomic-note.md",
-    "templates/free-recall.md",
-    "atomic-notes/operating system.md",
-    "rough-notes/tasks.md",
-    "source-material/manuals/Harmor.pdf",
-    "source-material/lectures/Databases I - Session 3.md",
-    "source-material/lectures/Operating Systems - Session 3.md",
-    "source-material/lectures/Software Design - Session 2.md",
-    "source-material/lectures/Software Quality Assurance - Season 2.md",
-    "source-material/textbooks/Generación de modelos de negocio.md",
-    "source-material/textbooks/Logical Database Design.md",
-    "source-material/textbooks/Operating Systems - Principle and Practice.md",
+    "utilities/attachments/Pasted image 20241030171616.png",
+    "utilities/attachments/Pasted image 20241030171517.png",
+    "utilities/attachments/Pasted image 20241030165135.png",
+    "utilities/attachments/Pasted image 20241030164703.png",
+    "source-material/lectures/Guión.md",
+    "source-material/videos/The 6 most important CSS concepts for beginners.md",
+    "source-material/videos/Learn flexbox the easy way.md",
+    "other-notes/rough-notes/rutas hall.md",
+    "utilities/attachments/Pasted image 20241026161221.png",
+    "utilities/attachments/Pasted image 20241026161011.png",
+    "utilities/attachments/Pasted image 20241026155922.png",
+    "utilities/attachments/Pasted image 20241026155835.png",
+    "utilities/attachments/Pasted image 20241026155812.png",
+    "source-material/videos/CSS Selectors - beyond the very basics.md",
+    "other-notes/rough-notes/prompt metagallery.md",
+    "source-material/videos/The Skill of Learning from Lectures 1.md",
+    "source-material/videos/The Skill of Learning from Lectures.md",
+    "utilities/attachments/Pasted image 20241024193847.png",
+    "utilities/attachments/Pasted image 20241024193716.png",
     "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
     "source-material/videos/Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF.md",
-    "templates/textbook-notes.md",
-    "templates/lecture-notes.md",
-    "source-material/textbooks/Generacion-de-modelos-de-negocio.pdf",
-    "source-material/textbooks/diseño-logico-db.pdf",
-    "attachments/Pasted image 20240907202356.png",
-    "atomic-notes/Pasted.md",
-    "attachments/Pasted image 20240907202131.png",
-    "attachments/Pasted image 20240907185820.png",
-    "attachments/Pasted image 20240907083213.png",
-    "attachments/Pasted image 20240907082608.png",
-    "attachments/Pasted image 20240907082542.png",
-    "source-material/articles/usabilidad-ingenieria-software.pdf",
-    "atomic-notes/[[Generacion-de-modelos-de-negocio.pdf]].md",
-    "source-material/manuals",
-    "source-material/etc",
+    "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf",
     "source-material/textbooks/os-principles-practice.pdf",
-    "free-recall/os-principles-practice free-recall sep-6-2024.md",
-    "free-recall/os-principles-practice free-recall sep-1-2024.md",
-    "source-material/videos",
-    "attachments/Pasted image 20240901142243.png",
-    "attachments",
-    "attachments/Pasted image 20240904160247.png",
-    "attachments/Pasted image 20240904155930.png",
-    "attachments/Pasted image 20240904145544.png",
-    "atomic-notes/kernel.md",
-    "atomic-notes/SQL.md",
-    "atomic-notes/database transactions.md",
-    "atomic-notes/database.md",
-    "atomic-notes/database transaction.md",
-    "atomic-notes/process (computing).md",
-    "source-material/textbooks/os-concepts.pdf"
+    "source-material/textbooks/os-concepts.pdf",
+    "other-notes/rough-notes/jwt.md",
+    "other-notes/rough-notes/pintos lab2.md",
+    "pintos_lab2.pdf",
+    "source-material/lectures/Software Design - Session 4.md",
+    "source-material/lectures/Software Design - Session 9.md",
+    "other-notes/presentations/expo chavez hoy.md",
+    "source-material/lectures/Databases I - Session 5.md",
+    "source-material/lectures/Databases I - Session 4.md",
+    "source-material/lectures/Databases I - Session 3.md",
+    "other-notes/rough-notes/2.md",
+    "other-notes/rough-notes/3.md",
+    "other-notes/rough-notes/5.pdf",
+    "other-notes/rough-notes/5.md",
+    "other-notes/rough-notes/1.pdf",
+    "other-notes/rough-notes/1.md",
+    "other-notes/rough-notes/3.pdf",
+    "other-notes/rough-notes/2.pdf",
+    "source-material/lectures/Software Design - Session 2.md",
+    "source-material/lectures/Software Design - Session 3.md",
+    "source-material/videos/19.2.3 Atomic Transactions.md",
+    "source-material/textbooks/osppv2.pdf",
+    "diaz_jesus.pdf"
   ]
 }

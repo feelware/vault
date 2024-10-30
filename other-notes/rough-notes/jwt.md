@@ -1,0 +1,4 @@
+- After signing in:
+	- extract the JWT from the server response
+	- store it in `localStorage`
+- On every request that requires authorization, include the header `Authorization: Bearer ${token}`

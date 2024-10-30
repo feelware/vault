@@ -13,7 +13,7 @@ src-link:
 - The most important thing to care about is the syscall's function definition
 - [POSIX](https://pubs.opengroup.org/onlinepubs/9799919799/): API for UNIX-based systems
 
-![[Pasted image 20240904145544.png]]
+![[utilities/attachments/Pasted image 20240904145544.png]]
 
 - The OS has a syscall table
 - It's possible to add [custom syscalls](https://www.kernel.org/doc/html/latest/process/adding-syscalls.html)
@@ -25,9 +25,9 @@ src-link:
 
 > A thread is a single execution sequence that represents a separately schedulable task.
 
-![[Pasted image 20240904155930.png]]
+![[utilities/attachments/Pasted image 20240904155930.png]]
 
-![[Pasted image 20240904160247.png]]
+![[utilities/attachments/Pasted image 20240904160247.png]]
 
 Amdahl's Law: theoretical limits to the efficiency of process parallelization
 $$
