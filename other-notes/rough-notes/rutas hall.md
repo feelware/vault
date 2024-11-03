@@ -103,3 +103,15 @@
 #### Cambiar privacidad de lista (pública/privada)
 
 #### Eliminar lista
+
+### `author/:id`
+
+![](utilities/attachments/Pasted%20image%2020241103144103.png)
+
+#### Obtener información de un autor
+
+- Incluir nombre, biografía y image_url
+
+#### Obtener libros de cierto autor (paginado)
+
+- Incluir id, título, autor (id, nombre) y cover_url de cada uno de los libros.
