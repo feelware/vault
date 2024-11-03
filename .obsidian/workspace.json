@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/lectures/Guión.md",
+                "file": "other-notes/rough-notes/rutas hall.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guión"
+              "title": "rutas hall"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "other-notes/presentations/Metagallery FODA.md"
+                "file": "other-notes/rough-notes/rutas hall.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Metagallery FODA"
+              "title": "Outline of rutas hall"
             }
           }
         ],
@@ -150,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,25 +164,26 @@
   },
   "active": "d5a4a99572a2de5c",
   "lastOpenFiles": [
-    "utilities/attachments/Pasted image 20241030171616.png",
-    "utilities/attachments/Pasted image 20241030171517.png",
-    "utilities/attachments/Pasted image 20241030165135.png",
-    "utilities/attachments/Pasted image 20241030164703.png",
+    "utilities/attachments/Pasted image 20241103143424.png",
+    "utilities/attachments/Pasted image 20241103143413.png",
+    "utilities/attachments/Pasted image 20241103143209.png",
+    "utilities/attachments/Pasted image 20241103135550.png",
+    "utilities/attachments/Pasted image 20241103134338.png",
+    "utilities/attachments/Pasted image 20241103134255.png",
+    "utilities/attachments/Pasted image 20241103134151.png",
+    "utilities/attachments/Pasted image 20241103134052.png",
+    "utilities/attachments/Pasted image 20241103131815.png",
+    "utilities/attachments/Pasted image 20241103125745.png",
+    "utilities/attachments/Pasted image 20241103121954.png",
+    "source-material/lectures/Software Design - Session 9.md",
+    "other-notes/rough-notes/rutas hall.md",
     "source-material/lectures/Guión.md",
     "source-material/videos/The 6 most important CSS concepts for beginners.md",
     "source-material/videos/Learn flexbox the easy way.md",
-    "other-notes/rough-notes/rutas hall.md",
-    "utilities/attachments/Pasted image 20241026161221.png",
-    "utilities/attachments/Pasted image 20241026161011.png",
-    "utilities/attachments/Pasted image 20241026155922.png",
-    "utilities/attachments/Pasted image 20241026155835.png",
-    "utilities/attachments/Pasted image 20241026155812.png",
     "source-material/videos/CSS Selectors - beyond the very basics.md",
     "other-notes/rough-notes/prompt metagallery.md",
     "source-material/videos/The Skill of Learning from Lectures 1.md",
     "source-material/videos/The Skill of Learning from Lectures.md",
-    "utilities/attachments/Pasted image 20241024193847.png",
-    "utilities/attachments/Pasted image 20241024193716.png",
     "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
     "source-material/videos/Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF.md",
     "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf",
@@ -193,7 +193,6 @@
     "other-notes/rough-notes/pintos lab2.md",
     "pintos_lab2.pdf",
     "source-material/lectures/Software Design - Session 4.md",
-    "source-material/lectures/Software Design - Session 9.md",
     "other-notes/presentations/expo chavez hoy.md",
     "source-material/lectures/Databases I - Session 5.md",
     "source-material/lectures/Databases I - Session 4.md",
