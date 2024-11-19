@@ -45,7 +45,7 @@
 ![](utilities/attachments/Pasted%20image%2020241103143209.png)
 
 - Incluir id, título, contenido, autor (id, nombre y profile_picture_url) y total de likes.
-
+	
 #### Registrar un nuevo préstamo de cierto libro a cierto usuario
 
 ![](utilities/attachments/Pasted%20image%2020241103121921.png)

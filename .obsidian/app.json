@@ -17,7 +17,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "atomic-notes",
   "attachmentFolderPath": "utilities/attachments",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true
 }
