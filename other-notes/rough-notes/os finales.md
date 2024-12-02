@@ -256,11 +256,11 @@ Write a program that creates a 100 MB file on your local disk and then measures 
 
 Write a program that creates three files, each of 100 MB, and then measures the time to do each of three things. Explain your results:
 
-**`fopen()/fwrite().`** Open the first file using `fopen()` and issue 256,000 sequential four-byte writes using `fwrite()`.
+**`fopen()/fwrite()`.** Open the first file using `fopen()` and issue 256,000 sequential four-byte writes using `fwrite()`.
 
-**`open()/write().`** Open the second file using `open()` and issue 256,000 sequential four-byte writes using `write()`.
+**`open()/write()`.** Open the second file using `open()` and issue 256,000 sequential four-byte writes using `write()`.
 
-**`mmap()/store.`** Map the third file into your program’s memory using `mmap()` and issue 256,000 sequential four-byte writes by iterating through memory and writing to each successive word of the mapped file.
+**`mmap()/store`.** Map the third file into your program’s memory using `mmap()` and issue 256,000 sequential four-byte writes by iterating through memory and writing to each successive word of the mapped file.
 
 ##### Chapter 13: Files and Directories
 
@@ -280,25 +280,25 @@ Go to an on-line site that sells hard disk drives, and find the largest capacity
 
 Suppose we define a RAID’s access cost as the number of disk accesses divided by the number of data blocks read or written. For each of following configurations and workloads, what is the access cost?
 
-**a. Workload: a series of random 1-block writes**
+**a. Workload: a series of random 1-block writes.**
 **Configuration: mirroring**
 
-**b. Workload: a series of random 1-block writes 
+**b. Workload: a series of random 1-block writes. 
 Configuration: distributed parity**
 
-**c. Workload: a series of random 1-block reads** 
+**c. Workload: a series of random 1-block reads.** 
 **Configuration: mirroring**
 
-**d. Workload: a series of random 1-block reads** 
+**d. Workload: a series of random 1-block reads.** 
 **Configuration: distributed parity** 
 
-**e. Workload: a series of random 1-block reads** 
+**e. Workload: a series of random 1-block reads.** 
 **Configuration: distributed parity with group size G and one failed disk**
 
-**f. Workload: a long sequential write** 
+**f. Workload: a long sequential write.** 
 **Configuration: mirroring**
 
-**g. Workload: a long sequential write** 
+**g. Workload: a long sequential write.** 
 **Configuration: distributed parity with a group size of G**
 
 ###### 14.7
