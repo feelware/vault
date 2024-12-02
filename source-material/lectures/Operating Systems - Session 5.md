@@ -21,7 +21,7 @@ src-link:
 
 ## Address binding
 
-- #wip 
+#wip
 
 ## Ejecución de un programa
 
@@ -42,6 +42,9 @@ src-link:
 
 ![](utilities/attachments/Pasted%20image%2020241106162844.png)
 
+- **input queue**: procesos que están esperando a ser cargados en memoria
+- swapping: guardar proceso en disco cuando la RAM se llena
+- **ready queue**: procesos guardados en disco (swapped)
 - La mayoría de sistemas operativos no requieren crear una partición SWAP.
 - `brk`: #wip
 - `strace`: executes program and traces the system calls and signals

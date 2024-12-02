@@ -1,69 +1,91 @@
-# FODA
+# Expo final
 
-Es importante tener claro que la utilidad de un análisis FODA depende en gran medida de su integración dentro de un marco estratégico claro. A menudo, un análisis FODA se convierte en una lista de observaciones y opiniones, sin jerarquizar la importancia de cada elemento o validar las ideas con datos externos, lo que lo convierte en un ejercicio sin impacto real en la estrategia de la organización. Para que un análisis FODA aporte valor estratégico, es crucial comprender claramente en qué mercado se busca competir y cómo se pretende diferenciar el producto o servicio.
+## Ventas
 
-## Fortalezas
+A continuación vamos a ver el plan de ventas de MetaGallery, así como las estrategias que planteamos para cumplir dichos objetivos.
 
-### Experiencia variada en el equipo
+### Plan de ventas
 
-Aunque esta es la primera experiencia de nuestro equipo con tecnología 3D, ya contamos con experiencia en áreas clave como el diseño y desarrollo de interfaces web utilizando React, así como en el desarrollo de APIs y comunicación con bases de datos. Esta diversidad de habilidades nos permite abordar el proyecto desde distintas perspectivas, garantizando que tanto el frontend como el backend de MetaGallery estén bien estructurados.
+Al elaborar un plan de ventas, es necesario definir un plan de acción estructurado y realista para la empresa. Como parte de este plan, se establecen una serie de objetivos cualitativos y cuantitativos S.M.A.R.T. que se deben alcanzar por los equipos comerciales de una empresa en plazos determinados y específicos. Entre estos objetivos, tenemos:
 
-### Uso de Spline para simplificar la creación de galerías en 3D 
- 
-Inicialmente consideramos utilizar ThreeJS y tecnologías similares para crear el motor 3D que daría vida a las galerías virtuales, sin embargo, añadir interactividad y la capacidad de navegación a los mapas habría resultado un desafío si hubiésemos optado por una solución a tan bajo nivel. Afortunadamente, encontramos Spline, una herramienta web que permite crear diseños en 3D y embeber estos diseños en páginas web. Esto facilita muchísimo la creación de plantillas y su integración a nuestra plataforma.
+- Reducir los costos de adquisición de nuevos usuarios año tras año.
+- Incrementar los ingresos anuales tras nuestro primer año operativo.
+- Aumentar trimestralmente la cantidad de usuarios y mejorar nuestra tasa de conversión en redes sociales.
 
-### Enfoque en la facilidad de uso
+### Estrategias y tácticas de ventas
 
-MetaGallery se diferencia de otras plataformas de galerías virtuales al priorizar la simplicidad sobre la personalización exhaustiva. Esto se traduce en una experiencia de usuario más accesible para artistas y museos que no cuentan con experiencia previa en el manejo de herramientas 3D. Al ofrecer plantillas predefinidas que facilitan la creación de galerías sin necesidad de conocimiento técnico, MetaGallery busca reducir la curva de aprendizaje para que los usuarios puedan concentrarse en la exhibición de sus obras, en lugar de en la configuración del entorno virtual.
+Para lograr nuestros objetivos, hemos diseñado varias estrategias clave:
 
-## Oportunidades
+1. **Canales de Comunicación Balanceados**:  
+    MetaGallery se diferencia por ofrecer una comunicación equilibrada entre tecnología y contacto humano. Utilizamos modelos de lenguaje como primera capa de atención, pero siempre brindamos la opción de interacción directa con un humano. Además, contamos con una sección de preguntas frecuentes que se actualiza en tiempo real según las inquietudes de los usuarios.
+2. **Sistema de Pagos Flexible**:  
+    Mantendremos un plan gratuito permanente, con actualizaciones en los planes de pago a medida que crezca la plataforma. Además, realizaremos estudios de mercado constantes para ofrecer descuentos y planes adaptados a las necesidades económicas de nuestros usuarios, incluyendo opciones para quienes enfrentan dificultades económicas.
+3. **Programa de Fidelidad**:  
+    Este programa buscará premiar a nuestros usuarios recurrentes con descuentos, plantillas exclusivas y la oportunidad de participar en sorteos corporativos, fomentando la lealtad a largo plazo.
+4. **Marketing de Boca a Boca**:  
+    Implementaremos incentivos para que nuestros usuarios recomienden la plataforma a otros, ofreciendo descuentos o meses gratuitos. También promoveremos que compartan sus experiencias positivas en redes sociales para aumentar nuestra visibilidad.
+5. **Eventos y Colaboraciones Locales**:  
+    Nos involucraremos activamente en la comunidad artística organizando o patrocinando exposiciones, ferias y talleres. Además, buscaremos alianzas con artistas emergentes para promover MetaGallery como su plataforma de galería virtual.
+6. **Contenido Informativo**:  
+    Crearemos contenido educativo, como podcasts y webinars, donde expertos en arte digital discutan temas relevantes. Esto nos ayudará a posicionarnos como una autoridad en el sector y atraer nuevos usuarios.
 
-### Creciente interés por la digitalización de exposiciones culturales
+Estas tácticas nos permitirán generar visibilidad, fidelizar usuarios y aumentar el crecimiento de MetaGallery.
 
-La pandemia impulsó una demanda significativa de experiencias culturales en línea, y aunque muchos museos y centros culturales han reabierto sus puertas, la tendencia hacia la digitalización de contenido artístico se ha mantenido. Esto presenta una oportunidad para MetaGallery de posicionarse como una herramienta clave para aquellos que buscan digitalizar sus exposiciones, ofreciendo una alternativa accesible que no requiere conocimientos avanzados en tecnología 3D. Museos y galerías de arte podrían encontrar en MetaGallery una forma práctica y económica de expandir su alcance a un público global.
+### Equipo de ventas
 
-### Expansión de funcionalidades para mejorar la experiencia de usuario
+El éxito de nuestras estrategias depende de un equipo bien estructurado, dividido en tres roles clave:
 
-MetaGallery tiene la oportunidad de ampliar sus capacidades, como la integración de "tours" guiados dentro de las galerías virtuales. Esta funcionalidad, que permite a los visitantes ser dirigidos a través de un recorrido predefinido, podría mejorar significativamente la experiencia inmersiva, atrayendo a un segmento de usuarios interesados en exposiciones más estructuradas. Además, la posibilidad de incorporar una mayor personalización de plantillas, como ajustar dimensiones de espacios o modificar la iluminación, podría atraer a aquellos usuarios que, aunque buscan simplicidad, desean un mayor grado de control sobre el diseño de sus galerías.
+1. **Líder de Ventas y Estrategia**: Define objetivos, coordina al equipo y asegura el cumplimiento de nuestras metas.
+2. **Ejecutivos de Ventas Técnicos**: Realizan demostraciones personalizadas y gestionan relaciones con los clientes.
+3. **Analistas de Mercado y Relaciones**: Monitorean tendencias, estudian a la competencia y gestionan alianzas clave.
 
-## Debilidades
+Aunque tenemos recursos limitados, esta estructura es eficiente y adaptable a nuestras necesidades.
 
-### Experiencia limitada en tecnología 3D
+## Organización de empresa
 
-Aunque contamos con experiencia variada en desarrollo web, la tecnología 3D es un área en la que todos estamos incursionando por primera vez. Si bien elegir Spline por encima de tecnologías más fundamentales como ThreeJS o WebGL nos permite avanzar rápidamente, la dependencia en esta herramienta podría convertirse en una desventaja si se requiere personalización más allá de lo que la herramienta permite.
+Vamos a pasar a ver la organización de la empresa, incluyendo tanto la dirección operativa como la organización funcional, incluyendo una pequeña previsión de recursos humanos para cada uno de estos, basado en las limitaciones con las que contamos como empresa emergente.
 
-### Falta de retroalimentación temprana
+### Dirección operativa
 
-Hasta el momento, no hemos buscado la opinión de potenciales usuarios o expertos en el sector, ya que aún estamos en una fase temprana de desarrollo. Esto significa que, aunque tenemos cierto grado de certeza en que nuestra plataforma cumple con las necesidades de nuestros usuarios, no hemos validado estas suposiciones. La ausencia de feedback puede hacer que perdamos de vista aspectos cruciales de la experiencia de usuario o de las funcionalidades que podrían ser críticas para el éxito de nuestra plataforma.
+#### CEO (Chief Executive Officer):  Rodrigo José Alva Saenz
 
-### Capacidad de personalización limitada
+Responsable de la gestión y dirección administrativa de MetaGallery. Su enfoque incluye la estrategia general y la misión de facilitar una plataforma accesible y atractiva para artistas y galerías de arte en el ámbito digital.
 
-Aunque nuestro enfoque en la simplicidad nos diferencia de otras plataformas, la poca capacidad de personalización de nuestras plantillas podría ser un problema para ciertos usuarios que desean un mayor control sobre el diseño de sus galerías. Esta limitación podría llevar a que algunos artistas o instituciones prefieran herramientas más complejas pero flexibles. Si bien planeamos expandir ligeramente estas opciones en el futuro, nuestra actual oferta podría no satisfacer completamente las expectativas de todos los segmentos de mercado.
+#### CTO (Chief Technology Officer): Jesus Stevan Diaz Ingol
 
-## Amenazas
+Responsable de asegurar que los sistemas de información y la infraestructura técnica de MetaGallery sean estables y eficientes. Su enfoque se centra en optimizar el rendimiento del editor 3D y la navegación de galerías, así como en la implementación de nuevas plantillas y funciones de usabilidad.
 
-### Competencia con plataformas más consolidadas
+#### CMO (Chief Marketing Officer): Luis Eduardo Calle Huamantinco
 
-En el mercado internacional, existen múltiples plataformas que ya han logrado posicionarse en el ámbito de las galerías virtuales, muchas de las cuales ofrecen una amplia gama de opciones de personalización y funcionalidades avanzadas. Esto hace que MetaGallery enfrente una competencia significativa para atraer a usuarios que buscan soluciones completas y sofisticadas, lo cual podría dificultar nuestra entrada en ciertos segmentos de mercado.
+Responsable de la gestión de ventas, el desarrollo de producto y la promoción de MetaGallery. Luis dirige las estrategias de mercado, investigaciones de tendencias y la publicidad para maximizar el alcance de la plataforma en la industria del arte digital.
 
-### Riesgos asociados a la escalabilidad de la infraestructura
+### Organización funcional
 
-Si bien nuestras necesidades iniciales de infraestructura pueden ser cubiertas con planes básicos de servicios en la nube, un crecimiento rápido en el número de usuarios y el volumen de contenido podría generar desafíos en términos de escalabilidad. La demanda de almacenamiento y procesamiento puede aumentar significativamente, lo que a su vez implicaría costos adicionales y una mayor complejidad en la administración de los recursos, poniendo en riesgo la estabilidad y la experiencia de uso si no logramos adaptarnos rápidamente.
+Vamos a ver ahora la organización funcional. En Metagallery es esencial contar con una organización funcional que soporte tanto el desarrollo tecnológico como el diseño, la experiencia del cliente y el crecimiento en el mercado. Se definen a continuación los roles de nuestra organización.
 
-# Politica de servicio y producto
+#### Equipo de desarrollo de producto
 
-## Accesibilidad y facilidad de uso
+- **Desarolladores frontend y backend**: Encargados de la construcción y mantenimiento de Metagallery como aplicación, incluyendo su funcionalidad principal (creación de galerías, visualización 3D, carga y reemplazo de contenidos). 
 
-MetaGallery ofrece una experiencia de creación de galerías virtuales simple y accesible. Los usuarios pueden crear, personalizar y compartir sus galerías de manera intuitiva a través de nuestro editor web, sin necesidad de experiencia previa con herramientas 3D.
+- **Diseñador UI/UX**: Crea y optimiza la interfaz de usuario, asegurándose de que Metagallery sea fácil de usar y visualmente atractiva. Define la disposición de la galería 2D, la navegación y la experiencia inmersiva 3D.
 
-## Infraestructura en la nube confiable
+- **Especialista en VR/AR**: Explora nuevas tecnologías y tendencias en realidad virtual (VR) y aumentada (AR) para optimizar la experiencia inmersiva de las galerías y expandir la oferta de la plataforma.
 
-MetaGallery se apoya en servicios de alojamiento en la nube, como Digital Ocean y Cloudflare. Esto asegura la disponibilidad continua de la plataforma y el acceso a las galerías virtuales en todo momento. Trabajamos para garantizar una experiencia fluida y estable para nuestros usuarios.
+#### Equipo de Marketing y Estrategia Comercial
 
-## Limitaciones por plan
+- **Especialista en Marketing Digital**: Crea la imagen de marca y la estrategia de comunicación de Metagallery. Diseña campañas de marketing digital para captar tanto artistas como clientes de otros sectores que deseen presentar contenido en galerías inmersivas.
+- **Ejecutivo de Ventas**: Establece alianzas estratégicas y cierra acuerdos con galerías, museos, instituciones educativas y empresas interesadas en utilizar Metagallery. También se enfoca en la retención y expansión de la base de clientes existente.
 
-MetaGallery ofrece diferentes planes de suscripción que determinan la cantidad de galerías que un usuario puede crear y el almacenamiento total para subir imágenes y contenido multimedia. Algunos planes permiten acceder a plantillas exclusivas y a funciones avanzadas, como la creación de tours guiados en las galerías. Cada plan incluye un límite de almacenamiento y número de galerías, los cuales pueden ser ampliados mediante la actualización del plan.
+#### Atención y Éxito del Cliente
 
-## Atención al cliente
+- **Especialista en Soporte Técnico**: Proporciona soporte técnico y resuelve problemas de usuarios en tiempo real, brindando asistencia para garantizar una experiencia sin problemas.
+- **Gestor de Atención al Cliente**: Asegura que los usuarios, especialmente artistas y creadores de contenido, logren éxito en sus objetivos dentro de Metagallery, aprovechando al máximo las funciones de la plataforma.
 
-Nuestros usuarios pueden contactar a nuestro equipo de soporte para resolver dudas o inconvenientes que surjan en el uso de la plataforma, a través de correo electrónico, Twitter, Instagram y Linkedin.
+#### Operaciones y finanzas
+
+- **Analista Financiero y Administrativo**: Maneja las finanzas, la contabilidad y la administración de Metagallery, asegurando la estabilidad financiera de la empresa y optimizando los costos operativos.
+- **Especialista en recursos humanos**: Encargado de la contratación, desarrollo de talento y la creación de una cultura de trabajo positiva y alineada con los valores de Metagallery.
+
+#### Equipo de Análisis y Estrategia de Datos
+
+- **Analista de datos**: Recopila, analiza y reporta datos de la interacción del usuario y el rendimiento de la plataforma, proporcionando conocimiento que ayuden a las decisiones estratégicas y de optimización del producto.

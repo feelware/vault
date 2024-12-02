@@ -4,53 +4,48 @@
     "type": "split",
     "children": [
       {
-        "id": "ff0cb2c84a897ae1",
+        "id": "ae4992acfea5a2cc",
         "type": "tabs",
         "children": [
           {
-            "id": "6f02bb1f9b97342e",
+            "id": "90a41943717a20d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "other-notes/rough-notes/finales.md",
+                "file": "other-notes/rough-notes/os finales.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "finales"
+              "title": "os finales"
             }
           },
           {
-            "id": "3301134a08a131a8",
+            "id": "aa46acbbfac23dd7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "source-material/lectures/Operating Systems - Session 5.md",
-                "mode": "source",
-                "source": false
+                "file": "source-material/textbooks/osppv3.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Operating Systems - Session 5"
+              "icon": "lucide-file-text",
+              "title": "osppv3"
             }
           },
           {
-            "id": "d3b63651c8b8fc39",
+            "id": "bddd6fb5b3bf2c72",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "source-material/lectures/Operating Systems - Session 6.md",
-                "mode": "source",
-                "source": false
+                "file": "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Operating Systems - Session 6"
+              "icon": "lucide-file-text",
+              "title": "Operating_systems__principles_and_practice (Anderson og Dahlin)_text"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "8090f1a6a0490b1c",
@@ -192,11 +188,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3301134a08a131a8",
+  "active": "90a41943717a20d8",
   "lastOpenFiles": [
-    "source-material/lectures/Operating Systems - Session 6.md",
+    "source-material/textbooks/osppv3.pdf",
+    "source-material/textbooks/osppv4.pdf",
+    "other-notes/rough-notes/os finales.md",
+    "source-material/lectures/Operating Systems - Session 7.md",
+    "utilities/attachments/Pasted image 20241202071903.png",
+    "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf",
+    "other-notes/rough-notes/balotario sistemas operativos.md",
+    "other-notes/rough-notes/examen sistemas operativos.md",
+    "utilities/attachments/Pasted image 20241202053958.png",
+    "source-material/lectures/15_file_systems.pdf",
+    "source-material/lectures/12_memory_management.pdf",
+    "source-material/lectures/14_storage_managment_cont.pdf",
+    "source-material/lectures/14_storage_manegement.pdf",
     "source-material/lectures/Operating Systems - Session 5.md",
-    "other-notes/rough-notes/finales.md",
+    "source-material/lectures/13_memory_management_cont.pdf",
+    "source-material/lectures/Operating Systems - Session 6.md",
+    "source-material/textbooks/Operating Systems - Principle and Practice.md",
+    "other-notes/rough-notes/hci trabajo final.md",
+    "source-material/lectures/Sesion 12 NoSQL.pdf",
+    "source-material/lectures/Sesion 10 BD.pdf",
+    "other-notes/presentations/expo chavez hoy.md",
+    "other-notes/rough-notes/pintos lab2.md",
+    "other-notes/rough-notes/logo fisi.md",
+    "utilities/attachments/color.svg",
+    "utilities/attachments/bw.svg",
     "source-material/lectures/Operating Systems - Session 4.md",
     "source-material/lectures/Operating Systems - Session 3.md",
     "other-notes/rough-notes/prompt metagallery.md",
@@ -204,41 +222,18 @@
     "utilities/attachments/Pasted image 20241113162155.png",
     "utilities/attachments/Pasted image 20241113154521.png",
     "source-material/lectures/Databases I - Session 12.md",
-    "source-material/misc/Sesion 10 BD.pdf",
     "utilities/attachments/Pasted image 20241111141636.png",
     "utilities/attachments/Pasted image 20241111135427.png",
     "utilities/attachments/Pasted image 20241111135053.png",
-    "utilities/attachments/Pasted image 20241111134224.png",
     "source-material/lectures/Databases I - Session 6.md",
     "source-material/videos/Learn flexbox the easy way.md",
-    "utilities/attachments/Pasted image 20241106162844.png",
-    "utilities/attachments/Pasted image 20241106144616.png",
     "other-notes/rough-notes/rutas hall.md",
-    "utilities/attachments/Pasted image 20241103144103.png",
     "source-material/lectures/Software Design - Session 9.md",
     "source-material/lectures/Guión.md",
     "source-material/videos/The 6 most important CSS concepts for beginners.md",
     "source-material/videos/CSS Selectors - beyond the very basics.md",
     "source-material/videos/The Skill of Learning from Lectures 1.md",
     "source-material/videos/The Skill of Learning from Lectures.md",
-    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
-    "source-material/videos/Learn Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF.md",
-    "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf",
-    "source-material/textbooks/os-principles-practice.pdf",
-    "source-material/textbooks/os-concepts.pdf",
-    "other-notes/rough-notes/jwt.md",
-    "other-notes/rough-notes/pintos lab2.md",
-    "pintos_lab2.pdf",
-    "source-material/lectures/Software Design - Session 4.md",
-    "other-notes/presentations/expo chavez hoy.md",
-    "source-material/lectures/Databases I - Session 5.md",
-    "source-material/lectures/Databases I - Session 4.md",
-    "source-material/lectures/Databases I - Session 3.md",
-    "other-notes/rough-notes/2.md",
-    "other-notes/rough-notes/5.pdf",
-    "other-notes/rough-notes/1.pdf",
-    "other-notes/rough-notes/3.pdf",
-    "other-notes/rough-notes/2.pdf",
-    "source-material/textbooks/osppv2.pdf"
+    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md"
   ]
 }
