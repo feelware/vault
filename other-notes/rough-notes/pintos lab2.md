@@ -11,14 +11,14 @@
 | description                                     | data       | start      | end        | size (bytes) | owner   |
 | ----------------------------------------------- | ---------- | ---------- | ---------- | ------------ | ------- |
 | `PHYS_BASE`                                     |            | 0xc0000000 |            |              | kernel  |
-| contents of the string that `argv[1]` points to | bar\0      | 0xbffffffc | 0xbfffffff | 4            | process |
-| contents of the string that `argv[0]` points to | fu\0       | 0xbffffff9 | 0xbffffffb | 3            | process |
-| 4-byte-word align padding                       | 0          | 0xbffffffa | 0xbffffffa | 1            | process |
-| `argv[2]` (null pointer sentinel)               | 0          | 0xbffffff6 | 0xbffffff9 | 4            | process |
-| `argv[1]`                                       | 0xbffffffc | 0xbffffff2 | 0xbffffff5 | 4            | process |
-| `argv[0]`                                       | 0xbffffff9 | 0xbfffffed | 0xbffffff1 | 4            | process |
-| `argv` (pointer to `argv[0]`)                   | 0xbfffffed | 0xbfffffe9 | 0xbfffffec | 4            | process |
-| `argc`                                          | 2          | 0xbfffffe5 | 0xbfffffe8 | 4            | process |
-| fake return address (`esp` must point here)     | 0          | 0xbfffffe1 | 0xbfffffe4 | 4            | process |
+| contents of the string that `argv[0]` points to | echo\0     | 0xbffffffb | 0xbfffffff | 5            | process |
+| contents of the string that `argv[1]` points to | hola\0     | 0xbffffff6 | 0xbffffffa | 5            | process |
+| 4-byte-word align padding                       | 0x0000     | 0xbffffff4 | 0xbffffff5 | 2            | process |
+| `argv[2]` (null pointer sentinel)               | 0x00000000 | 0xbffffff0 | 0xbffffff3 | 4            | process |
+| `argv[1]`                                       | 0xbffffffb | 0xbfffffec | 0xbfffffef | 4            | process |
+| `argv[0]`                                       | 0xbffffff6 | 0xbfffffe8 | 0xbfffffeb | 4            | process |
+| `argv` (pointer to `argv[0]`)                   | 0xbfffffe8 | 0xbfffffe4 | 0xbfffffe7 | 4            | process |
+| `argc`                                          | 0x00000002 | 0xbfffffe0 | 0xbfffffe3 | 4            | process |
+| fake return address (`esp` must point here)     | 0x00000000 | 0xbfffffdc | 0xbfffffdf | 4            | process |
 | ...rest of the stack                            |            |            |            |              |         |
-`esp`: 0xbfffffe1
+`esp`: 0xbfffffdc

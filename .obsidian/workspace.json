@@ -4,45 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "ae4992acfea5a2cc",
+        "id": "433dac3673751d8e",
         "type": "tabs",
         "children": [
           {
-            "id": "90a41943717a20d8",
+            "id": "861ddfb8f3f67188",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "other-notes/rough-notes/os finales.md",
+                "file": "other-notes/rough-notes/Data and Computer Communications.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "os finales"
+              "title": "Data and Computer Communications"
             }
           },
           {
-            "id": "aa46acbbfac23dd7",
+            "id": "10b6e6ab27c21c7f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/memory-to-digital-signal.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "memory-to-digital-signal.excalidraw"
+            }
+          },
+          {
+            "id": "941bda24ba004768",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/textbooks/osppv3.pdf"
+                "file": "source-material/textbooks/data-computer-communications-william-stallings.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "osppv3"
-            }
-          },
-          {
-            "id": "bddd6fb5b3bf2c72",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Operating_systems__principles_and_practice (Anderson og Dahlin)_text"
+              "title": "data-computer-communications-william-stallings"
             }
           }
         ]
@@ -164,10 +164,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/lectures/Operating Systems - Session 5.md"
+                "file": "other-notes/rough-notes/Data and Computer Communications.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Operating Systems - Session 5"
+              "title": "Outline of Data and Computer Communications"
             }
           }
         ],
@@ -185,55 +185,57 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "90a41943717a20d8",
+  "active": "861ddfb8f3f67188",
   "lastOpenFiles": [
-    "source-material/textbooks/osppv3.pdf",
-    "source-material/textbooks/osppv4.pdf",
-    "other-notes/rough-notes/os finales.md",
-    "source-material/lectures/Operating Systems - Session 7.md",
-    "utilities/attachments/Pasted image 20241202071903.png",
-    "source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf",
-    "other-notes/rough-notes/balotario sistemas operativos.md",
-    "other-notes/rough-notes/examen sistemas operativos.md",
-    "utilities/attachments/Pasted image 20241202053958.png",
-    "source-material/lectures/15_file_systems.pdf",
-    "source-material/lectures/12_memory_management.pdf",
-    "source-material/lectures/14_storage_managment_cont.pdf",
-    "source-material/lectures/14_storage_manegement.pdf",
-    "source-material/lectures/Operating Systems - Session 5.md",
-    "source-material/lectures/13_memory_management_cont.pdf",
-    "source-material/lectures/Operating Systems - Session 6.md",
-    "source-material/textbooks/Operating Systems - Principle and Practice.md",
-    "other-notes/rough-notes/hci trabajo final.md",
-    "source-material/lectures/Sesion 12 NoSQL.pdf",
-    "source-material/lectures/Sesion 10 BD.pdf",
-    "other-notes/presentations/expo chavez hoy.md",
-    "other-notes/rough-notes/pintos lab2.md",
-    "other-notes/rough-notes/logo fisi.md",
+    "Excalidraw/memory-to-digital-signal.excalidraw.md",
+    "other-notes/rough-notes/Data and Computer Communications.md",
+    "other-notes/rough-notes/excal.md",
+    "Excalidraw/Drawing 2024-12-23 18.05.24.excalidraw.md",
+    "utilities/attachments/Pasted image 20241223180539.png",
+    "source-material/textbooks/data-computer-communications-william-stallings.pdf",
+    "Excalidraw",
+    "utilities/attachments/Pasted image 20241223174818.png",
+    "utilities/attachments/Pasted image 20241223174751.png",
+    "utilities/attachments/Pasted image 20241223173720.png",
+    "source-material/lectures/Foundations of User Experience (UX) Design.md",
+    "other-notes/rough-notes/networks class - syllabus to book mappings.md",
+    "source-material/syllabi/silabo-redes-2019-2.pdf",
+    "source-material/syllabi/silabo-redes-2016-2.pdf",
+    "source-material/textbooks/microsoft-tcp-ip.pdf",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/syllabi/silabo-metodos-formales-pruebas-2021-1.pdf",
+    "source-material/syllabi/silabo-arquitectura-software-2022-2.pdf",
+    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
+    "source-material/syllabi",
+    "other-notes/rough-notes/formación de empresas - resumen.pdf",
+    "other-notes/rough-notes/concrete mathematics.md",
+    "other-notes/rough-notes/puzle.md",
+    "source-material/lectures/Software Design - Session 2.md",
+    "source-material/lectures/Software Quality Assurance - Season 3.md",
+    "source-material/lectures/Software Quality Assurance - Season 2.md",
+    "other-notes/rough-notes/expo final fany.md",
+    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
+    "source-material/textbooks/algebra-gelfrand.md",
+    "other-notes/rough-notes/detriments to productivity.md",
+    "other-notes/rough-notes/fast note-taking rules.md",
     "utilities/attachments/color.svg",
-    "utilities/attachments/bw.svg",
-    "source-material/lectures/Operating Systems - Session 4.md",
-    "source-material/lectures/Operating Systems - Session 3.md",
-    "other-notes/rough-notes/prompt metagallery.md",
-    "utilities/attachments/Pasted image 20241113162216.png",
-    "utilities/attachments/Pasted image 20241113162155.png",
-    "utilities/attachments/Pasted image 20241113154521.png",
-    "source-material/lectures/Databases I - Session 12.md",
-    "utilities/attachments/Pasted image 20241111141636.png",
-    "utilities/attachments/Pasted image 20241111135427.png",
-    "utilities/attachments/Pasted image 20241111135053.png",
-    "source-material/lectures/Databases I - Session 6.md",
-    "source-material/videos/Learn flexbox the easy way.md",
-    "other-notes/rough-notes/rutas hall.md",
-    "source-material/lectures/Software Design - Session 9.md",
-    "source-material/lectures/Guión.md",
-    "source-material/videos/The 6 most important CSS concepts for beginners.md",
-    "source-material/videos/CSS Selectors - beyond the very basics.md",
-    "source-material/videos/The Skill of Learning from Lectures 1.md",
-    "source-material/videos/The Skill of Learning from Lectures.md",
-    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md"
+    "other-notes/rough-notes/final-chavez.md",
+    "other-notes/rough-notes/pintos lab2.md",
+    "other-notes/rough-notes/hoy sergio.md",
+    "utilities/attachments/Pasted image 20241204225030.png",
+    "utilities/attachments/Pasted image 20241204225028.png",
+    "utilities/attachments/Pasted image 20241204225012.png",
+    "other-notes/rough-notes/os finales.md",
+    "other-notes/rough-notes/diaz-ingol-final-sistemas-operativos.md",
+    "source-material/lectures/Operating Systems - Session 5.md",
+    "source-material/lectures/Operating Systems - Session 6.md",
+    "source-material/lectures/Operating Systems - Session 7.md",
+    "utilities/attachments/Pasted image 20241204084811.png",
+    "utilities/attachments/Pasted image 20241204084801.png",
+    "other-notes/rough-notes/balotario sistemas operativos.md"
   ]
 }

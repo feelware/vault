@@ -15,7 +15,7 @@
   "showUnsupportedFiles": false,
   "promptDelete": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "atomic-notes",
+  "newFileFolderPath": "other-notes/rough-notes",
   "attachmentFolderPath": "utilities/attachments",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,

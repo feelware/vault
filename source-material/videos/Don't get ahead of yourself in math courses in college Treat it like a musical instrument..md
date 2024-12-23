@@ -3,7 +3,7 @@ tags:
   - "#video-notes"
 src-date: 2024-08-14
 src-author:
-  - Author Jonathan David
+  - Jonathan David
 src-link: https://youtu.be/xQp-D_AaUqM
 ---
 # Don't get ahead of yourself in math courses in college. Treat it like a musical instrument.
