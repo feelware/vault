@@ -40,3 +40,4 @@ When sending mail from one computer to another through a telephone network, the 
 5. The received sequence of bits $m'$ is buffered in the destination's memory
 
 ![Simplified Data Communications Model](../../utilities/attachments/Pasted%20image%2020241223174818.png)
+

@@ -62,7 +62,28 @@ Deploy the product. Digital products might gather feedback even after deploying.
 
 ## UX design jobs at different types of companies
 
-- **Startups**: Since they have few employees, you end up [fulfilling multiple roles](#Specialists,%20generalists,%20and%20T-shaped%20designers). It's usually fun.
+- **Startups**: Since they have few employees, you end up [fulfilling multiple roles](#Specialists,%20generalists,%20and%20T-shaped%20designers), which is a useful learning experience, but can be stressful.
 - **Big companies**: Specialized work. Hard to get outside your specialty.
-- **Freelance**: You decide your own 
-- **Design agencies**: 
+
+## Universal design, inclusive design, and equity-focused design
+
+- Universal design: A single design for all users
+- Inclusive design: Taking account of particularities of certain user groups
+- Equity-focused: Focusing on historically underrepresented user groups
+
+## Platforms
+
+- **Users behave differently depending on their device**
+- Start designing for the platform your users are more likely to use your product on
+- Have a clear brand image so your product has the same look-and-feel no matter the platform
+- Mobile usage sessions are almost half as short as desktop usage sessions
+- **Reflect on your own behaviors when using these platforms**
+- Take account of low-end devices and slow/unreliable Internet connectivity
+
+### Mobile UX design tips
+
+- CTA buttons should be front and clear
+- Navigation menus should list only the core parts of a website
+- Make use of gestures users are familiar with, like tapping or swiping
+- Consider both portrait and landscape views
+- **Reduce clutter**

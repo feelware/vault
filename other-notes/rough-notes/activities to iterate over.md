@@ -1,12 +1,12 @@
 # activities to iterate over
 
-- (!!!) take google's ux introductory course
-- read algebra by gelfand and shen
-- read concrete math
+- take google's [foundations of ux design](https://www.coursera.org/learn/foundations-user-experience-design/home)
+- read [algebra](../../source-material/textbooks/algebra-gelfand.pdf) by gelfand and shen
+- read [concrete mathematics](../../source-material/textbooks/concrete-mathematics.pdf)
 - follow [silabo-inteligencia-artificial-2024-2](../../source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf)
-- (!!!) follow [silabo-redes-2019-2](../../source-material/syllabi/silabo-redes-2019-2.pdf) and/or [silabo-redes-2016-2](../../source-material/syllabi/silabo-redes-2016-2.pdf)
-- learn guitar
-- remake songs and watch taomb
+- follow [silabo-redes-2019-2](../../source-material/syllabi/silabo-redes-2019-2.pdf) and/or [silabo-redes-2016-2](../../source-material/syllabi/silabo-redes-2016-2.pdf)
+- follow [this guitar course](https://www.justinguitar.com/classes/beginner-guitar-course-grade-one)
+- remake [these songs](https://open.spotify.com/playlist/1HLiZ0vNblGYzcbURZLkog)
 
 ## optional
 

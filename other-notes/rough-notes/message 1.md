@@ -1,0 +1,1 @@
+regarding what I just said, I decided to stick to remaking songs and learning guitar, at least for these months. I tried making original music but most times I realized that either the ideas weren't good, or that I had no idea of what to do next once I got something like a loop or a chord progression
