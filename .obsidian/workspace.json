@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "fb9a19c6e4eb06a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "84af832f8a02b4e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d64d37e52dd7bb07",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6b9871631b35e0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d2d9dda6ce9c118",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58f5db9b0c939ad0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c831ccfa881c685f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:lecture-notes",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "cc37d9896835eb19",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 292.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8090f1a6a0490b1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a34e118df0550330",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c52eb39ce34581d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "other-notes/presentations/Metagallery FODA.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Metagallery FODA"
+            }
+          },
+          {
+            "id": "5b49ef0557b42f4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "other-notes/presentations/Metagallery FODA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Metagallery FODA"
+            }
+          },
+          {
+            "id": "7bc95cafa911f004",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "449fca97fc985ec5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source-material/textbooks/data-computer-communications-william-stallings.pdf"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of data-computer-communications-william-stallings"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "header-adjuster:Adjust Headers": false
+    }
+  },
+  "active": "d64d37e52dd7bb07",
+  "lastOpenFiles": [
+    "atomic-notes/operating system.md",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/lectures/Foundations of User Experience (UX) Design.md",
+    "source-material/textbooks/algebra-and-trigonometry.pdf",
+    "source-material/textbooks/art-and-visual-perception.pdf",
+    "source-material/textbooks/basic-mathematics-serge-lang.pdf",
+    "source-material/textbooks/blitzer-college-algebra.pdf",
+    "source-material/textbooks/book-of-proof.pdf",
+    "source-material/textbooks/clrs.pdf",
+    "source-material/textbooks/designers-dictionary-of-color.pdf",
+    "source-material/textbooks/design-patterns.pdf",
+    "source-material/textbooks/differential-geometry.pdf",
+    "source-material/textbooks/layout-essentials-design-principles-for-using-grids.pdf",
+    "source-material/textbooks/Data and Computer Communications.md",
+    "other-notes/rough-notes/detriments.md",
+    "other-notes/rough-notes/the.md",
+    "source-material/videos/The Skill of Learning from Lectures.md",
+    "other-notes/rough-notes/networks class - syllabus to book mappings.md",
+    "source-material/textbooks/concrete mathematics.md",
+    "source-material/textbooks/Refactoring UI.md",
+    "other-notes/rough-notes/message 1.md",
+    "Excalidraw/memory-to-digital-signal.excalidraw.md",
+    "other-notes/rough-notes/diaz-ingol-parcial-sistemas-operativos.md",
+    "other-notes/rough-notes/Data and Computer Communications.md",
+    "other-notes/rough-notes/final-chavez.md",
+    "other-notes/rough-notes/hoy sergio.md",
+    "other-notes/rough-notes/excal.md",
+    "Excalidraw/Drawing 2024-12-23 18.05.24.excalidraw.md",
+    "utilities/attachments/Pasted image 20241223180539.png",
+    "utilities/attachments/Pasted image 20241223174818.png",
+    "utilities/attachments/Pasted image 20241223174751.png",
+    "utilities/attachments/Pasted image 20241223173720.png",
+    "other-notes/rough-notes/concrete mathematics.md",
+    "other-notes/rough-notes/puzle.md",
+    "source-material/lectures/Software Design - Session 2.md",
+    "source-material/lectures/Software Quality Assurance - Season 3.md",
+    "source-material/lectures/Software Quality Assurance - Season 2.md",
+    "other-notes/rough-notes/expo final fany.md",
+    "source-material/videos/Don't get ahead of yourself in math courses in college Treat it like a musical instrument..md",
+    "source-material/textbooks/algebra-gelfrand.md",
+    "utilities/attachments/color.svg",
+    "utilities/attachments/Pasted image 20241204225030.png",
+    "utilities/attachments/Pasted image 20241204225028.png",
+    "utilities/attachments/Pasted image 20241204225012.png",
+    "utilities/attachments/Pasted image 20241204084811.png",
+    "utilities/attachments/Pasted image 20241204084801.png"
+  ]
+}
