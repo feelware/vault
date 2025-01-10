@@ -5,7 +5,7 @@ tags:
 src-date: 2007-01-01
 src-author:
   - William Stallings
-src-link: "[[../../source-material/textbooks/data-computer-communications-william-stallings.pdf|data-computer-communications-william-stallings]]"
+src-link: "[data-computer-communications-william-stallings](../../source-material/textbooks/data-computer-communications-william-stallings.pdf)"
 ---
 # Data and Computer Communications
 
@@ -33,7 +33,7 @@ Transmitting information between two computers has a lot of intricacies that wil
 
 When sending mail from one computer to another through a telephone network, the information goes through a process like this:
 
-1. The input bit sequence $m$, buffered in the source's memory, is turned into a digital signal $g(t)$ (those same bits represented by voltage changes over time) ![](../../utilities/attachments/Pasted%20image%2020241223180539.png)
+1. The input bit sequence $m$, buffered in the source's memory, is turned into a digital signal $g(t)$ (those same bits represented by voltage changes over time) ![Pasted image 20241223180539](../../utilities/attachments/Pasted%20image%2020241223180539.png)
 2. $g(t)$ is converted into an analog signal $s(t)$ that can be sent through the telephone line
 3. The signal inevitably loses fidelity when travelling, so the received signal $r(t)$ is different from the transmitted signal $s(t)$ to some degree
 4. $r(t)$ is converted back from an analog to digital, resulting in $g'(t)$, which will be different from $g(t)$ to some degree

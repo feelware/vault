@@ -14,7 +14,7 @@ src-link:
 
 ### Processor affinity
 
-![](utilities/attachments/Pasted%20image%2020241002150519.png)
+![Pasted image 20241002150519](../../utilities/attachments/Pasted%20image%2020241002150519.png)
 
 - Cache es "reservada" a estado de procesos (valores de registros) guardados durante un context switch
 - Un procesador acceda más rápido a su propia cache que a la memoria principal cada vez que se quiera restaurar el proceso (1 ns vs. 5-10 ms)
@@ -25,7 +25,7 @@ src-link:
 
 ### Non-Uniform Memory Access (NUMA)
 
-![](utilities/attachments/Pasted%20image%2020241002152515.png)
+![Pasted image 20241002152515](../../utilities/attachments/Pasted%20image%2020241002152515.png)
 
 - La afinidad de procesador es un factor a considerar por el scheduler
 - cuando hay una ready queue por procesador, se debe asegurar que cada ready queue tenga al menos un proceso
@@ -36,7 +36,7 @@ src-link:
 
 ### Procesadores Multicore
 
-![](utilities/attachments/Pasted%20image%2020241002154207.png)
+![Pasted image 20241002154207](../../utilities/attachments/Pasted%20image%2020241002154207.png)
 
 #wip 
 

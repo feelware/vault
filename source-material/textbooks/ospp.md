@@ -7,13 +7,13 @@ src-date: 2014-08-21
 src-author:
   - Thomas Anderson
   - Michael Dahlin
-src-link: "[[source-material/textbooks/Operating_systems__principles_and_practice (Anderson og Dahlin)_text.pdf|Operating_systems__principles_and_practice (Anderson og Dahlin)_text]]"
+src-link: "[Operating_systems__principles_and_practice (Anderson og Dahlin)_text](Anderson%20og%20Dahlin)_text)_text.pdf)"
 ---
 # Operating Systems: Principle and Practice
 
 ## Chapter 1: Introduction
 
-### What is an [[operating system]]?
+### What is an [operating system](../../atomic-notes/operating%20system.md)?
 
 An operating system plays three roles:
 
@@ -120,32 +120,32 @@ The OS needs to restrict applications from doing certain things to ensure:
 - Privacy: Apps shouldn't have read access to potentially sensitive data
 - Fairness: Apps shouldn't be allowed to hoard computer resources
 
-The [[kernel]], with full access to hardware, is responsible for restricting these apps.
+The [kernel](kernel), with full access to hardware, is responsible for restricting these apps.
 
-![[utilities/attachments/Pasted image 20240901142243.png]]
+![Pasted image 20240901142243](../../utilities/attachments/Pasted%20image%2020240901142243.png)
 
-A [[process (computing)|process]] is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
+A [process](process%20(computing)) is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
 
 ### The process concept
 
 - There can be multiple instances of the same program running on a computer. For every open process, the OS loads a copy of the running program in memory.
-- The [[process control block]] (PCB) is a data structure that stores everything the OS needs to know about a certain process (location in memory, privileges, location of the executable image, etc).
-- Most processes have multiple activities running in parallel. We're talking about [[thread|threads]].
+- The [process control block](process%20control%20block) (PCB) is a data structure that stores everything the OS needs to know about a certain process (location in memory, privileges, location of the executable image, etc).
+- Most processes have multiple activities running in parallel. We're talking about [threads](thread).
 
 ### Dual-mode operation
 
 - The processor is able to execute many sorts of instructions. Although some are relatively innocuous (like multiplying numbers), some others are *very* critical (writing to memory or disk, for instance) and pose a danger to other processes and even the OS.
 - A *hypothetical* solution would be to analyze/simulate every instruction that comes from a process before actually executing it on bare metal. If a certain process is overstepping its bounds, we could just halt it.
-- A more realistic approach to this idea is [[dual-mode operation]]: running kernel-issued instructions directly on hardware, while performing safety checks on every other instruction. A single bit in the status register indicates whether the current instruction comes from the kernel or a process.
+- A more realistic approach to this idea is [dual-mode operation](dual-mode%20operation): running kernel-issued instructions directly on hardware, while performing safety checks on every other instruction. A single bit in the status register indicates whether the current instruction comes from the kernel or a process.
 
 There are multiple things the hardware must support in order to achieve dual-mode operation:
 
 #### Privileged instructions
 
 - Among other things, processes are forbidden from executing instructions that:
-	- Change their privilege *directly* (without [[syscall|syscalls]]). Only the kernel is allowed to change the mode bit (See [[#Safe control transfer]]).
-	- Allow them to access memory outside the bounds set *only* by the kernel (see [[#Memory protection]]).
-	- Disable processor interrupts (see [[#Timer interrupts]]).
+	- Change their privilege *directly* (without [syscalls](syscall)). Only the kernel is allowed to change the mode bit (See [#Safe control transfer](#Safe%20control%20transfer)).
+	- Allow them to access memory outside the bounds set *only* by the kernel (see [#Memory protection](#Memory%20protection)).
+	- Disable processor interrupts (see [#Timer interrupts](#Timer%20interrupts)).
 - On the other hand, the kernel must be allowed to do these, otherwise it wouldn't be able to do its job.
 - If a process attempts to execute a privileged instruction, a **processor exception** will be triggered. The kernel handles these exceptions, usually by just halting such process.
 
@@ -155,7 +155,7 @@ There are multiple things the hardware must support in order to achieve dual-mod
 - Early OSes implemented memory protection using **base** and **bound** registers, which indicate the start and length of the current process' memory area, respectively.
 - The processes, unable to access memory that isn't theirs, need the kernel to take care of their input and output operations.
 
-![[utilities/attachments/Pasted image 20240903131941.png]]
+![Pasted image 20240903131941](../../utilities/attachments/Pasted%20image%2020240903131941.png)
 
 - This approach has multiple limitations:
 	- Neither the stack nor the heap can expand dynamically.
@@ -192,9 +192,9 @@ There are multiple things the hardware must support in order to achieve dual-mod
 
 - There are many services the operating system can provide to applications: some of the most important, yet surprisingly minimal to implement, are process management and input/output.
 - Whether we implement these services as user-level apps, user-level libraries, or part of the kernel through syscalls, is a matter of balancing:
-	- Security: The kernel must implement resource management and protection (see [[#Chapter 2 The Kernel Abstraction]])
+	- Security: The kernel must implement resource management and protection (see [#Chapter 2 The Kernel Abstraction](#Chapter%202%20The%20Kernel%20Abstraction))
 	- Flexibility: Allow applications and hardware to evolve independently by exposing a mostly transparent interface.
-	- Reliability: A bug in the kernel can be fatal. As seen in [[#Chapter 2 The Kernel Abstraction|Chapter 2]], the hardware trusts the kernel not to crash the entire system. The least responsibility we give to the kernel, the more reliable the system will be. 
+	- Reliability: A bug in the kernel can be fatal. As seen in [Chapter 2](#Chapter%202%20The%20Kernel%20Abstraction), the hardware trusts the kernel not to crash the entire system. The least responsibility we give to the kernel, the more reliable the system will be. 
 	- Performance: On the other hand, delegating too many OS tasks to user processes can slow things down due to excessive syscalls, which tend to be expensive.
 
 ### Process management

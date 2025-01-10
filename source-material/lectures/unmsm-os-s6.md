@@ -25,12 +25,12 @@ src-link:
 
 #wip
 
-![](../../utilities/attachments/Pasted%20image%2020241113154521.png)
+![Pasted image 20241113154521](../../utilities/attachments/Pasted%20image%2020241113154521.png)
 
 ## Paginado
 
-![](../../utilities/attachments/Pasted%20image%2020241113162155.png)
+![Pasted image 20241113162155](../../utilities/attachments/Pasted%20image%2020241113162155.png)
 - Tanto direcciones lógicas como físicas tienen dos componentes.
 - #wip
-![](../../utilities/attachments/Pasted%20image%2020241113162216.png)
+![Pasted image 20241113162216](../../utilities/attachments/Pasted%20image%2020241113162216.png)
 - Nota: Memoria lógica y memoria virtual son diferentes

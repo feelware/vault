@@ -7,7 +7,7 @@ src-author:
   - Ronald Graham
   - Donald Knuth
   - Oren Patashnik
-src-link: "[[../../source-material/textbooks/concrete-mathematics.pdf|concrete-mathematics]]"
+src-link: "[concrete-mathematics](../../source-material/textbooks/concrete-mathematics.pdf)"
 ---
 # Concrete Mathematics
 

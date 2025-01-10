@@ -15,7 +15,7 @@ src-link:
 - Acceder a memoria principal puede tomar varios ciclos. Las caches (L1, L2, L3) resuelven esto.
 - La memoria caché suele ser gestionada por hardware
 - Registros `base` y `limit` determinan los "bordes" del bloque de memoria de un proceso.
-![](utilities/attachments/Pasted%20image%2020241106144616.png)
+![Pasted image 20241106144616](../../utilities/attachments/Pasted%20image%2020241106144616.png)
 - Hardware realiza esta verificación de direcciones
 - En tablas `GDT` y `LDT` se guardan los valores de los registros de segmentación
 
@@ -40,7 +40,7 @@ src-link:
 
 #wip
 
-![](utilities/attachments/Pasted%20image%2020241106162844.png)
+![Pasted image 20241106162844](../../utilities/attachments/Pasted%20image%2020241106162844.png)
 
 - **input queue**: procesos que están esperando a ser cargados en memoria
 - swapping: guardar proceso en disco cuando la RAM se llena

@@ -25,20 +25,20 @@ src-link: Databases I
 - the database is just the repository
 - the DBMS is a *program* that works as an **interface** between the database and its administrators, allowing to store, query, and manipulate data in a safe and efficient manner
 
-![[utilities/attachments/Pasted image 20240902134845.png]]
+![Pasted image 20240902134845](../../utilities/attachments/Pasted%20image%2020240902134845.png)
 
-- they implement [[SQL]] as a means to query data
+- they implement [SQL](SQL) as a means to query data
 - controls who can access certain elements and how
 - ensures data integrity
 	- example: when deleting a register from a certain table, the DBMS deletes every other register that references it
-- allows grouping operations as [[database transactions|transactions]] that either finish executing entirely or don't execute at all (ACID)
+- allows grouping operations as [transactions](database%20transactions) that either finish executing entirely or don't execute at all (ACID)
 - allows to roll back accidental changes
 - uses indices, among other techniques, to optimize queries
 - allows audits and system monitoring
 
 ## Normalization techniques
 
-- [[database normalization|Normalization]] is about organizing data in certain ways in order to
+- [Normalization](database%20normalization) is about organizing data in certain ways in order to
 	- control redundancy
 	- optimize queries
 	- improve integrity
@@ -50,7 +50,7 @@ src-link: Databases I
 - All attributes are indivisible, no field has multiple values
 
 
-![[utilities/attachments/Pasted image 20240902153058.png]]
+![Pasted image 20240902153058](../../utilities/attachments/Pasted%20image%2020240902153058.png)
 
 ### Second normal form
 

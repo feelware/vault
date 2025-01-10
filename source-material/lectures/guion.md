@@ -28,11 +28,11 @@
 ### Escaleta
 
 - Lista de escenas
-![](utilities/attachments/Pasted%20image%2020241030164703.png)
+![Pasted image 20241030164703](../../utilities/attachments/Pasted%20image%2020241030164703.png)
 - Protagonista: El que está en constante conflicto. NO es necesariamente el héroe, ni el más apto, ni el más fuerte.
 - Villano: En su mundo, es un héroe.
 - Protagonista y antagonista buscan cancelarse. No pueden ganar los dos.
-- A veces se suele usar la escaleta para identificar escenas cuyo contexto (lugar y tiempo) pueden cambiar para ahorrar presupuesto, sin afectar la narrativa.
+- A veces se suele **aths** can be handy where you husar la escaleta para identificar escenas cuyo contexto (lugar y tiempo) pueden cambiar para ahorrar presupuesto, sin afectar la narrativa.
 
 ### Guión literario
 
@@ -44,7 +44,7 @@
 - Renombrado asesor de guionistas.
 - Libros populares: Screenplay (1979) y The Screenwriter's Workbook.
 - Propone una estructura confiable de los tres actos.
-![](utilities/attachments/Pasted%20image%2020241030165135.png)
+![Pasted image 20241030165135](../../utilities/attachments/Pasted%20image%2020241030165135.png)
 - Debes conocer la estructura antes de romperla. Al conocer la estructura, naturalmente tendrás ganas de romperla.
 - Sirve mucho para cortometrajes. Un largometraje se presta más a perderse en la trama.
 
@@ -80,8 +80,8 @@
 	- `int/ex`: interior o exterior, dan indicaciones sobre espacio e iluminación
 	- `locación`: indicación precisa del lugar
 	- `tiempo`: complementa información de iluminación y continuidad de escena. usualmente día o noche.
-![](utilities/attachments/Pasted%20image%2020241030171517.png)
-![](utilities/attachments/Pasted%20image%2020241030171616.png)
+![Pasted image 20241030171517](../../utilities/attachments/Pasted%20image%2020241030171517.png)
+![Pasted image 20241030171616](../../utilities/attachments/Pasted%20image%2020241030171616.png)
 - Un buen guionista no solo hace una buena historia, sino da a pie a una producción sostenible.
 
 ### Acción

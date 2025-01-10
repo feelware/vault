@@ -10,17 +10,17 @@ src-link: Databases I
 
 ## Views
 
-![](utilities/attachments/Pasted%20image%2020241111134224.png)
+![Pasted image 20241111134224](../../utilities/attachments/Pasted%20image%2020241111134224.png)
 
 Nota: La mayoría de veces se barre sobre las tablas **de movimiento**
 
 ### Casos de uso
 
 - Crear versiones "públicas" de ciertas tablas que no contenga info sensible
-![](utilities/attachments/Pasted%20image%2020241111135053.png)
+![Pasted image 20241111135053](../../utilities/attachments/Pasted%20image%2020241111135053.png)
 
 - Mostrar info agregada
-![](utilities/attachments/Pasted%20image%2020241111135427.png)
+![Pasted image 20241111135427](../../utilities/attachments/Pasted%20image%2020241111135427.png)
 
 ### Consideraciones
 
@@ -31,7 +31,7 @@ Nota: La mayoría de veces se barre sobre las tablas **de movimiento**
 - Realmente almacenan información
 - Se actualizan cada cierto tiempo o cuando ocurren cambios en las tablas originales
 - Tiempos de respuesta cortos
-![](../../utilities/attachments/Pasted%20image%2020241111141636.png)
+![Pasted image 20241111141636](../../utilities/attachments/Pasted%20image%2020241111141636.png)
 - Actualizar una tabla: `REFRESH` #wip
 
 ## Triggers

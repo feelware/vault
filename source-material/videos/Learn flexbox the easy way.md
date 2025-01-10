@@ -17,7 +17,7 @@ src-link: https://youtu.be/u044iM9xsWU
 - Allows items to shrink their content if the parent runs out of space.
 - As seen in the example below, if `flex-shrink` is set to `0`, the items overflow as soon as the parent can't keep their size as `max-content` within one "row".
 
-![](utilities/attachments/Pasted%20image%2020241026155922.png)
+![Pasted image 20241026155922](../../utilities/attachments/Pasted%20image%2020241026155922.png)
 
 ## `flex-grow`
 
@@ -25,20 +25,20 @@ src-link: https://youtu.be/u044iM9xsWU
 - Allows items to take up the entire space available on the parent.
 - The size of each item is proportional to their intrinsic size. Setting different `flex-grow` values on different items affects this proportion.
 
-![](utilities/attachments/Pasted%20image%2020241026155835.png)
+![Pasted image 20241026155835](../../utilities/attachments/Pasted%20image%2020241026155835.png)
 
 ## `flex-wrap`
 
 - Parent property, defaults to `no-wrap`.
 - When set to `wrap`, allows items to `wrap` if they exceed one "row" (assuming `flex-direction: row`).
 
-![with `flex-grow: 0`](utilities/attachments/Pasted%20image%2020241026161011.png)
+![with `flex-grow: 0`](../../utilities/attachments/Pasted%20image%2020241026161011.png)
 
-![with `flex-grow: 1`](utilities/attachments/Pasted%20image%2020241026155812.png)
+![with `flex-grow: 1`](../../utilities/attachments/Pasted%20image%2020241026155812.png)
 
 - Items long enough for the parent to keep as `max-content` are allowed to shrink, as seen in the example below.
 
-![](utilities/attachments/Pasted%20image%2020241026161221.png)
+![Pasted image 20241026161221](../../utilities/attachments/Pasted%20image%2020241026161221.png)
 
 ## `flex-basis`
 

@@ -6,7 +6,7 @@ src-date: 1993-09-17
 src-author:
   - Alexander Shen
   - Israel Gelfand
-src-link: "[[algebra-gelfand.pdf]]"
+src-link: "[algebra-gelfand](pdf/algebra-gelfand.pdf)"
 ---
 # Algebra
 

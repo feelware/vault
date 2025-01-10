@@ -1,7 +1,7 @@
 ---
 tags:
   - free-recall
-src-link: "[[Operating Systems - Principle and Practice]]"
+src-link: "[Operating Systems - Principle and Practice](Operating%20Systems%20-%20Principle%20and%20Practice)"
 ---
 - operating systems isolate processes in a way that doesn't allow them to corrupt or access sensitive information from other processes or the OS itself
 - the processor has two modes: user-mode and kernel-mode, defined by a single bit in the flags register

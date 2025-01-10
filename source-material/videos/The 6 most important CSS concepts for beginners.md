@@ -27,11 +27,11 @@ select {
 
 When many rulesets applied to the same element affect the same property, the one below gets preference (assuming all rulesets have the same level of [specificity](#Specificity)). In the example below, `background-color: purple` overrides `background-color.
 
-![](utilities/attachments/Pasted%20image%2020241024184804.png)
+![Pasted image 20241024184804](../../utilities/attachments/Pasted%20image%2020241024184804.png)
 
 You can use devtools to inspect where each declaration is being made, both the applied and the overwritten, as shown in the example above. Keep in mind that, in devtools, the cascade is "inverted". Specific declarations and those that are "winning" are on the top, while inherited declarations are below.
 
-![](utilities/attachments/Pasted%20image%2020241024191841.png)
+![Pasted image 20241024191841](../../utilities/attachments/Pasted%20image%2020241024191841.png)
 
 ## The box model
 
@@ -49,7 +49,7 @@ This way, padding will grow *inwards*, not altering the width of the element in 
 
 ## Specificity
 
-(See [[Specificity (CSS)]])
+(See [Specificity (CSS)](CSS))))
 
 - **Low specificity**: Element selectors (`body`, `h1`, `p`)
 - **Medium specificity**: Class selectors (`.foo`)
