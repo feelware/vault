@@ -22,7 +22,6 @@ src-link: https://www.coursera.org/learn/foundations-user-experience-design/
 - Visual designer: Digital assets (icons, illustrations, etc.)
 - Motion designer
 - Graphic designer: Print assets and other mediums (posters, etc.)
-- UX designer: #wip
 
 #### Design-adjacent
 
