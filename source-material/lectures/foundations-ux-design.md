@@ -152,3 +152,43 @@ Before starting a sprint, review the latest sprint retrospective.
 
 ## UX research
 
+- What users actually want over what companies *believe* users want
+- In large companies, it's usual for each UX designer to have a UX research partner
+
+### Phases of UX research
+
+- Foundational research: What are the user problems and how to solve them
+- Design research: How to solve those problems
+- Post-launch research: Did we solve the problem?
+
+### Types of UX research
+
+- Qualitative and quantitative
+- Primary (interacting with real users) and secondary (previous studies)
+
+### Research methods
+
+- Interviews (in-depth feedback)
+- Surveys (cheap, larger samples)
+- Usability tests (feedback on your actual app)
+
+### Biases
+
+#### Confirmation bias
+
+- Focusing on evidence of your own beliefs
+- To overcome:
+	- Don't word your interview questions to make the answers please you
+	- Prefer open-ended questions rather than multiple-choice questions
+	- Keep a neutral body language and tone of voice
+	- Don't interrupt users while they're using your app
+
+#### Primacy and recency biases
+
+- Focusing on the first and last thing the interviewees mentioned, respectively
+- To overcome: Document interviews either by taking notes or recording them 
+
+#### Sunk cost fallacy
+
+- Insist on finishing something because you already invested a lot on it
+- To overcome: Set "checkpoints" where you can freely decided whether to continue or stop

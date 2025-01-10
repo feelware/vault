@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "625ec64e8f00ecc7",
+        "id": "fb1028e36e39c7d7",
         "type": "tabs",
         "children": [
           {
-            "id": "90ab02e805938fe5",
+            "id": "8d90723fc0c72cbb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "source-material/lectures/foundations-ux-design.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "foundations-ux-design"
             }
           }
         ]
@@ -162,8 +166,14 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "90ab02e805938fe5",
+  "active": "8d90723fc0c72cbb",
   "lastOpenFiles": [
+    "other-notes/rough-notes/verano unmsm.md",
+    "source-material/textbooks/pdf/concrete-mathematics.pdf",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
+    "source-material/textbooks/algebra-gelfrand.md",
+    "source-material/textbooks/pdf/algebra-gelfand.pdf",
     "source-material/lectures/foundations-ux-design.md",
     "source-material/manuals/palindrome.pdf",
     "source-material/manuals/harmor.pdf",
@@ -173,9 +183,6 @@
     "source-material/lectures/pdf/unmsm-db-s12.pdf",
     "source-material/lectures/guion.md",
     "source-material/lectures/pdf/Sesion 12 NoSQL.pdf",
-    "source-material/lectures/pdf/Sesion 11 StoreProcedures.pdf",
-    "source-material/lectures/pdf/Sesion 10 BD.pdf",
-    "source-material/lectures/pdf/Estructura del proyecto final_2024-2.docx.pdf",
     "source-material/lectures/guión.md",
     "source-material/lectures/unmsm-os-s7.md",
     "source-material/lectures/unmsm-os-s6.md",
@@ -196,9 +203,6 @@
     "source-material/lectures/os-s4.md",
     "source-material/lectures/os-s3.md",
     "source-material/lectures/db-s12.md",
-    "source-material/lectures/db-s4.md",
-    "source-material/lectures/db-s6.md",
-    "source-material/lectures/db-s5.md",
     "utilities/attachments/Pasted image 20241223180539.png",
     "utilities/attachments/Pasted image 20241223174818.png",
     "utilities/attachments/Pasted image 20241223174751.png",

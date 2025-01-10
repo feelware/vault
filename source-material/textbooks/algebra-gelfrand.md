@@ -74,3 +74,35 @@ Multiply 11111 by 1111.
 --------
 12344321
 ```
+
+## 8
+
+Divide 123123123 by 123 (Check your answer by multiplication!)
+
+**Solution**
+
+$$
+\dfrac{123123123}{123} = \dfrac{123(10^6 + 10^3 + 1)}{123} = 10^6 + 10^3 + 1 = 1001001
+$$
+
+## 9
+
+Can you predict the remainder when 111...1 (100 ones) is divided by 1111111?
+
+**Solution**
+
+#wip 
+
+## 10
+
+Divide 1000...0 (20 zeros) by 7.
+
+**Solution**
+
+$$
+\begin{align*}
+
+\dfrac{10^{20}}{7} = 10^{20} \left(\dfrac{1}{7}\right) = 10^{20} \cdot 0.\overline{142857} = 14285714285714285714.\overline{285714}
+
+\end{align*}
+$$
