@@ -93,10 +93,28 @@ Point of connection between many ISPs.
 
 ### The TCP/IP Protocol Architecture
 
-#### The TCP/IP layers
+#### Physical layer
 
-- **Physical layer**: Computer to network
-- **Network access layer**: Computer to computer (across same network)
-- **Internet layer**: Network to network
-- **Host-to-host** or **transport layer**: Network mechanisms shared by apps
-- **Application layer**: #wip
+- Host to subnetwork
+
+#### Network access layer
+
+- Host to destination in the same subnetwork, or to router that will forward the data
+
+#### Internet layer
+
+- Acts as a relay (IP)
+- Host-to-host across routers
+- Implemented in hosts and routers
+
+#### Host-to-host or transport layer
+
+- Reliability mechanisms shared by apps (TCP)
+- Implemented in hosts
+
+#### Application layer
+
+- #wip
+
+![T](../../utilities/attachments/Pasted%20image%2020250111213811.png)
+

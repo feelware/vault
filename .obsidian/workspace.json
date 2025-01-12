@@ -4,36 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "290c21a46efc8fdb",
+        "id": "aa70d1ad6729ffd9",
         "type": "tabs",
         "children": [
           {
-            "id": "3d62319772bacc4f",
+            "id": "075fee948d5eceff",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
+                "file": "source-material/textbooks/pdf/algebra-gelfand.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "data-computer-communications-william-stallings"
+              "title": "algebra-gelfand"
             }
           },
           {
-            "id": "43d17cbccb5a65b9",
+            "id": "060142159a99ce9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/textbooks/data-computer-communications-william-stallings.md",
+                "file": "source-material/textbooks/algebra-gelfrand.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-computer-communications-william-stallings"
+              "title": "algebra-gelfrand"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,21 +179,26 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "3d62319772bacc4f",
+  "active": "060142159a99ce9a",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/algebra-gelfand.pdf",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/articles/pdf/chaos-report-2015.pdf",
+    "source-material/articles/chaos-report-2015.md",
+    "source-material/articles/pdf/chaosreport.pdf",
     "source-material/textbooks/data-computer-communications-william-stallings.md",
     "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "utilities/attachments/Pasted image 20250111213811.png",
+    "utilities/attachments/Pasted image 20250111213744.png",
+    "utilities/attachments/Pasted image 20250111213732.png",
     "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
     "other-notes/rough-notes/computer networks - syllabus mappings.md",
-    "other-notes/rough-notes/activities to iterate over.md",
     "source-material/syllabi/silabo-redes-2019-2.pdf",
     "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
     "source-material/textbooks/pdf/concrete-mathematics.pdf",
-    "source-material/textbooks/pdf/algebra-gelfand.pdf",
     "source-material/textbooks/algebra-gelfrand.md",
     "utilities/attachments/Pasted image 20250111125559.png",
     "source-material/lectures/unmsm-swarch-1.md",
-    "source-material/articles/pdf/CHAOSReport2015-Final.pdf",
     "source-material/articles/pdf",
     "utilities/attachments/Pasted image 20250110190331.png",
     "source-material/lectures/unmsm-db-s6.md",
@@ -209,21 +215,16 @@
     "source-material/lectures/foundations-ux-design.md",
     "other-notes/rough-notes/verano unmsm.md",
     "source-material/manuals/palindrome.pdf",
-    "source-material/manuals/harmor.pdf",
     "source-material/lectures/guión.md",
     "source-material/lectures/unmsm-guión.md",
     "source-material/lectures/unmsm-Foundations of User Experience (UX) Design.md",
     "source-material/lectures/unmsm-db-s5.md",
     "source-material/lectures/unmsm-db-s3.md",
     "source-material/lectures/Operating Systems - Session 3.md",
-    "source-material/lectures/os-s7.md",
     "utilities/attachments/Pasted image 20241223180539.png",
     "utilities/attachments/Pasted image 20241223174818.png",
     "utilities/attachments/Pasted image 20241223174751.png",
     "utilities/attachments/Pasted image 20241223173720.png",
-    "utilities/attachments/color.svg",
-    "utilities/attachments/Pasted image 20241204225030.png",
-    "utilities/attachments/Pasted image 20241204225028.png",
-    "utilities/attachments/Pasted image 20241204225012.png"
+    "utilities/attachments/color.svg"
   ]
 }
