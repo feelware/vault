@@ -101,9 +101,7 @@ Divide 1000...0 (20 zeros) by 7.
 
 $$
 \begin{align*}
-
 \dfrac{10^{20}}{7} = 10^{20} \left(\dfrac{1}{7}\right) = 10^{20} \cdot 0.\overline{142857} = 14285714285714285714.\overline{285714}
-
 \end{align*}
 $$
 
