@@ -89,4 +89,14 @@ Company that provides ISPs with communication with other ISPs
 
 Point of connection between many ISPs.
 
+## Protocol Architecture, TCP/IP, and Internet-Based Applications
 
+### The TCP/IP Protocol Architecture
+
+#### The TCP/IP layers
+
+- **Physical layer**: Computer to network
+- **Network access layer**: Computer to computer (across same network)
+- **Internet layer**: Network to network
+- **Host-to-host** or **transport layer**: Network mechanisms shared by apps
+- **Application layer**: #wip

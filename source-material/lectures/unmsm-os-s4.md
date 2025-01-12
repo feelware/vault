@@ -2,7 +2,8 @@
 tags:
   - "#lecture-notes"
 src-date: 2024-09-04
-src-author: 
+src-author:
+  - Edson Ticona
 src-link:
 ---
 # Operating Systems - Session 4

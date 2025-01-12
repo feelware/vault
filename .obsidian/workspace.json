@@ -4,21 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "419fab7a9c76effe",
+        "id": "290c21a46efc8fdb",
         "type": "tabs",
         "children": [
           {
-            "id": "f433a5743b36d432",
+            "id": "3d62319772bacc4f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "data-computer-communications-william-stallings"
+            }
+          },
+          {
+            "id": "43d17cbccb5a65b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/lectures/guion.md",
+                "file": "source-material/textbooks/data-computer-communications-william-stallings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "guion"
+              "title": "data-computer-communications-william-stallings"
             }
           }
         ]
@@ -52,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:lecture-notes",
+                "query": "tag:#wip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,43 +178,45 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "f433a5743b36d432",
+  "active": "3d62319772bacc4f",
   "lastOpenFiles": [
+    "source-material/textbooks/data-computer-communications-william-stallings.md",
+    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
+    "other-notes/rough-notes/computer networks - syllabus mappings.md",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/syllabi/silabo-redes-2019-2.pdf",
+    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
+    "source-material/textbooks/pdf/concrete-mathematics.pdf",
+    "source-material/textbooks/pdf/algebra-gelfand.pdf",
+    "source-material/textbooks/algebra-gelfrand.md",
+    "utilities/attachments/Pasted image 20250111125559.png",
+    "source-material/lectures/unmsm-swarch-1.md",
+    "source-material/articles/pdf/CHAOSReport2015-Final.pdf",
+    "source-material/articles/pdf",
+    "utilities/attachments/Pasted image 20250110190331.png",
+    "source-material/lectures/unmsm-db-s6.md",
+    "source-material/textbooks/ospp.md",
+    "source-material/lectures/unmsm-db-s4.md",
+    "source-material/lectures/unmsm-db-s12.md",
+    "source-material/lectures/unmsm-os-s3.md",
+    "source-material/lectures/unmsm-os-s4.md",
+    "source-material/lectures/unmsm-os-s5.md",
+    "source-material/lectures/unmsm-os-s6.md",
+    "source-material/lectures/unmsm-os-s7.md",
+    "source-material/syllabi/silabo-arquitectura-software-2022-2.pdf",
     "source-material/lectures/guion.md",
     "source-material/lectures/foundations-ux-design.md",
     "other-notes/rough-notes/verano unmsm.md",
-    "source-material/textbooks/pdf/concrete-mathematics.pdf",
-    "other-notes/rough-notes/activities to iterate over.md",
-    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
-    "source-material/textbooks/algebra-gelfrand.md",
-    "source-material/textbooks/pdf/algebra-gelfand.pdf",
     "source-material/manuals/palindrome.pdf",
     "source-material/manuals/harmor.pdf",
-    "source-material/manuals/bazillecm.pdf",
-    "source-material/lectures/pdf/unmsm-db-s11.pdf",
-    "source-material/lectures/pdf/unmsm-db-s10.pdf",
-    "source-material/lectures/pdf/unmsm-db-s12.pdf",
-    "source-material/lectures/pdf/Sesion 12 NoSQL.pdf",
     "source-material/lectures/guión.md",
-    "source-material/lectures/unmsm-os-s7.md",
-    "source-material/lectures/unmsm-os-s6.md",
-    "source-material/lectures/unmsm-os-s5.md",
-    "source-material/lectures/unmsm-os-s4.md",
-    "source-material/lectures/unmsm-os-s3.md",
     "source-material/lectures/unmsm-guión.md",
     "source-material/lectures/unmsm-Foundations of User Experience (UX) Design.md",
-    "source-material/lectures/unmsm-db-s6.md",
     "source-material/lectures/unmsm-db-s5.md",
-    "source-material/lectures/unmsm-db-s4.md",
     "source-material/lectures/unmsm-db-s3.md",
-    "source-material/lectures/unmsm-db-s12.md",
     "source-material/lectures/Operating Systems - Session 3.md",
     "source-material/lectures/os-s7.md",
-    "source-material/lectures/os-s6.md",
-    "source-material/lectures/os-s5.md",
-    "source-material/lectures/os-s4.md",
-    "source-material/lectures/os-s3.md",
-    "source-material/lectures/db-s12.md",
     "utilities/attachments/Pasted image 20241223180539.png",
     "utilities/attachments/Pasted image 20241223174818.png",
     "utilities/attachments/Pasted image 20241223174751.png",
@@ -210,8 +224,6 @@
     "utilities/attachments/color.svg",
     "utilities/attachments/Pasted image 20241204225030.png",
     "utilities/attachments/Pasted image 20241204225028.png",
-    "utilities/attachments/Pasted image 20241204225012.png",
-    "utilities/attachments/Pasted image 20241204084811.png",
-    "utilities/attachments/Pasted image 20241204084801.png"
+    "utilities/attachments/Pasted image 20241204225012.png"
   ]
 }
