@@ -146,3 +146,29 @@ It's the same sequence of repeating decimals with different offsets to the left.
 | 4      | 571428   | 4      |
 | 5      | 714285   | 5      |
 | 6      | 857142   | 3      |
+
+## 13
+
+A multiplication fan may enjoy the following problem:
+
+Multiply 142857 by 1, 2, 3, 4, 5, 6, 7, and look at the results. (It is easy to memorize these results and become a famous number cruncher who is able to multiply a random number, for example, 142857, by almost any digit!)
+
+**Solution**
+
+$$
+\begin{align*}
+1 \cdot 142857 = 142857 \\
+2 \cdot 142857 = 285714 \\
+3 \cdot 142857 = 428571 \\
+4 \cdot 142857 = 571428 \\
+5 \cdot 142857 = 714285 \\
+6 \cdot 142857 = 857142 \\
+7 \cdot 142857 = 999999 \\
+\end{align*}
+$$
+
+Again, we notice that the same sequence repeats with different offsets. This is because [142857 is a cyclic number](https://www.wikiwand.com/en/articles/142857#Cyclic_number). #wip
+
+## 14
+
+
