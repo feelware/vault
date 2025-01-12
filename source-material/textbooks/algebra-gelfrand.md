@@ -167,8 +167,54 @@ $$
 \end{align*}
 $$
 
-Again, we notice that the same sequence repeats with different offsets. This is because [142857 is a cyclic number](https://www.wikiwand.com/en/articles/142857#Cyclic_number). #wip
+Again, we notice that the same sequence repeats with different offsets. This is because [142857 is a cyclic number](https://www.wikiwand.com/en/articles/142857#Cyclic_number). 
+
+#wip
 
 ## 14
 
+#wip
+
+## 15
+
+Find a generating rule, and write five or ten more lines:
+
+$$
+\begin{align*}
+   0\\
+   1\\
+  10\\
+  11\\
+ 100\\
+ 101\\
+ 110\\
+ 111\\
+1000\\
+1001\\
+1010\\
+1011\\
+1100\\
+...
+\end{align*}
+$$
+
+**Solution**
+
+These are just the natural numbers in base 2
+
+$$
+\begin{align*}
+  ...\\
+ 1101\\
+ 1110\\
+ 1111\\
+10000\\
+10001\\
+10010\\
+10011\\
+10100\\
+10101\\
+10110
+\end{align*}
+$$
 
