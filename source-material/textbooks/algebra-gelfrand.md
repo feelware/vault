@@ -218,3 +218,55 @@ $$
 \end{align*}
 $$
 
+#wip
+
+## 16
+
+You have weights of 1, 2, 4, 8, and 16 grams. Show that it is possible to get any weight from 0 to 31 grams using the following table ("+" means "the weight is used", "—" means "not used"):
+
+![](../../utilities/attachments/Pasted%20image%2020250113143546.png)
+
+We can replace "—" by 0 and "+" by 1 (column B) and omit the leading zeros (column C). Then we get the same result as in the preceding problem.
+
+**Solution**
+
+#wip 
+
+## 17
+
+This table is called a conversion table between decimal and binary number systems:
+
+| Decimal | Binary |
+| ------- | ------ |
+| 0       | 0      |
+| 1       | 1      |
+| 2       | 10     |
+| 3       | 11     |
+| 4       | 100    |
+| 5       | 101    |
+| 6       | 110    |
+| 7       | 111    |
+| 8       | 1000   |
+| 9       | 1001   |
+| 10      | 1010   |
+| 11      | 1011   |
+| 12      | 1100   |
+
+What corresponds to 14 in the right column? What corresponds to 10000 in the left column?
+
+**Solution**
+
+14 to binary is 1110
+
+```
+14 |2
+ 0  7 |2
+    1  3 |2
+       1  1
+```
+
+10000 to decimal is 16
+
+$$
+16(1) + 8(0) + 4(0) + 2(0) + 1(0)
+$$

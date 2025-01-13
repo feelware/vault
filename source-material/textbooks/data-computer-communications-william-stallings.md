@@ -65,56 +65,44 @@ Smaller geographical data. #wip
 
 > [..] Vint Cerf and Bob Kahn of ARPA started to develop methods and protocols for *internetworking*; that is, communicating across arbitrary, multiple, packet-switched networks. They published a very influential paper in May of 1974 [CERF74] outlining their approach to a Transmission Control Protocol [...] eventually leading to the TCP (Transmission Control Protocol) and IP (Internet Protocol) protocols, which, in turn, formed the basis for what eventually became the TCP/IP protocol suite. This provided the foundation for the Internet.
 
-#### Internet Service Provider (ISP)
-
-Company that provides customers with presence on the internet
-
-#### Customers Premises Equipment (CPE)
-
-Telecommunications equipment at a customer's location
-
-#### Central Office (CO)
-
-ISP-managed end of communication line between customer and ISP
-
-#### Point of Presence (POP)
-
-#wip
-
-#### Network Service Provider (NSP)
-
-Company that provides ISPs with communication with other ISPs
-
-#### Network Access Point (NAP)
-
-Point of connection between many ISPs.
+- **Internet Service Provider (ISP)**: Company that provides customers with presence on the internet
+- **Customers Premises Equipment (CPE)**: Telecommunications equipment at a customer's location
+- **Central Office (CO)**: ISP-managed end of communication line between customer and ISP
+- **Point of Presence (POP)**: #wip
+- **Network Service Provider (NSP)**: Company that provides ISPs with communication with other ISPs
+- **Network Access Point (NAP)**: Point of connection between many ISPs.
 
 ## Protocol Architecture, TCP/IP, and Internet-Based Applications
 
 ### The TCP/IP Protocol Architecture
 
-#### Physical layer
+#### Layers
 
-- Host to subnetwork
+- Application layer
+- Host-to-host or transport layer
+- Internet layer 
+- Network access layer
+- Physical layer
 
-#### Network access layer
+#wip
 
-- Host to destination in the same subnetwork, or to router that will forward the data
-
-#### Internet layer
-
-- Acts as a relay (IP)
-- Host-to-host across routers
-- Implemented in hosts and routers
-
-#### Host-to-host or transport layer
-
-- Reliability mechanisms shared by apps (TCP)
-- Implemented in hosts
-
-#### Application layer
-
-- #wip
+#### Operation of the TCP and IP
 
 ![T](../../utilities/attachments/Pasted%20image%2020250111213811.png)
 
+Two levels of entity addressing:
+- One for hosts
+- Another for processes within the host (ports)
+
+Every [layer](#Layers) appends certain information to the data to be sent
+
+![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
+
+- Process passes down user data to TCP
+- TCP breaks down the user data in **segments**, appending the destination *port*, sequence number, and checksum to each one
+- IP appends the destination *host address* to each segment (now called **IP datagram**)
+- Network-access layer appends destination *subnetwork address* and facilities requests to each datagram (now called **packet**)
+
+These headers are stripped down at different points.
+
+- In the router between subnetworks, 
