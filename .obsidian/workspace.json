@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4ff5568a88e09569",
+            "id": "d78ec718165d09fd",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
+                "file": "source-material/articles/pdf/chaos-report-2015.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "data-computer-communications-william-stallings"
-            }
-          },
-          {
-            "id": "eeede4f18b0e8b67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source-material/textbooks/data-computer-communications-william-stallings.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "data-computer-communications-william-stallings"
+              "title": "chaos-report-2015"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,10 +164,15 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "eeede4f18b0e8b67",
+  "active": "d78ec718165d09fd",
   "lastOpenFiles": [
-    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "source-material/articles/chaos-report-2015.md",
+    "source-material/articles/pdf/chaos-report-2015.pdf",
+    "utilities/attachments/Pasted image 20250113201551.png",
+    "utilities/attachments/Pasted image 20250113201542.png",
     "source-material/textbooks/data-computer-communications-william-stallings.md",
+    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "source-material/articles/pdf/chaosreport.pdf",
     "other-notes/rough-notes/activities to iterate over.md",
     "source-material/textbooks/ai-foundations-computational-agents.md",
     "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
@@ -200,9 +190,6 @@
     "source-material/textbooks/pdf/ai-modern-approach.pdf",
     "source-material/textbooks/pdf/AI_Russell_Norvig.pdf",
     "source-material/textbooks/concrete-mathematics.md",
-    "source-material/articles/pdf/chaos-report-2015.pdf",
-    "source-material/articles/chaos-report-2015.md",
-    "source-material/articles/pdf/chaosreport.pdf",
     "utilities/attachments/Pasted image 20250111213811.png",
     "utilities/attachments/Pasted image 20250111213744.png",
     "utilities/attachments/Pasted image 20250111213732.png",
@@ -223,8 +210,6 @@
     "other-notes/rough-notes/verano unmsm.md",
     "source-material/lectures/guión.md",
     "source-material/lectures/unmsm-guión.md",
-    "source-material/lectures/unmsm-Foundations of User Experience (UX) Design.md",
-    "utilities/attachments/Pasted image 20241223180539.png",
-    "utilities/attachments/Pasted image 20241223174818.png"
+    "source-material/lectures/unmsm-Foundations of User Experience (UX) Design.md"
   ]
 }
