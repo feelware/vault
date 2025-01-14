@@ -103,6 +103,6 @@ Every [layer](#Layers) appends certain information to the data to be sent
 - IP appends the destination *host address* to each segment (now called **IP datagram**)
 - Network-access layer appends destination *subnetwork address* and facilities requests to each datagram (now called **packet**)
 
-These headers are stripped down at different points.
+#### TCP and UDP
 
-- In the router between subnetworks, 
+UDP is a much more minimal transport-layer protocol. UDP doesn't guarantee preservation of sequence, or protection against duplication, unlike TCP.
