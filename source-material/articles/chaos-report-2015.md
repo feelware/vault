@@ -6,8 +6,8 @@ Los puentes no suelen caerse, pero cuando lo hacen, la causa del fallo se invest
 
 El CHAOS report se centra en identificar
 - alcance de los fracasos
-- los principales factores del fracaso
-- formas de reducir el fracaso
+- factores para el fracaso
+- factores para el éxito
 
 ## Redefiniendo resolución
 

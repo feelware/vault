@@ -18,8 +18,23 @@
               "icon": "lucide-file-text",
               "title": "chaos-report-2015"
             }
+          },
+          {
+            "id": "b672fac5dade1633",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source-material/articles/chaos-report-2015.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "chaos-report-2015"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,10 +179,10 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "d78ec718165d09fd",
+  "active": "b672fac5dade1633",
   "lastOpenFiles": [
-    "source-material/articles/chaos-report-2015.md",
     "source-material/articles/pdf/chaos-report-2015.pdf",
+    "source-material/articles/chaos-report-2015.md",
     "utilities/attachments/Pasted image 20250113201551.png",
     "utilities/attachments/Pasted image 20250113201542.png",
     "source-material/textbooks/data-computer-communications-william-stallings.md",
