@@ -268,5 +268,78 @@ What corresponds to 14 in the right column? What corresponds to 10000 in the lef
 10000 to decimal is 16
 
 $$
-16(1) + 8(0) + 4(0) + 2(0) + 1(0)
+16(1) + 8(0) + 4(0) + 2(0) + 1(0) = 16
 $$
+
+## 18
+
+How is 45 (decimal) written in the binary system?
+
+**Solution**
+
+32 is the greatest power of two less than 45. We *do* need a number 1 since 45 is odd. So far we have 33, 45 minus 33 is 12, 12 is 4 plus 8, which are powers of two, so the answer is 101101.
+
+## 19
+
+What (decimal) number is written as 10101101 in binary?
+
+**Solution**
+
+$$
+128(1) + 64(0) + 32(1) + 16(0) + 8(1) + 4(1) + 2(0) + 1(1) = 173
+$$
+
+## 20
+
+Try the usual addition method in binary version:
+
+```
+1010 + 101  = ?
+1111 + 1    = ?
+1011 + 1    = ?
+1111 + 1111 = ?
+```
+
+Check your answers, converting all the numbers (the numbers being added and the sums) into the decimal system.
+
+**Solution**
+
+```
+1010 -> 10
+ 101 ->  5
+----
+1111 -> 15
+```
+
+```
+ 1111 -> 15
+    1 ->  1
+-----
+10000 -> 16
+```
+
+```
+1011 -> 11
+   1 ->  1
+----
+1100 -> 12
+```
+
+```
+ 1111 -> 15
+ 1111 -> 15
+-----
+11110 -> 30
+```
+
+## 21
+
+Try the usual subtraction algorithm in its binary version:
+
+```
+1101 - 101 = ?
+ 110 - 1   = ?
+1000 - 1   = ?
+```
+
+**Solution**

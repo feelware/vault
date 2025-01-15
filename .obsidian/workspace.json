@@ -4,37 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "80e8790bdc10f150",
+        "id": "8cb4344cdf98201c",
         "type": "tabs",
         "children": [
           {
-            "id": "d78ec718165d09fd",
+            "id": "6bc1991ff06e22ad",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/articles/pdf/chaos-report-2015.pdf"
+                "file": "source-material/textbooks/pdf/algebra-gelfand.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "chaos-report-2015"
+              "title": "algebra-gelfand"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "89795fb79fe4a273",
+        "type": "tabs",
+        "children": [
           {
-            "id": "b672fac5dade1633",
+            "id": "c31a205df041d4af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/articles/chaos-report-2015.md",
+                "file": "source-material/textbooks/algebra-gelfrand.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chaos-report-2015"
+              "title": "algebra-gelfrand"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,10 +158,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/textbooks/data-computer-communications-william-stallings.pdf"
+                "file": "source-material/textbooks/algebra-gelfrand.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of data-computer-communications-william-stallings"
+              "title": "Outline of algebra-gelfrand"
             }
           }
         ],
@@ -179,8 +184,11 @@
       "header-adjuster:Adjust Headers": false
     }
   },
-  "active": "b672fac5dade1633",
+  "active": "c31a205df041d4af",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/algebra-gelfand.pdf",
+    "source-material/textbooks/algebra-gelfrand.md",
+    "other-notes/rough-notes/activities to iterate over.md",
     "source-material/articles/pdf/chaos-report-2015.pdf",
     "source-material/articles/chaos-report-2015.md",
     "utilities/attachments/Pasted image 20250113201551.png",
@@ -188,14 +196,11 @@
     "source-material/textbooks/data-computer-communications-william-stallings.md",
     "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
     "source-material/articles/pdf/chaosreport.pdf",
-    "other-notes/rough-notes/activities to iterate over.md",
     "source-material/textbooks/ai-foundations-computational-agents.md",
     "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
     "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
     "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
     "source-material/textbooks/pdf/concrete-mathematics.pdf",
-    "source-material/textbooks/algebra-gelfrand.md",
-    "source-material/textbooks/pdf/algebra-gelfand.pdf",
     "utilities/attachments/Pasted image 20250113143546.png",
     "utilities/attachments/Pasted image 20250113143307.png",
     "utilities/attachments/Pasted image 20250112210759.png",
