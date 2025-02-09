@@ -1,6 +1,4 @@
 ---
-tags:
-  - "#lecture-notes"
 src-date: 2025-01-10
 src-author:
   - Manuel Ibarra
@@ -28,7 +26,3 @@ src-link:
 ## Arquitectura de software
 
 - Descripción a alto nivel de componentes del sistema y relaciones entre ellos
-
----
-
-Tarea: Leer [este artículo](../articles/pdf/chaos-report-2015.pdf)

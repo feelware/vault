@@ -4,42 +4,51 @@
     "type": "split",
     "children": [
       {
-        "id": "8cb4344cdf98201c",
+        "id": "9532738d5df9f133",
         "type": "tabs",
         "children": [
           {
-            "id": "6bc1991ff06e22ad",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/textbooks/pdf/algebra-gelfand.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "algebra-gelfand"
-            }
-          }
-        ]
-      },
-      {
-        "id": "89795fb79fe4a273",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c31a205df041d4af",
+            "id": "dd2a551e84f56376",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/textbooks/algebra-gelfrand.md",
+                "file": "other-notes/rough-notes/computer networks - syllabus mappings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "algebra-gelfrand"
+              "title": "computer networks - syllabus mappings"
+            }
+          },
+          {
+            "id": "1f0f3c2c35537986",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "data-computer-communications-william-stallings"
+            }
+          },
+          {
+            "id": "4a0ed84168a8fa94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source-material/textbooks/data-computer-communications-william-stallings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "data-computer-communications-william-stallings"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -58,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -70,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#wip",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "other-notes/presentations/Metagallery FODA.md",
+                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Metagallery FODA"
+              "title": "Backlinks for data-computer-communications-william-stallings"
             }
           },
           {
@@ -158,14 +168,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/textbooks/algebra-gelfrand.md"
+                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of algebra-gelfrand"
+              "title": "Outline of data-computer-communications-william-stallings"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,55 +193,56 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "header-adjuster:Adjust Headers": false
+      "header-adjuster:Adjust Headers": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "c31a205df041d4af",
+  "active": "1f0f3c2c35537986",
   "lastOpenFiles": [
-    "source-material/textbooks/pdf/algebra-gelfand.pdf",
-    "source-material/textbooks/algebra-gelfrand.md",
-    "other-notes/rough-notes/activities to iterate over.md",
-    "source-material/articles/pdf/chaos-report-2015.pdf",
-    "source-material/articles/chaos-report-2015.md",
-    "utilities/attachments/Pasted image 20250113201551.png",
-    "utilities/attachments/Pasted image 20250113201542.png",
     "source-material/textbooks/data-computer-communications-william-stallings.md",
     "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
-    "source-material/articles/pdf/chaosreport.pdf",
-    "source-material/textbooks/ai-foundations-computational-agents.md",
-    "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
-    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
-    "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
-    "source-material/textbooks/pdf/concrete-mathematics.pdf",
-    "utilities/attachments/Pasted image 20250113143546.png",
-    "utilities/attachments/Pasted image 20250113143307.png",
-    "utilities/attachments/Pasted image 20250112210759.png",
-    "other-notes/rough-notes/fast note-taking rules.md",
     "other-notes/rough-notes/computer networks - syllabus mappings.md",
-    "source-material/textbooks/pdf/ia-metodos-tecnicas-aplicaciones.pdf",
-    "source-material/textbooks/pdf/ai-modern-approach.pdf",
-    "source-material/textbooks/pdf/AI_Russell_Norvig.pdf",
+    "other-notes/rough-notes/activities to iterate over.md",
+    "source-material/lectures/unmsm-pm-2.md",
+    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
+    "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
+    "source-material/textbooks/ai-foundations-computational-agents.md",
+    "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
     "source-material/textbooks/concrete-mathematics.md",
-    "utilities/attachments/Pasted image 20250111213811.png",
-    "utilities/attachments/Pasted image 20250111213744.png",
-    "utilities/attachments/Pasted image 20250111213732.png",
-    "utilities/attachments/Pasted image 20250111125559.png",
+    "source-material/textbooks/pdf/concrete-mathematics.pdf",
+    "source-material/textbooks/algebra-shen-gelfand.md",
+    "source-material/textbooks/pdf/algebra-shen-gelfand.pdf",
+    "projects/unmsm-2025-0/read-week-1.md",
+    "projects/unmsm-2025-0/dev-tombo-bootstrap.md",
+    "projects/unmsm-2025-0/hw-3-pmbok.md",
+    "projects/unmsm-2025-0/hw-2-pmbok.md",
+    "source-material/lectures/unmsm-pm-1.md",
+    "source-material/lectures/unmsm-pm-3.md",
+    "source-material/lectures/pdf/unmsm-pm-s2.pdf",
+    "source-material/lectures/pdf/unmsm-pm-s1.pdf",
+    "source-material/lectures/pdf/GDPS_01 La empresa.pdf",
+    "source-material/lectures/pdf/GDPS_02 GDP bajo el enfoque PMI.pdf",
+    "source-material/lectures/pdf/unmsm-os-15-file-systems.pdf",
     "source-material/lectures/unmsm-swarch-1.md",
-    "utilities/attachments/Pasted image 20250110190331.png",
-    "source-material/lectures/unmsm-db-s6.md",
+    "source-material/lectures/unmsm-swarch-3.md",
+    "utilities/attachments/Pasted image 20250209103755.png",
+    "Untitled.md",
+    "source-material/lectures/unmsm-swarch-4.md",
+    "atomic-notes/operating system.md",
     "source-material/textbooks/ospp.md",
-    "source-material/lectures/unmsm-db-s4.md",
-    "source-material/lectures/unmsm-db-s12.md",
-    "source-material/lectures/unmsm-os-s3.md",
-    "source-material/lectures/unmsm-os-s4.md",
-    "source-material/lectures/unmsm-os-s5.md",
-    "source-material/lectures/unmsm-os-s6.md",
-    "source-material/lectures/unmsm-os-s7.md",
-    "source-material/lectures/guion.md",
-    "source-material/lectures/foundations-ux-design.md",
-    "other-notes/rough-notes/verano unmsm.md",
-    "source-material/lectures/guión.md",
-    "source-material/lectures/unmsm-guión.md",
-    "source-material/lectures/unmsm-Foundations of User Experience (UX) Design.md"
+    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
+    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
+    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
+    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
+    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
+    "utilities/attachments/Pasted image 20250205095058.png",
+    "utilities/attachments/Pasted image 20250205092744.png",
+    "utilities/attachments/Pasted image 20250205092457.png",
+    "utilities/attachments/Pasted image 20250205092359.png",
+    "utilities/attachments/Pasted image 20250124184255.png",
+    "utilities/attachments/Pasted image 20250124173350.png",
+    "utilities/attachments/Pasted image 20250124173343.png",
+    "utilities/attachments/Pasted image 20250124173319.png",
+    "utilities/attachments/Pasted image 20250121180401.png"
   ]
 }

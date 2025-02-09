@@ -2,7 +2,7 @@
 tags:
   - "#atomic-note"
   - wip
-  - unmsm
+  - unmsm-2024-2
 ---
 # Operating System
 

@@ -6,7 +6,7 @@ src-author:
   - Kevin Powell
 src-link: https://youtu.be/JnTPd9G6hoY
 ---
-# The 6 most important CSS concepts for beginners
+w# The 6 most important CSS concepts for beginners
 
 ## Inheritance
 

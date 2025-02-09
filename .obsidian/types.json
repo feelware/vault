@@ -4,7 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "hola": "number",
-    "status": "multitext",
+    "status": "text",
     "date": "datetime",
     "references": "multitext",
     "source": "date",
@@ -30,6 +30,7 @@
     "excalidraw-css": "text",
     "excalidraw-autoexport": "text",
     "excalidraw-embeddable-theme": "text",
-    "excalidraw-open-md": "checkbox"
+    "excalidraw-open-md": "checkbox",
+    "src-link": "multitext"
   }
 }

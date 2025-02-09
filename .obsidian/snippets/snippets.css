@@ -1,0 +1,4 @@
+.callout[data-callout="problem"] {
+  --callout-color: 128, 128, 128;
+  --callout-icon: lucide-circle-help;
+}

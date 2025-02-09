@@ -1,0 +1,130 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "title": {
+          "richText": true
+        },
+        "status": {
+          "options": [
+            "backlog",
+            "doing",
+            "done"
+          ]
+        }
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "projects/unmsm-2025-0",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "includeFields": [
+              "deadline",
+              "difficulty",
+              "name",
+              "tags"
+            ],
+            "headerField": "title",
+            "groupByField": "status"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "ab72340c-23e7-4246-934a-ad18921efb2b",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "af521f95-2a54-4e6b-a74b-67c04b20c6af",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "title": {
+                "width": 392,
+                "hide": false
+              },
+              "name": {
+                "hide": false,
+                "width": 178
+              },
+              "tags": {
+                "hide": false
+              }
+            },
+            "orderFields": [
+              "name",
+              "title",
+              "deadline",
+              "status",
+              "tags"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "e2783cb5-7e76-4d69-a997-e9f772b977b2",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "2fc1f71e-c5f8-4f9a-b0d3-44ae7344b477",
+      "name": "unmsm-2025-0"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "monday"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

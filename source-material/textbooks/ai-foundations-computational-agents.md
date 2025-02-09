@@ -1,3 +1,12 @@
+---
+tags:
+  - "#lecture-notes"
+src-date: 
+src-author:
+  - Alan Mackworth
+  - David L. Poole
+src-link: "[[pdf/ai-foundations-computational-agents.pdf|ai-foundations-computational-agents]]"
+---
 # Artificial Intelligence: Foundations of Computational Agents
 
 ## AI and agents
@@ -6,4 +15,22 @@
 
 > AI is the field that studies the synthesis and analysis of computational agents that act *intelligently*.
 
+### A brief history of AI
 
+Through history, humans have put effort into understanding and modelling human thought through whatever technological paradigm was current.
+
+**Church-Turing thesis**:
+
+> Any effectively computable function can be carried out on a Turing machine (and so also in the lambda calculus or any of the other equivalent formalisms).
+
+- There is no evidence that people can compute functions that are not Turing computable.
+- An agent’s actions are a function of its abilities, its history, and its goals or preferences.
+- Computation is more than just a metaphor for intelligence; reasoning *is* computation and computation can be carried out by a computer.
+
+AI can be thought of as synthetic epistemology. Instead of just making hypotheses about intelligence, researches craft intelligent models.
+
+"Flying machines", like planes, don't look or behave like flying animals at all, yet they fly. Similarly, "thinking machines" don't have to mimic human thought to work.
+
+> This also offers an approach to the question, “Can computers really think?” by considering the analogous question, “Can airplanes really fly?”
+
+### Agents situated in environments

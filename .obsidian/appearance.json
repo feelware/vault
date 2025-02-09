@@ -1,5 +1,10 @@
 {
   "accentColor": "#ea4d91",
-  "enabledCssSnippets": [],
-  "baseFontSize": 16
+  "enabledCssSnippets": [
+    "snippets"
+  ],
+  "baseFontSize": 16,
+  "monospaceFontFamily": "",
+  "textFontFamily": "",
+  "interfaceFontFamily": ""
 }

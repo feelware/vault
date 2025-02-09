@@ -99,13 +99,29 @@
   "editor:toggle-code": [
     {
       "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "editor:toggle-inline-math": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
         "Alt",
         "Mod"
       ],
       "key": "C"
     }
   ],
-  "editor:toggle-inline-math": [
+  "editor:insert-mathblock": [
     {
       "modifiers": [
         "Alt",

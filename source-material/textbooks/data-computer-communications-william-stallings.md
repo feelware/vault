@@ -76,30 +76,36 @@ Smaller geographical data. #wip
 
 ### The TCP/IP Protocol Architecture
 
-#### Layers
+#### Layers #wip
 
 - Application layer
 - Host-to-host or transport layer
-- Internet layer 
+- Internet layer
 - Network access layer
 - Physical layer
-
-#wip
 
 #### Operation of the TCP and IP
 
 ![T](../../utilities/attachments/Pasted%20image%2020250111213811.png)
 
-Two levels of entity addressing:
-- One for hosts
-- Another for processes within the host (ports)
+- Network access protocol: Used to **connect a computer to a subnetwork**
+- Internet Protocol (IP): Used to **move blocks of data** from one host to another, across one or multiple routers
+- Transmission Control Protocol (TCP): Used to **ensure** that these blocks are delivered to the **right host**, to the **right process**, **reliably**
+
+ Two levels of entity addressing are needed:
+
+- Each host should have an address unique within the Internet
+- Each process should have an address unique within the host. These addresses are called **ports**
 
 Every [layer](#Layers) appends certain information to the data to be sent
 
 ![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
 
 - Process passes down user data to TCP
-- TCP breaks down the user data in **segments**, appending the destination *port*, sequence number, and checksum to each one
+- TCP breaks down user data into **segments**, appending a TCP header to each one. This header includes:
+	- destination *port*
+	- sequence number
+	- checksum
 - IP appends the destination *host address* to each segment (now called **IP datagram**)
 - Network-access layer appends destination *subnetwork address* and facilities requests to each datagram (now called **packet**)
 

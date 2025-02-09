@@ -1,6 +1,6 @@
 ---
 tags:
-  - unmsm
+  - unmsm-2024-2
   - wip
   - lecture-notes
 src-date: 2014-08-21
