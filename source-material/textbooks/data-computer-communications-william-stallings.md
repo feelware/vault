@@ -92,22 +92,24 @@ Smaller geographical data. #wip
 - Internet Protocol (IP): Used to **move blocks of data** from one host to another, across one or multiple routers
 - Transmission Control Protocol (TCP): Used to **ensure** that these blocks are delivered to the **right host**, to the **right process**, **reliably**
 
- Two levels of entity addressing are needed:
+> [!note]
+>  Two levels of entity addressing are needed:
+>  - Each host should have an address unique within the Internet
+>  - Each process should have an address unique within the host. These addresses are called **ports**
 
-- Each host should have an address unique within the Internet
-- Each process should have an address unique within the host. These addresses are called **ports**
-
-Every [layer](#Layers) appends certain information to the data to be sent
+TCP receives user data and breaks it down into **TCP segments**. Then, each [layer](#Layers) appends certain information to each segment.
 
 ![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
 
-- Process passes down user data to TCP
-- TCP breaks down user data into **segments**, appending a TCP header to each one. This header includes:
-	- destination *port*
-	- sequence number
-	- checksum
-- IP appends the destination *host address* to each segment (now called **IP datagram**)
-- Network-access layer appends destination *subnetwork address* and facilities requests to each datagram (now called **packet**)
+1. TCP header:
+	- Destination port: which process should receive the data
+	- Sequence number: a sequential number is assigned to each segment to ensure ordering
+	- Checksum
+2. IP header:
+	- Host address: which host should receive the data
+3. Network header:
+	- Destination subnetwork address: #wip
+	- Facilities requests (optional)
 
 #### TCP and UDP
 
