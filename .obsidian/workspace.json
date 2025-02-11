@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "data-computer-communications-william-stallings"
             }
-          },
-          {
-            "id": "6a22705db411e177",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "data-computer-communications-william-stallings"
-            }
           }
         ]
       }
@@ -184,6 +172,7 @@
   "lastOpenFiles": [
     "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
     "source-material/textbooks/data-computer-communications-william-stallings.md",
+    "source-material/textbooks/data-computer-communications-william-stallings.pdf",
     "other-notes/rough-notes/activities to iterate over.md",
     "source-material/lectures/unmsm-pm-3.md",
     "other-notes/rough-notes/unmsm-pm-s3-articulo.md",
@@ -208,7 +197,6 @@
     "source-material/lectures/pdf/unmsm-pm-s1.pdf",
     "source-material/lectures/pdf/GDPS_01 La empresa.pdf",
     "source-material/lectures/pdf/GDPS_02 GDP bajo el enfoque PMI.pdf",
-    "source-material/lectures/pdf/unmsm-os-15-file-systems.pdf",
     "source-material/lectures/unmsm-swarch-1.md",
     "source-material/lectures/unmsm-swarch-3.md",
     "utilities/attachments/Pasted image 20250209103755.png",

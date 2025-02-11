@@ -33,7 +33,7 @@ Transmitting information between two computers has a lot of intricacies that wil
 
 When sending mail from one computer to another through a telephone network, the information goes through a process like this:
 
-1. The input bit sequence $m$, buffered in the source's memory, is turned into a digital signal $g(t)$ (those same bits represented by voltage changes over time) ![Pasted image 20241223180539](../../utilities/attachments/Pasted%20image%2020241223180539.png)
+1. The input bit sequence $m$, buffered in the source's memory, is turned into a digital signal $g(t)$ (those same bits represented by voltage changes over time)
 2. $g(t)$ is converted into an analog signal $s(t)$ that can be sent through the telephone line
 3. The signal inevitably loses fidelity when travelling, so the received signal $r(t)$ is different from the transmitted signal $s(t)$ to some degree
 4. $r(t)$ is converted back from an analog to digital, resulting in $g'(t)$, which will be different from $g(t)$ to some degree
@@ -45,32 +45,25 @@ When sending mail from one computer to another through a telephone network, the 
 
 #### Wide Area Networks (WAN)
 
-Cover a large geographical area. Nodes are not concerned with the content of the data transmitted, just in making sure they reach their destination. #wip
+Cover a large geographical area. Nodes are not concerned with the content of the data transmitted, just in making sure they reach their destination.
 
 Some technologies to implement WANs:
+
 - Circuit switching: Dedicated path between two stations (e.g. telephone network)
 - Packet switching: Data is sent as a sequence of packets. About 64 kbps
 - Frame relay: Leverages high data rates and low error rates of modern transmission facilities. Up to 2 Mbps
 - ATM: Evolution of frame relay. In the Gbps range
 
-#### Local Area Networks (LAN)
-
-Smaller geographical data. #wip
-
-#### Wireless Networks
-
-#wip
-
 ### The Internet
 
 > [..] Vint Cerf and Bob Kahn of ARPA started to develop methods and protocols for *internetworking*; that is, communicating across arbitrary, multiple, packet-switched networks. They published a very influential paper in May of 1974 [CERF74] outlining their approach to a Transmission Control Protocol [...] eventually leading to the TCP (Transmission Control Protocol) and IP (Internet Protocol) protocols, which, in turn, formed the basis for what eventually became the TCP/IP protocol suite. This provided the foundation for the Internet.
 
-- **Internet Service Provider (ISP)**: Company that provides customers with presence on the internet
-- **Customers Premises Equipment (CPE)**: Telecommunications equipment at a customer's location
-- **Central Office (CO)**: ISP-managed end of communication line between customer and ISP
-- **Point of Presence (POP)**: #wip
-- **Network Service Provider (NSP)**: Company that provides ISPs with communication with other ISPs
-- **Network Access Point (NAP)**: Point of connection between many ISPs.
+- Internet Service Provider (ISP): Company that provides customers with presence on the internet
+- Customers Premises Equipment (CPE): Telecommunications equipment at a customer's location
+- Central Office (CO): ISP-managed end of communication line between customer and ISP
+- Point of Presence (POP): #wip
+- Network Service Provider (NSP): Company that provides ISPs with communication with other ISPs
+- Network Access Point (NAP): Point of connection between many ISPs.
 
 ## Protocol Architecture, TCP/IP, and Internet-Based Applications
 
@@ -78,13 +71,25 @@ Smaller geographical data. #wip
 
 #### Layers
 
-| Layer name           | Description                                                                                                                                                                                                    | Implemented in          |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| Physical layer       | Concerned with signals, data rate, and related matters.                                                                                                                                                        | End-systems and routers |
-| Network access layer | Specific to the type of network to be used (circuit switching, packet switching, etc). There are as many NAPs as the amount of networks the host/router is connected to (Router J has two NAPs, for instance). | End-systems and routers |
-| Internet layer       | Needed when the source and destination are in different networks (like Host A and Host B, connected to Network 1 and 2 respectively).                                                                          | End-systems and routers |
-| Transport layer      |                                                                                                                                                                                                                |                         |
-| Application layer    |                                                                                                                                                                                                                |                         |
+##### Physical layer
+
+Concerned with signals, data rate, and related matters. Implemented in end-systems and routers.
+
+##### Network access layer
+
+Specific to the type of network to be used (circuit switching, packet switching, etc). There are as many NAPs as the amount of networks the host/router is connected to (Router J has two NAPs, for instance). Implemented in end-systems and routers.
+
+##### Internet layer
+
+Needed when the source and destination are in different networks (like Host A and Host B, connected to Network 1 and 2 respectively). Implemented in end-systems and routers.
+
+##### Transport layer
+
+#wip
+
+##### Application layer
+
+#wip
 
 #### Operation of the TCP and IP
 
