@@ -36,7 +36,21 @@
               "tags"
             ],
             "headerField": "title",
-            "groupByField": "status"
+            "groupByField": "status",
+            "columns": {
+              "done": {
+                "records": [
+                  "projects/unmsm-2025-0/dev-tombo-bootstrap.md"
+                ]
+              },
+              "backlog": {
+                "records": [
+                  "projects/unmsm-2025-0/hw-2-pmbok.md",
+                  "projects/unmsm-2025-0/hw-3-pmbok.md",
+                  "projects/unmsm-2025-0/read-week-1.md"
+                ]
+              }
+            }
           },
           "filter": {
             "conjunction": "and",
@@ -58,7 +72,14 @@
           },
           "filter": {
             "conjunction": "and",
-            "conditions": []
+            "conditions": [
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "done"
+              }
+            ]
           },
           "colors": {
             "conditions": []

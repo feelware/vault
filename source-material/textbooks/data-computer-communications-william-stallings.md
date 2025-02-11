@@ -76,17 +76,19 @@ Smaller geographical data. #wip
 
 ### The TCP/IP Protocol Architecture
 
-#### Layers #wip
+#### Layers
 
-- Application layer
-- Host-to-host or transport layer
-- Internet layer
-- Network access layer
-- Physical layer
+| Layer name           | Description                                                                                                                                                                                                    | Implemented in          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Physical layer       | Concerned with signals, data rate, and related matters.                                                                                                                                                        | End-systems and routers |
+| Network access layer | Specific to the type of network to be used (circuit switching, packet switching, etc). There are as many NAPs as the amount of networks the host/router is connected to (Router J has two NAPs, for instance). | End-systems and routers |
+| Internet layer       | Needed when the source and destination are in different networks (like Host A and Host B, connected to Network 1 and 2 respectively).                                                                          | End-systems and routers |
+| Transport layer      |                                                                                                                                                                                                                |                         |
+| Application layer    |                                                                                                                                                                                                                |                         |
 
 #### Operation of the TCP and IP
 
-![T](../../utilities/attachments/Pasted%20image%2020250111213811.png)
+![TCP/IP concepts](../../utilities/attachments/Pasted%20image%2020250111213811.png)
 
 - Network access protocol: Used to **connect a computer to a subnetwork**
 - Internet Protocol (IP): Used to **move blocks of data** from one host to another, across one or multiple routers
@@ -101,15 +103,19 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each [lay
 
 ![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
 
-1. TCP header:
+1. TCP header (added by [transport layer](#Transport%20layer)):
 	- Destination port: which process should receive the data
 	- Sequence number: a sequential number is assigned to each segment to ensure ordering
 	- Checksum
-2. IP header:
+2. IP header (added by [internet layer](#Internet%20layer)):
 	- Host address: which host should receive the data
-3. Network header:
+3. Network/packet header (added by [network access layer](#Network%20access%20layer)):
 	- Destination subnetwork address: #wip
 	- Facilities requests (optional)
+
+> At router J, the packet header is stripped off and the IP header examined. On the basis of the destination address information in the IP header, the IP module in the router directs the datagram out across subnetwork 2 to B. To do this, the datagram is again augmented with a network access header.
+
+> When the data are received at B, the reverse process occurs. At each layer, the corresponding header is removed, and the remainder is passed on to the next higher layer, until the original user data are delivered to the destination process.
 
 #### TCP and UDP
 
