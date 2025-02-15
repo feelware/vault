@@ -124,7 +124,7 @@ The [kernel](kernel), with full access to hardware, is responsible for restricti
 
 ![Pasted image 20240901142243](../../utilities/attachments/Pasted%20image%2020240901142243.png)
 
-A [process](process%20(computing)) is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
+A [process](../../atomic-notes/process%20(computing).md) is an instance of an application running with **restricted access** to hardware, which the kernel mediates.
 
 ### The process concept
 

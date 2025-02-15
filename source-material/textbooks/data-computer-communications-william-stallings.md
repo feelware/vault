@@ -58,12 +58,29 @@ Some technologies to implement WANs:
 
 > [..] Vint Cerf and Bob Kahn of ARPA started to develop methods and protocols for *internetworking*; that is, communicating across arbitrary, multiple, packet-switched networks. They published a very influential paper in May of 1974 [CERF74] outlining their approach to a Transmission Control Protocol [...] eventually leading to the TCP (Transmission Control Protocol) and IP (Internet Protocol) protocols, which, in turn, formed the basis for what eventually became the TCP/IP protocol suite. This provided the foundation for the Internet.
 
-- Internet Service Provider (ISP): Company that provides customers with presence on the internet
-- Customers Premises Equipment (CPE): Telecommunications equipment at a customer's location
-- Central Office (CO): ISP-managed end of communication line between customer and ISP
-- Point of Presence (POP): #wip
-- Network Service Provider (NSP): Company that provides ISPs with communication with other ISPs
-- Network Access Point (NAP): Point of connection between many ISPs.
+#### Internet Service Provider (ISP)
+
+A company that provides customers with presence on the internet.
+
+#### Customers Premises Equipment (CPE)
+
+Telecommunications equipment at a customer's location.
+
+#### Central Office (CO)
+
+ISP-managed end of communication line between customer and ISP.
+
+#### Point of Presence (POP)
+
+#wip
+
+#### Network Service Provider (NSP)
+
+A company that provides ISPs with communication with other ISPs.
+
+#### Network Access Point (NAP)
+
+Point of connection between many ISPs.
 
 ## Protocol Architecture, TCP/IP, and Internet-Based Applications
 
@@ -71,25 +88,29 @@ Some technologies to implement WANs:
 
 #### Layers
 
+It makes sense to separate communications mechanisms into loosely coupled layers. Many of the needs presented in one layer are not affected by how the other layer implements it under the hood.
+
 ##### Physical layer
 
-Concerned with signals, data rate, and related matters. Implemented in end-systems and routers.
+Manages **hardware transmission mediums**. Concerned with signals, data rate, and related matters. Implemented in end-systems and routers.
 
 ##### Network access layer
 
-Specific to the type of network to be used (circuit switching, packet switching, etc). There are as many NAPs as the amount of networks the host/router is connected to (Router J has two NAPs, for instance). Implemented in end-systems and routers.
+Concerned with transmission mechanisms **specific to the type of network to be used** (circuit switching, packet switching, etc). There are as many NAPs as the amount of networks the host/router is connected to (Router J has two NAPs, for instance). Implemented in end-systems and routers.
 
 ##### Internet layer
 
-Needed when the source and destination are in different networks (like Host A and Host B, connected to Network 1 and 2 respectively). Implemented in end-systems and routers.
+Needed when the source and destination are in **different networks** (like Host A and Host B, connected to Network 1 and 2 respectively). Implemented in end-systems and routers.
 
 ##### Transport layer
 
-#wip
+Exposes an API that **allows applications to send and receive data reliably**, so that developers don't have to implement those mechanisms every time.
+
+> [...] the mechanisms for providing reliability are essentially independent of the nature of the applications.
 
 ##### Application layer
 
-#wip
+Any application's module concerned with data transmission and communication. Makes use of the API provided by the [transport layer](#Transport%20layer) and adds its own logic on top of it.
 
 #### Operation of the TCP and IP
 
@@ -104,17 +125,17 @@ Needed when the source and destination are in different networks (like Host A an
 >  - Each host should have an address unique within the Internet
 >  - Each process should have an address unique within the host. These addresses are called **ports**
 
-TCP receives user data and breaks it down into **TCP segments**. Then, each [layer](#Layers) appends certain information to each segment.
+TCP receives user data and breaks it down into **TCP segments**. Then, each layer appends certain information to each segment.
 
 ![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
 
-1. TCP header (added by [transport layer](#Transport%20layer)):
+1. **TCP header**, added by TCP (see [transport layer](#Transport%20layer)):
 	- Destination port: which process should receive the data
 	- Sequence number: a sequential number is assigned to each segment to ensure ordering
 	- Checksum
-2. IP header (added by [internet layer](#Internet%20layer)):
+2. **IP header**, added by the IP (see [internet layer](#Internet%20layer)):
 	- Host address: which host should receive the data
-3. Network/packet header (added by [network access layer](#Network%20access%20layer)):
+3. **Network/packet header**, added by the [network access](#Network%20access%20layer) protocol:
 	- Destination subnetwork address: #wip
 	- Facilities requests (optional)
 
@@ -124,4 +145,4 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each [lay
 
 #### TCP and UDP
 
-UDP is a much more minimal transport-layer protocol. UDP doesn't guarantee preservation of sequence, or protection against duplication, unlike TCP.
+UDP is a much more minimal [transport layer](#Transport%20layer) protocol. UDP doesn't guarantee preservation of sequence, or protection against duplication, unlike TCP.

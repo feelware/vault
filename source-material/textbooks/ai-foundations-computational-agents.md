@@ -34,3 +34,14 @@ AI can be thought of as synthetic epistemology. Instead of just making hypothese
 > This also offers an approach to the question, “Can computers really think?” by considering the analogous question, “Can airplanes really fly?”
 
 ### Agents situated in environments
+
+- Perception + reasoning + acting = **agent**
+- Agent + environment = **world**
+
+An agent's actions are a function of its past experiences, observations, abilities and goals, among other factors. These actions affect the agent's environment, which influences the agent back.
+
+![An agent interacting with its environment](../../utilities/attachments/Pasted%20image%2020250215115049.png)
+
+### Knowledge representation
+
+
