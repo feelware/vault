@@ -44,4 +44,16 @@ An agent's actions are a function of its past experiences, observations, abiliti
 
 ### Knowledge representation
 
+Knowledge is used to solve problems, it must be represented in a way a computer can understand.
+
+- Representation scheme: The way an agent's knowledge is organized
+- Knowledge base: The representation of everything the agent "knows"
+
+#### Defining a solution
+
+- The problem must be understood by the agent, even when some details are not specified
+- Very often the solution doesn't need to be optimal, but close to optimal, or even just acceptable based on a threshold
+
+#### Representations
+
 
