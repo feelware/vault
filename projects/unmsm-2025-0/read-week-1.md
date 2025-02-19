@@ -1,6 +1,6 @@
 ---
 title: "read: week 1 (notetaking)"
-status: backlog
+status: done
 tags:
   - nice-to-have
 deadline: 2025-02-09

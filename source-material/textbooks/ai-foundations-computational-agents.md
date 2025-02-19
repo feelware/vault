@@ -19,8 +19,7 @@ src-link: "[[pdf/ai-foundations-computational-agents.pdf|ai-foundations-computat
 
 Through history, humans have put effort into understanding and modelling human thought through whatever technological paradigm was current.
 
-**Church-Turing thesis**:
-
+> [!quote] Church-Turing thesis 
 > Any effectively computable function can be carried out on a Turing machine (and so also in the lambda calculus or any of the other equivalent formalisms).
 
 - There is no evidence that people can compute functions that are not Turing computable.
@@ -46,14 +45,24 @@ An agent's actions are a function of its past experiences, observations, abiliti
 
 Knowledge is used to solve problems, it must be represented in a way a computer can understand.
 
+- Knowledge base: Everything the agent knows
 - Representation scheme: The way an agent's knowledge is organized
-- Knowledge base: The representation of everything the agent "knows"
 
 #### Defining a solution
 
-- The problem must be understood by the agent, even when some details are not specified
-- Very often the solution doesn't need to be optimal, but close to optimal, or even just acceptable based on a threshold
+- Agents must "use common sense" to fill in unspecified details about the problem
+- Often times, a solution doesn't need to be optimal, but close to optimal, or even just acceptable based on a threshold
 
 #### Representations
 
+Computers and human minds are physical symbol systems.
 
+> [!quote] Physical symbol system hypothesis
+> A physical symbol system has the necessary and sufficient means for general intelligent action.
+
+- **Symbol**: Meaningful pattern that can be manipulated
+- **Symbol system**: Creates, copies, modifies, and destroys symbols
+
+A symbol system is physical when its symbols *exist* in the physical world.
+
+Agents use these systems to model the world. Not all models have the same level of detail, it depends on what's relevant and what isn't.

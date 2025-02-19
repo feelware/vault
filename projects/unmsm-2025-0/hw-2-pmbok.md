@@ -1,7 +1,7 @@
 ---
 tags:
 title: "hw: resumen pmbok parte 1 (solo expo)"
-status: backlog
+status: done
 deadline: 2025-02-18
 ---
 ## Tarea

@@ -100,7 +100,7 @@ Concerned with transmission mechanisms **specific to the type of network to be u
 
 ##### Internet layer
 
-Needed when the source and destination are in **different networks** (like Host A and Host B, connected to Network 1 and 2 respectively). Implemented in end-systems and routers.
+Needed when the source and destination are in **different networks** (like Host A and Host B, connected to subnetworks 1 and 2 respectively). Implemented in end-systems and routers.
 
 ##### Transport layer
 
@@ -129,19 +129,49 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each laye
 
 ![Protocol Data Units (PDUs) in the TCP/IP Architecture](../../utilities/attachments/Pasted%20image%2020250112210759.png)
 
-1. **TCP header**, added by TCP (see [transport layer](#Transport%20layer)):
-	- Destination port: which process should receive the data
-	- Sequence number: a sequential number is assigned to each segment to ensure ordering
-	- Checksum
-2. **IP header**, added by the IP (see [internet layer](#Internet%20layer)):
-	- Host address: which host should receive the data
-3. **Network/packet header**, added by the [network access](#Network%20access%20layer) protocol:
-	- Destination subnetwork address: #wip
-	- Facilities requests (optional)
+##### TCP header
 
-> At router J, the packet header is stripped off and the IP header examined. On the basis of the destination address information in the IP header, the IP module in the router directs the datagram out across subnetwork 2 to B. To do this, the datagram is again augmented with a network access header.
+- Added by TCP (see [transport layer](#Transport%20layer))
 
-> When the data are received at B, the reverse process occurs. At each layer, the corresponding header is removed, and the remainder is passed on to the next higher layer, until the original user data are delivered to the destination process.
+| Item               | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| Source port        | Which process is sending the data                             |
+| Destination port   | Which process (not host) should receive the data              |
+| Sequence number    | Sequential number assigned to each segment to ensure ordering |
+| Acknowledge number | #wip                                                          |
+| Window fields      | #wip                                                          |
+| Checksum           | 16-bit sequence used to detect errors in the segment          |
+
+##### IP header 
+
+- Added by the IP (see [internet layer](#Internet%20layer))
+
+| Item         | Description                        |
+| ------------ | ---------------------------------- |
+| Host address | Which host should receive the data |
+
+##### Network/packet header
+
+- Added by the [network access](#Network%20access%20layer) protocol
+
+| Item                           | Description     |
+| ------------------------------ | --------------- |
+| Destination subnetwork address | #wip            |
+| Facilities request             | (optional) #wip |
+
+When a datagram arrives at router J:
+
+1. The packet header is stripped off
+2. The IP header is examined
+3. Based on the destination address found, the IP module decides to send the datagram across subnetwork 2, to B
+4. Before sending it, a new packet header is attached
+
+When a datagram arrives at host B:
+
+1. The packet header is stripped off
+2. The IP header is stripped off
+3. The TCP header is stripped off
+4. The data arrives at the destination process
 
 #### TCP and UDP
 
