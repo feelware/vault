@@ -120,7 +120,7 @@ Any application's module concerned with data transmission and communication. Mak
 - Internet Protocol (IP): Used to **move blocks of data** from one host to another, across one or multiple routers
 - Transmission Control Protocol (TCP): Used to **ensure** that these blocks are delivered to the **right host**, to the **right process**, **reliably**
 
-> [!note]
+> [!note]-
 >  Two levels of entity addressing are needed:
 >  - Each host should have an address unique within the Internet
 >  - Each process should have an address unique within the host. These addresses are called **ports**
@@ -136,21 +136,23 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each laye
 | Item               | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | Source port        | Which process is sending the data                             |
-| Destination port   | Which process (not host) should receive the data              |
+| Destination port   | Which process should receive the data                         |
 | Sequence number    | Sequential number assigned to each segment to ensure ordering |
 | Acknowledge number | #wip                                                          |
 | Window fields      | #wip                                                          |
-| Checksum           | 16-bit sequence used to detect errors in the segment          |
+| Checksum           | Sequence used to detect errors in the data                    |
 
-##### IP header 
+##### IP header
 
 - Added by the IP (see [internet layer](#Internet%20layer))
 
-| Item         | Description                        |
-| ------------ | ---------------------------------- |
-| Host address | Which host should receive the data |
+| Item                | Description                                                                                     |
+| ------------------- | ----------------------------------------------------------------------------------------------- |
+| Source address      | Which host is sending the data                                                                  |
+| Destination address | Which host should receive the data                                                              |
+| Header checksum     | Sequence used to detect errors in the header (avoiding misdelivery rather than data corruption) |
 
-##### Network/packet header
+##### Network header
 
 - Added by the [network access](#Network%20access%20layer) protocol
 
@@ -161,18 +163,30 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each laye
 
 When a datagram arrives at router J:
 
-1. The packet header is stripped off
+1. The network header is stripped off
 2. The IP header is examined
 3. Based on the destination address found, the IP module decides to send the datagram across subnetwork 2, to B
-4. Before sending it, a new packet header is attached
+4. Before sending it, a new network header is attached
 
 When a datagram arrives at host B:
 
-1. The packet header is stripped off
+1. The network header is stripped off
 2. The IP header is stripped off
 3. The TCP header is stripped off
 4. The data arrives at the destination process
 
+The general term for these data units (TCP segments, IP datagrams, etc.) are **protocol data units (PDU)**.
+
 #### TCP and UDP
 
 UDP is a much more minimal [transport layer](#Transport%20layer) protocol. UDP doesn't guarantee preservation of sequence, or protection against duplication, unlike TCP.
+
+> Because it is connectionless, UDP has very little to do. Essentially, it adds a port addressing capability to IP.
+
+![TCP and UDP headers](../../utilities/attachments/Pasted%20image%2020250219190312.png)
+
+In UDP, the use of checksum is optional.
+
+#### IP and IPv6
+
+

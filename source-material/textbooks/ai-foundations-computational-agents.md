@@ -68,6 +68,22 @@ Agents use these systems to model the world. Not all models have the same level 
 There are two main levels of abstraction:
 
 1. [Knowledge level](https://www.wikiwand.com/en/articles/Knowledge_level): What an agent knows and what its goals are.
-2. [Symbol level](https://www.wikiwand.com/en/articles/Symbol_level): Reasoning. The way an agent transforms symbols to arrive to a solution. 
+2. [Symbol level](https://www.wikiwand.com/en/articles/Symbol_level): **Reasoning**. The way an agent transforms symbols to arrive to a solution. 
+
+#### Reasoning and acting
+
+> One way that AI representations differ from computer programs in traditional languages is that an AI representation typically specifies **what** needs to be computed, **not how** it is to be computed.
+
+Three stages of reasoning can be distinguished:
+
+1. Design time reasoning: Done by the designer when designing the agent
+2. Offline computation: Done by the agent to build background knowledge before acting
+3. Online computation: Done by the agent while acting as a result of **observing** its environment
+
+### Prototypical applications
+
+> AI applications are widespread and diverse [...] Rather than treating each application separately, we **abstract the essential features** of such applications to allow us to **study the principles** behind intelligent reasoning and action. 
 
 #wip
+
+
