@@ -5,7 +5,7 @@ tags:
 src-date: 2007-01-01
 src-author:
   - William Stallings
-src-link: "[data-computer-communications-william-stallings](../../source-material/textbooks/data-computer-communications-william-stallings.pdf)"
+src-link: "[[pdf/data-computer-communications-william-stallings.pdf|data-computer-communications-william-stallings]]"
 ---
 # Data and Computer Communications
 
