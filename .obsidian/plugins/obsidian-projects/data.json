@@ -40,19 +40,14 @@
             "columns": {
               "done": {
                 "records": [
-                  "projects/unmsm-2025-0/hw-3-pmbok.md",
-                  "projects/unmsm-2025-0/hw-2-pmbok.md",
-                  "projects/unmsm-2025-0/read-week-1.md",
-                  "projects/unmsm-2025-0/dev-tombo-bootstrap.md"
+                  "projects/unmsm-2025-0/hw-pm-standard.md",
+                  "projects/unmsm-2025-0/hw-pmbok-entrega.md",
+                  "projects/unmsm-2025-0/hw-applied-pmbok-samsung.md",
+                  "projects/unmsm-2025-0/hw-applied-pmbok-own.md"
                 ]
               },
               "backlog": {
-                "records": [
-                  "projects/unmsm-2025-0/hw-pm-standard.md",
-                  "projects/unmsm-2025-0/hw-pmbok-section.md",
-                  "projects/unmsm-2025-0/hw-applied-pmbok-external.md",
-                  "projects/unmsm-2025-0/hw-applied-pmbok-own.md"
-                ]
+                "records": []
               },
               "doing": {
                 "records": []
