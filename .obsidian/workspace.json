@@ -4,17 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "c575d052cd18992f",
+        "id": "58152dba7b19ad31",
         "type": "tabs",
         "children": [
           {
-            "id": "2f130bed05444f72",
+            "id": "6173490383abaeea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "source-material/textbooks/data-computer-communications-william-stallings.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "data-computer-communications-william-stallings"
+            }
+          },
+          {
+            "id": "32e9560c75064cff",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "data-computer-communications-william-stallings"
             }
           }
         ]
@@ -74,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "8090f1a6a0490b1c",
@@ -168,17 +185,29 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "2f130bed05444f72",
+  "active": "6173490383abaeea",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "source-material/textbooks/data-computer-communications-william-stallings.md",
+    "utilities/attachments/Pasted image 20250309120228.png",
+    "source-material/textbooks/ai-foundations-computational-agents.md",
+    "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
+    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
+    "source-material/lectures/pdf/ilide.info-horario-2020-upn-pr_8e4e0c6b38c0c797d7ef8f0c028bbeed.pdf",
+    "source-material/manuals/pdf/Ribs manual v1.2.3.pdf",
+    "other-notes/rough-notes/profes.md",
+    "source-material/videos/The 6 most important CSS concepts for beginners.md",
+    "projects/unmsm-2025-0/hw-pm-standard.md.pdf",
+    "projects/unmsm-2025-0/hw-pm-standard.md",
+    "projects/unmsm-2025-0/hw-pmbok-entrega.md.pdf",
+    "projects/unmsm-2025-0/hw-applied-pmbok-samsung.md.pdf",
+    "projects/unmsm-2025-0/hw-applied-pmbok-own.md.pdf",
     "projects/unmsm-2025-0/hw-applied-pmbok-own.md",
     "projects/unmsm-2025-0/hw-applied-pmbok-samsung.md",
-    "projects/unmsm-2025-0/hw-pmbok-entrega.md",
-    "projects/unmsm-2025-0/hw-pm-standard.md",
     "source-material/misc/pdf/pmbok.pdf",
-    "source-material/misc/pdf/guia_de_los_fundamentos_para_la_direccion_de_proyectos-pmbok_5ta_edicion_espanol.pdf",
+    "projects/unmsm-2025-0/hw-pmbok-entrega.md",
     "source-material/lectures/unmsm-pm-2.md",
     "source-material/lectures/unmsm-pm-1.md",
-    "source-material/textbooks/pdf/refactoring-ui.pdf",
     "utilities/attachments/Pasted image 20250301005804.png",
     "other-notes/rough-notes/pm-final-resumen-pmbok.md",
     "other-notes/rough-notes/unmsm-pm-4.md",
@@ -189,31 +218,19 @@
     "atomic-notes/operating system.md",
     "projects/unmsm-2025-0/hw-2-pmbok.md",
     "source-material/textbooks/algebra-shen-gelfand.md",
-    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
-    "source-material/textbooks/data-computer-communications-william-stallings.md",
-    "source-material/textbooks/pdf/algebra-shen-gelfand.pdf",
     "other-notes/rough-notes/project-charter-metagallery.md",
     "other-notes/rough-notes/expo final frida.md",
     "other-notes/rough-notes/expo-frida-2.md",
     "other-notes/rough-notes/tombo expo.md",
     "other-notes/rough-notes/prompt-tombo.md",
     "other-notes/rough-notes/expo ibarra 2.md",
-    "projects/unmsm-2025-0/hw-3-pmbok.md",
-    "source-material/syllabi/silabo-redes-2019-2.pdf",
-    "source-material/textbooks/ai-foundations-computational-agents.md",
-    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
-    "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
-    "source-material/videos/19.2.3 Atomic Transactions.md",
-    "source-material/textbooks/pdf/ai-modern-approach.pdf",
     "utilities/attachments/Pasted image 20250219190312.png",
-    "source-material/textbooks/data-computer-communications-william-stallings.pdf",
     "utilities/attachments/Pasted image 20250215115049.png",
     "utilities/attachments/Pasted image 20250214180124.png",
     "utilities/attachments/Pasted image 20250212101638.png",
     "utilities/attachments/Pasted image 20250210121951.png",
     "utilities/attachments/Pasted image 20250210101800.png",
     "utilities/attachments/Pasted image 20250209103755.png",
-    "utilities/attachments/Pasted image 20250205095058.png",
-    "utilities/attachments/Pasted image 20250205092744.png"
+    "utilities/attachments/Pasted image 20250205095058.png"
   ]
 }

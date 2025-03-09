@@ -138,19 +138,21 @@ TCP receives user data and breaks it down into **TCP segments**. Then, each laye
 | Source port        | Which process is sending the data                             |
 | Destination port   | Which process should receive the data                         |
 | Sequence number    | Sequential number assigned to each segment to ensure ordering |
-| Acknowledge number | #wip                                                          |
-| Window fields      | #wip                                                          |
-| Checksum           | Sequence used to detect errors in the data                    |
+| Acknowledge number | Flow and error control                                        |
+| Window fields      | Flow and error control                                        |
+| Checksum           | Sequence used to detect errors in the segment itself          |
 
 ##### IP header
 
 - Added by the IP (see [internet layer](#Internet%20layer))
 
-| Item                | Description                                                                                     |
-| ------------------- | ----------------------------------------------------------------------------------------------- |
-| Source address      | Which host is sending the data                                                                  |
-| Destination address | Which host should receive the data                                                              |
-| Header checksum     | Sequence used to detect errors in the header (avoiding misdelivery rather than data corruption) |
+| Item                           | Description                                                                |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| Source address                 | Which host is sending the data                                             |
+| Destination address            | Which host should receive the data                                         |
+| Header checksum                | Sequence used to detect errors in the IP header, thus avoiding misdelivery |
+| Protocol                       | Which higher-layer protocol is using IP                                    |
+| ID, Flags, and Fragment Offset | Fragmentation and reassembly process                                       |
 
 ##### Network header
 
@@ -189,4 +191,8 @@ In UDP, the use of checksum is optional.
 
 #### IP and IPv6
 
+IPv6 supports 128-bit source and destination addresses, unlike IP (also called IPv4), which only supports 32-bit addresses.
 
+![IP Headers](../../utilities/attachments/Pasted%20image%2020250309120228.png)
+
+> Ultimately, all installations using TCP/IP are expected to migrate from the current IP to IPv6, but this process will take many years, if not decades.

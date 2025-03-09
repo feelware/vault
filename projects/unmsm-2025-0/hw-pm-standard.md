@@ -3,7 +3,7 @@ status: done
 title: "hw: pm standard (summary)"
 deadline: 2025-03-02
 ---
-2> [!problem]
+> [!problem]
 > Resumir [estándar para la dirección de proyectos](../../source-material/misc/pdf/pmbok.pdf) (páginas 30 a 86)
 
 ---

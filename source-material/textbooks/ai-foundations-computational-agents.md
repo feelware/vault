@@ -24,9 +24,9 @@ Through history, humans have put effort into understanding and modelling human t
 
 Computation is more than just a metaphor for intelligence; **reasoning is computation** and computation can be carried out by a computer.
 
-"Flying machines", like planes, don't look or behave like flying animals at all, yet they fly. Similarly, "thinking machines" don't have to perfectly emulate human thought to work.
+"Flying machines", like planes, don't look like flying animals at all, yet they fly. Similarly, "thinking machines" don't have to perfectly emulate human thought to work.
 
-AI can be thought of as **synthetic epistemology**. AI researchers craft intelligent models instead of just making hypotheses about intelligence.
+AI can be thought of as **synthetic epistemology**, AI researchers craft intelligent models instead of just making hypotheses about intelligence.
 
 ### Agents situated in environments
 
@@ -57,11 +57,11 @@ Computers and human minds are **physical symbol systems**.
 > A physical symbol system has the necessary and sufficient means for general intelligent action.
 
 - Symbol: Meaningful pattern that can be manipulated
-- Symbol *system*: Creates, copies, modifies, and destroys symbols
+- Symbol system: Creates, copies, modifies, and destroys symbols
 
-A symbol system is physical when its symbols *exist* in the physical world.
+A symbol system is physical when its symbols exist in the physical world.
 
-Agents use these systems to model the world. Not all models have the same level of detail, it depends on what's relevant and what isn't. Often, multiple levels of abstraction are used at once.
+Agents use these systems to model the world. Not all models of reality have the same level of detail, it depends on what's relevant and what isn't. Often, multiple levels of abstraction are used at once.
 
 > [...] you do not have to emulate every level of a human to build an AI agent, but rather you can **emulate the higher levels** and **build them on the foundation of modern computers**.
 
@@ -76,9 +76,45 @@ There are two main levels of abstraction:
 
 Three stages of reasoning can be distinguished:
 
-1. Design time reasoning: Done by the designer when designing the agent
+1. Design time reasoning: Done by the designer when creating the agent
 2. Offline computation: Done by the agent to build background knowledge before acting
-3. Online computation: Done by the agent while acting as a result of **observing** its environment
+3. Online computation: Done by the agent while acting as a result of observing its environment
+
+Some agents, like thermostats, need a lot of design time but little online computation to work.
+
+To build agents that adapt to changing environments, there are two main strategies:
+
+1. Simplify the environment
+2. Increase the agent's reasoning abilities
+
+### Dimensions of complexity
+
+An agent's complexity can be measured in multiple dimensions:
+
+#### Modularity
+
+The degree to which an agent can be decomposed into smaller, interconnected components.
+
+An agent's structure can be:
+
+- Flat: Indivisible
+- Modular: Multiple modules 
+- Hierarchical: Multiple modules where each one be further decomposed into simpler modules 
+
+> [...] to explore the other dimensions, we initially ignore the hierarchical structure and assume a flat representation.
+
+#### Representation scheme
+
+The way the world (agent + environment) is described
+
+There are multiple, often infinite, **states** the world can be in. An useful way of describing states as a combination of **features**.
+
+> [!example]
+> A thermostat for a heater may have two belief states: *off* and *heating*. The environment may have three states: *cold*, *comfortable*, and *hot*. There are thus six states corresponding to the different combinations of belief and environment states.
+
+- **Proposition**: feature that evaluates to either true or false
+
+
 
 ### Prototypical applications
 
