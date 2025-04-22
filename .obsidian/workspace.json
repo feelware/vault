@@ -4,24 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "538acd97716ea53d",
+        "id": "2e10e0b6eb9cbd23",
         "type": "tabs",
         "children": [
           {
-            "id": "6e420a03bc5c0da5",
+            "id": "2a29a2f6cc8c9899",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
+            }
+          },
+          {
+            "id": "b72854615216634c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/misc/How to start songwriting (comment).md",
+                "file": "projects/unmsm-2025-0/db2-lab-s4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to start songwriting (comment)"
+              "title": "db2-lab-s4"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#hw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,12 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/unmsm-2025-0/hw-pm-final-test.md",
+                "file": "source-material/misc/pdf/Cap2_Agentes_Inteligentes_libro_Russell-Norvig.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from hw-pm-final-test"
+              "title": "Outgoing links from Cap2_Agentes_Inteligentes_libro_Russell-Norvig"
             }
           },
           {
@@ -143,17 +154,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/unmsm-2025-0/hw-pm-final-test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of hw-pm-final-test"
+              "title": "Outline"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -168,58 +178,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "header-adjuster:Adjust Headers": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6e420a03bc5c0da5",
+  "active": "b72854615216634c",
   "lastOpenFiles": [
-    "source-material/misc/How to start songwriting (comment).md",
-    "source-material/textbooks/data-computer-communications-william-stallings.md",
-    "other-notes/rough-notes/computer networks - syllabus mappings.md",
-    "other-notes/rough-notes/profes fisi 2025-1.md",
-    "source-material/lectures/What is a Graphics Programmer?.md",
-    "source-material/lectures/unmsm-swarch-4.md",
-    "source-material/lectures/unmsm-swarch-3.md",
-    "source-material/lectures/unmsm-swarch-1.md",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s4.pdf",
+    "projects/unmsm-2025-0/db2-lab-s4.md",
+    "source-material/lectures/pdf/unmsm-db2-s4.pdf",
+    "source-material/lectures/unmsm-redes-s3.md",
+    "source-material/lectures/unmsm-redes-s2.md",
     "other-notes/rough-notes/activities to iterate over.md",
-    "other-notes/rough-notes/chatgpt-prompt-sql-complete.md",
-    "other-notes/rough-notes/darker-side-of-making-music.md",
-    "other-notes/rough-notes/cv-francisco.md",
-    "other-notes/rough-notes/cv-francisco.pdf",
+    "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
     "other-notes/rough-notes/detriments.md",
     "other-notes/rough-notes/logo fisi.md",
+    "other-notes/rough-notes/computer networks - syllabus mappings.md",
+    "other-notes/rough-notes/cursos.md",
+    "source-material/videos/darker-side-of-making-music.md",
+    "other-notes/rough-notes/data-fmv-video-es.md",
+    "other-notes/rough-notes/data-fmv-video-en.md",
     "other-notes/rough-notes/fast note-taking rules.md",
-    "other-notes/rough-notes/prompt-tombo.md",
+    "other-notes/rough-notes/plugins-left-to-install.md",
+    "other-notes/rough-notes/holaaaaa.md",
+    "source-material/lectures/unmsm-riesgos-s3.md",
     "other-notes/rough-notes/project-charter-metagallery.md",
-    "other-notes/rough-notes/verano unmsm.md",
-    "other-notes/rough-notes/swarch-tarea-2-prompt-copilot.md",
-    "other-notes/rough-notes/swarch-tarea-2-prompt.md",
-    "other-notes/rough-notes/unmsm-pm-parcial-3.md",
-    "other-notes/rough-notes/unmsm-pm-s3-articulo.md",
-    "other-notes/rough-notes/unmsm-pm-parcial.md",
-    "other-notes/rough-notes/unmsm-pm-5.md",
-    "other-notes/rough-notes/unmsm-pm-4.md",
-    "other-notes/rough-notes/the.md",
-    "source-material/manuals/pdf/Ribs manual v1.2.3.pdf",
-    "source-material/textbooks/pdf/data-computer-communications-william-stallings.pdf",
+    "other-notes/rough-notes/profes fisi 2025-1.md",
+    "other-notes/rough-notes/rodro.md",
+    "source-material/lectures/unmsm-pruebas-s4.md",
+    "other-notes/rough-notes/database normalization.md",
+    "utilities/attachments/Pasted image 20250420192106.png",
+    "source-material/lectures/unmsm-db2-s4.md",
+    "projects/unmsm-2025-0/pdf/LaboratorioBDSem04.pdf",
+    "projects/unmsm-2025-0/db2-lab-s4-p3.md",
+    "source-material/lectures/unmsm-riesgos-s4.md",
+    "projects/unmsm-2025-0/general-transcribir-notas.md",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p6.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p5.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p4.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p3.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p2.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p1.pdf",
+    "source-material/lectures/pdf/unmsm-db2-s2.pdf",
+    "utilities/attachments/Pasted image 20250411184720.png",
+    "utilities/attachments/Pasted image 20250411184108.png",
+    "utilities/attachments/Pasted image 20250411183214.png",
+    "utilities/attachments/Pasted image 20250411181039.png",
     "utilities/attachments/Pasted image 20250309120228.png",
-    "source-material/textbooks/pdf/ai-foundations-computational-agents.pdf",
-    "source-material/syllabi/silabo-inteligencia-artificial-2024-2.pdf",
-    "source-material/lectures/pdf/ilide.info-horario-2020-upn-pr_8e4e0c6b38c0c797d7ef8f0c028bbeed.pdf",
-    "projects/unmsm-2025-0/hw-pm-standard.md.pdf",
-    "projects/unmsm-2025-0/hw-pmbok-entrega.md.pdf",
-    "projects/unmsm-2025-0/hw-applied-pmbok-samsung.md.pdf",
-    "projects/unmsm-2025-0/hw-applied-pmbok-own.md.pdf",
     "utilities/attachments/Pasted image 20250301005804.png",
     "utilities/attachments/Pasted image 20250219190312.png",
     "utilities/attachments/Pasted image 20250215115049.png",
-    "utilities/attachments/Pasted image 20250214180124.png",
-    "utilities/attachments/Pasted image 20250212101638.png",
-    "utilities/attachments/Pasted image 20250210121951.png",
-    "utilities/attachments/Pasted image 20250210101800.png",
-    "utilities/attachments/Pasted image 20250209103755.png",
-    "utilities/attachments/Pasted image 20250205095058.png"
+    "utilities/attachments/Pasted image 20250214180124.png"
   ]
 }

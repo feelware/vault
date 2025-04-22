@@ -3,15 +3,16 @@
   "projects": [
     {
       "fieldConfig": {
-        "title": {
-          "richText": true
-        },
         "status": {
           "options": [
             "backlog",
+            "to do",
             "doing",
             "done"
           ]
+        },
+        "deadline": {
+          "time": true
         }
       },
       "defaultName": "",
@@ -32,27 +33,39 @@
             "includeFields": [
               "deadline",
               "difficulty",
-              "name",
               "tags"
             ],
-            "headerField": "title",
             "groupByField": "status",
             "columns": {
-              "done": {
-                "records": [
-                  "projects/unmsm-2025-0/hw-pm-standard.md",
-                  "projects/unmsm-2025-0/hw-pmbok-entrega.md",
-                  "projects/unmsm-2025-0/hw-applied-pmbok-samsung.md",
-                  "projects/unmsm-2025-0/hw-applied-pmbok-own.md"
-                ]
-              },
               "backlog": {
-                "records": []
+                "records": [],
+                "weight": 0
+              },
+              "to do": {
+                "records": [
+                  "projects/unmsm-2025-0/ia-estudiar-s4.md",
+                  "projects/unmsm-2025-0/redes-expo-rednace.md",
+                  "projects/unmsm-2025-0/redes-investigar-s4.md",
+                  "projects/unmsm-2025-0/ux-leer-paper-serverless.md"
+                ],
+                "weight": 1
               },
               "doing": {
-                "records": []
+                "records": [
+                  "projects/unmsm-2025-0/general-transcribir-notas.md",
+                  "projects/unmsm-2025-0/db2-lab-s4.md"
+                ],
+                "weight": 2
+              },
+              "done": {
+                "weight": 3,
+                "records": [
+                  "projects/unmsm-2025-0/nur-investigar-worker-architecture.md",
+                  "projects/unmsm-2025-0/riesgos-impacto-frecuencia.md"
+                ]
               }
-            }
+            },
+            "headerField": "name"
           },
           "filter": {
             "conjunction": "and",
@@ -62,7 +75,13 @@
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
           },
           "id": "ab72340c-23e7-4246-934a-ad18921efb2b",
           "name": "Board",
@@ -87,7 +106,13 @@
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
           },
           "id": "af521f95-2a54-4e6b-a74b-67c04b20c6af",
           "name": "Calendar",
@@ -99,34 +124,77 @@
               "path": {
                 "hide": true
               },
-              "title": {
-                "width": 392,
-                "hide": false
-              },
               "name": {
                 "hide": false,
                 "width": 178
               },
               "tags": {
                 "hide": false
+              },
+              "status": {
+                "width": 150
+              },
+              "deadline": {
+                "width": 146
               }
             },
             "orderFields": [
               "name",
-              "title",
+              "status",
               "deadline",
-              "status"
+              "path"
             ]
           },
           "filter": {
             "conjunction": "and",
-            "conditions": []
+            "conditions": [
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": false,
+                "value": "done"
+              }
+            ]
           },
           "colors": {
-            "conditions": []
+            "conditions": [
+              {
+                "color": "#4deaa6",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              },
+              {
+                "color": "#ea4d4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "to do"
+                }
+              },
+              {
+                "color": "#ffea00",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "doing"
+                }
+              }
+            ]
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
           },
           "id": "e2783cb5-7e76-4d69-a997-e9f772b977b2",
           "name": "Table",
