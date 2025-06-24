@@ -2,3 +2,8 @@
   --callout-color: 128, 128, 128;
   --callout-icon: lucide-circle-help;
 }
+
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]) {
+    text-decoration:none;
+    color: var(--text-normal);
+}

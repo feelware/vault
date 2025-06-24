@@ -1,6 +1,7 @@
 ---
 deadline: 2025-04-17T14:00
 status: done
+class: nur
 ---
 - [x] investigar arquitectura para múltiples workers
 - [ ] investigar qué cliente STOMP usar (opción: RabbitMQ)

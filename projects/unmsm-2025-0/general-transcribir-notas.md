@@ -1,5 +1,6 @@
 ---
-status: doing
-deadline: 2025-04-21T10:00
+status: done
+deadline: 2025-05-02T14:00
+class: general
 ---
 

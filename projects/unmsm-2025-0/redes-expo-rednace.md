@@ -1,6 +1,7 @@
 ---
-status: to do
-deadline: 2025-04-25T22:00
+status: backlog
+deadline: 2025-05-09T22:00
+class: redes
 ---
 preguntar a red telematica
 * cual es su participacion

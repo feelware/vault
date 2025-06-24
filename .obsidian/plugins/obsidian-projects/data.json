@@ -13,6 +13,18 @@
         },
         "deadline": {
           "time": true
+        },
+        "class": {
+          "options": [
+            "riesgos",
+            "db2",
+            "pruebas",
+            "ia",
+            "ux",
+            "redes",
+            "general",
+            "nur"
+          ]
         }
       },
       "defaultName": "",
@@ -38,22 +50,23 @@
             "groupByField": "status",
             "columns": {
               "backlog": {
-                "records": [],
+                "records": [
+                  "projects/unmsm-2025-0/redes-expo-rednace.md"
+                ],
                 "weight": 0
               },
               "to do": {
                 "records": [
-                  "projects/unmsm-2025-0/ia-estudiar-s4.md",
-                  "projects/unmsm-2025-0/redes-expo-rednace.md",
-                  "projects/unmsm-2025-0/redes-investigar-s4.md",
-                  "projects/unmsm-2025-0/ux-leer-paper-serverless.md"
+                  "projects/unmsm-2025-0/riesgos-prep-parcial.md",
+                  "projects/unmsm-2025-0/ia-tc.md",
+                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+                  "projects/unmsm-2025-0/nur-implement-project-overview.md"
                 ],
                 "weight": 1
               },
               "doing": {
                 "records": [
-                  "projects/unmsm-2025-0/general-transcribir-notas.md",
-                  "projects/unmsm-2025-0/db2-lab-s4.md"
+                  "projects/unmsm-2025-0/nur-implement-services.md"
                 ],
                 "weight": 2
               },
@@ -61,7 +74,23 @@
                 "weight": 3,
                 "records": [
                   "projects/unmsm-2025-0/nur-investigar-worker-architecture.md",
-                  "projects/unmsm-2025-0/riesgos-impacto-frecuencia.md"
+                  "projects/unmsm-2025-0/redes-expo-tia-942.md",
+                  "projects/unmsm-2025-0/redes-preguntas-data-center.md",
+                  "projects/unmsm-2025-0/ux-segundo-entregable.md",
+                  "projects/unmsm-2025-0/db2-hw-s6.md",
+                  "projects/unmsm-2025-0/general-transcribir-notas.md",
+                  "projects/unmsm-2025-0/redes-expo-ethernet.md",
+                  "projects/unmsm-2025-0/ia-estudiar-s6.md",
+                  "projects/unmsm-2025-0/ia-lab-s6.md",
+                  "projects/unmsm-2025-0/redes-mejorar-expo-ethernet.md",
+                  "projects/unmsm-2025-0/ia-lab-classificatiion.md",
+                  "projects/unmsm-2025-0/ia-prep-parcial.md",
+                  "projects/unmsm-2025-0/riesgos-prep-parcial.md",
+                  "projects/unmsm-2025-0/ux-prep-expo-parcial.md",
+                  "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
+                  "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
+                  "projects/unmsm-2025-0/ia-lab-rna.md",
+                  "projects/unmsm-2025-0/nur-fix-dashboard-details.md"
                 ]
               }
             },
@@ -99,6 +128,12 @@
                 "operator": "is-not",
                 "enabled": true,
                 "value": "done"
+              },
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "backlog"
               }
             ]
           },
@@ -126,16 +161,19 @@
               },
               "name": {
                 "hide": false,
-                "width": 178
+                "width": 249
               },
               "tags": {
                 "hide": false
               },
               "status": {
-                "width": 150
+                "width": 119
               },
               "deadline": {
                 "width": 146
+              },
+              "class": {
+                "width": 129
               }
             },
             "orderFields": [
@@ -159,7 +197,7 @@
           "colors": {
             "conditions": [
               {
-                "color": "#4deaa6",
+                "color": "#52ffb4",
                 "condition": {
                   "field": "status",
                   "operator": "is",
@@ -190,6 +228,11 @@
           "sort": {
             "criteria": [
               {
+                "field": "status",
+                "order": "asc",
+                "enabled": true
+              },
+              {
                 "field": "deadline",
                 "order": "asc",
                 "enabled": true
@@ -199,6 +242,103 @@
           "id": "e2783cb5-7e76-4d69-a997-e9f772b977b2",
           "name": "Table",
           "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "class",
+            "columns": {
+              "riesgos": {
+                "weight": 0
+              },
+              "db2": {
+                "weight": 1
+              },
+              "pruebas": {
+                "weight": 2
+              },
+              "ia": {
+                "weight": 3
+              },
+              "ux": {
+                "weight": 4
+              },
+              "redes": {
+                "weight": 5
+              },
+              "general": {
+                "weight": 6
+              },
+              "nur": {
+                "weight": 7
+              }
+            },
+            "columnWidth": 175,
+            "headerField": "name",
+            "includeFields": [
+              "deadline",
+              "status"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "done"
+              },
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "backlog"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#ea4d4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "to do"
+                }
+              },
+              {
+                "color": "#52ffb4",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              },
+              {
+                "color": "#ffea4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "doing"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "523b792c-a393-4f1b-9082-ccf1ead04567",
+          "name": "Classes",
+          "type": "board"
         }
       ],
       "id": "2fc1f71e-c5f8-4f9a-b0d3-44ae7344b477",

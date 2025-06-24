@@ -7,7 +7,7 @@ src-author:
   - William Stallings
 src-link: "[[pdf/data-computer-communications-william-stallings.pdf|data-computer-communications-william-stallings]]"
 ---
-# Data and Computer Communications
+# Data and Computer Communicationsi
 
 ## Data Communications, Data Networks and the Internet
 
