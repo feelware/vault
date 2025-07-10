@@ -1,5 +1,5 @@
 ---
-status: to do
+status: done
 deadline: 2025-06-26T00:00
 class: ia
 ---

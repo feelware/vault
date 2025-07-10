@@ -53,27 +53,29 @@
                 "records": [
                   "projects/unmsm-2025-0/redes-expo-rednace.md"
                 ],
-                "weight": 0
+                "weight": 0,
+                "collapse": true
               },
               "to do": {
                 "records": [
                   "projects/unmsm-2025-0/riesgos-prep-parcial.md",
-                  "projects/unmsm-2025-0/ia-tc.md",
-                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
-                  "projects/unmsm-2025-0/nur-implement-project-overview.md"
+                  "projects/unmsm-2025-0/pruebas-prep-final.md",
+                  "projects/unmsm-2025-0/db2-prep-final.md",
+                  "projects/unmsm-2025-0/ux-prep-final.md"
                 ],
                 "weight": 1
               },
               "doing": {
                 "records": [
-                  "projects/unmsm-2025-0/nur-implement-services.md"
+                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+                  "projects/unmsm-2025-0/riesgos-prep-final.md",
+                  "projects/unmsm-2025-0/ia-prep-final.md"
                 ],
                 "weight": 2
               },
               "done": {
                 "weight": 3,
                 "records": [
-                  "projects/unmsm-2025-0/nur-investigar-worker-architecture.md",
                   "projects/unmsm-2025-0/redes-expo-tia-942.md",
                   "projects/unmsm-2025-0/redes-preguntas-data-center.md",
                   "projects/unmsm-2025-0/ux-segundo-entregable.md",
@@ -90,8 +92,9 @@
                   "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
                   "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
                   "projects/unmsm-2025-0/ia-lab-rna.md",
-                  "projects/unmsm-2025-0/nur-fix-dashboard-details.md"
-                ]
+                  "projects/unmsm-2025-0/ia-tc.md"
+                ],
+                "collapse": true
               }
             },
             "headerField": "name"
@@ -191,6 +194,12 @@
                 "operator": "is-not",
                 "enabled": false,
                 "value": "done"
+              },
+              {
+                "field": "name",
+                "operator": "contains",
+                "enabled": false,
+                "value": ""
               }
             ]
           },
