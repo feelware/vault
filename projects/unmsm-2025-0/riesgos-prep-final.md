@@ -1,5 +1,5 @@
 ---
-status: doing
+status: done
 deadline: 2025-07-07T16:30
 class: general
 ---

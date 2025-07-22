@@ -4,61 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "131eb36d00ec400e",
+        "id": "6e78b582de05abc5",
         "type": "tabs",
         "children": [
           {
-            "id": "45217e7953013fe2",
+            "id": "1d7110554904cd20",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "computer-systems-programmer-perspective"
+            }
+          },
+          {
+            "id": "d708924dc7510921",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/unmsm-2025-0/ia-prep-final.md",
+                "file": "source-material/textbooks/computer-systems-programmer-perspective.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ia-prep-final"
-            }
-          },
-          {
-            "id": "1874c672c1161ed6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/lectures/pdf/unmsm-ia-c-means.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "unmsm-ia-c-means"
-            }
-          },
-          {
-            "id": "65ec49e400609456",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/lectures/pdf/unmsm-ia-rna-p2.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "unmsm-ia-rna-p2"
-            }
-          },
-          {
-            "id": "f2bc7f8477ef026c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/lectures/pdf/unmsm-ia-rna-ej-res.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "unmsm-ia-rna-ej-res"
+              "title": "computer-systems-programmer-perspective"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "other-notes/rough-notes/ucs-tree.md",
+                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ucs-tree"
+              "title": "Backlinks for computer-systems-programmer-perspective"
             }
           },
           {
@@ -180,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of redes-expo-voip-codecs"
+              "title": "Outline of computer-systems-programmer-perspective"
             }
           }
         ],
@@ -210,19 +185,29 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "1874c672c1161ed6",
+  "active": "1d7110554904cd20",
   "lastOpenFiles": [
-    "projects/unmsm-2025-0/ia-prep-final.md",
-    "source-material/lectures/pdf/unmsm-ia-rna-p2.pdf",
+    "source-material/textbooks/computer-systems-programmer-perspective.md",
+    "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
+    "other-notes/rough-notes/hola.md",
+    "utilities/attachments/Pasted image 20250719173641.png",
+    "other-notes/rough-notes/webada-ia.md",
+    "source-material/textbooks/pdf/how-to-prove-it.pdf",
+    "other-notes/rough-notes/roadmaps.md",
+    "source-material/textbooks/pdf/algebra-and-trigonometry.pdf",
+    "source-material/textbooks/pdf/c-programming-language.pdf",
+    "source-material/videos/tcp-ip-for-programmers.md",
+    "source-material/textbooks/pdf/c-programming-language-krr.pdf",
+    "other-notes/rough-notes/calisthenics.md",
+    "projects/unmsm-2025-0/redes-expo-ethernet.md",
+    "source-material/textbooks/pdf/think-dsp.pdf",
+    "other-notes/rough-notes/think-dsp.md",
+    "TCP",
+    "other-notes/rough-notes/guion-codecs.md",
     "source-material/lectures/pdf/unmsm-ia-rna-ej-res.pdf",
-    "source-material/lectures/pdf/unmsm-ia-svm.pdf",
-    "source-material/lectures/pdf/unmsm-ia-clas-eval.pdf",
-    "source-material/lectures/pdf/unmsm-ia-clas.pdf",
+    "source-material/lectures/pdf/unmsm-ia-rna-p2.pdf",
     "source-material/lectures/pdf/unmsm-ia-c-means.pdf",
-    "source-material/lectures/pdf/IA_2025-1_EPISW_ML_Clasificacion.pdf",
-    "source-material/lectures/pdf/IA_2025-1_EPISW_AprendizajeNoSupervisado_c-means.pdf",
-    "source-material/lectures/pdf/unmsm-ia-reg-eval.pdf",
-    "source-material/lectures/pdf/unmsm-ia-rna-ej.pdf",
+    "projects/unmsm-2025-0/ia-prep-final.md",
     "other-notes/rough-notes/asndasoidnmasoidn.md",
     "other-notes/rough-notes/holaaaaaaa.md",
     "other-notes/rough-notes/huevada petrlik final.md",
@@ -234,20 +219,11 @@
     "projects/unmsm-2025-0/db2-prep-final.md",
     "projects/unmsm-2025-0/ux-prep-final.md",
     "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
-    "other-notes/rough-notes/guion-codecs.md",
     "projects/unmsm-2025-0/nur-implement-project-overview.md",
     "other-notes/sound-tagging-docs.md",
     "source-material/videos/CSS Selectors - beyond the very basics.md",
     "other-notes/rough-notes/risk-it-notas.md",
     "utilities/attachments/Pasted image 20250623132343.png",
-    "other-notes/rough-notes/ucs-tree.md",
-    "other-notes/rough-notes/prompt-ucs.md",
-    "other-notes/rough-notes/ucs.md",
-    "other-notes/rough-notes/franchise.md",
-    "other-notes/rough-notes/prompt-chaski.md",
-    "other-notes/rough-notes/detriments.md",
-    "projects/unmsm-2025-0/nur-implement-services.md",
-    "projects/unmsm-2025-0/nur-fix-dashboard-details.md",
     "utilities/attachments/Pasted image 20250530225027.png",
     "utilities/attachments/Pasted image 20250530224739.png",
     "utilities/attachments/Pasted image 20250530224722.png",
@@ -255,7 +231,6 @@
     "utilities/attachments/Pasted image 20250530224641.png",
     "utilities/attachments/Pasted image 20250530224610.png",
     "utilities/attachments/Pasted image 20250530224007.png",
-    "utilities/attachments/Pasted image 20250530223841.png",
-    "utilities/attachments/Pasted image 20250530223827.png"
+    "utilities/attachments/Pasted image 20250530223841.png"
   ]
 }

@@ -1,5 +1,5 @@
 ---
-status: doing
+status: done
 deadline: 2025-07-04T23:00
 class: redes
 ---

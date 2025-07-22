@@ -58,19 +58,12 @@
               },
               "to do": {
                 "records": [
-                  "projects/unmsm-2025-0/riesgos-prep-parcial.md",
-                  "projects/unmsm-2025-0/pruebas-prep-final.md",
-                  "projects/unmsm-2025-0/db2-prep-final.md",
-                  "projects/unmsm-2025-0/ux-prep-final.md"
+                  "projects/unmsm-2025-0/riesgos-prep-parcial.md"
                 ],
                 "weight": 1
               },
               "doing": {
-                "records": [
-                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
-                  "projects/unmsm-2025-0/riesgos-prep-final.md",
-                  "projects/unmsm-2025-0/ia-prep-final.md"
-                ],
+                "records": [],
                 "weight": 2
               },
               "done": {
@@ -92,7 +85,13 @@
                   "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
                   "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
                   "projects/unmsm-2025-0/ia-lab-rna.md",
-                  "projects/unmsm-2025-0/ia-tc.md"
+                  "projects/unmsm-2025-0/ia-tc.md",
+                  "projects/unmsm-2025-0/riesgos-prep-final.md",
+                  "projects/unmsm-2025-0/ia-prep-final.md",
+                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+                  "projects/unmsm-2025-0/pruebas-prep-final.md",
+                  "projects/unmsm-2025-0/ux-prep-final.md",
+                  "projects/unmsm-2025-0/db2-prep-final.md"
                 ],
                 "collapse": true
               }
