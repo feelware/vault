@@ -1,53 +1,54 @@
 {
   "main": {
-    "id": "e449ff54f7d5751d",
+    "id": "fb9a19c6e4eb06a6",
     "type": "split",
     "children": [
       {
-        "id": "6e78b582de05abc5",
+        "id": "52083047abb1d156",
         "type": "tabs",
         "children": [
           {
-            "id": "1d7110554904cd20",
+            "id": "4f0c14850e2fc4f4",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf"
+                "file": "source-material/textbooks/pdf/CSAPP_2016.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "computer-systems-programmer-perspective"
+              "title": "CSAPP_2016"
             }
           },
           {
-            "id": "d708924dc7510921",
+            "id": "49735b30f924a447",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/textbooks/computer-systems-programmer-perspective.md",
+                "file": "other-notes/rough-notes/introduction-computer-systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "computer-systems-programmer-perspective"
+              "title": "introduction-computer-systems"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f4eeb45e5b3e0e09",
+    "id": "c6b9871631b35e0d",
     "type": "split",
     "children": [
       {
-        "id": "dedd3d08395dea55",
+        "id": "3d2d9dda6ce9c118",
         "type": "tabs",
         "children": [
           {
-            "id": "3a59f056fae0ce7a",
+            "id": "58f5db9b0c939ad0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -60,12 +61,12 @@
             }
           },
           {
-            "id": "981392aab905164a",
+            "id": "c831ccfa881c685f",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#hw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +78,7 @@
             }
           },
           {
-            "id": "bcdc87d5bd4eacb5",
+            "id": "cc37d9896835eb19",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,25 +91,25 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 292.5,
     "collapsed": true
   },
   "right": {
-    "id": "c61cf1cc39805767",
+    "id": "8090f1a6a0490b1c",
     "type": "split",
     "children": [
       {
-        "id": "d9947af11eb8b9d7",
+        "id": "a34e118df0550330",
         "type": "tabs",
         "children": [
           {
-            "id": "dfe8276de785e87a",
+            "id": "0c52eb39ce34581d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
-                "collapseAll": true,
+                "file": "projects/unmsm-2025-0/hw-pm-final-test.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -117,25 +118,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for computer-systems-programmer-perspective"
+              "title": "Backlinks for hw-pm-final-test"
             }
           },
           {
-            "id": "72f26e87c1b9f358",
+            "id": "5b49ef0557b42f4a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source-material/lectures/pdf/unmsm-ia-s4-ejercicios.pdf",
+                "file": "source-material/misc/pdf/Cap2_Agentes_Inteligentes_libro_Russell-Norvig.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from unmsm-ia-s4-ejercicios"
+              "title": "Outgoing links from Cap2_Agentes_Inteligentes_libro_Russell-Norvig"
             }
           },
           {
-            "id": "4a412424e5e46a21",
+            "id": "7bc95cafa911f004",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -150,18 +151,17 @@
             }
           },
           {
-            "id": "9035223929ebb45a",
+            "id": "449fca97fc985ec5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of computer-systems-programmer-perspective"
+              "title": "Outline"
             }
           }
         ],
@@ -169,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5,
+    "width": 301.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -180,49 +180,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "header-adjuster:Adjust Headers": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1d7110554904cd20",
+  "active": "49735b30f924a447",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/CSAPP_2016.pdf",
+    "other-notes/rough-notes/introduction-computer-systems.md",
     "source-material/textbooks/computer-systems-programmer-perspective.md",
-    "source-material/textbooks/pdf/computer-systems-programmer-perspective.pdf",
-    "other-notes/rough-notes/hola.md",
     "utilities/attachments/Pasted image 20250719173641.png",
-    "other-notes/rough-notes/webada-ia.md",
-    "source-material/textbooks/pdf/how-to-prove-it.pdf",
-    "other-notes/rough-notes/roadmaps.md",
-    "source-material/textbooks/pdf/algebra-and-trigonometry.pdf",
-    "source-material/textbooks/pdf/c-programming-language.pdf",
-    "source-material/videos/tcp-ip-for-programmers.md",
-    "source-material/textbooks/pdf/c-programming-language-krr.pdf",
-    "other-notes/rough-notes/calisthenics.md",
-    "projects/unmsm-2025-0/redes-expo-ethernet.md",
-    "source-material/textbooks/pdf/think-dsp.pdf",
-    "other-notes/rough-notes/think-dsp.md",
-    "TCP",
-    "other-notes/rough-notes/guion-codecs.md",
-    "source-material/lectures/pdf/unmsm-ia-rna-ej-res.pdf",
-    "source-material/lectures/pdf/unmsm-ia-rna-p2.pdf",
-    "source-material/lectures/pdf/unmsm-ia-c-means.pdf",
-    "projects/unmsm-2025-0/ia-prep-final.md",
-    "other-notes/rough-notes/asndasoidnmasoidn.md",
-    "other-notes/rough-notes/holaaaaaaa.md",
-    "other-notes/rough-notes/huevada petrlik final.md",
-    "projects/unmsm-2025-0/riesgos-prep-final.md",
-    "other-notes/rough-notes/holaaaa.md",
-    "projects/unmsm-2025-0/ia-lab-s6.md",
-    "other-notes/rough-notes/risk-it.md",
-    "projects/unmsm-2025-0/pruebas-prep-final.md",
-    "projects/unmsm-2025-0/db2-prep-final.md",
-    "projects/unmsm-2025-0/ux-prep-final.md",
-    "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
-    "projects/unmsm-2025-0/nur-implement-project-overview.md",
-    "other-notes/sound-tagging-docs.md",
-    "source-material/videos/CSS Selectors - beyond the very basics.md",
-    "other-notes/rough-notes/risk-it-notas.md",
     "utilities/attachments/Pasted image 20250623132343.png",
     "utilities/attachments/Pasted image 20250530225027.png",
     "utilities/attachments/Pasted image 20250530224739.png",
@@ -231,6 +199,38 @@
     "utilities/attachments/Pasted image 20250530224641.png",
     "utilities/attachments/Pasted image 20250530224610.png",
     "utilities/attachments/Pasted image 20250530224007.png",
-    "utilities/attachments/Pasted image 20250530223841.png"
+    "utilities/attachments/Pasted image 20250530223841.png",
+    "source-material/videos/tcp-ip-for-programmers.md",
+    "source-material/misc/pdf/ISO_31000_2018(es).PDF",
+    "source-material/lectures/unmsm-riesgos-s6.md",
+    "source-material/lectures/unmsm-riesgos-s5.md",
+    "source-material/lectures/unmsm-redes-s4.md",
+    "source-material/lectures/unmsm-pruebas-s6.md",
+    "source-material/lectures/unmsm-pruebas-s5.md",
+    "source-material/lectures/unmsm-ia-s2.md",
+    "source-material/lectures/unmsm-db2-s6.md",
+    "source-material/lectures/unmsm-db2-s5.md",
+    "projects/unmsm-2025-0/ux-segundo-entregable.md",
+    "projects/unmsm-2025-0/ux-prep-final.md",
+    "projects/unmsm-2025-0/ux-prep-expo-parcial.md",
+    "projects/unmsm-2025-0/riesgos-prep-parcial.md",
+    "projects/unmsm-2025-0/riesgos-prep-final.md",
+    "projects/unmsm-2025-0/redes-preguntas-data-center.md",
+    "projects/unmsm-2025-0/redes-mejorar-expo-ethernet.md",
+    "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
+    "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
+    "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+    "projects/unmsm-2025-0/redes-expo-tia-942.md",
+    "projects/unmsm-2025-0/redes-expo-ethernet.md",
+    "projects/unmsm-2025-0/pruebas-prep-final.md",
+    "projects/unmsm-2025-0/ia-tc.md",
+    "projects/unmsm-2025-0/hola.py",
+    "pdf",
+    "source-material/manuals/pdf/flow.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s4.pdf",
+    "source-material/lectures/pdf/unmsm-db2-s4.pdf",
+    "projects/unmsm-2025-0/pdf/LaboratorioBDSem04.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p6.pdf",
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s3-p5.pdf"
   ]
 }
