@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d81665cac0858b99",
+        "id": "335d6d09560a69c4",
         "type": "tabs",
         "children": [
           {
-            "id": "a30e75637be9d269",
+            "id": "2356d66c6ded8419",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "source-material/lectures/introduction-computer-systems.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "introduction-computer-systems"
             }
           }
         ]
@@ -168,11 +172,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a30e75637be9d269",
+  "active": "2356d66c6ded8419",
   "lastOpenFiles": [
-    "source-material/textbooks/pdf/CSAPP_2016.pdf",
+    "other-notes/sound-tagging-docs.md",
     "source-material/lectures/introduction-computer-systems.md",
     "source-material/textbooks/computer-systems-programmer-perspective.md",
+    "source-material/textbooks/pdf/CSAPP_2016.pdf",
+    "other-notes/rough-notes/introduction-computer-systems.md",
     "utilities/attachments/Pasted image 20250719173641.png",
     "utilities/attachments/Pasted image 20250623132343.png",
     "utilities/attachments/Pasted image 20250530225027.png",
@@ -206,7 +212,6 @@
     "projects/unmsm-2025-0/redes-expo-tia-942.md",
     "projects/unmsm-2025-0/redes-expo-ethernet.md",
     "projects/unmsm-2025-0/pruebas-prep-final.md",
-    "projects/unmsm-2025-0/ia-tc.md",
     "projects/unmsm-2025-0/hola.py",
     "pdf",
     "source-material/manuals/pdf/flow.pdf",

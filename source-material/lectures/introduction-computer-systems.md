@@ -115,12 +115,19 @@ Fractions can also be represented in binary
 ### Bit-Level Operations in C
 
 - Apply to any "integral" data type (long, int, short, char, unsigned)
-- View arguments as bit vectors
-- Operate one bit at a time
+- View arguments as bit vectors, operating on one bit at a time (bit-wise)
 
-**Examples**:
+**Examples**
 
-- `0xC8 & 0xB8` -> `0x88`
+- `~0xC8` = `0x37`
+
+```
+~ 11001000
+  --------
+= 00110111
+```
+
+- `0xC8 & 0xB8` = `0x88`
 
 ```
   11001000  
@@ -129,7 +136,7 @@ Fractions can also be represented in binary
 = 10001000
 ```
 
-- `0xC8 | 0xB8` -> `0xF8`
+- `0xC8 | 0xB8` = `0xF8`
 
 ```
   11001000  
@@ -143,4 +150,112 @@ Fractions can also be represented in binary
 > [!NOTE]
 > It's a common error for programmers to mix up `&&` for `&`, or `||` for `|`
 
-The "double bar" ones are *not* bit-wise operators, they only care about whether something is true or false.
+> The "double" ones (like `||`) are *not* "thinking" about bit-wise operations (like `|` does), they're thinking about something that's either true or false.
+
+- 0 is false, *anything* else is true
+- always return 0 or 1
+- **early termination** #wip
+
+**Examples**
+
+- `!0xC8` = `0x00`
+- `!0x00` = `0x01`
+- `!!0xC8` = `!0x00` = `0x01`
+- `0xC8 && 0xB8` = `0x01`
+- `0xC8 || 0xB8` = `0x01`
+
+### Shift Operations
+
+```
+x << y
+x >> y
+```
+
+Shift the number `x`, either to the left or right, `y` positions 
+
+#### Left shift
+
+Leftmost bits are lost. Right side is *always* filled with zeroes
+
+```
+x           |01100010
+x << 3   011|00010    <-
+             00010000
+         ---      ---
+        lost      new
+```
+
+#### Right shift
+
+Rightmost bits are lost. What happens to the left side depends on the type
+
+##### Logical shift
+
+Left side is filled with zeroes, just as left shift does
+
+```
+x        01100010|
+x >> 3      01100|010 ->
+         00001100
+         ---      ---
+         new      lost
+```
+
+##### Arithmetic shift
+
+Left side is filled with whatever value the leftmost bit (MSB) originally had
+
+```
+x        10100010|
+x >> 3      10100|010 ->
+         11110100
+         ---      ---
+         new      lost
+```
+
+If the original MSB is zero, it is effectively the same as logical shift
+
+```
+x        01100010|
+x >> 3      01100|010 ->
+         00001100
+         ---      ---
+         new      lost
+```
+
+> [!note]
+> In most systems, shifting an 8-bit number `x` 8 positions returns `x` rather than 0. Shifting a negative number of positions, or a number of positions bigger than the word size, yields undefined behavior.
+
+### Encoding Integers
+
+#### Unsigned
+
+Given a number $X$ of size $w$
+$$
+B2U(X) = \sum_{i=0}^{w-1} x_i \cdot 2^i
+$$
+where $x_i$ can be either 0 or 1
+
+**Example ($w = 4$)**
+
+| $i$   | 3   | 2   | 1   | 0   |
+| ----- | --- | --- | --- | --- |
+| $2^i$ | 8   | 4   | 2   | 1   |
+
+`0xf = 8 + 4 + 2 + 1 = 15`
+
+#### Two's Complement
+
+MSB (biggest absolute value of $2^i$) is negative
+
+$$
+B2T(X) = -x_{w_1} \cdot 2^{w-1} + \sum_{i=0}^{w-2} x_i \cdot 2^i
+$$
+
+**Example ($w = 4$)**
+
+| $i$       | 3   | 2   | 1   | 0   |
+| --------- | --- | --- | --- | --- |
+| $\pm 2^i$ | -8  | 4   | 2   | 1   |
+
+`0xf = -8 + 4 + 2 + 1 = -1`
