@@ -236,26 +236,50 @@ B2U(X) = \sum_{i=0}^{w-1} x_i \cdot 2^i
 $$
 where $x_i$ can be either 0 or 1
 
-**Example ($w = 4$)**
+> [!example]
+> given $w=4$
+> 
+> | $i$   | 3   | 2   | 1   | 0   |
+> | ----- | --- | --- | --- | --- |
+> | $2^i$ | 8   | 4   | 2   | 1   |
+> 
+> `0xf = 8 + 4 + 2 + 1 = 15`
 
-| $i$   | 3   | 2   | 1   | 0   |
-| ----- | --- | --- | --- | --- |
-| $2^i$ | 8   | 4   | 2   | 1   |
-
-`0xf = 8 + 4 + 2 + 1 = 15`
+> [!note] Numeric ranges
+> - UMin: 0 (000...0)
+> - UMax: $2^w - 1$ (111...1)
 
 #### Two's Complement
 
-MSB (biggest absolute value of $2^i$) is negative
+MSB (biggest absolute value of $2^i$) is negative (also called sign bit)
 
 $$
 B2T(X) = -x_{w_1} \cdot 2^{w-1} + \sum_{i=0}^{w-2} x_i \cdot 2^i
 $$
 
-**Example ($w = 4$)**
+> [!example]
+> given $w=4$
+> 
+> | $i$   | 3   | 2   | 1   | 0   |
+> | ----- | --- | --- | --- | --- |
+> | $\pm 2^i$ | -8   | 4   | 2   | 1   |
+> 
+> `0xf = -8 + 4 + 2 + 1 = -1`
 
-| $i$       | 3   | 2   | 1   | 0   |
-| --------- | --- | --- | --- | --- |
-| $\pm 2^i$ | -8  | 4   | 2   | 1   |
+> [!note] Numeric ranges
+> - TMin: $-2^{w-1}$ (100...0)
+> - TMax: $2^{w-1} - 1$ (011...1)
 
-`0xf = -8 + 4 + 2 + 1 = -1`
+#### Range comparison
+
+Given $w=16$ (2 bytes)
+
+|      | Decimal | Hex  | Binary                |
+| ---- | ------- | ---- | --------------------- |
+| UMax | 65535   | FFFF | `1111 1111 1111 1111` |
+| TMax | 32767   | 7FFF | `0111 1111 1111 1111` |
+| TMin | -32768  | 8000 | `1000 0000 0000 0000` |
+| -1   | -1      | FFFF | `1111 1111 1111 1111` |
+| 0    | 0       | 0000 | `0000 0000 0000 0000` |
+
+
