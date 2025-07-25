@@ -282,4 +282,83 @@ Given $w=16$ (2 bytes)
 | -1   | -1      | FFFF | `1111 1111 1111 1111` |
 | 0    | 0       | 0000 | `0000 0000 0000 0000` |
 
+### Unsigned & Signed Numeric Values
 
+| $X$    | $B2U(X)$ | $B2T(X)$ |
+| ------ | -------- | -------- |
+| `0000` | 0        | 0        |
+| `0001` | 1        | 1        |
+| `0010` | 2        | 2        |
+| `0011` | 3        | 3        |
+| `0100` | 4        | 4        |
+| `0101` | 5        | 5        |
+| `0110` | 6        | 6        |
+| `0111` | 7        | 7        |
+| `1000` | 8        | -8       |
+| `1001` | 9        | -7       |
+| `1010` | 10       | -6       |
+| `1011` | 11       | -5       |
+| `1100` | 12       | -4       |
+| `1101` | 13       | -3       |
+| `1110` | 14       | -2       |
+| `1111` | 15       | -1       |
+
+> [!note]
+> $B2U$ means binary to unsigned
+> $B2T$ means binary to two's complement
+
+> You'll often find cases where what used to be a very large number, because it was unsigned, all of a sudden becomes a negative number, because it's considered two's complement.
+
+- For those where the MSB is zero, $B2U$ and $B2T$ are the same
+- For those where the MSB is one, $B2U$ and $B2T$ will differ by $2^n$
+
+### Mapping Between Signed & Unsigned
+
+- These mappings **keep bit representations ($X$) and reinterpret**
+- C performs these mappings
+- The computer itself doesn't have a clue of whether something is signed or unsigned, it's all just bit patterns
+
+#### Two's Complement -> Unsigned ($T2U$)
+
+$$
+\begin{align}
+x \rightarrow T2B &\rightarrow X \\
+X \rightarrow B2U &\rightarrow ux \\
+\end{align}
+$$
+
+#### Unsigned -> Two's Complement ($U2T$)
+
+$$
+\begin{align}
+ux \rightarrow U2B &\rightarrow X \\
+X \rightarrow B2T &\rightarrow x \\
+\end{align}
+$$
+
+### Signed vs. Unsigned in C
+
+#### Constants
+
+- Considered signed integers by default
+- Unsigned if suffix "U" is used (e.g. `0U`, `4294967259U`)
+
+#### Casting
+
+Done using the [mappings](#Mapping%20Between%20Signed%20&%20Unsigned) mentioned above
+
+- Can be explicit
+
+```c
+int tx, ty;
+unsigned ux, uy;
+tx = (int) ux;
+uy = (unsigned) ty;
+```
+
+- Or implicit, via assignments and procedure calls
+
+```c
+tx = ux;
+uy = ty;
+```
