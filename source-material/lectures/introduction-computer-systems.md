@@ -359,6 +359,27 @@ uy = (unsigned) ty;
 - Or implicit, via assignments and procedure calls
 
 ```c
-tx = ux;
-uy = ty;
+tx = ux;   // ux -> U2T -> tx 
+uy = ty;   // ty -> T2U -> uy
 ```
+
+##### Expression evaluation
+
+If there's a mix of unsigned and signed in a single expression (including comparisons), **signed values implicitly cast to unsigned**
+
+Examples for $w = 32$
+- UMax: 4294967296
+- TMax: 2147483647
+- TMin: -2147483648
+
+| C1            | Relation | C2                | Evaluation | Result | Explanation                                                                             |
+| ------------- | -------- | ----------------- | ---------- | ------ | --------------------------------------------------------------------------------------- |
+| 0             | ==       | 0U*               | unsigned   | True   | Since there's an unsigned in the expression (0U), 0 (which is signed) casts to unsigned |
+| -1            | <        | 0                 | signed     | True   | No casting                                                                              |
+| -1            | >        | 0U                | unsigned   | True   | -1 is cast to unsigned, which is UMax, which is obviously bigger than 0                 |
+| 2147483647    | >        | -2147483647 - 1   | signed     | True   | No casting. -214...7 - 1 is TMin, which is still "within range"                         |
+| 2147483647U   | <        | -2147483647 - 1   | unsigned   | True   | -214...7 - 1, which is TMin, is cast to TMax + 1                                        |
+| -1            | >        | -2                | signed     | True   | No casting                                                                              |
+| (unsigned) -1 | >        | -2                | unsigned   | True   | -1 is cast to UMax, -2 is cast to UMax - 1                                              |
+| 2147483647    | <        | 2147483648U       | unsigned   | True   | No casting                                                                              |
+| 2147483647    | >        | (int) 2147483648U | signed     | True   | 214...8U, which is TMax + 1, is cast to TMin                                            |
