@@ -316,7 +316,7 @@ Given $w=16$ (2 bytes)
 
 - These mappings **keep bit representations ($X$) and reinterpret**
 - C performs these mappings
-- The computer itself doesn't have a clue of whether something is signed or unsigned, it's all just bit patterns
+- The computer itself doesn't have a clue of whether something is signed or unsigned, it's all just bit patterns. Can lead to unexpected results (like adding or subtracting $2^w$)
 
 #### Two's Complement -> Unsigned ($T2U$)
 
