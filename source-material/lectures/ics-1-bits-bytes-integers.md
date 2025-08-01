@@ -9,96 +9,7 @@ src-link:
   - https://youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE
   - https://csapp.cs.cmu.edu/3e/labs.html
 ---
-# Introduction to Computer Systems
-
-## Course Overview
-
-### `int` != integer. `float` != real
-
-Overflows cause certain assumptions about numbers to not be met
-
-### It's important to understand the assembly output of programs
-
-More than just learning to write assembly "by hand"
-
-### It's important to understand the memory system
-
-#### Memory Referencing Bug Example
-
-```c
-#include <stdio.h>
-
-typedef struct {
-  int a[2];
-  double d;
-} struct_t;
-
-double fun(int i) {
-  volatile struct_t s;
-  s.d = 3.14;
-  s.a[i] = 1073741824;
-  return s.d;
-}
-
-int main() {
-  printf("%f\n", fun(0)); // a[0]
-  printf("%f\n", fun(1)); // a[1]
-  printf("%f\n", fun(2)); // d
-  printf("%f\n", fun(3)); // d
-  printf("%f\n", fun(4)); // ?
-  printf("%f\n", fun(5)); // ?
-  printf("%f\n", fun(6)); // critical state
-}
-```
-
-Output:
-
-```
-3.140000
-3.140000
-3.14000
-2.000001
-3.140000
-3.140000
-*** stack smashing detected ***: terminated
-zsh: IOT instruction (core dumped)  ./a.out
-```
-
-- C/C++ doesn't do bounds checking on arrays. It won't complain, but they OS might complain.
-- Memory referencing errors can be really hard to debug
-
-### There's more to performance than asymptotic complexity
-
-```c
-// rows by row (4.3 ms)
-void copyij(int src[2048], int dest[2048]) {
-	int i, j;
-	for (i = 0; i < 2048; i++)
-		for (j = 0; j < 2048; j++)
-			dst[i][j] = src[i][j];
-}
-
-// column by column (81.8 ms)
-void copyji(int src[2048], int dest[2048]) {
-	int i, j;
-	for (j = 0; j < 2048; j++)
-		for (i = 0; i < 2048; i++)
-			dst[i][j] = src[i][j];
-}
-```
-
-Copying a matrix row-by-row is faster than col-by-col. Why do things like this happen?
-
-### Computer not only execute programs
-
-But also do I/O and communicate over the network, which lead to other challenges:
-
-- Concurrent operations by autonomous processes
-- Coping with unreliable media
-- Cross platform compatibility
-- Complex performance issues
-
-## Bits, Bytes, and Integers
+# Bits, Bytes, and Integers
 
 Fractions can also be represented in binary
 
@@ -112,7 +23,7 @@ Fractions can also be represented in binary
 
 64-bit machine = 64-bit addresses
 
-### Bit-Level Operations in C
+## Bit-Level Operations in C
 
 - Apply to any "integral" data type (long, int, short, char, unsigned)
 - View arguments as bit vectors, operating on one bit at a time (bit-wise)
@@ -145,7 +56,7 @@ Fractions can also be represented in binary
 = 11111000
 ```
 
-### Contrast: Logic Operations in C
+## Contrast: Logic Operations in C
 
 > [!NOTE]
 > It's a common error for programmers to mix up `&&` for `&`, or `||` for `|`
@@ -164,7 +75,7 @@ Fractions can also be represented in binary
 - `0xC8 && 0xB8` = `0x01`
 - `0xC8 || 0xB8` = `0x01`
 
-### Shift Operations
+## Shift Operations
 
 ```
 x << y
@@ -173,7 +84,7 @@ x >> y
 
 Shift the number `x`, either to the left or right, `y` positions 
 
-#### Left shift
+### Left shift
 
 Leftmost bits are lost. Right side is *always* filled with zeroes
 
@@ -185,11 +96,11 @@ x << 3   011|00010    <-
         lost      new
 ```
 
-#### Right shift
+### Right shift
 
 Rightmost bits are lost. What happens to the left side depends on the type
 
-##### Logical shift
+#### Logical shift
 
 Left side is filled with zeroes, just as left shift does
 
@@ -201,7 +112,7 @@ x >> 3      01100|010 ->
          new      lost
 ```
 
-##### Arithmetic shift
+#### Arithmetic shift
 
 Left side is filled with whatever value the leftmost bit (MSB) originally had
 
@@ -226,9 +137,9 @@ x >> 3      01100|010 ->
 > [!note]
 > In most systems, shifting an 8-bit number `x` 8 positions returns `x` rather than 0. Shifting a negative number of positions, or a number of positions bigger than the word size, yields undefined behavior.
 
-### Encoding Integers
+## Encoding Integers
 
-#### Unsigned
+### Unsigned
 
 Given a number $X$ of size $w$
 $$
@@ -249,7 +160,7 @@ where $x_i$ can be either 0 or 1
 > - UMin: 0 (000...0)
 > - UMax: $2^w - 1$ (111...1)
 
-#### Two's Complement
+### Two's Complement
 
 MSB (biggest absolute value of $2^i$) is negative (also called sign bit)
 
@@ -270,7 +181,7 @@ $$
 > - TMin: $-2^{w-1}$ (100...0)
 > - TMax: $2^{w-1} - 1$ (011...1)
 
-#### Range comparison
+### Range comparison
 
 Given $w=16$ (2 bytes)
 
@@ -282,7 +193,7 @@ Given $w=16$ (2 bytes)
 | -1   | -1      | FFFF | `1111 1111 1111 1111` |
 | 0    | 0       | 0000 | `0000 0000 0000 0000` |
 
-### Unsigned & Signed Numeric Values
+## Unsigned & Signed Numeric Values
 
 | $X$    | $B2U(X)$ | $B2T(X)$ |
 | ------ | -------- | -------- |
@@ -312,13 +223,13 @@ Given $w=16$ (2 bytes)
 - For those where the MSB is zero, $B2U$ and $B2T$ are the same
 - For those where the MSB is one, $B2U$ and $B2T$ will differ by $2^n$
 
-### Mapping Between Signed & Unsigned
+## Mapping Between Signed & Unsigned
 
 - These mappings **keep bit representations ($X$) and reinterpret**
 - C performs these mappings
 - The computer itself doesn't have a clue of whether something is signed or unsigned, it's all just bit patterns. Can lead to unexpected results (like adding or subtracting $2^w$)
 
-#### Two's Complement -> Unsigned ($T2U$)
+### Two's Complement -> Unsigned ($T2U$)
 
 $$
 \begin{align}
@@ -327,7 +238,7 @@ X \rightarrow B2U &\rightarrow ux \\
 \end{align}
 $$
 
-#### Unsigned -> Two's Complement ($U2T$)
+### Unsigned -> Two's Complement ($U2T$)
 
 $$
 \begin{align}
@@ -336,14 +247,14 @@ X \rightarrow B2T &\rightarrow x \\
 \end{align}
 $$
 
-### Signed vs. Unsigned in C
+## Signed vs. Unsigned in C
 
-#### Constants
+### Constants
 
 - Considered signed integers by default
 - Unsigned if suffix "U" is used (e.g. `0U`, `4294967259U`)
 
-#### Casting
+### Casting
 
 Done using the [mappings](#Mapping%20Between%20Signed%20&%20Unsigned) mentioned above
 
@@ -363,7 +274,7 @@ tx = ux;   // ux -> U2T -> tx
 uy = ty;   // ty -> T2U -> uy
 ```
 
-##### Expression evaluation
+#### Expression evaluation
 
 If there's a mix of unsigned and signed in a single expression (including comparisons), **signed values implicitly cast to unsigned**
 
