@@ -1,7 +1,7 @@
 ---
 tags:
   - "#lecture-notes"
-src-date: 
+src-date:
 src-author:
   - Randal E. Bryant
   - David R. O'Hallaron
@@ -9,6 +9,7 @@ src-link:
   - https://youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE
   - https://csapp.cs.cmu.edu/3e/labs.html
 ---
+
 # Bits, Bytes, and Integers
 
 Fractions can also be represented in binary
@@ -41,18 +42,18 @@ Fractions can also be represented in binary
 - `0xC8 & 0xB8` = `0x88`
 
 ```
-  11001000  
-& 10111000 
-  -------- 
+  11001000
+& 10111000
+  --------
 = 10001000
 ```
 
 - `0xC8 | 0xB8` = `0xF8`
 
 ```
-  11001000  
-| 10111000 
-  -------- 
+  11001000
+| 10111000
+  --------
 = 11111000
 ```
 
@@ -61,9 +62,9 @@ Fractions can also be represented in binary
 > [!NOTE]
 > It's a common error for programmers to mix up `&&` for `&`, or `||` for `|`
 
-> The "double" ones (like `||`) are *not* "thinking" about bit-wise operations (like `|` does), they're thinking about something that's either true or false.
+> The "double" ones (like `||`) are _not_ "thinking" about bit-wise operations (like `|` does), they're thinking about something that's either true or false.
 
-- 0 is false, *anything* else is true
+- 0 is false, _anything_ else is true
 - always return 0 or 1
 - **early termination** #wip
 
@@ -82,11 +83,11 @@ x << y
 x >> y
 ```
 
-Shift the number `x`, either to the left or right, `y` positions 
+Shift the number `x`, either to the left or right, `y` positions
 
 ### Left shift
 
-Leftmost bits are lost. Right side is *always* filled with zeroes
+Leftmost bits are lost. Right side is _always_ filled with zeroes
 
 ```
 x           |01100010
@@ -142,21 +143,24 @@ x >> 3      01100|010 ->
 ### Unsigned
 
 Given a number $X$ of size $w$
+
 $$
 B2U(X) = \sum_{i=0}^{w-1} x_i \cdot 2^i
 $$
+
 where $x_i$ can be either 0 or 1
 
 > [!example]
 > given $w=4$
-> 
+>
 > | $i$   | 3   | 2   | 1   | 0   |
 > | ----- | --- | --- | --- | --- |
 > | $2^i$ | 8   | 4   | 2   | 1   |
-> 
+>
 > `0xf = 8 + 4 + 2 + 1 = 15`
 
 > [!note] Numeric ranges
+>
 > - UMin: 0 (000...0)
 > - UMax: $2^w - 1$ (111...1)
 
@@ -170,14 +174,15 @@ $$
 
 > [!example]
 > given $w=4$
-> 
-> | $i$   | 3   | 2   | 1   | 0   |
-> | ----- | --- | --- | --- | --- |
-> | $\pm 2^i$ | -8   | 4   | 2   | 1   |
-> 
+>
+> | $i$       | 3   | 2   | 1   | 0   |
+> | --------- | --- | --- | --- | --- |
+> | $\pm 2^i$ | -8  | 4   | 2   | 1   |
+>
 > `0xf = -8 + 4 + 2 + 1 = -1`
 
 > [!note] Numeric ranges
+>
 > - TMin: $-2^{w-1}$ (100...0)
 > - TMax: $2^{w-1} - 1$ (011...1)
 
@@ -214,8 +219,7 @@ Given $w=16$ (2 bytes)
 | `1110` | 14       | -2       |
 | `1111` | 15       | -1       |
 
-> [!note]
-> $B2U$ means binary to unsigned
+> [!note] > $B2U$ means binary to unsigned
 > $B2T$ means binary to two's complement
 
 > You'll often find cases where what used to be a very large number, because it was unsigned, all of a sudden becomes a negative number, because it's considered two's complement.
@@ -270,7 +274,7 @@ uy = (unsigned) ty;
 - Or implicit, via assignments and procedure calls
 
 ```c
-tx = ux;   // ux -> U2T -> tx 
+tx = ux;   // ux -> U2T -> tx
 uy = ty;   // ty -> T2U -> uy
 ```
 
@@ -279,13 +283,14 @@ uy = ty;   // ty -> T2U -> uy
 If there's a mix of unsigned and signed in a single expression (including comparisons), **signed values implicitly cast to unsigned**
 
 Examples for $w = 32$
-- UMax: 4294967296
+
+- UMax: 4294967295
 - TMax: 2147483647
 - TMin: -2147483648
 
 | C1            | Relation | C2                | Evaluation | Result | Explanation                                                                             |
 | ------------- | -------- | ----------------- | ---------- | ------ | --------------------------------------------------------------------------------------- |
-| 0             | ==       | 0U*               | unsigned   | True   | Since there's an unsigned in the expression (0U), 0 (which is signed) casts to unsigned |
+| 0             | ==       | 0U\*              | unsigned   | True   | Since there's an unsigned in the expression (0U), 0 (which is signed) casts to unsigned |
 | -1            | <        | 0                 | signed     | True   | No casting                                                                              |
 | -1            | >        | 0U                | unsigned   | True   | -1 is cast to unsigned, which is UMax, which is obviously bigger than 0                 |
 | 2147483647    | >        | -2147483647 - 1   | signed     | True   | No casting. -214...7 - 1 is TMin, which is still "within range"                         |
@@ -294,3 +299,140 @@ Examples for $w = 32$
 | (unsigned) -1 | >        | -2                | unsigned   | True   | -1 is cast to UMax, -2 is cast to UMax - 1                                              |
 | 2147483647    | <        | 2147483648U       | unsigned   | True   | No casting                                                                              |
 | 2147483647    | >        | (int) 2147483648U | signed     | True   | 214...8U, which is TMax + 1, is cast to TMin                                            |
+
+## Unsigned vs. Signed: Easy to Make Mistakes
+
+```c
+unsigned i;
+int a[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+
+for (i = 6; i >= 0; i--)
+  a[i] += a[i + 1];
+```
+
+This loop goes forever because `i`, which is unsigned, can never become negative, thus the loop condition will always be true.
+
+Printing `i` yields the following output:
+
+```
+6
+5
+4
+3
+2
+1
+0
+4294967295
+4294967294
+4294967293
+...
+```
+
+Notice that subtracting 1 from 0 results in UMax instead of -1, as expected from unsigned numbers. The program will try to access `a[UMax]`, `a[UMax - 1]`, `a[UMax - 2]`, and so on until the operating system halts the program.
+
+These errors can be very subtle. The following loop will also go forever.
+
+```c
+#define DELTA sizeof(int)
+
+int i;
+int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+for (i = 8; i - DELTA >= 0; i -= DELTA)
+  a[i] += a[i + 1];
+```
+
+This is because the operator `sizeof` returns a value of type `size_t`, which is unsigned on most machines. This causes `i - DELTA` to be cast as unsigned, which will always be greater or equal than zero. We observe similar behavior of `i` to that in the previous example.
+
+```
+8
+4
+0
+4294967292
+4294967288
+4294967284
+...
+```
+
+If we replaced `DELTA` by 4, this bug wouldn't happen.
+
+## Sign Extension
+
+Given a number $X$ of size $w$, if we wanted to use $k$ additional bits to represent it, all we need to do is fill the left-most side with $k$ copies of the original MSB ($w$-th bit).
+
+**Examples**
+
+- Filling with zeroes
+
+```
+i           5   4   3   2   1
+
+2^i                -4   2   1
+X                   0   1   1      value: 3
+
+2^i        -16  8   4   2   1
+X'          0   0   0   1   1      value: 3
+      	    -----
+      	    duplicates of X_3
+```
+
+- Filling with ones (this one is a bit less intuitive)
+
+```
+i            6   5   4   3   2   1
+
+2^i                 -8   4   2   1
+X                    1   0   1   0      value: -6
+
+2^i         -32  16  8   4   2   1
+X'           1   1   1   0   1   0      value: -6
+	         -----
+	         duplicates of x_4
+```
+
+> [!note]
+> Here's a thing I made to help me visualize the "negative case" of sign extension. Notice how $\sum_{a=w}^{w+k - 1} 2^a$ (the blue segments) plus $2^w$ (the green segment) fit perfectly in $2^{w+k}$
+>
+> Available [here](https://www.geogebra.org/calculator/bncj3vz3)
+>
+> ![](../../utilities/attachments/Pasted%20image%2020250801124619.png)
+
+### C Example
+
+```c
+short int x = 15213;     //       3B 6D
+int      ix = (int) x;   // 00 00 3B 6D
+
+short int y = -15213;    //        C4 93
+int      iy = (int) y;   // F$F FF C4 93
+```
+
+## Truncation
+
+To truncate a number $X$ of size $w + k$ to a smaller number $X'$ of size $w$, we drop the $k$ left-most bits. If $X$ is fairly close to zero, we don't lose any information.
+
+```
+i           5   4   3   2   1
+
+2^i        -16  8   4   2   1
+X           0   0   0   1   1      value: 3
+            -----
+            deleted
+
+2^i                -4   2   1
+X'                  0   1   1      value: 3
+```
+
+Otherwise, we will get a totally different value
+
+```
+i            6   5   4   3   2   1
+
+2^i         -32  16  8   4   2   1
+X            1   0   1   0   0   0      value: -24
+             -----
+             deleted
+
+2^i                 -8   4   2   1
+X'                   1   0   0   0      value: -8
+```

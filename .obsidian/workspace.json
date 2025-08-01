@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "702b000effdbdd0b",
+        "id": "b676c0a6912f09a6",
         "type": "tabs",
         "children": [
           {
-            "id": "89363f0490415635",
+            "id": "3da83d11fea23069",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source-material/lectures/introduction-computer-systems.md",
+                "file": "source-material/lectures/ics-1-bits-bytes-integers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "introduction-computer-systems"
+              "title": "ics-1-bits-bytes-integers"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "8090f1a6a0490b1c",
@@ -171,8 +172,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "58f5db9b0c939ad0",
+  "active": "3da83d11fea23069",
   "lastOpenFiles": [
+    "source-material/lectures/ics-1-bits-bytes-integers.md",
+    "utilities/attachments/Pasted image 20250801124619.png",
+    "other-notes/staging/horario.md",
+    "source-material/lectures/ics-0-overview.md",
+    "source-material/lectures/ics-overview.md",
+    "source-material/textbooks/computer-systems-programmer-perspective.md",
+    "other-notes/rough-notes/activities to iterate over.md",
     "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
     "other-notes/rough-notes/chatgpt-prompt-sql-complete.md",
     "other-notes/rough-notes/computer networks - syllabus mappings.md",
@@ -181,7 +189,6 @@
     "other-notes/rough-notes/guion-expo.md",
     "other-notes/rough-notes/guion-codecs.md",
     "other-notes/rough-notes/expo-tc.md",
-    "other-notes/staging/horario.md",
     "other-notes/staging/logo fisi.md",
     "other-notes/rough-notes/message 1.md",
     "other-notes/ideas/note-taking rules.md",
@@ -195,15 +202,9 @@
     "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "other-notes/rough-notes/unmsm-pruebas-s13.md",
     "other-notes/rough-notes/unmsm-pm-s3-articulo.md",
-    "other-notes/rough-notes/verano unmsm.md",
-    "other-notes/ideas/cardinal-module-ideas.md",
-    "other-notes/ideas/sound-tagging-docs.md",
     "other-notes/ideas",
     "other-notes/staging",
-    "source-material/lectures/introduction-computer-systems.md",
     "source-material/textbooks/pdf",
-    "cardinal-module-ideas.md",
-    "other-notes/sound-tagging-docs.md",
     "utilities/attachments/Pasted image 20250719173641.png",
     "utilities/attachments/Pasted image 20250623132343.png",
     "utilities/attachments/Pasted image 20250530225027.png",
@@ -213,7 +214,6 @@
     "utilities/attachments/Pasted image 20250530224641.png",
     "utilities/attachments/Pasted image 20250530224610.png",
     "utilities/attachments/Pasted image 20250530224007.png",
-    "utilities/attachments/Pasted image 20250530223841.png",
     "source-material/misc/pdf/ISO_31000_2018(es).PDF",
     "projects/unmsm-2025-0/hola.py",
     "pdf",
