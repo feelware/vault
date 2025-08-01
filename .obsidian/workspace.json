@@ -20,35 +20,8 @@
               "icon": "lucide-file",
               "title": "introduction-computer-systems"
             }
-          },
-          {
-            "id": "69ee7e9b34b702f7",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/textbooks/pdf/CSAPP_2016.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "CSAPP_2016"
-            }
-          },
-          {
-            "id": "df92965fea0f35ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "horario.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "horario"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,20 +171,39 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "df92965fea0f35ef",
+  "active": "58f5db9b0c939ad0",
   "lastOpenFiles": [
+    "other-notes/rough-notes/artificial intelligence - syllabus mappings.md",
+    "other-notes/rough-notes/chatgpt-prompt-sql-complete.md",
+    "other-notes/rough-notes/computer networks - syllabus mappings.md",
+    "source-material/videos/darker-side-of-making-music 1.md",
+    "other-notes/rough-notes/expo-frida-2.md",
+    "other-notes/rough-notes/guion-expo.md",
+    "other-notes/rough-notes/guion-codecs.md",
+    "other-notes/rough-notes/expo-tc.md",
+    "other-notes/staging/horario.md",
+    "other-notes/staging/logo fisi.md",
+    "other-notes/rough-notes/message 1.md",
+    "other-notes/ideas/note-taking rules.md",
+    "other-notes/staging/detriments.md",
+    "other-notes/staging/prompt-tombo.md",
+    "other-notes/rough-notes/tombo expo.md",
+    "other-notes/staging/the.md",
+    "other-notes/staging",
+    "other-notes/rough-notes/unmsm-pm-parcial.md",
+    "other-notes/rough-notes/unmsm-pm-parcial-3.md",
+    "source-material/textbooks/pdf/CSAPP_2016.pdf",
+    "other-notes/rough-notes/unmsm-pruebas-s13.md",
+    "other-notes/rough-notes/unmsm-pm-s3-articulo.md",
+    "other-notes/rough-notes/verano unmsm.md",
     "other-notes/ideas/cardinal-module-ideas.md",
     "other-notes/ideas/sound-tagging-docs.md",
     "other-notes/ideas",
     "other-notes/staging",
-    "source-material/textbooks/pdf/CSAPP_2016.pdf",
-    "horario.md",
     "source-material/lectures/introduction-computer-systems.md",
     "source-material/textbooks/pdf",
     "cardinal-module-ideas.md",
     "other-notes/sound-tagging-docs.md",
-    "source-material/textbooks/computer-systems-programmer-perspective.md",
-    "other-notes/rough-notes/introduction-computer-systems.md",
     "utilities/attachments/Pasted image 20250719173641.png",
     "utilities/attachments/Pasted image 20250623132343.png",
     "utilities/attachments/Pasted image 20250530225027.png",
@@ -222,29 +214,10 @@
     "utilities/attachments/Pasted image 20250530224610.png",
     "utilities/attachments/Pasted image 20250530224007.png",
     "utilities/attachments/Pasted image 20250530223841.png",
-    "source-material/videos/tcp-ip-for-programmers.md",
     "source-material/misc/pdf/ISO_31000_2018(es).PDF",
-    "source-material/lectures/unmsm-riesgos-s6.md",
-    "source-material/lectures/unmsm-riesgos-s5.md",
-    "source-material/lectures/unmsm-redes-s4.md",
-    "source-material/lectures/unmsm-pruebas-s6.md",
-    "source-material/lectures/unmsm-pruebas-s5.md",
-    "source-material/lectures/unmsm-ia-s2.md",
-    "source-material/lectures/unmsm-db2-s6.md",
-    "source-material/lectures/unmsm-db2-s5.md",
-    "projects/unmsm-2025-0/ux-segundo-entregable.md",
-    "projects/unmsm-2025-0/ux-prep-final.md",
-    "projects/unmsm-2025-0/ux-prep-expo-parcial.md",
-    "projects/unmsm-2025-0/riesgos-prep-parcial.md",
-    "projects/unmsm-2025-0/riesgos-prep-final.md",
-    "projects/unmsm-2025-0/redes-preguntas-data-center.md",
-    "projects/unmsm-2025-0/redes-mejorar-expo-ethernet.md",
-    "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
-    "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
     "projects/unmsm-2025-0/hola.py",
     "pdf",
     "source-material/manuals/pdf/flow.pdf",
-    "projects/unmsm-2025-0/pdf/db2-labo-guia-s4.pdf",
-    "source-material/lectures/pdf/unmsm-db2-s4.pdf"
+    "projects/unmsm-2025-0/pdf/db2-labo-guia-s4.pdf"
   ]
 }
