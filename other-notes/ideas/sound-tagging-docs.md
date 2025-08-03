@@ -269,35 +269,37 @@ Designed Bass
     Sub
 ```
 
+This category will probably evolve over time.
+
 ## Properties
 
 ```yaml
 Timbral
-    Highs
-        Harsh
-        Bright
-        Dark
-    Lows
-        Bassy
-        Muddy
-        Thin
-    Loudness
-        Soft
-        Loud
-        Compressed
-    Inharmonicity
-        Inharmonic
-        Harmonic
-    Depth
-        ASMR
-        Close
-        Distant/Verb
-    Position
-        Center
-        Sides
-    Width
-        Mono
-        Stereo
+    # Highs
+	Harsh
+	Bright
+	Dark
+    # Lows
+	Bassy
+	Muddy
+	Thin
+    # Loudness
+	Soft
+	Loud
+	Compressed
+    # Inharmonicity
+	Inharmonic
+	Harmonic
+    # Depth
+	ASMR
+	Close
+	Distant/Verb
+    # Position
+	Center
+	Sides
+    # Width
+	Mono
+	Stereo
 Textural
     Solid/Rigid
         Brittle/Sharp
@@ -312,7 +314,7 @@ Textural
         Carbonated
         Creamy
         Oily
- 		Paste-like
+ 		Pasteous
         Steamy
     Amorphous
         Gaseous
@@ -355,7 +357,7 @@ Move
     Shake
     Rattle
     Jingle
-Fluid dynamics
+Fluid dynamics  # Liquid
     Splash      # Strike
     Drip
     Flow
@@ -395,8 +397,6 @@ Vocalize
     Whisper
     Yawn
 ```
-
-This category will probably evolve over time.
 
 ## Musical Info
 
