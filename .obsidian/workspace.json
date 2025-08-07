@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "3f5ea7c0881451b1",
+        "id": "ec351e6c0e76cda5",
         "type": "tabs",
         "children": [
           {
-            "id": "1fe937d264aae228",
+            "id": "9c881a852ae67392",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "other-notes/ideas/sound-tagging-docs.md",
-                "mode": "source",
-                "source": false
+                "file": "source-material/textbooks/pdf/the_c_programming_language.pdf"
               },
-              "icon": "lucide-file",
-              "title": "sound-tagging-docs"
+              "icon": "lucide-file-text",
+              "title": "the_c_programming_language"
             }
           }
         ]
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "8090f1a6a0490b1c",
@@ -166,13 +165,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "header-adjuster:Adjust Headers": false,
-      "obsidian-projects:Open projects": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "1fe937d264aae228",
+  "active": "9c881a852ae67392",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/the_c_programming_language.pdf",
+    "other-notes/ideas/sound-tagging-docs.md",
     "source-material/lectures/ics-1-bits-bytes-integers.md",
     "utilities/attachments/Pasted image 20250801124619.png",
     "other-notes/staging/horario.md",
@@ -200,7 +201,6 @@
     "other-notes/rough-notes/unmsm-pm-parcial-3.md",
     "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "other-notes/rough-notes/unmsm-pruebas-s13.md",
-    "other-notes/rough-notes/unmsm-pm-s3-articulo.md",
     "other-notes/ideas",
     "other-notes/staging",
     "source-material/textbooks/pdf",
