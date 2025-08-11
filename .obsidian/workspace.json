@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8c63590c799ccb03",
+        "id": "4a5fd0b51e1ebe18",
         "type": "tabs",
         "children": [
           {
-            "id": "b156c94ad272428d",
+            "id": "689379ed28dfcfd0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -168,7 +168,7 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "b156c94ad272428d",
+  "active": "689379ed28dfcfd0",
   "lastOpenFiles": [
     "other-notes/staging/address the inversion.md",
     "source-material/textbooks/pdf/the_c_programming_language.pdf",
