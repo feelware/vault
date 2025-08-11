@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ec351e6c0e76cda5",
+        "id": "8c63590c799ccb03",
         "type": "tabs",
         "children": [
           {
-            "id": "9c881a852ae67392",
+            "id": "b156c94ad272428d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/textbooks/pdf/the_c_programming_language.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "the_c_programming_language"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -170,8 +168,9 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "9c881a852ae67392",
+  "active": "b156c94ad272428d",
   "lastOpenFiles": [
+    "other-notes/staging/address the inversion.md",
     "source-material/textbooks/pdf/the_c_programming_language.pdf",
     "other-notes/ideas/sound-tagging-docs.md",
     "source-material/lectures/ics-1-bits-bytes-integers.md",
@@ -216,7 +215,6 @@
     "source-material/misc/pdf/ISO_31000_2018(es).PDF",
     "projects/unmsm-2025-0/hola.py",
     "pdf",
-    "source-material/manuals/pdf/flow.pdf",
-    "projects/unmsm-2025-0/pdf/db2-labo-guia-s4.pdf"
+    "source-material/manuals/pdf/flow.pdf"
   ]
 }

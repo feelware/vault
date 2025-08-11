@@ -15,7 +15,7 @@
   "showUnsupportedFiles": false,
   "promptDelete": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "other-notes/rough-notes",
+  "newFileFolderPath": "other-notes/staging",
   "attachmentFolderPath": "utilities/attachments",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
