@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "other-notes/ideas/sound-tagging-docs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sound-tagging-docs"
+            }
+          },
+          {
+            "id": "3d39dbb04746c424",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "other-notes/ideas/cardinal-module-ideas.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "cardinal-module-ideas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,18 +188,26 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "7fe7a30886774850",
+  "active": "3d39dbb04746c424",
   "lastOpenFiles": [
-    "utilities/attachments/Pasted image 20250814140528.png",
+    "utilities/attachments/Pasted image 20250814180326.png",
+    "utilities/attachments/Pasted image 20250814175917.png",
+    "utilities/attachments/Pasted image 20250814175837.png",
+    "utilities/attachments/Pasted image 20250814175828.png",
+    "utilities/attachments/Pasted image 20250814175639.png",
+    "utilities/attachments/Pasted image 20250814174406.png",
+    "utilities/attachments/Pasted image 20250814172704.png",
+    "utilities/attachments/Pasted image 20250814172137.png",
+    "utilities/attachments/Pasted image 20250814171725.png",
+    "utilities/attachments/Pasted image 20250814171701.png",
+    "utilities/attachments/Pasted image 20250814171652.png",
+    "other-notes/ideas/sound-tagging-docs.md",
+    "other-notes/ideas/cardinal-module-ideas.md",
     "source-material/lectures/ics-1-bits-bytes-integers.md",
     "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
     "source-material/textbooks/think-dsp.md",
-    "utilities/attachments/Pasted image 20250812214713.png",
-    "utilities/attachments/Pasted image 20250812082244.png",
     "other-notes/staging/address the inversion.md",
     "source-material/textbooks/pdf/the_c_programming_language.pdf",
-    "other-notes/ideas/sound-tagging-docs.md",
-    "utilities/attachments/Pasted image 20250801124619.png",
     "other-notes/staging/horario.md",
     "source-material/lectures/ics-0-overview.md",
     "source-material/lectures/ics-overview.md",
@@ -204,19 +227,11 @@
     "other-notes/staging/detriments.md",
     "other-notes/staging/prompt-tombo.md",
     "other-notes/rough-notes/tombo expo.md",
-    "other-notes/staging/the.md",
     "other-notes/staging",
     "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "other-notes/ideas",
     "other-notes/staging",
     "source-material/textbooks/pdf",
-    "utilities/attachments/Pasted image 20250719173641.png",
-    "utilities/attachments/Pasted image 20250623132343.png",
-    "utilities/attachments/Pasted image 20250530225027.png",
-    "utilities/attachments/Pasted image 20250530224739.png",
-    "utilities/attachments/Pasted image 20250530224722.png",
-    "utilities/attachments/Pasted image 20250530224652.png",
-    "utilities/attachments/Pasted image 20250530224641.png",
     "source-material/misc/pdf/ISO_31000_2018(es).PDF",
     "projects/unmsm-2025-0/hola.py",
     "pdf",
