@@ -9,7 +9,6 @@ src-link:
   - https://youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE
   - https://csapp.cs.cmu.edu/3e/labs.html
 ---
-
 # Bits, Bytes, and Integers
 
 Fractions can also be represented in binary
