@@ -25,7 +25,7 @@ Modules:
 
 ### Library
 
-![](../../utilities/attachments/Pasted%20image%2020250814180326.png)
+![](../../utilities/attachments/Pasted%20image%2020250814201324.png)
 
 "Current sample" = Currently playing (play button has pause icon), most recently played sample (play button has replay icon), or most recently added/replaced sample. Background has light primary color.
 
