@@ -57,11 +57,12 @@ Modules:
 	- Duration
 	- Creation date
 	- Last played (idea)
-- "Add entire page" menu options adds every sample on the current page to new slots of the [*Multisampler*](#Multisampler) next to *Library*
+- "Add entire page" menu option adds every sample on the current page to new slots of the [*Multisampler*](#Multisampler) next to *Library*. "Replace with entire page" does the same, but it removes every non-locked slot first. Consider not restricting to a page, but to an arbitrary user-provided number.
 
 > [!note] Possible features
 > - Allowing to select a sample region
 > - Adjusting auditioned sample to tempo
+> - Spectrogram view
 
 ### Query Concat
 
