@@ -1,7 +1,5 @@
 # Ideas for Cardinal modules
 
-- modules for interacting with TagStudio library and feed modules with
-	- consider allowing to feed more than one module
 - modules for interacting with Ardour session: getting the output of any channel, creating automation, bouncing, etc
 - modules for interacting with AudioStellar
 	- one parent module. multiple child modules per AudioStellar unit
@@ -29,36 +27,45 @@ Modules:
 
 ![](../../utilities/attachments/Pasted%20image%2020250814180326.png)
 
-"Current sample" = Currently playing or most recently played sample
+"Current sample" = Currently playing (play button has pause icon), most recently played sample (play button has replay icon), or most recently added/replaced sample. Background has light primary color.
+
+"Block" = Entire graphical section including padding ![](../../utilities/attachments/Pasted%20image%2020250814195242.png)
 
 - Sample list is scrollable
 - Queries are executed on debounced input change
-- `CAT` input receives the output of a [*Query Concat*](#Query%20Concat) module, concatenating the input query to its own
-- `ADD` button adds the current sample to a new slot of the [*Multisampler*](#Multisampler) next to *Library*
-- `REPL` doesn't add to a new slot, but replaces the content of the current slot
+- The `CAT` input receives the output of a [*Query Concat*](#Query%20Concat) module, concatenating the input query to its own
+- The `ADD` button adds the current sample to a new slot of the [*Multisampler*](#Multisampler) next to *Library*
+- The `REPL` button doesn't add to a new slot, but replaces the content of the current slot
 - If either `ADD` or `REPL` are pressed and no instance of [*Multisampler*](#Multisampler) is next to *Library*, a new instance is created
-- `NEXT` button immediately plays the sample next to the current one
-	- `PREV` behaves the same way
-- `PLAY` re-plays the most recently played sample, or pauses the currently playing sample
+- The `NEXT` button immediately plays the sample next to the current one; the `PREV` button, the previous one
+	- Ctrl+click will perform the functionality of `ADD`, adding the sample to a new slot without playing it. The `ADD` button will lighten up before clicking
+	- Ctrl+Alt+click will perform the functionality of `REPL`, replacing the current slot with the previous or next sample, again, without playing it. The `REPL` button will lighten up before clicking
+- The `PLAY` button pauses or re-plays the current sample
+	- Ctrl+Click will stop the sample and move the playback to the start
 - `LOOP` switch toggles sample looping
+- Hovering anywhere in the block does not change the background color
+- Holding Ctrl while hovering anywhere in the block will cover it with a translucent blue color, with the words "Add" in the center. Clicking will perform the functionality of `ADD` without playing the sample. Holding Ctrl+Alt will cover it with yellow color, and will perform the functionality of `REPL`, again, without playing the sample.
+- Clicking on the waveform of a sample should immediately play it at that timestamp
+- Below the sample filename, there's a list of all the tags for that sample
+	- Clicking on a tag adds it to the current query (doesn't clear it)
+	- The list should be limited to a single line by default, with a "show more" option that extends the view vertically so that all tags are shown
+- At the end of a page there should be buttons to move to the previous or next page. It may seem redundant, since there are buttons for that above, but it helps minimizing mouse movement
 - Available `SORT` options (either ascending or descending)
 	- Random
 	- Filename
 	- Filepath
 	- Duration
+	- Creation date
+	- Last played (idea)
 - "Add entire page" menu options adds every sample on the current page to new slots of the [*Multisampler*](#Multisampler) next to *Library*
-- Below the sample filename, there's a list of all the tags given to the sample
-	- Clicking on a tag adds it to the current query (doesn't clear it)
-	- The list should be limited to a single line by default, with a "show more" option that extends the view vertically so that all tags are shown
-- Clicking on the waveform of a sample should immediately play it at that timestamp
-- The play/pause buttons should behave the same way as the `PLAY` button, changing its icon to "pause" when playing, and to "replay" when done playing
-	- Holding Ctrl should change all these buttons' icons to "plus", behaving like `ADD` when clicking them
-	- Holding Ctrl+Alt should change all the icons to "replace", behaving like `REPL` when clicking them
-- At the end of sample list there should be buttons to change page. It may seem redundant, since there already are buttons to change page, but it minimizes mouse movement with no screen real-estate penalty
+
+> [!note] Possible features
+> - Allowing to select a sample region
+> - Adjusting auditioned sample to tempo
 
 ### Query Concat
 
-![](../../utilities/attachments/Pasted%20image%2020250814175917.png)
+![](../../utilities/attachments/Pasted%20image%2020250814200956.png)
 
 - Not only it can output a query, but it can also receive input from another *Query Concat* instance, concatenating the input query to its own. This allows to create a "hierarchy" of queries
 - *Query Concat* shows a list of all queries it is concatenated to
