@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "31b2575f5fd980eb",
+        "id": "ab9a46e05ecb999b",
         "type": "tabs",
         "children": [
           {
-            "id": "7fe7a30886774850",
+            "id": "5871fa8d99047d8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "other-notes/ideas/sound-tagging-docs.md",
+                "file": "source-material/lectures/ics-3-floating-point.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sound-tagging-docs"
-            }
-          },
-          {
-            "id": "3d39dbb04746c424",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "other-notes/ideas/cardinal-module-ideas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cardinal-module-ideas"
+              "title": "ics-3-floating-point"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,8 +173,11 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "3d39dbb04746c424",
+  "active": "5871fa8d99047d8a",
   "lastOpenFiles": [
+    "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
+    "source-material/lectures/ics-3-floating-point.md",
+    "source-material/lectures/ics-1-bits-bytes-integers.md",
     "other-notes/ideas/sound-tagging-docs.md",
     "other-notes/ideas/cardinal-module-ideas.md",
     "utilities/attachments/Pasted image 20250814201346.png",
@@ -202,8 +190,6 @@
     "utilities/attachments/Pasted image 20250814195242.png",
     "utilities/attachments/Pasted image 20250814180326.png",
     "utilities/attachments/Pasted image 20250814175917.png",
-    "source-material/lectures/ics-1-bits-bytes-integers.md",
-    "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
     "source-material/textbooks/think-dsp.md",
     "other-notes/staging/address the inversion.md",
     "source-material/textbooks/pdf/the_c_programming_language.pdf",
