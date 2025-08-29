@@ -16,9 +16,9 @@ $$
 v = (-1)^s \cdot 2^E \cdot M
 $$
 
-Remember that $E$ is not equal to `exp` (the value stored for the exponent). For [normalized](#Normalized) numbers, `exp` is equal to $E$ plus some [bias](#Bias%20formula). This might not be intuitive, but turns out to be convenient.
+Remember that `exp` is not equal to $E$, it only encodes it. For [normalized](#Normalized) numbers, `exp` is equal to $E$ plus some [bias](#Bias%20formula). For [denormalized](#Denormalized) numbers, `exp` is equal to all zeroes.
 
-Similarly, $M$ is not equal to `frac` (the value stored for the mantissa). `frac` only stores the part that comes after the decimal dot, the part before the dot is implied (1 for [normalized](#Normalized) numbers, 0 for [denormalized](#Denormalized) numbers)
+Similarly, `frac` is not equal to $M$. `frac` only stores the part that comes after the decimal dot. Whether it's 0 or 1 that comes before the dot, depends on whether the number is normalized or denormalized.
 
 ## Bias formula
 
@@ -36,16 +36,18 @@ s   exp     frac
 1   3       2
 ```
 
-In this case, since the length of `exp` $l$ is equal to 3, the bias is equal to $2^{3-1} - 1 = 3$
+In this case, since the length of `exp` is equal to 3, the bias is equal to $2^{3-1} - 1 = 3$
 
 ### Dynamic range
 
 #### Normalized
 
-- `exp` is different from `000`
 - $M = 1.$`frac`
-- $E$ is a function of the value of $\text{Exp}$ (unsigned decimal representation of `exp`) for the given number. Namely, $E = \text{Exp} - \text{Bias}$
-	- In this case $E = \text{Exp} - 3$
+- `exp` is always different from `000`
+- $E = \text{Exp} - \text{Bias} = \text{Exp} - 3$
+
+> [!note]
+> $\text{Exp}$ is the unsigned base-10 representation of `exp`
 
 | $s$ | `exp` | $E$              | $2^E$          | `frac` | $M$                                                       | $v$                                                             |
 | --- | ----- | ---------------- | -------------- | ------ | --------------------------------------------------------- | --------------------------------------------------------------- |
@@ -77,8 +79,8 @@ Notice how the distance between values of $v$  turns exponentially bigger as $E$
 #### Denormalized
 
 - $M = 0.$`frac`
-- Since the value of `exp` is always `000`, $E$ is fixed to $1 - \text{Bias}$
-	- In this case, $E = 1 - 3 = -2$
+- `exp` is always `000`
+- $E$ is fixed to $1 - \text{Bias} = 1 - 3 = -2$
 
 | $s$ | `exp` | $E$ | $2^E$          | `frac` | $M$                                                   | $v$                                                             |
 | --- | ----- | --- | -------------- | ------ | ----------------------------------------------------- | --------------------------------------------------------------- |
