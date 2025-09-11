@@ -30,11 +30,11 @@
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
-      "isDefault": true,
+      "isDefault": false,
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "projects/unmsm-2025-0",
+          "path": "projects/unmsm-2025-1",
           "recursive": false
         }
       },
@@ -350,7 +350,331 @@
         }
       ],
       "id": "2fc1f71e-c5f8-4f9a-b0d3-44ae7344b477",
-      "name": "unmsm-2025-0"
+      "name": "unmsm-2025-1"
+    },
+    {
+      "fieldConfig": {
+        "status": {
+          "options": [
+            "backlog",
+            "to do",
+            "doing",
+            "done"
+          ]
+        },
+        "deadline": {
+          "time": true
+        },
+        "class": {
+          "options": [
+            "web",
+            "mdd",
+            "bi",
+            "inv",
+            "sec",
+            "verif",
+            "general"
+          ]
+        }
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "projects/unmsm-2025-2",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "includeFields": [
+              "deadline",
+              "difficulty",
+              "tags"
+            ],
+            "groupByField": "status",
+            "columns": {
+              "backlog": {
+                "records": [
+                  "projects/unmsm-2025-0/redes-expo-rednace.md"
+                ],
+                "weight": 0,
+                "collapse": true
+              },
+              "to do": {
+                "records": [
+                  "projects/unmsm-2025-0/riesgos-prep-parcial.md"
+                ],
+                "weight": 1
+              },
+              "doing": {
+                "records": [],
+                "weight": 2
+              },
+              "done": {
+                "weight": 3,
+                "records": [
+                  "projects/unmsm-2025-0/redes-expo-tia-942.md",
+                  "projects/unmsm-2025-0/redes-preguntas-data-center.md",
+                  "projects/unmsm-2025-0/ux-segundo-entregable.md",
+                  "projects/unmsm-2025-0/db2-hw-s6.md",
+                  "projects/unmsm-2025-0/general-transcribir-notas.md",
+                  "projects/unmsm-2025-0/redes-expo-ethernet.md",
+                  "projects/unmsm-2025-0/ia-estudiar-s6.md",
+                  "projects/unmsm-2025-0/ia-lab-s6.md",
+                  "projects/unmsm-2025-0/redes-mejorar-expo-ethernet.md",
+                  "projects/unmsm-2025-0/ia-lab-classificatiion.md",
+                  "projects/unmsm-2025-0/ia-prep-parcial.md",
+                  "projects/unmsm-2025-0/riesgos-prep-parcial.md",
+                  "projects/unmsm-2025-0/ux-prep-expo-parcial.md",
+                  "projects/unmsm-2025-0/redes-investigar-temas-capa-2.md",
+                  "projects/unmsm-2025-0/redes-investigar-temas-capa-3.md",
+                  "projects/unmsm-2025-0/ia-lab-rna.md",
+                  "projects/unmsm-2025-0/ia-tc.md",
+                  "projects/unmsm-2025-0/riesgos-prep-final.md",
+                  "projects/unmsm-2025-0/ia-prep-final.md",
+                  "projects/unmsm-2025-0/redes-expo-voip-codecs.md",
+                  "projects/unmsm-2025-0/pruebas-prep-final.md",
+                  "projects/unmsm-2025-0/ux-prep-final.md",
+                  "projects/unmsm-2025-0/db2-prep-final.md"
+                ],
+                "collapse": false
+              }
+            },
+            "headerField": "name"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "8ff53c5f-9bc9-44ad-a5ae-429c3e3dc59f",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "873986b1-5b20-4e21-9e7a-38aaf21718b5",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "groupByField": "class",
+            "columns": {
+              "web": {
+                "weight": 0
+              },
+              "mdd": {
+                "records": [
+                  "projects/unmsm-2025-2/mdd-hw-fact-finances.md"
+                ],
+                "weight": 1
+              },
+              "bi": {
+                "weight": 2
+              },
+              "inv": {
+                "weight": 3
+              },
+              "sec": {
+                "weight": 4
+              },
+              "verif": {
+                "weight": 5
+              },
+              "general": {
+                "weight": 6
+              }
+            },
+            "columnWidth": 175,
+            "headerField": "name",
+            "includeFields": [
+              "deadline",
+              "status"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "done"
+              },
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "backlog"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#ea4d4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "to do"
+                }
+              },
+              {
+                "color": "#52ffb4",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              },
+              {
+                "color": "#ffea4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "doing"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "712bbb2d-f09f-4480-ae5c-24cc2f9ce02a",
+          "name": "Classes",
+          "type": "board"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "hide": false,
+                "width": 249
+              },
+              "tags": {
+                "hide": false
+              },
+              "status": {
+                "width": 119
+              },
+              "deadline": {
+                "width": 146
+              },
+              "class": {
+                "width": 129
+              }
+            },
+            "orderFields": [
+              "name",
+              "status",
+              "deadline",
+              "path"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#52ffb4",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              },
+              {
+                "color": "#ea4d4d",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "to do"
+                }
+              },
+              {
+                "color": "#ffea00",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "doing"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "status",
+                "order": "asc",
+                "enabled": true
+              },
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "16972927-30b2-4974-b77e-367c676b0cfe",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "fbe24491-8c1b-44d8-abc1-8350d2671f32",
+      "name": "unmsm-2025-2"
     }
   ],
   "archives": [],

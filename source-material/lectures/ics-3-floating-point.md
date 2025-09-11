@@ -91,3 +91,42 @@ Notice how the distance between values of $v$  turns exponentially bigger as $E$
 
 > [!note]
 > Same as before, the values for $s = 1$ are the same as the ones for $s = 0$, just negative.
+
+## Rounding
+
+Default mode: **round-to-even**
+- Determine "floor" and "ceiling" of value
+	- You can find the floor by truncating the bits to the right of rounding position (trailing bits)
+	- You can find the ceiling by adding a "rounding increment" (smallest rounded value) to the floor. For example, if we're rounding to hundredths, the floor of $0.1111$ is $0.11$, so the ceiling is $0.11 + 0.01 = 1.00$
+- Round to whichever is closer to the value
+- If the value is halfway between both, choose the one whose LSB is even
+
+### Less than, greater than, or exactly halfway
+
+You can tell if a binary number is less than halfway, greater than halfway, or exactly halfway by looking at the trailing bits
+
+| Trailing bits                                                           | Verdict              | Example (not rounded) | Example rounded to nearest hundredth |
+| ----------------------------------------------------------------------- | -------------------- | --------------------- | ------------------------------------ |
+| $1000..._2$                                                             | Halfway              | 1.011000              | 1.10                                 |
+| less than $1000..._2$ (starts with 0)                                   | Less than halfway    | 0.110111              | 0.11                                 |
+| greater than $1000..._2$ (starts with 1 but not followed by all zeroes) | Greater than halfway | 0.011101              | 0.10                                 |
+
+## Mathematical Properties of FP Add and Multiply
+
+- They're both commutative, but not associative (possibility of overflow)
+- Multiplication is not distributive (again, possibility of overflow)
+
+## Floating point in C
+
+```c
+float   // single precision
+double  // double precision
+```
+
+### Casting
+
+Changes bit representation, unlike signed-unsigned casting
+
+- `double/float` -> `int` truncates fractional part
+- `int` -> `float` will round according to rounding mode
+- `int` -> `double` is exact as long as `int` has $\leq 53$ bit word size
