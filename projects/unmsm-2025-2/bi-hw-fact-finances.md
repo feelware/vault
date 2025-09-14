@@ -1,6 +1,6 @@
 ---
-status: to do
-deadline: 2025-09-11T23:59
+status: doing
+deadline: 2025-09-16T18:00:00
 class: bi
 ---
 > [!todo]

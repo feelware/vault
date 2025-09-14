@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e9afa386b9572655",
+        "id": "658733f6c5f39fc9",
         "type": "tabs",
         "children": [
           {
-            "id": "8374cdca496c225b",
+            "id": "bee28a037dce279a",
             "type": "leaf",
             "state": {
-              "type": "obsidian-projects",
+              "type": "empty",
               "state": {},
-              "icon": "projects-icon",
-              "title": "Projects"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -170,19 +170,22 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "8374cdca496c225b",
+  "active": "bee28a037dce279a",
   "lastOpenFiles": [
+    "projects/unmsm-2025-2/bi-hw-fact-finances.md",
     "projects/unmsm-2025-2/mdd-hw-preproc.md",
     "projects/unmsm-2025-2/verif-hw-gqm.md",
     "projects/unmsm-2025-2/pdf/verif-sem-3-teoria.pdf",
     "projects/unmsm-2025-2/web-hw-avance-1.md",
+    "other-notes/staging/ics-5-machine-level-i.md",
+    "source-material/lectures/ics-3-floating-point.md",
+    "source-material/lectures/ics-0-overview.md",
+    "projects/unmsm-2025-2/pdf/ETLenBI.pdf",
+    "projects/unmsm-2025-2/pdf/DataMart_VisualStudio V2.pdf",
     "projects/unmsm-2025-2/inv-hw-planificacion.md",
-    "projects/unmsm-2025-2/bi-hw-fact-finances.md",
     "other-notes/staging/thesis-5-whys.md",
     "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf",
-    "projects/unmsm-2025-2/pdf/DataMart_VisualStudio V2.pdf",
     "utilities/templates/task.md",
-    "projects/unmsm-2025-2/pdf/ETLenBI.pdf",
     "source-material/lectures/pdf/Estado del Arte_2024.pdf",
     "source-material/lectures/pdf",
     "projects/Estado del Arte_2024.pdf",
@@ -204,9 +207,6 @@
     "projects/unmsm-2025-0 1/redes-preguntas-data-center.md",
     "projects/unmsm-2025-0 1/redes-mejorar-expo-ethernet.md",
     "projects/unmsm-2025-0 1/redes-investigar-temas-capa-3.md",
-    "projects/unmsm-2025-0 1/redes-investigar-temas-capa-2.md",
-    "projects/unmsm-2025-0 1/redes-expo-tia-942.md",
-    "projects/unmsm-2025-0 1/redes-expo-ethernet.md",
     "utilities/attachments/Pasted image 20250910220409.png",
     "utilities/attachments/Pasted image 20250814201346.png",
     "utilities/attachments/Pasted image 20250814201324.png",

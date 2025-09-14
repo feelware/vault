@@ -1,7 +1,7 @@
 ---
 class: web
-status: to do
-deadline: 2025-09-15T14:00:00
+status: done
+deadline: 2025-09-15T14:00
 ---
 > [!todo]
 > Para la siguiente clase deben presentar una PPT con la siguiente información mínima:

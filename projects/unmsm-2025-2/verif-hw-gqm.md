@@ -1,7 +1,7 @@
 ---
 class: verif
-status: to do
-deadline: 2025-09-13T14:00:00
+status: done
+deadline: 2025-09-20T14:00
 ---
 > [!todo]
 > 
@@ -11,24 +11,26 @@ deadline: 2025-09-13T14:00:00
 > 
 > ## Instrucciones
 > 
-> 1. Selecciona un proyecto de software (real o ficticio) en uno de los siguientes contextos:
-> - Desarrollo web (e-commerce, blog, plataforma educativa)
-> - App móvil (agenda, juegos, salud)
-> - Software de escritorio
-> - Sistema embebido
-> - Proyecto académico propio
+> Dado 
 > 
-> 2. Define un objetivo claro de medición, usando el formato GQM:
+> 1. Define un objetivo claro de medición, usando el formato GQM:
 > - Objeto de medición (producto, proceso, recurso)
 > - Propósito (evaluar, controlar, mejorar, predecir, etc.)
 > - Punto de vista (desarrollador, cliente, QA, gerente)
 > - Contexto (tipo de proyecto, entorno de trabajo)
 >   
-> 3. Formula al menos 3 preguntas relevantes que ayuden a evaluar si se cumple el objetivo
+> 2. Formula al menos 3 preguntas relevantes que ayuden a evaluar si se cumple el objetivo
 > 
-> 4. Define al menos una métrica por cada pregunta, explicando:
+> 3. Define al menos una métrica por cada pregunta, explicando:
 > - Qué medirá
 > - Cómo se obtendrá (fuente de datos)
 > - Frecuencia de medición (por sprint, por versión, semanal, etc.)
 >   
 > Referencia: [ver-sem-3-teoria](pdf/verif-sem-3-teoria.pdf)
+
+# Plan de Medición GQM: Aplicación de Alertas Ciudadanas
+
+## 1. OBJETIVO DE MEDICIÓN (GOAL)
+
+**Evaluar** (propósito) **la efectividad y calidad del sistema de alertas** (objeto) **desde el punto de vista del Product Manager** (punto de vista) **en el contexto de una app móvil de seguridad ciudadana con desarrollo ágil** (contexto).
+
