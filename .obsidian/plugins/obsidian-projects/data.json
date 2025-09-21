@@ -398,29 +398,28 @@
             ],
             "groupByField": "status",
             "columns": {
-              "backlog": {
-                "records": [],
-                "weight": 0,
-                "collapse": false
-              },
               "to do": {
                 "records": [
-                  "projects/unmsm-2025-2/mdd-hw-preproc.md",
-                  "projects/unmsm-2025-2/inv-hw-planificacion.md"
+                  "projects/unmsm-2025-2/web-proj-tombo-polish.md",
+                  "projects/unmsm-2025-2/mdd-hw-anova.md"
                 ],
-                "weight": 1
+                "weight": 0
               },
               "doing": {
                 "records": [
-                  "projects/unmsm-2025-2/bi-hw-fact-finances.md"
+                  "projects/unmsm-2025-2/inv-hw-problema.md"
                 ],
-                "weight": 2
+                "weight": 1
               },
               "done": {
-                "weight": 3,
+                "weight": 2,
                 "records": [
                   "projects/unmsm-2025-2/verif-hw-gqm.md",
-                  "projects/unmsm-2025-2/web-hw-avance-1.md"
+                  "projects/unmsm-2025-2/mdd-hw-preproc.md",
+                  "projects/unmsm-2025-2/web-expo-avance-1.md",
+                  "projects/unmsm-2025-2/bi-hw-fact-finances.md",
+                  "projects/unmsm-2025-2/inv-hw-planificacion.md",
+                  "projects/unmsm-2025-2/sec-expo-2.md"
                 ],
                 "collapse": false
               }

@@ -18,7 +18,7 @@ $$
 
 Remember that `exp` is not equal to $E$, it only encodes it. For [normalized](#Normalized) numbers, `exp` is equal to $E$ plus some [bias](#Bias%20formula). For [denormalized](#Denormalized) numbers, `exp` is equal to all zeroes.
 
-Similarly, `frac` is not equal to $M$. `frac` only stores the part that comes after the decimal dot. Whether it's 0 or 1 that comes before the dot, depends on whether the number is normalized or denormalized.
+Similarly, `frac` is not equal to $M$. `frac` only stores the part that comes after the decimal dot of $M$: whether it's 0 or 1 depends on whether the number is normalized or denormalized.
 
 ## Bias formula
 
