@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c1f5c69b83f281a9",
+        "id": "18b48727aec1ffb9",
         "type": "tabs",
         "children": [
           {
-            "id": "e303a28c95fe5b51",
+            "id": "8ecc46e79bd07841",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "other-notes/ideas/thesis.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "thesis"
+              "title": "New tab"
             }
           }
         ]
@@ -174,15 +170,15 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "e303a28c95fe5b51",
+  "active": "8ecc46e79bd07841",
   "lastOpenFiles": [
-    "other-notes/staging/expo seguridad.md",
     "other-notes/ideas/thesis.md",
+    "projects/unmsm-2025-2/inv-hw-problema.md",
+    "source-material/lectures/ics-3-floating-point.md",
+    "other-notes/staging/expo seguridad.md",
     "projects/unmsm-2025-2/mdd-hw-anova.md",
     "projects/unmsm-2025-2/verif-hw-gqm.md",
     "projects/unmsm-2025-2/sec-expo-2.md",
-    "source-material/lectures/ics-3-floating-point.md",
-    "projects/unmsm-2025-2/inv-hw-problema.md",
     "projects/unmsm-2025-2/inv-hw-planificacion.md",
     "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf",
     "projects/unmsm-2025-2/mdd-hw-preproc.md",

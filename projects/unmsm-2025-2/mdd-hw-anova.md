@@ -1,5 +1,5 @@
 ---
-status: to do
+status: done
 deadline: 2025-09-23T18:00
 class: mdd
 ---
