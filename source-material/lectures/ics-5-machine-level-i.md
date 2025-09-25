@@ -67,11 +67,11 @@ Fiction made in collaboration between hardware and OS. Each process views the en
 movq %rax, (%rbx)
 ```
 
-| C       | ASM      | Explanation                                                                                                                        |
-| ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `t`     | `%rax`   | Register `%rax` holds the value of `t`                                                                                             |
-| `dest`  | `%rbx`   | Register `%rbx` holds the value of `dest`, which is a memory address                                                               |
-| `*dest` | `(%rbx)` | Surrounding a register by parentheses accesses the memory at the "index" provided by register. In short, `(%rbx)` = `Memory[%rbx]` |
+| C       | ASM      | Explanation                                                                                                                     |
+| ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `t`     | `%rax`   | Register `%rax` holds the value of `t`                                                                                          |
+| `dest`  | `%rbx`   | Register `%rbx` holds the value of `dest`, which is a memory address                                                            |
+| `*dest` | `(%rbx)` | Surrounding a register by parentheses accesses the memory at the "index" provided by register. In short, `(%rbx)` = `Mem[%rbx]` |
 
 ### Object Code
 
@@ -96,4 +96,91 @@ movq %rax, (%rbx)
 	- New ones have numbers in their names: `%r8`, `%r9`, ... `%r15`
 	- Nowadays, most register names are legacy and have nothing to do with their current purpose, except for `%rsp` (stack pointer)
 
-#wip left at 53:16
+## Moving data
+
+```
+movq Source, Dest
+```
+
+Can move value of:
+- Constant
+	- To register: `movq $0x69, %rax`
+	- To memory: `movq $0x69, (%rax)`
+- Register
+	- To memory: `movq %rax, (%rbx)`
+	- To another register: `movq %rax, %rbx`
+- Memory
+	- To register: `movq (%rax), %rbx`
+
+Not possible to move from memory to memory (with a single instruction)
+
+### Simple memory addressing modes
+
+#### Normal `(R)`
+
+- Equivalent to pointer dereferencing in C
+- Example: `movq (%rcx), %rax`
+- Equivalent to: `a = *c`
+
+#### Displacement `D(R)`
+
+- Register `R` specifies start of memory region
+- Constant `D` specifies offset
+- Example: `movq 8(%rcx), %rax`
+- Equivalent to: `a = *(c + 8)`
+
+### C Example
+
+```c
+void swap(long *xp, long *yp) {
+	long t0 = *xp;
+	long t1 = *yp;
+	*xp = t1;
+	*yp = t0;
+}
+```
+
+- In x86-64, the arguments are copied to specific registers
+	- First argument: `%rdi`
+	- Second argument: `%rsi`
+
+```asm
+swap:
+	movq (%rdi), %rax
+	movq (%rsi), %rdx
+	movq %rdx, (%rdi)
+	movq %rax, (%rsi)
+	ret
+```
+
+> [!note]
+> - The "q" in `movq` makes reference to "quad" word (four times a word)
+> - in x86-64 a word is 16 bits long, so a quad word is 64 bits long (or 8 bytes if you prefer)
+
+### Complete memory addressing modes
+
+- Assembly form: `D(Rb, Ri, S)`
+- Equivalent to `Mem[Rb + Ri*S + D]`
+	- `Rb`: base register
+	- `Ri`: index register (`%rsp` not allowed)
+	- `S`: constant index scale (1, 2, 4, or 8)
+	- `D`: constant offset (1, 2, 4, or 8)
+- "Natural way to implement array indexing"
+
+#### Example
+
+`movq %rax, 0(%rbx, %rdx, 4)`
+
+- `Rb` = `0x69`
+- `Ri` = `0x3`
+- `S` = 4
+- `D` = 0
+- Destination: `0x69 + 0x3 * 4 + 0` = `0x6d`
+
+![](../../utilities/attachments/Pasted%20image%2020250925161354.png)
+
+#### Special cases
+
+- No index scale: `D(Rb, Ri)` = `Mem[Rb + Ri + D]`
+- No constant offset: `(Rb, Ri, S)` = `Mem[Rb + Ri*S]`
+- No index scale nor constant offset: `(Rb, Ri)` = `Mem[Rb + Ri]`

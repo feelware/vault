@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "18b48727aec1ffb9",
+        "id": "7c66f5a2e4aa0321",
         "type": "tabs",
         "children": [
           {
-            "id": "8ecc46e79bd07841",
+            "id": "db7eabda125b2e13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source-material/lectures/ics-5-machine-level-i.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ics-5-machine-level-i"
+              "title": "New tab"
             }
           }
         ]
@@ -143,13 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ics-2-bits-bytes-integers-cont"
+              "title": "Outline"
             }
           }
         ],
@@ -174,8 +169,12 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "8ecc46e79bd07841",
+  "active": "db7eabda125b2e13",
   "lastOpenFiles": [
+    "source-material/lectures/ics-5-machine-level-i.md",
+    "utilities/attachments/Pasted image 20250925161354.png",
+    "utilities/attachments/Pasted image 20250925160818.png",
+    "utilities/attachments/Pasted image 20250925160704.png",
     "other-notes/ideas/thesis.md",
     "projects/unmsm-2025-2/inv-hw-problema.md",
     "source-material/lectures/ics-3-floating-point.md",
@@ -191,7 +190,6 @@
     "projects/unmsm-2025-2/pdf/DataMart_VisualStudio V2.pdf",
     "projects/unmsm-2025-2/web-proj-tombo-polish.md",
     "projects/unmsm-2025-2/web-expo-avance-1.md",
-    "source-material/lectures/ics-5-machine-level-i.md",
     "other-notes/staging/thesis-5-whys.md",
     "source-material/textbooks/pdf/cissp_all-in-one_exam_guide_seventh_edition_1.pdf",
     "projects/unmsm-2025-2/pdf/verif-sem-3-teoria.pdf",
@@ -211,16 +209,12 @@
     "projects/unmsm-2025-2/hola.py",
     "projects/unmsm-2025-2/db2-prep-final.md",
     "projects/unmsm-2025-0/test.md",
-    "projects/unmsm-2025-0 1/db2-hw-s6.md",
     "utilities/attachments/Pasted image 20250910220409.png",
     "utilities/attachments/Pasted image 20250814201346.png",
     "utilities/attachments/Pasted image 20250814201324.png",
     "utilities/attachments/Pasted image 20250814200956.png",
     "utilities/attachments/Pasted image 20250814195410.png",
     "utilities/attachments/Pasted image 20250814195349.png",
-    "utilities/attachments/Pasted image 20250814195340.png",
-    "utilities/attachments/Pasted image 20250814195330.png",
-    "utilities/attachments/Pasted image 20250814195242.png",
-    "utilities/attachments/Pasted image 20250814180326.png"
+    "utilities/attachments/Pasted image 20250814195340.png"
   ]
 }

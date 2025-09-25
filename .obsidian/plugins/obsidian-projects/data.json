@@ -405,9 +405,7 @@
                 "weight": 0
               },
               "doing": {
-                "records": [
-                  "projects/unmsm-2025-2/inv-hw-problema.md"
-                ],
+                "records": [],
                 "weight": 1
               },
               "done": {
@@ -419,7 +417,8 @@
                   "projects/unmsm-2025-2/bi-hw-fact-finances.md",
                   "projects/unmsm-2025-2/inv-hw-planificacion.md",
                   "projects/unmsm-2025-2/sec-expo-2.md",
-                  "projects/unmsm-2025-2/mdd-hw-anova.md"
+                  "projects/unmsm-2025-2/mdd-hw-anova.md",
+                  "projects/unmsm-2025-2/inv-hw-problema.md"
                 ],
                 "collapse": false
               }

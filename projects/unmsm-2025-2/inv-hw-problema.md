@@ -1,6 +1,6 @@
 ---
 class: inv
-status: doing
+status: done
 deadline: 2025-09-24T18:00
 ---
 > [!todo]
