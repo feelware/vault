@@ -22,3 +22,7 @@ Note that this expansion may double the amount of effort and expertise required,
 
 - The focus should be on making sure the synth's output pitch matches the MIDI input, no matter how complex the audio input is
 - Another good set of metrics involves making sure the resulting timbre has not deviated significantly from the input timbre (as a result of pitch correction and other processing)
+
+> How can granular synthesis be enhanced by integrating polyphonic pitch detection and correction techniques?
+
+

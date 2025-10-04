@@ -400,12 +400,19 @@
             "columns": {
               "to do": {
                 "records": [
-                  "projects/unmsm-2025-2/web-proj-tombo-polish.md"
+                  "projects/unmsm-2025-2/mdd-prep-parcial.md",
+                  "projects/unmsm-2025-2/mdd-arboles-decision.md",
+                  "projects/unmsm-2025-2/bi-prep-parcial.md",
+                  "projects/unmsm-2025-2/inv-avance-intro.md",
+                  "projects/unmsm-2025-2/verif-prep-parcial.md",
+                  "projects/unmsm-2025-2/web-tombo-mobile-setup.md"
                 ],
                 "weight": 0
               },
               "doing": {
-                "records": [],
+                "records": [
+                  "projects/unmsm-2025-2/web-scrum-cert.md"
+                ],
                 "weight": 1
               },
               "done": {
@@ -418,7 +425,8 @@
                   "projects/unmsm-2025-2/inv-hw-planificacion.md",
                   "projects/unmsm-2025-2/sec-expo-2.md",
                   "projects/unmsm-2025-2/mdd-hw-anova.md",
-                  "projects/unmsm-2025-2/inv-hw-problema.md"
+                  "projects/unmsm-2025-2/inv-hw-problema.md",
+                  "projects/unmsm-2025-2/sec-expo-31000.md"
                 ],
                 "collapse": false
               }

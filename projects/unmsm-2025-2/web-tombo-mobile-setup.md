@@ -1,6 +1,6 @@
 ---
 status: to do
-deadline: 2025-09-29T14:00
+deadline: 2025-10-13T14:00
 class: web
 ---
 

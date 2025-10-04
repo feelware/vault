@@ -3,136 +3,154 @@
 ### Environment
 
 ```yaml
-Natural
-    Terrestrial
-        Forest
-        Desert
-        Mountain
-        Tundra
-    Aquatic
+Natural/Nature
+    Body of water
         Ocean
-        Lake/River
+        Stream
+        Waterfall
         Underwater
-    Atmospheric
-        Wind
-        Storm
-Artificial
-    Domestic
-        Kitchen
-        Bathroom
-        Living Room
-    Social
-        Business/Institution
-            Restaurant/Bar
-            Airport
-            Mall
-            Supermarket
-            Theater
-            Library
-            Museum
-            Hospital
-            School
-            Office
-            Factory
-            Prison
-        Urban
-            Park
-            Playground
-            Traffic
-            Street Market
-            Public Transport
-            City
-            Subway
-            Construction Site
-            Beach # Ocean
+        Rain
+	Open air
+		Fields
+		Deserts
+		Farm
+		# ...
+	Storm/Thunder
+	Forest
+	Cave
+	# ...
+Social/Artificial
+	Everyday
+		Urban
+			Park
+			Traffic
+			Street market
+			Onboard
+			# ...
+		Building
+			Home
+				Kitchen
+				Bathroom
+				Living room
+			Restaurant
+			Office
+			Classroom
+			Hospital
+			Library
+			# ...
+	Event
+		Amusement Ride
+		Beach
+		Carnival
+		Festival
+		Party
+		Protest
+		Sports
+		# ...
+	Industrial
+		Factory
+		Construction Site
+		# ...
 ```
+
+- Building: Everyday indoor spaces (e.g. home, businesses)
+- Urban: Everyday outdoor or very open spaces, mostly city-oriented
+- Events: Social events that escape the everyday routine and are typically loud. Most of them are recreational, although not all (like protests)
+
+- Onboard: Inside public transportation
 
 ### Entity/Object
 
 ```yaml
-Natural
-    Biological
-        Plant
-            Tree
-            Flower
-            Grass
-            Leaf
-            Fruit
-            Vegetable
-            Mushroom    # (technically fungi)
-            Root
-        Animal
-			Organ/System
+Natural/Nature
+	Biological
+		Botanical/Plant
+			Stick
+			Leaf
+				Celery
+				Cabbage
+			Fruit
+				Tomato
+			Root
+				Leek
+				Potato
+			Nut/Seed
+				Pistachio
+		Zoological
+			Body
+				Beak
+				Nail/Claw
+				Teeth
+				Feather
 				Mouth
 				Lungs
+				Heart
 				Intestines
-			Organism
-	            Human
-	                Male
-	                Female
-	                Baby
-	                Adult
-	                Child
-	                Elderly
-	                Multitude
-	            Non-human
-	                Amphibian
-	                Aquatic
-	                Bat
-	                Bear
-	                Bird
-	                    Bird of Prey
-	                    Songbird
-	                    Sea Bird
-	                    Tropical Bird
-	                Feline
-	                    Cat
-	                    Lion
-	                Canine
-	                    Dog
-	                    Wolf
-	                Insect
-	                Primate
-	                Reptile
-	                Rodent
-Artificial
-    Furniture
-        Chair
-        Table
-        Sofa
-        Bed
-        Cabinet
-        Shelf
-        Desk
-    Appliance
-        Refrigerator
-        Washing Machine
-        Microwave
-        Oven
-        Dishwasher
-        Vacuum Cleaner
-        Air Conditioner
-        Heater
-    Tool
-        Hand Tool
-            Hammer
-            Screwdriver
-            Saw
-            Chisel
-        Power Tool
-            Drill
-            Grinder
-            Sander
+			Animal
+				Amphibian
+				Fish
+				Bear
+				Bird
+					Corvids
+					Songbird
+					Shoebill
+				Feline
+					Cat
+				Canine
+					Dog
+				Insect
+				Primate
+				Reptile
+				Horse
+				Rodent
+Human
+	Man/Male
+	Woman/Female
+	Baby
+	Child
+	Elderly
+	Multitude
+Fabricated/Artificial
+	Furniture
+		Chair
+		Desk/Table
+		Sofa
+		Bed
+		Pillow
+		Shelf
+	Appliance
+		Refrigerator
+		Washing Machine
+		Microwave
+		Oven
+		Dishwasher
+		Vacuum Cleaner
+		Air Conditioner
+		Heater
+	Item
+		Pencil
+		Coin
+		Keys
+		Bottle
+		Glass
+		Drink can
+		Bag
+		Shoe
+		Clothing
+		Phone
+		Paper punch
+    Machinery
+		Hammer
+		Saw
+		Chisel
+		Drill
+		Grinder
     Weapon
-        Melee
-        Firearm
-        Siege
-    Explosive
-        Grenade
-        Bomb
-        Mine
+	    Melee
+	    Gun
+	    Explosive
     Vehicle
-        Land
+        Landcraft
             Car
             Motorcycle
             Bicycle
@@ -148,51 +166,47 @@ Artificial
             Drone
 ```
 
+By separating Natural and Biological into different tags, I made space for natural non-biological entities/objects **whose sound is more than just the material they're made of**. I just can't think of an example at the moment. Maybe a volcano.
+
 ### Material
 
 ```yaml
-Natural
+Natural/Nature
     Geological
         Water
-        Air
-        Vapor
-        Soil/Mud                    # Dampened
-        Sand                        # Dusty
+        Gas
+	        Air
+	        Vapor
+	        Fire
+	    Aggregate
+			Snow
+	        Mud/Soil/Dirt               # Dampened
+	        Sand                        # Dusty
+	        Gravel                      # Rock, Grainy
         Rock
             Rubble                  # Rough
             Pebble                  # Textured
-            Gravel                  # Grainy
+	        Coal
         Mineral
+	        Ice
             Crystal                 # Sharp
-            Coal
         Metal                       # Sharp
-            Hard                    # Smooth
-            Foil                    # Textured
     Biological
-        Botanic
+        Botanical
             Bark                    # Rough
             Wood                    # Textured
             Paper                   # Textured
             Cardboard               # Textured
             Cork
             Cotton                  # Fuzzy
+            Grass                   # Fuzzy
+            Foliage                 # Fuzzy
+            Puree
         Zoological
-            Osteous                 # Sharp
-                Bone
-                Horn
-                Nail
-                Shell
-                Tooth
-                Claw
-            Furry                   # Fuzzy, Damped
-                Wool
-                Fur
-                Hair
-                Feather
-            Insides
-                Meat
-                Viscera
-                Blood
+            Bone                    # Sharp
+            Fur
+			Hair
+            Meat
             Skin
             Leather                 # Textured
 Synthetic/Artificial
@@ -213,115 +227,113 @@ Synthetic/Artificial
 ### Instrument
 
 ```yaml
-String
-    Bowed
-        Violin
-        Viola
-        Cello
-        Double Bass
-    Plucked
-        Guitar
-            Acoustic Guitar
-            Electric Guitar
-            Bass Guitar
-    Ukelele
-    Banjo
-Percussion
-    Drums
-        Kick
-        Snare
-        Tom
-        Cymbal
-            Hi-Hat
-                Closed
-                Open
-            Ride
-        Fill
-        Break
-Wind
-    Woodwind
-        Flute
-        Clarinet
-        Zampoña
-    Brass
-        Trumpet
-        Trombone
-        Tuba
-Keyboard
-    Piano
-        Upright Piano
-        Felt Piano
-    Organ
+Traditional
+	String
+	    Bowed
+	        Violin
+	        Viola
+	        Cello
+	        Double Bass
+	    Plucked
+	        Guitar
+	            Acoustic
+	            Electric
+	            Bass
+	    Ukelele
+	    Banjo
+	Percussion
+	    Drums
+	        Kick
+	        Snare
+	        Tom
+	        Cymbal
+	            Hi-Hat
+	                Closed
+	                Open
+	            Ride
+	        Fill
+	        Break
+	Wind
+	    Woodwind
+	        Flute
+	        Clarinet
+	        Zampoña
+	    Brass
+	        Trumpet
+	        Trombone
+	        Tuba
+	Keyboard
+	    Piano
+	        Upright Piano
+	        Felt Piano
+	    Organ
+Synth
+	Drum Machine
+	    Clap
+	Bass
+	    Reese
+	    Neuro
+	    Square 4
+	    Growl
+	    Sub
 ```
-
-### Designed
-
-```yaml
-Drum Machine
-    Clap
-Synth Strings
-Designed Bass
-    Vintage
-    Reese
-    Neuro
-    Square 4
-    Growl
-    Sub
-```
-
-This category will probably evolve over time.
 
 ## Properties
 
+### Mixing properties
+
 ```yaml
-Timbral
-    # Highs
-	Harsh
-	Bright
-	Dark
-    # Lows
-	Bassy
-	Muddy
-	Thin
-    # Loudness
-	Soft
-	Loud
-	Compressed
-    # Inharmonicity
-	Inharmonic
-	Harmonic
-    # Depth
-	ASMR
-	Close
-	Distant/Verb
-    # Position
-	Center
-	Sides
-    # Width
-	Mono
-	Stereo
-Textural
-    Solid/Rigid
-        Brittle/Sharp
-        Resonant
-        Smooth
-        Textured
-        Rough
-        Ductile
-        Damped
-    Liquid
-        Watery
-        Carbonated
-        Creamy
-        Oily
- 		Pasteous
-        Steamy
-    Amorphous
-        Gaseous
-        Grainy
-        Dusty
-        Fuzzy
+# Highs
+Harsh
+Bright
+Dark
+# Lows
+Bassy
+Muddy
+Thin
+# Loudness
+Soft
+Loud
+Compressed
+# Inharmonicity
+Inharmonic
+Harmonic
+# Depth
+ASMR
+Close
+Distant
+# Width
+Mono
+Wide
+Panned
 ```
+
+### Timbral properties
+
+```yaml
+Solid/Rigid
+	Brittle/Sharp
+	Resonant
+	Smooth
+	Textured
+	Rough
+	Ductile
+	Damped
+Liquid
+	Watery
+	Carbonated
+	Creamy/Gory
+	Oily
+	Steamy
+Amorphous
+	Gaseous
+	Grainy
+	Dusty
+	Fuzzy
+```
+
+- Oily: Low viscosity
+- Creamy: High viscosity
 
 ## Action
 
@@ -334,6 +346,8 @@ Strike
     Crash       # Break
     Shoot
     Explode     # Combust
+    Walk
+    Stomp
 Break
     Crush
     Cut
@@ -383,90 +397,52 @@ Vibrate
     Buzz
     Ring
 Vocalize
-    Chirp
-    Bark
-    Cry
-    Laugh
-    Moan
-    Growl
-    Shout
-    Babble
     Speak
+    Shout
     Sing
     Rap
-    Whisper
     Yawn
+    Whisper
+    Moan
+    Babble
+    Cry
+    Laugh
+    Sneeze
+    Growl
+    Chirp
+    Bark
+    Howl
 ```
 
-## Musical Info
+## Music Info
+
+### Function
 
 ```yaml
-Player Count
-    Solo
-    Duet
-    Quartet
-    Ensemble/Band
-Polyphony
-    Monophonic
-    Polyphonic
-        Chord
-            Major
-            Minor
-            Augmented
-            Diminished
-            Triad
-            Extended
-Playing Technique
-    Bowing
-    Pizzicato
-    Plucking
-    Slapping
-    Striking
-    Strumming
-    Humming
-    Tremolo
-Function/Envelope
-    Percussive
-        Base
-        Top
-        Perif
-        Cym
-	Tonal
-		Key
-		Pluck
-		Swell
-		Stab
-		Pad
-    Riser
-    Downer
-    Texture
-    Earcandy
-    One-Shot
-    Loop
-	    Pulse
-	    Vocal Chop
-	    Break
-		Fill
-Octave
-    0
-    1
-    2
-#   ...
-    7
-Scale
-    Major
-    Minor
-Root
-    C
-    C#/Db
-    D
-#   ...
-    B
+Percussive
+	Base
+	Top
+	Perif
+	Cym
+Tonal
+	Key
+	Pluck
+	Swell
+	Stab
+	Pad
+Riser
+Downer
+Texture
+Ear candy
+One-shot
+Loop
+	Pulse
+	Vocal Chop
+	Break
+	Fill
 ```
 
-Some of these tags are very useful for finding material to feed granular synths with. If I want anything pitched, the Polyphony tag is often enough, or a specific Scale and Root if I'm doing it in the context of a song. I also use Root for setting a single note's pitch (useful with the One-Shot tag).
-
-The Envelope tags roughly describe how volume changes over time, but most importantly, they define a sound's function in a song. You might recognize some of these names from preset categories in synthesizers, but some of them are more esoteric.
+These tags roughly describe how volume changes over time, but most importantly, they define a sound's function in a song. You might recognize some of these names from preset categories in synthesizers, but some of them are more esoteric.
 
 - Base: A kick-like sound, or anything that can be used as a (conventional or super weird) kick, even some foley can be categorized as Base
 - Top: A snare/clap like sound
@@ -476,9 +452,70 @@ The Envelope tags roughly describe how volume changes over time, but most import
 - Pulsation: Tremolo-like
 - Pluck/Key: Fast attack and medium decay, but for pitched sounds
 - Texture: No distinctive elements, can be easily used as a layer for other sounds
-- Earcandy: Foley/designed sounds to use as filler
+- Ear candy: Foley/designed sounds to use as filler
 
-I might add tags for microtonal music, but it's not a priority currently.
+### Tonality
+
+```yaml
+Polyphony
+	Monophonic
+	Polyphonic
+		Major chord
+		Minor chord
+		Augmented
+		Diminished
+		Extended
+Scale
+    Major scale
+    Minor scale
+Root
+    C
+    C#/Db
+    D
+#   ...
+    B
+```
+
+These tags are very useful for finding material to feed granular synths with. If I want anything pitched, the "Tonality" tag is often enough, or a specific scale and root if I'm doing it in the context of a song. In fact, scale tags should be used *only* for melodies and chord progressions. It wouldn't make sense to tag a sample containing a single chord with a specific scale, since that chord can be used in multiple scales.
+
+- Root tags can be used to define:
+	- the root of the scale of a **melody, chord progression, or full song**
+	- the note of a **single-note sample**
+	- the root of the chord of a **single-chord sample**
+- If using both Scale, Chord, and Root tags simultaneously (e.g. to tag a song in D minor with the chords Dm, Bb, and C), the root tag should be interpreted as the root of the *scale*, **not the root of any of the chords**, so in this case the root tag would be "D", not Bb nor C. In total, only these tags must be used:
+	- D (Root)
+	- Minor scale
+	- Major chord
+	- Minor chord
+- This also applies for melodies. For example, a melody in D minor with notes D, F, and A must have *only* the following tags:
+	- D (Root)
+	- Minor scale
+
+In the future, I envision encoding more specific music information (such as all notes and chords played in the file) as some sort of metadata.
+
+I might add tags for microtonal music in the future.
+
+### Player count
+
+```yaml
+Solo
+Duet
+Quartet
+Ensemble/Band
+```
+
+### Playing technique
+
+```yaml
+Bowing
+Pizzicato
+Plucking
+Slapping
+Striking
+Strumming
+Humming
+Tremolo
+```
 
 ## Genre/Style Info
 
@@ -500,28 +537,6 @@ International
 		Samba
 #       ...
 #   ...
-```
-
-## Geographical Info
-
-```yaml
-Asia
-Americas
-    Northern America
-        USA
-        Canada
-    Latin America
-        Mexico
-        Central America
-        Caribbean
-        South America
-            Peru
-                Lima
-#               ...
-#           ...
-Europe
-Africa
-Oceania
 ```
 
 ## Semantic Info
@@ -552,31 +567,11 @@ Sentiment
 
 I use these tags to further describe speech and lyrics in terms of the actual ideas being transmitted. Sentiment tags can also be used to describe certain non-speech sounds based on your own perception.
 
-## Gear Info
-
-```yaml
-Hardware
-    Eurorack
-    Guitar Pedal
-    Analog
-Digital
-    Software
-        Cardinal Synth
-        Bespoke Synth
-        Vitalium
-        Surge XT
-        SoundThread
-        Cecilia
-#       ...
-Audio Effect
-```
-
-Gear used to make the sound.
-
-## Synthesis/Processing Info
+## Processing Info
 
 ```yaml
 Unprocessed
+Subtractive/Analog
 Physical Modelling
 Granular
     Concatenative
@@ -592,6 +587,47 @@ Sine Compression
 FM/AM
 Stutter
 # ...
+```
+
+## Gear Info
+
+```yaml
+Hardware
+    Eurorack
+    Guitar Pedal
+    Analog
+Digital
+    Software
+        Cardinal
+        Vitalium
+        Surge XT
+        SoundThread
+        Cecilia
+#       ...
+```
+
+Gear used to make the sound.
+
+## Geographical Info
+
+```yaml
+Asia
+Americas
+    Northern America
+        USA
+        Canada
+    Latin America
+        Mexico
+        Central America
+        Caribbean
+        South America
+            Peru
+                Lima
+#               ...
+#           ...
+Europe
+Africa
+Oceania
 ```
 
 ## Language
@@ -613,34 +649,26 @@ Portuguese
 # ...
 ```
 
-## License
-
-```yaml
-Creative Commons
-    CC0
-    CC-BY
-Copyrighted
-```
-
-## Authorship
-
-```yaml
-Original
-Derived
-Downloaded
-```
-
 ## Meta
 
 ```yaml
-Wavetable
-Impulse Response
-Render
-    Stem
-    Track
+File
+	Wavetable
+	IR
+	Render
+		Stem
+		Track
+	Preset/Patch
+Authorship
+	Original
+	Derived
+	Downloaded
+License
+	Creative Commons
+	    CC0
+	    CC-BY
+	Copyrighted
 ```
-
-These tags respond to a more "meta" version of the question "What is this sound?". It even opens the possibility of non-audio entries like presets or effect chains. I still need to work on that though.
 
 Some clarifications:
 
