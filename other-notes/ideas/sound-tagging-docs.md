@@ -127,6 +127,11 @@ Fabricated/Artificial
 		Vacuum Cleaner
 		Air Conditioner
 		Heater
+	Infrastructure
+		Door
+		Elevator
+		Staircase
+		Floor
 	Item
 		Pencil
 		Coin
@@ -134,12 +139,12 @@ Fabricated/Artificial
 		Bottle
 		Glass
 		Drink can
+		Phone
 		Bag
 		Shoe
 		Clothing
-		Phone
 		Paper punch
-    Machinery
+    Machinery/Industrial
 		Hammer
 		Saw
 		Chisel
@@ -171,7 +176,7 @@ By separating Natural and Biological into different tags, I made space for natur
 ### Material
 
 ```yaml
-Natural/Nature
+Natural
     Geological
         Water
         Gas
