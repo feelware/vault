@@ -2,12 +2,11 @@
 tags:
   - "#textbook-notes"
   - wip
-src-date: 
+src-date:
 src-author:
   - Randal E. Bryant
   - David R. O'Hallaron
 src-link:
-  - "[[computer-systems-programmer-perspective]]"
 ---
 # Computer Systems: A programmer's perspective
 

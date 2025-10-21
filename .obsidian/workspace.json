@@ -4,72 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "4c3785bbc6d8f65e",
+        "id": "b5b7cfa4b88cf931",
         "type": "tabs",
         "children": [
           {
-            "id": "15b3b944958e8727",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/unmsm-2025-2/inv-avance-intro.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "inv-avance-intro"
-            }
-          },
-          {
-            "id": "225860cd81522a6c",
+            "id": "41187b9c5348c916",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/textbooks/pdf/computer-sound-design-synthesis-techniques-programming-music-technology-miranda.pdf"
+                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg-23-32.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "computer-sound-design-synthesis-techniques-programming-music-technology-miranda"
+              "title": "Medina_zg-23-32"
             }
           },
           {
-            "id": "54144961cf1d33f0",
+            "id": "d85c6c585686eb63",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/misc/pdf/tesis-directivas.pdf"
+                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Lacherre_vj-17-22.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "tesis-directivas"
+              "title": "Lacherre_vj-17-22"
             }
           },
           {
-            "id": "b87c645035c8a0c6",
+            "id": "6570e569a439d0f8",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "source-material/misc/pdf/Freire_vd-19-25.pdf"
+                "file": "projects/unmsm-2025-2/pdf/tesis/sources/Discovering the Pedagogy and Secrets of Gamification and Game-Based Learning Applied to the Music Theory Classroom.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Freire_vd-19-25"
-            }
-          },
-          {
-            "id": "cb35f933dae8b433",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/misc/pdf/Quinteros_nd.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Quinteros_nd"
+              "title": "Discovering the Pedagogy and Secrets of Gamification and Game-Based Learning Applied to the Music Theory Classroom"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -222,52 +197,53 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "15b3b944958e8727",
+  "active": "6570e569a439d0f8",
   "lastOpenFiles": [
-    "source-material/textbooks/pdf/computer-sound-design-synthesis-techniques-programming-music-technology-miranda.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Lacherre_vj-17-22.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg-23-32.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/Medina_zg.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_32.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_31.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_30.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_29.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_28.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_27.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_26.pdf",
     "projects/unmsm-2025-2/inv-avance-intro.md",
-    "source-material/misc/pdf/tesis-directivas.pdf",
-    "source-material/misc/pdf/Freire_vd-19-25.pdf",
-    "source-material/misc/pdf/Quinteros_nd.pdf",
+    "other-notes/ideas/thesis-intro-2.md",
+    "other-notes/ideas/granular synth.md",
+    "projects/unmsm-2025-2/verif-expo-parcial.md",
+    "projects/unmsm-2025-2/web-vision-empresa-proyecto.md",
+    "other-notes/staging/prompt-tombo.md",
+    "projects/unmsm-2025-2/web-tombo-mobile-setup.md",
+    "other-notes/staging/Untitled 1.md",
+    "other-notes/staging/thesis-introduction.md",
+    "other-notes/staging/Untitled.md",
+    "projects/unmsm-2025-2/verif-expo-sonarqube.md",
+    "projects/unmsm-2025-2/web-scrum-cert.md",
+    "source-material/lectures/ics-5-machine-level-i.md",
+    "source-material/textbooks/computer-systems-programmer-perspective.md",
+    "utilities/attachments/Pasted image 20251008165413.png",
+    "other-notes/staging/sdn-network-graph.md",
     "projects/unmsm-2025-2/mdd-arboles-decision.md",
     "projects/unmsm-2025-2/mdd-prep-parcial.md",
-    "projects/unmsm-2025-2/web-scrum-cert.md",
     "other-notes/ideas/sound-tagging-docs.md",
-    "other-notes/staging/Untitled.md",
     "projects/unmsm-2025-2/sec-expo-31000.md",
-    "source-material/misc/pdf/1-iso-temp.pdf",
-    "source-material/misc/pdf/ISO_31000_2018(es).PDF",
-    "source-material/textbooks/pdf/electronic-music-sound-design-vol-1.pdf",
-    "projects/unmsm-2025-2/verif-prep-parcial.md",
-    "other-notes/staging/thesis-introduction.md",
-    "other-notes/ideas/thesis.md",
     "projects/unmsm-2025-2/bi-prep-parcial.md",
     "projects/unmsm-2025-2/bi-hw-fact-finances.md",
-    "projects/unmsm-2025-2/web-tombo-mobile-setup.md",
     "utilities/templates/task.md",
-    "source-material/textbooks/pdf/microsound.pdf",
-    "source-material/textbooks/pdf/Freire_vd.pdf",
-    "source-material/lectures/ics-5-machine-level-i.md",
     "other-notes/ideas/cardinal-module-ideas.md",
     "utilities/attachments/Pasted image 20250925161354.png",
     "utilities/attachments/Pasted image 20250925160818.png",
     "utilities/attachments/Pasted image 20250925160704.png",
     "projects/unmsm-2025-2/inv-hw-problema.md",
     "source-material/lectures/ics-3-floating-point.md",
-    "other-notes/staging/expo seguridad.md",
-    "projects/unmsm-2025-2/mdd-hw-anova.md",
-    "projects/unmsm-2025-2/verif-hw-gqm.md",
-    "projects/unmsm-2025-2/sec-expo-2.md",
-    "projects/unmsm-2025-2/inv-hw-planificacion.md",
-    "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf",
-    "projects/unmsm-2025-2/mdd-hw-preproc.md",
-    "other-notes/staging/address the inversion.md",
     "utilities/attachments/Pasted image 20250910220409.png",
     "utilities/attachments/Pasted image 20250814201346.png",
     "utilities/attachments/Pasted image 20250814201324.png",
     "utilities/attachments/Pasted image 20250814200956.png",
     "utilities/attachments/Pasted image 20250814195410.png",
-    "utilities/attachments/Pasted image 20250814195349.png",
-    "utilities/attachments/Pasted image 20250814195340.png"
+    "utilities/attachments/Pasted image 20250814195349.png"
   ]
 }
