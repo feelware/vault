@@ -98,7 +98,7 @@ movq %rax, (%rbx)
 
 ## Moving data
 
-```
+```asm
 movq Source, Dest
 ```
 
@@ -120,7 +120,7 @@ Not possible to move from memory to memory (with a single instruction)
 
 - Equivalent to pointer dereferencing in C
 - Example: `movq (%rcx), %rax`
-- Equivalent to: `a = *c`
+	- Equivalent to: `a = *c`
 
 #### Displacement `D(R)`
 
@@ -184,3 +184,90 @@ swap:
 - No index scale: `D(Rb, Ri)` = `Mem[Rb + Ri + D]`
 - No constant offset: `(Rb, Ri, S)` = `Mem[Rb + Ri*S]`
 - No index scale nor constant offset: `(Rb, Ri)` = `Mem[Rb + Ri]`
+
+## Address Computation Instruction
+
+Leverages the [complete memory addressing](#Complete%20memory%20addressing%20modes) mechanism we've just seen, giving developers **access to the result of that computation** rather than it just being used internally.
+
+```asm
+leaq (Rb, Ri, S), Dest
+```
+
+Equivalent to `Dest = Rb + Ri*S`
+
+Used by the compiler to:
+- Compute memory addresses of indexed arrays (e.g. `p = &x[i]`)
+- Compute arithmetic expressions of the form `Rb + Ri*S`
+
+## Some Arithmetic Operations
+
+### One-operand
+
+Form: `opr Dest`
+
+| Format | Computation     | Notes   |
+| ------ | --------------- | ------- |
+| incq   | Dest = Dest + 1 |         |
+| decq   | Dest = Dest - 1 |         |
+| negq   | Dest = -Dest    |         |
+| notq   | Dest = ~Dest    | Bitwise |
+
+### Two-operand
+
+While all of these instructions are of the form `opr Src, Dest`, the actual computation reverses that order. Think of it as "the destination being affected by some external value".
+
+| Format | Computation        | Notes                                                                                  |
+| ------ | ------------------ | -------------------------------------------------------------------------------------- |
+| addq   | Dest = Dest + Src  |                                                                                        |
+| subq   | Dest = Dest - Src  |                                                                                        |
+| imulq  | Dest = Dest * Src  |                                                                                        |
+| salq   | Dest = Dest << Src | Also called shlq<br>([there's no arithmetic left shift](ics-1-bits-bytes-integers.md)) |
+| sarq   | Dest = Dest >> Src | Arithmetic                                                                             |
+| shrq   | Dest = Dest >> Src | Logical                                                                                |
+| xorq   | Dest = Dest ^ Src  |                                                                                        |
+| andq   | Dest = Dest & Src  |                                                                                        |
+| orq    | Dest = Dest \| Src |                                                                                        |
+
+## Arithmetic Expression Example
+
+```c
+long arith (long x, long y, long z)
+{
+	long t1 = x + y;
+	long t2 = z + t1;
+	long t3 = x + 4;
+	long t4 = y * 48;
+	long t5 = t3 + t4;
+	long rval = t2 * t5;
+	return rval;
+}
+```
+
+```
+rval = t5              * t2
+	   t5 = t3 + t4      t2 = z + t1
+                                  t1 = x + y
+       t5 = 4 + x + t4
+                    t4 = (y + y * 2) << 4
+```
+
+- `x` -> `%rdi`
+- `y` -> `%rsi`
+- `z` -> `%rdx`
+
+```asm
+arith:
+	leaq (%rsi, %rsi, 2), %rbx  # %rbx = (y + y * 2) = y * 3
+	salq $4, %rbx               # %rbx = (y * 3) << 4 = t4
+	leaq 4(%rdi, %rbx), %rbx    # %rbx = 4 + x + t4 = t5
+	
+	leaq (%rdi, %rsi), %rax     # %rax = x + y = t1
+	addq %rdx, %rax             # %rax = z + t1 = t2
+	
+	imulq %rbx, %rax            # %rax = t5 * t2 = rval
+	ret
+```
+
+> [!note] Prof. implementation
+> ![](../../utilities/attachments/Pasted%20image%2020251023142525.png)
+> He went for the t1 -> t2 pipeline first. Since he had already used `z`, he was free to reuse `%rdx`, in this case to store `%t4`. Something I wonder is why didn't he keep using `%rdx` to store `t5`, and instead went for a  new register (`%rcx`)
