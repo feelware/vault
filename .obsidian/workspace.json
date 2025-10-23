@@ -4,47 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b5b7cfa4b88cf931",
+        "id": "e48e6279206847da",
         "type": "tabs",
         "children": [
           {
-            "id": "41187b9c5348c916",
+            "id": "90e5c62e0146aa1a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg-23-32.pdf"
+                "file": "source-material/lectures/ics-5-machine-level-i.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Medina_zg-23-32"
-            }
-          },
-          {
-            "id": "d85c6c585686eb63",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Lacherre_vj-17-22.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Lacherre_vj-17-22"
-            }
-          },
-          {
-            "id": "6570e569a439d0f8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/sources/Discovering the Pedagogy and Secrets of Gamification and Game-Based Learning Applied to the Music Theory Classroom.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Discovering the Pedagogy and Secrets of Gamification and Game-Based Learning Applied to the Music Theory Classroom"
+              "icon": "lucide-file",
+              "title": "ics-5-machine-level-i"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,8 +174,11 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "6570e569a439d0f8",
+  "active": "90e5c62e0146aa1a",
   "lastOpenFiles": [
+    "source-material/textbooks/computer-systems-programmer-perspective.md",
+    "projects/unmsm-2025-2/pdf/tesis/sources/do-you-want-to-major-in-music-a-guide-to-majoring-in-music-or-music-education-in-american-colleges-and-universities.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/sources/Discovering the Pedagogy and Secrets of Gamification and Game-Based Learning Applied to the Music Theory Classroom.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Lacherre_vj-17-22.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg-23-32.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
@@ -207,9 +187,6 @@
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_31.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_30.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_29.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_28.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_27.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_26.pdf",
     "projects/unmsm-2025-2/inv-avance-intro.md",
     "other-notes/ideas/thesis-intro-2.md",
     "other-notes/ideas/granular synth.md",
@@ -223,7 +200,6 @@
     "projects/unmsm-2025-2/verif-expo-sonarqube.md",
     "projects/unmsm-2025-2/web-scrum-cert.md",
     "source-material/lectures/ics-5-machine-level-i.md",
-    "source-material/textbooks/computer-systems-programmer-perspective.md",
     "utilities/attachments/Pasted image 20251008165413.png",
     "other-notes/staging/sdn-network-graph.md",
     "projects/unmsm-2025-2/mdd-arboles-decision.md",
