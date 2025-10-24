@@ -154,10 +154,11 @@ GCC uses conditional moves a lot.
 ```asm
 absdiff:
 	movq %rdi, %rax
-	subq %rsi, %rax   # %rax = x - y
+	subq %rsi, %rax    # %rax = x - y
 	
 	movq %rsi, %rdx
-	subq %rdi, %rdx   # %rdx = y - x
+	subq %rdi, %rdx    # %rdx = y - x
 	
-	cmpq %
+	cmpq %rsi, %rdi    # x - y
+	cmovle %rdx %rax   # if (x <= y) then %rax = y - x
 ```
