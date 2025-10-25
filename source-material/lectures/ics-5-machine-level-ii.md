@@ -167,10 +167,11 @@ absdiff:
 ## Loops
 
 - `do-while` is the "easier" to implement
+- `while` employs "jump-to-middle" strategy
 - `do-while`, `while`, and `for` are pretty intuitive
 - `switch` uses a table that maps each possible value of the switch variable `x` (the range between its minimum and maximum value) to the start addresses of their corresponding code blocks
 	- `ja` (jump above) instruction is used to jump to "default" code block
 	- `jmp` is used to index the table and jump to the right code block
 	- The table is exhaustive (values without a case point to the default code block)
 		- If there are negative values, a bias is added so that the minimum is always 0
-		- If the values are *very* sparse, it is converted to if-else code
+		- If the values are *very* sparse, it may be converted to a decision tree
