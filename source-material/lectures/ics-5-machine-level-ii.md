@@ -149,7 +149,7 @@ Branches are very disruptive to [instruction pipelining](https://en.wikipedia.or
 
 "Backtracking" from a wrong prediction takes many CPU instructions. #wip For simple computations, it's faster to compute both results and choose which one to keep based on condition flags.
 
-GCC uses conditional moves a lot.
+GCC uses conditional moves a lot (only when it's safe and side-effect free, not on expensive computations).
 
 ```asm
 absdiff:
@@ -160,5 +160,17 @@ absdiff:
 	subq %rdi, %rdx    # %rdx = y - x
 	
 	cmpq %rsi, %rdi    # x - y
-	cmovle %rdx %rax   # if (x <= y) then %rax = y - x
+	cmovle %rdx, %rax   # if (x <= y) then %rax = y - x
+	ret
 ```
+
+## Loops
+
+- `do-while` is the "easier" to implement
+- `do-while`, `while`, and `for` are pretty intuitive
+- `switch` uses a table that maps each possible value of the switch variable `x` (the range between its minimum and maximum value) to the start addresses of their corresponding code blocks
+	- `ja` (jump above) instruction is used to jump to "default" code block
+	- `jmp` is used to index the table and jump to the right code block
+	- The table is exhaustive (values without a case point to the default code block)
+		- If there are negative values, a bias is added so that the minimum is always 0
+		- If the values are *very* sparse, it is converted to if-else code
