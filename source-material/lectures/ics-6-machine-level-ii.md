@@ -74,7 +74,7 @@ gt:
 
 > Notice how I flipped the order. It says `%rsi` (which is `y`) and `%rdi` (which is `x`) [...] so that I'm thinking in the order that the actual comparison is made in
 
-`movzbl` only really zeroes-out the 3 upper bytes of `%eax` (the lower 4 bytes of `%rax`). But due to a quirk of x86-64, **every operation whose result is 4-byte long will fill the upper 4 bytes with zeroes**. So all of the 7 remaining bytes are zeroed-out automatically.
+`movzbl` only really zeroes-out the 3 upper bytes of `%eax` (the lower 4 bytes of `%rax`). But due to a quirk of x86-64, **every operation whose destination is 4-byte long (registers starting with "e") will fill the upper 4 bytes with zeroes**. So all of the 7 remaining bytes are zeroed-out automatically.
 
 Alternative:
 
