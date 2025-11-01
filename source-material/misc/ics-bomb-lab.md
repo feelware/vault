@@ -1,3 +1,5 @@
+# Bomb lab
+
 ## Phase 2
 
 ```c
@@ -206,7 +208,7 @@ void phase_3(char* rdi) {
 	
 	rsp += 24;
 }
-```
+moving to phase 4 now```
 
 > [!note]
 > `jmp *0x402470(,%rax,8)`
@@ -229,3 +231,102 @@ void phase_3(char* rdi) {
 > - the instruction uses `%rax` to index the table, jumping to the address pointed by the selected row
 > - `%rax` is scaled by 8 precisely because each row is 8-bytes long
 > - example: if `%rax` is 3, the instruction will cause a jump to `+71`: `mov $0x100,%eax`
+
+## Phase 4
+
+```c
+void phase_4(char* rdi) {
+	rsp -= 24;
+	
+	rcx = rsp + 12; // 2nd
+	rdx = rsp + 8;  // 1st
+	
+	rsi = 0x4025cf; // %d %d
+	rax = 0;
+	
+	rax = sscanf(
+		rdi, // user input
+		rsi, // format: %d %d
+		rdx, // 1st
+		rcx  // 2nd
+	)
+	
+	if (rax != 2) {
+		// goto +41
+		explode_bomb();
+		return;
+	}
+
+	if (*(rsp + 8) > 14 || *(rsp + 8) < 0) {  // if 1st is out of bounds
+		explode_bomb();
+		return;
+	}
+	// else goto +46
+	
+	rdx = 14;
+	rsi = 0;
+	rdi = *(rsp + 8); // 1st
+	
+    //          1st  0    14
+	rax = func4(rdi, rsi, rdx);
+	
+	if (rax != 0) {
+		explode_bomb();
+		return;
+	}
+	
+	if (*(rsp + 12) != 0) {  // if 2nd != 0
+		explode_bomb();
+		return;
+	}
+	
+	rsp += 24;
+}
+```
+
+> [!note] findings
+> - input is 2 numbers
+> - first number should be in the range from 0 to 14
+> - second number should be 0 (?)
+> - `func4` must return 0
+
+```c
+//              1st    0            14
+//              rdi    rsi          rdx
+long func4(long input, long second, long third) {
+	a = third - second;  // a = 14 - 0 = 14
+	c = a >> 31;         // c = 0             (logical)
+	
+	a = (a + c) >> 1;    // a = 7             (arithmetic)
+	c = a + second;      // c = 7 + 0 = 7
+
+	if (c > input) {
+		third = c - 1;
+		func4(input, second, third);
+		return a * 2;
+	}
+
+.36
+	if (c >= input) {
+		return 0;
+	}
+	second = c + 1;
+	func4(input, second, third);
+	return a*2 + 1;
+}
+```
+
+> [!note]
+> - `0 0 ` seems to be a valid input, I haven't checked why though
+> - we can successfully return from `func4` on the first call by setting the first number to 7. since the value of `c` is equal to 7, `c >= input` will be true and the function will return 0
+
+## Phase 5
+
+```c
+void phase_5(char* rdi) {
+	rsp -= 32;
+	
+	rbx = rdi;
+	rax = 
+}
+```
