@@ -47,8 +47,7 @@
               "title": "ics-8-machine-level-iv"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,8 +200,9 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "b83c56ef65cf314f",
+  "active": "c250f6eae66b97eb",
   "lastOpenFiles": [
+    "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "source-material/misc/ics-bomb-lab.md",
     "source-material/lectures/ics-8-machine-level-iv.md",
     "source-material/lectures/ics-7-machine-level-iii.md",
@@ -210,7 +210,6 @@
     "source-material/lectures/ics-5-machine-level-i.md",
     "source-material/lectures/ics-1-bits-bytes-integers.md",
     "source-material/lectures/ics-6-machine-level-ii.md",
-    "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "source-material/textbooks/computer-systems-programmer-perspective.md",
     "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
     "other-notes/staging/ics-5-machine-level-ii.md",
@@ -241,7 +240,6 @@
     "other-notes/staging/sdn-network-graph.md",
     "projects/unmsm-2025-2/mdd-arboles-decision.md",
     "projects/unmsm-2025-2/mdd-prep-parcial.md",
-    "other-notes/ideas/sound-tagging-docs.md",
     "utilities/attachments/Pasted image 20250925161354.png",
     "utilities/attachments/Pasted image 20250925160818.png",
     "utilities/attachments/Pasted image 20250925160704.png",
