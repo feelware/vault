@@ -327,6 +327,49 @@ void phase_5(char* rdi) {
 	rsp -= 32;
 	
 	rbx = rdi;
-	rax = 
+	
+	*(rsp + 24) = 0xfec8e93c891fa600; // store canary
+	
+	rax = string_length(rdi); // length of input
+	if (rax != 6) {
+		explode_bomb();
+		return;
+	}
+	// else goto +112
+	
+.112:
+	eax = 0;
+	// goto +41
+
+.41:
+	// get input char (xx) on stack
+	ecx = *(rbx + rax); // ecx   = input[rax]
+	*rsp = cl;          // stack = xx .. .. .. .. .. .. ..
+
+	// rdx = weird_str[LS digit of xx]
+	rdx = *(rsp);           // rdx = .. .. .. .. .. .. .. xx
+	edx &= 0xf;             // rdx = x (least signif. hex digit)
+	edx = *(0x4024b0 + rdx) // edx = weird_str[rdx]
+	
+	*(16 + rsp + rax) = dl; // 
 }
+```
+
+> [!NOTE] findings
+> - input is of the form `123456` (no spaces)
+> - chars are taken from input string using `rax` as index
+> - least-significant 4-bit number of input chars are used to index weird string (`maduiersnfotvbyl`), these chars are put in the stack
+
+```
+00 01 02 03 04 05 06 07
+31 .. .. .. .. .. .. .. // input
+
+08 09 0a 0b 0c 0d 0e 0f
+.. .. .. .. .. .. .. ..
+
+10 11 12 13 14 15 16 17
+.. .. .. .. .. .. .. ..
+
+18 19 1a 1b 1c 1d 1e 1f
+00 a6 1f 89 3c e9 c8 fe  // canary
 ```
