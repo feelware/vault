@@ -328,30 +328,49 @@ void phase_5(char* rdi) {
 	
 	rbx = rdi;
 	
-	*(rsp + 24) = 0xfec8e93c891fa600; // store canary
+	rsp[24] = 0xfec8e93c891fa600; // store canary
 	
 	rax = string_length(rdi); // length of input
 	if (rax != 6) {
 		explode_bomb();
 		return;
 	}
-	// else goto +112
-	
+	// else goto +112	
+
 .112:
-	eax = 0;
+	rax = 0;
 	// goto +41
 
 .41:
-	// get input char (xx) on stack
-	ecx = *(rbx + rax); // ecx   = input[rax]
-	*rsp = cl;          // stack = xx .. .. .. .. .. .. ..
+	do {
+		// get input char (xx) on stack
+		*rsp = rbx[rax];
 
-	// rdx = weird_str[LS digit of xx]
-	rdx = *(rsp);           // rdx = .. .. .. .. .. .. .. xx
-	edx &= 0xf;             // rdx = x (least signif. hex digit)
-	edx = *(0x4024b0 + rdx) // edx = weird_str[rdx]
+		// get weird char on stack
+		rsp[16 + rax] = 0x4024b0[*rsp & 0xf];
+
+		rax++;
+	} while (rax != 6);
 	
-	*(16 + rsp + rax) = dl; // 
+	rsp[16] = 0;
+	esi = 0x40245e;  // points to "flyers"
+	rdi = rsp + 16;  // points to stack-stored weird string
+	rax = strings_not_equal(rdi, rsi);
+	if (rax != 0) {  // if they're not equal
+		explode_bomb();
+		return;
+	}
+	// else goto +119
+
+.119:
+	rax = rsp[24];
+	if (rax != 0xfec8e93c891fa600) {
+		stack_chk_fail();
+		return;
+	}	
+	// else goto +140
+
+	rsp += 32;
 }
 ```
 
