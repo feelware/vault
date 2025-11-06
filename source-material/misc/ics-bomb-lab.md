@@ -376,7 +376,7 @@ void phase_5(char* rdi) {
 
 > [!NOTE] findings
 > - input is of the form `123456` (no spaces)
-> - least significant digit of input chars are used to index into some weird string (`maduiersnfotvbyl`)
+> - least significant digit of input chars are used to index into some weird string (`maduiersnfotvbyl`) to reconstruct string `flyers`
 
 ```
 00 01 02 03 04 05 06 07
@@ -386,8 +386,44 @@ void phase_5(char* rdi) {
 .. .. .. .. .. .. .. ..
 
 10 11 12 13 14 15 16 17
-61 .. .. .. .. .. .. ..  // weird chars
+61 .. .. .. .. .. .. ..  // "flyers" reconstructed
 
 18 19 1a 1b 1c 1d 1e 1f
 00 a6 1f 89 3c e9 c8 fe  // canary
+```
+
+## Phase 6
+
+```c
+void phase_6(char* rdi) {
+	rsp -= 80;
+	
+	r13 = rsp;
+	rsi = rsp;
+	
+	read_six_numbers(
+		rdi, // input
+		rsi  // destination (top of stack)
+	);
+	
+	r14 = rsp;
+	r12d = 0;
+	rbp = r13;
+	eax = *r13;
+	
+	eax -= 1;
+	if (eax > 5 || eax < 0) {
+		explode_bomb();
+		return;
+	}
+	
+	r12d += 1;
+	
+	if (eax == 6) {
+		goto .95;
+	}
+	else {
+		
+	}
+}
 ```

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed7eb2695207dca0",
+        "id": "52fea6c86682ad32",
         "type": "tabs",
         "children": [
           {
-            "id": "45da6902dd995485",
+            "id": "7e53e7dd11badf31",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,10 +174,10 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "45da6902dd995485",
+  "active": "7e53e7dd11badf31",
   "lastOpenFiles": [
-    "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "source-material/misc/ics-bomb-lab.md",
+    "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "source-material/lectures/ics-8-machine-level-iv.md",
     "source-material/textbooks/pdf/CSAPP_2016.pdf",
     "source-material/lectures/ics-7-machine-level-iii.md",
@@ -198,7 +198,6 @@
     "projects/unmsm-2025-2/pdf/tesis/Medina_zg.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_32.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_31.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg_30.pdf",
     "projects/unmsm-2025-2/inv-avance-intro.md",
     "other-notes/ideas/thesis-intro-2.md",
     "other-notes/ideas/granular synth.md",
