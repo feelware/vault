@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "52fea6c86682ad32",
+        "id": "62f30e979038825b",
         "type": "tabs",
         "children": [
           {
-            "id": "7e53e7dd11badf31",
+            "id": "08c28ce81a9a25e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,7 +174,7 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "7e53e7dd11badf31",
+  "active": "08c28ce81a9a25e6",
   "lastOpenFiles": [
     "source-material/misc/ics-bomb-lab.md",
     "source-material/textbooks/pdf/CSAPP_2016.pdf",

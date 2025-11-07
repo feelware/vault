@@ -8,15 +8,14 @@ void read_six_numbers(long rdi, long rsi) {
 
     rdx = rsi;
     rcx = rsi + 4;
-    
-    rax = rsi + 20;
-    *(rsp + 8) = rax;
+    r8 = rsi + 8;
+    r9 = rsi + 12;
     
     rax = rsi + 16;
     *rsp = rax;
-    
-    r9 = rsi + 12;
-    r8 = rsi + 8;
+
+    rax = rsi + 20;
+    *(rsp + 8) = rax;
     
     rsi = 0x4025c3;  // %d %d %d %d %d %d
     rax = 0;
@@ -59,7 +58,7 @@ void phase_2(char *rdi) {
 	rsi = rsp;
 	read_six_numbers(
 		rdi,  // points to user input
-		rsi   // top of current stack frame
+		rsi   // top of caller's stack frame
 	);
 	
 	if (*rsp != 1) {    // *rsp = first number introduced
@@ -376,7 +375,7 @@ void phase_5(char* rdi) {
 
 > [!NOTE] findings
 > - input is of the form `123456` (no spaces)
-> - least significant digit of input chars are used to index into some weird string (`maduiersnfotvbyl`) to reconstruct string `flyers`
+> - least significant hex digit of input chars are used to index into some weird string (`maduiersnfotvbyl`) to reconstruct string `flyers`
 
 ```
 00 01 02 03 04 05 06 07
@@ -398,32 +397,140 @@ void phase_5(char* rdi) {
 void phase_6(char* rdi) {
 	rsp -= 80;
 	
-	r13 = rsp;
 	rsi = rsp;
-	
 	read_six_numbers(
 		rdi, // input
-		rsi  // destination (top of stack)
+		rsi  // destination buffer (top of stack)
 	);
-	
+
 	r14 = rsp;
+
+	r13 = rsp;
 	r12d = 0;
-	rbp = r13;
-	eax = *r13;
+
+	while (true) {
+		// check if num (pointed to by r13) is within 1-6 range
+		eax = *r13 - 1;	// normalize to 0-5
+		if (eax > 5 || eax < 0) {
+			explode_bomb();
+			return;
+		}
+		// increment counter, loop will run 6 times
+		r12d++;
+		if (r12d == 6) {
+			break;
+		}
+		// check if num is unique
+		rbp = r13;
+		ebx = r12d;
+		do {
+			rax = ebx;
+			eax = rsp[4*rax];
+			if (*rbp == eax) {
+				explode_bomb();
+				return;
+			}
+			ebx++;
+		} while (ebx <= 5);
+		// move to next num
+		r13 += 4;
+	}
 	
-	eax -= 1;
-	if (eax > 5 || eax < 0) {
+	// x = 7 - x, for x in buffer
+	rsi = rsp + 24;
+	rax = r14; // rax = rsp
+	rcx = 7;
+	do {
+		*rax = 7 - *rax;
+		rax += 4;
+	} while (rax != rsi);
+
+	rsi = 0; // global counter
+
+	// traverse linked list
+	// until counter (rax) reaches rcx
+	rax = 1;
+	rdx = 0x6032d0;
+	do {
+		rdx = *(rdx + 8); // base (0x6032d0) + struct offset (8)
+		rax++;
+	} while (rax != rcx);
+	
+	// save "found" node pointer to stack
+	rsp[32 + (rsi * 2)] = rdx;
+	rsi += 4;
+	if (rsi == 24) break;
+
+	rcx = rsp[rsi];
+	
+	if (rcx <= 1)
+}
+```
+
+> [!note] findings
+> - input is of the form `1 2 3 4 5 6 `
+> - numbers must be between 1 to 6, and they must not repeat
+> - each number $x$ will be transformed into $7-x$, which "inverts" them
+> - 
+
+Stack frame:
+
+| offset | content     |
+| ------ | ----------- |
+| 0-3    | number 1    |
+| 4-7    | number 2    |
+| 8-11   | number 3    |
+| 12-15  | number 4    |
+| 16-19  | number 5    |
+| 20-23  | number 6    |
+| 24-27  | ?           |
+| 28-31  | ?           |
+| 32-39  | ptr to node |
+| 40-47  | ptr to node |
+| 48-55  | ptr to node |
+| 56-63  | ptr to node |
+| 64-69  | ptr to node |
+| 70-77  | ptr to node |
+| 78-79  | ?           |
+
+Linked list:
+
+```
+0x6032d0 <node1>:	0x000000010000014c	0x00000000006032e0
+0x6032e0 <node2>:	0x00000002000000a8	0x00000000006032f0
+0x6032f0 <node3>:	0x000000030000039c	0x0000000000603300
+0x603300 <node4>:	0x00000004000002b3	0x0000000000603310
+0x603310 <node5>:	0x00000005000001dd	0x0000000000603320
+0x603320 <node6>:	0x00000006000001bb	0x0000000000000000
+```
+
+First nested loop:
+
+```c
+int arr[6];
+read_six_numbers(input, arr);
+int *ptr = arr;
+int ctr = 0;
+
+while (true) {
+	int num = (*ptr) - 1;
+	if (num > 5 || num < 0) {
 		explode_bomb();
 		return;
 	}
-	
-	r12d += 1;
-	
-	if (eax == 6) {
-		goto .95;
-	}
-	else {
-		
-	}
+
+	ctr++;
+	if (ctr == 6) break;
+
+	int new_ctr = ctr;
+	do {
+		if (num == arr[new_ctr]) {
+			explode_bomb();
+			return;
+		}
+		new_ctr++;
+	} while (new_ctr <= 5);
+
+	r13++;
 }
 ```
