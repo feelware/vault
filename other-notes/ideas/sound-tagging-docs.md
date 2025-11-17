@@ -127,33 +127,21 @@ Fabricated/Artificial
 		Vacuum Cleaner
 		Air Conditioner
 		Heater
-	Infrastructure
-		Door
-		Elevator
-		Staircase
-		Floor
-	Item
-		Pencil
-		Coin
-		Keys
-		Bottle
-		Glass
-		Drink can
-		Phone
-		Bag
-		Shoe
-		Clothing
-		Paper punch
-    Machinery/Industrial
-		Hammer
-		Saw
-		Chisel
-		Drill
-		Grinder
+    Industrial
+	    Tool
+			Hammer
+			Saw
+			Chisel
+			Drill
+			Grinder
+		Machinery
     Weapon
-	    Melee
-	    Gun
-	    Explosive
+		Melee
+		Gun/Firearm
+			Pistol
+			Rifle
+			Machine Gun
+		Explosive
     Vehicle
         Landcraft
             Car
@@ -169,9 +157,36 @@ Fabricated/Artificial
             Airplane
             Helicopter
             Drone
+    # more groups...
 ```
 
-By separating Natural and Biological into different tags, I made space for natural non-biological entities/objects **whose sound is more than just the material they're made of**. I just can't think of an example at the moment. Maybe a volcano.
+By separating Natural and Biological into different tags, I made space for natural non-biological entities/objects **whose sound is more than just the material they're made of**. I just can't think of an example at the moment, maybe a volcano.
+
+Fabricated/artificial object groups not listed before are shown here:
+
+| Subcategory           | Children (examples)                                                        |
+| --------------------- | -------------------------------------------------------------------------- |
+| Container             | Bottle, Jar, Can, Box, Bin, Tank, Barrel, Glass, Cup                       |
+| Fastener              | Latch, Zipper, Button, Buckle, Lock, Clasp, Velcro                         |
+| Motorized             | Fan, Mixer, Drill, Toy car                                                 |
+| Hydraulic/Pneumatic   | Brake, Door closer, Air compressor, Nail gun                               |
+| Wheeled               | Skateboard, Shopping cart, Pulley, Toy car, Wheelchair                     |
+| Toy                   | Rattle, Yo-yo, Rubik's cube, Toy car                                       |
+| Writing implement     | Pen, Pencil, Marker, Chalk, Brush                                          |
+| Switch/Control        | Light switch, Button, Dial, Lever, Remote, Keyboard                        |
+| Shoe/Footwear         | Heels, Sandals/Flip-flops, Sneakers, Boots                                 |
+| Tableware/Kitchenware | Plate, Cup, Glass, Fork, Knife, Pot, Pan                                   |
+| Miniature             | Keychain, Coin, Ring                                                       |
+| Monument              | Bell tower, Drawbridge                                                     |
+| Dispenser             | Soap dispenser, Tape dispenser, Paper towel, dispenser, Spray bottle, Pump |
+| Cutter                | Scissors, Knife, Saw, Shredder, Paper punch                                |
+| Crusher               | Grinder, Mill, Compactor, Hydraulic press                                  |
+| Spinner               | Fan, Fidget spinner, Propeller                                             |
+| Rattler               | Spray paint can, Dice, Keychain, Maracas                                   |
+| Slider                | Drawer, Zipper, Curtain, Barn door, Sliding window                         |
+| Stationery            | Stapler, Paper punch, Writing implement, Stamp                             |
+| Inflatable            | Balloon, Pool toy                                                          |
+| Hinged                | Door, Lid, Folding chair                                                   |
 
 ### Material
 
@@ -317,19 +332,22 @@ Panned
 
 ```yaml
 Solid/Rigid
-	Brittle/Sharp
 	Resonant
-	Smooth
-	Textured
-	Rough
-	Ductile
 	Damped
+	Brittle/Sharp
+	Elastic
+	Fibrous        # 
+	Crumplable     # paper, cardboard, foil, plastic bag, chip bag
+	Smooth         # glass, metal, plastic, ice, marble
+	Textured/Rough # 
+	Light          # foam, cork, snow, cotton
 Liquid
 	Watery
 	Carbonated
 	Creamy/Gory
 	Oily
 	Steamy
+	Molten
 Amorphous
 	Gaseous
 	Grainy

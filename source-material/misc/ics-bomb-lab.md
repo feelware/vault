@@ -506,8 +506,8 @@ void phase_6(char* rdi) {
 > - input is of the form `1 2 3 4 5 6 `
 > - numbers must be between 1 to 6, and they must not repeat
 > - each number $x$ will be transformed into $7-x$, which "inverts" them
-> - stack is filled with pointers to nodes of a linked list, the order in which these pointers are placed corresponds to the "inverted" input
-
+> - transformed input is used to rearrange linked list, whose nodes have the following attributes (in order): `int index`, `int x`, `node *next` 
+> - nodes must be arranged in descending order based on their `x` value
 
 Stack frame:
 
