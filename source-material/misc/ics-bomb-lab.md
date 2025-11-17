@@ -448,7 +448,7 @@ void phase_6(char* rdi) {
 	rsi = 0; // global counter
 
 	// traverse linked list
-	// until counter (rax) reaches rcx
+	// until counter (rax) reaches input number (rcx)
 	rax = 1;
 	rdx = 0x6032d0;
 	do {
@@ -462,8 +462,43 @@ void phase_6(char* rdi) {
 	if (rsi == 24) break;
 
 	rcx = rsp[rsi];
-	
+
 	if (rcx <= 1)
+	
+	// ...
+	
+	rbx = rsp[32];  // init: 1st ptr
+	rax = rsp + 40; // init: points to 2nd ptr
+	rsi = rsp + 80; // points to end of stack frame
+	
+	// rewire linked list
+	// according to the order of its pointers
+	// in the stack
+	rcx = rbx;
+	while (true) {
+		rdx = *rax;
+		*(rcx + 8) = rdx;
+		
+		rax += 8;
+		if (rax == rsi) break;
+		
+		rcx = rdx;
+	}
+	*(rdx + 8) = 0; // set final node's "next" to null
+	
+	// check that nodes are in descending order
+	// based on their content
+	rbp = 5;
+	do {
+		rax = *(rbx + 8);   // rax = node's "next" pointer
+		rax = *rax;         // rax = content of next node
+		if (*rbx < rax) {   // content of node < content of next node
+			explode_bomb();
+			return;
+		}disa
+		rbx = *(rbx + 8);
+		rbp--;
+	} while(rbp != 0);
 }
 ```
 
@@ -471,27 +506,28 @@ void phase_6(char* rdi) {
 > - input is of the form `1 2 3 4 5 6 `
 > - numbers must be between 1 to 6, and they must not repeat
 > - each number $x$ will be transformed into $7-x$, which "inverts" them
-> - 
+> - stack is filled with pointers to nodes of a linked list, the order in which these pointers are placed corresponds to the "inverted" input
+
 
 Stack frame:
 
-| offset | content     |
-| ------ | ----------- |
-| 0-3    | number 1    |
-| 4-7    | number 2    |
-| 8-11   | number 3    |
-| 12-15  | number 4    |
-| 16-19  | number 5    |
-| 20-23  | number 6    |
-| 24-27  | ?           |
-| 28-31  | ?           |
-| 32-39  | ptr to node |
-| 40-47  | ptr to node |
-| 48-55  | ptr to node |
-| 56-63  | ptr to node |
-| 64-69  | ptr to node |
-| 70-77  | ptr to node |
-| 78-79  | ?           |
+| offset | content       |
+| ------ | ------------- |
+| 0-3    | 1             |
+| 4-7    | 2             |
+| 8-11   | 3             |
+| 12-15  | 4             |
+| 16-19  | 5             |
+| 20-23  | 6             |
+| 24-27  | ?             |
+| 28-31  | ?             |
+| 32-39  | ptr to node 6 |
+| 40-47  | ptr to node 5 |
+| 48-55  | ptr to node 4 |
+| 56-63  | ptr to node 3 |
+| 64-69  | ptr to node 2 |
+| 72-79  | ptr to node 1 |
+| 80-... | out of bounds |
 
 Linked list:
 
@@ -503,6 +539,31 @@ Linked list:
 0x603310 <node5>:	0x00000005000001dd	0x0000000000603320
 0x603320 <node6>:	0x00000006000001bb	0x0000000000000000
 ```
+
+```
+2 1 6 5 4 3
+0x6032e0 <node2>:	0x00000002000000a8	0x00000000006032f0
+0x6032d0 <node1>:	0x000000010000014c	0x00000000006032e0
+0x603320 <node6>:	0x00000006000001bb	0x0000000000000000
+0x603310 <node5>:	0x00000005000001dd	0x0000000000603320
+0x603300 <node4>:	0x00000004000002b3	0x0000000000603310
+0x6032f0 <node3>:	0x000000030000039c	0x0000000000603300
+
+4 3 2 1 6 5
+0x6032f0 <node3>:	0x000000030000039c	0x0000000000603300
+0x603300 <node4>:	0x00000004000002b3	0x0000000000603310
+0x603310 <node5>:	0x00000005000001dd	0x0000000000603320
+0x603320 <node6>:	0x00000006000001bb	0x0000000000000000
+0x6032d0 <node1>:	0x000000010000014c	0x00000000006032e0
+0x6032e0 <node2>:	0x00000002000000a8	0x00000000006032f0
+```
+
+$$
+\begin{align*}
+y &= 7 - x \\
+x &= 7 - y
+\end{align*}
+$$
 
 First nested loop:
 
