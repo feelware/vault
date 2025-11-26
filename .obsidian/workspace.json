@@ -22,42 +22,45 @@
             }
           },
           {
-            "id": "56767d4252d6740d",
+            "id": "9d733bdbd05dd508",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf"
+                "file": "other-notes/staging/estado-del-arte.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "tesis-directivas"
+              "icon": "lucide-file",
+              "title": "estado-del-arte"
             }
           },
           {
-            "id": "b31d68ed6e492302",
+            "id": "4e9081683796d7e7",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Quinteros_nd.pdf"
+                "file": "source-material/lectures/pdf/Estado del Arte_2024.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Quinteros_nd"
+              "title": "Estado del Arte_2024"
             }
           },
           {
-            "id": "24321040ac4b98d3",
+            "id": "fb5da78dddddff63",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf"
+                "file": "source-material/papers/pdf/pico-framework-application.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Freire_vd"
+              "title": "pico-framework-application"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,20 +213,21 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "da600fd7a36c5c1d",
+  "active": "9d733bdbd05dd508",
   "lastOpenFiles": [
+    "source-material/papers/pdf/pico-framework-application.pdf",
+    "source-material/lectures/pdf/Estado del Arte_2024.pdf",
+    "other-notes/staging/estado-del-arte.md",
+    "projects/unmsm-2025-2/tesis-marco-teorico.md",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
-    "other-notes/staging/contingency.md",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Quinteros_nd.pdf",
     "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf",
+    "source-material/papers/pdf/pico-framework.pdf",
+    "other-notes/staging/contingency.md",
     "projects/unmsm-2025-2/pdf/tesis/sources/desarrollo-sentido-auditov-musicos-aspirantes-aplicativo-movil-ios-archivos-audio-realidad-aumentada.pdf",
-    "projects/unmsm-2025-2/tesis-marco-teorico.md",
     "projects/unmsm-2025-2/pdf/tesis/sources/desarrollo-app-web-entrenamiento-auditivo-club-musica-puce-ibarra.pdf",
     "projects/unmsm-2025-2/pdf/tesis/sources/Desarrollo del sentido auditivo para músicos aspirantes mediante un aplicativo móvil iOS utilizando archivos de audio y realidad aumentada.pdf",
     "projects/unmsm-2025-2/pdf/tesis/sources/DESARROLLO DE UNA APLICACIÓN WEB PARA EL ENTRENAMIENTO AUDITIVO Y ENSEÑANZA MUSICAL PARA MIEMBROS DEL CLUB DE MÚSICA DE LA PUCE IBARRA.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Designing Music App for Aural Training.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Effectiveness Study of Applying Earmaster for Ear Training in Chinese University Students.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Mobile learning: Using application Auralbook to learn aural skills.pdf",
     "other-notes/ideas/thesis-idea.md",
     "other-notes/ideas/sound-tagging-docs.md",
     "other-notes/staging/holaxdxd.md",
@@ -248,7 +252,6 @@
     "projects/unmsm-2025-2/web-vision-empresa-proyecto.md",
     "other-notes/staging/prompt-tombo.md",
     "projects/unmsm-2025-2/web-tombo-mobile-setup.md",
-    "other-notes/staging/Untitled 1.md",
     "utilities/attachments/Pasted image 20251008165413.png",
     "utilities/attachments/Pasted image 20250925161354.png",
     "utilities/attachments/Pasted image 20250925160818.png",
