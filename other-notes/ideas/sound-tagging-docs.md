@@ -4,53 +4,53 @@
 
 ```yaml
 Natural/Nature
-  Body of water
-    Ocean
-    Stream
-    Waterfall
-    Underwater
-    Rain
-  Open air
-    Fields
-    Deserts
-    Farm
+    Body of water
+        Ocean
+        Stream
+        Waterfall
+        Underwater
+        Rain
+    Open air
+        Fields
+        Deserts
+        Farm
+        # ...
+    Storm/Thunder
+    Forest
+    Cave
     # ...
-  Storm/Thunder
-  Forest
-  Cave
-  # ...
 Social/Artificial
-  Everyday
-    Urban
-      Park
-      Traffic
-      Street market
-      Onboard
-      # ...
-    Building
-      Home
-        Kitchen
-        Bathroom
-        Living room
-      Restaurant
-      Office
-      Classroom
-      Hospital
-      Library
-      # ...
-  Event
-    Amusement Ride
-    Beach
-    Carnival
-    Festival
-    Party
-    Protest
-    Sports
-    # ...
-  Industrial
-    Factory
-    Construction Site
-    # ...
+    Everyday
+        Urban
+            Park
+            Traffic
+            Street market
+            Onboard
+            # ...
+        Building
+            Home
+                Kitchen
+                Bathroom
+                Living room
+            Restaurant
+            Office
+            Classroom
+            Hospital
+            Library
+            # ...
+    Event
+        Amusement Ride
+        Beach
+        Carnival
+        Festival
+        Party
+        Protest
+        Sports
+        # ...
+    Industrial
+        Factory
+        Construction Site
+        # ...
 ```
 
 - Building: Everyday indoor spaces (e.g. home, businesses)
@@ -63,101 +63,101 @@ Social/Artificial
 
 ```yaml
 Natural/Nature
-  Biological
-    Botanical/Plant
-      Stick
-      Leaf
-        Celery
-        Cabbage
-      Fruit
-        Tomato
-      Root
-        Leek
-        Potato
-      Nut/Seed
-        Pistachio
-    Zoological
-      Body
-        Beak
-        Nail/Claw
-        Teeth
-        Feather
-        Mouth
-        Lungs
-        Heart
-        Intestines
-      Animal
-        Amphibian
-        Fish
-        Bear
-        Bird
-          Corvids
-          Songbird
-          Shoebill
-        Feline
-          Cat
-        Canine
-          Dog
-        Insect
-        Primate
-        Reptile
-        Horse
-        Rodent
+    Biological
+        Botanical/Plant
+            Stick
+            Leaf
+                Celery
+                Cabbage
+            Fruit
+                Tomato
+            Root
+                Leek
+                Potato
+            Nut/Seed
+                Pistachio
+        Zoological
+            Body
+                Beak
+                Nail/Claw
+                Teeth
+                Feather
+                Mouth
+                Lungs
+                Heart
+                Intestines
+            Animal
+                Amphibian
+                Fish
+                Bear
+                Bird
+                    Corvids
+                    Songbird
+                    Shoebill
+                Feline
+                    Cat
+                Canine
+                    Dog
+                Insect
+                Primate
+                Reptile
+                Horse
+                Rodent
 Human
-  Man/Male
-  Woman/Female
-  Baby
-  Child
-  Elderly
-  Multitude
+    Man/Male
+    Woman/Female
+    Baby
+    Child
+    Elderly
+    Multitude
 Fabricated/Artificial
-  Furniture
-    Chair
-    Desk/Table
-    Sofa
-    Bed
-    Pillow
-    Shelf
-  Appliance
-    Refrigerator
-    Washing Machine
-    Microwave
-    Oven
-    Dishwasher
-    Vacuum Cleaner
-    Air Conditioner
-    Heater
-    Industrial
-      Tool
-      Hammer
-      Saw
-      Chisel
-      Drill
-      Grinder
-    Machinery
-    Weapon
-    Melee
-    Gun/Firearm
-      Pistol
-      Rifle
-      Machine Gun
-    Explosive
-    Vehicle
-        Landcraft
-            Car
-            Motorcycle
-            Bicycle
-            Truck
-            Bus
-        Watercraft
-            Boat
-            Ship
-            Submarine
-        Aircraft
-            Airplane
-            Helicopter
-            Drone
-    # more groups...
+    Furniture
+        Chair
+        Desk/Table
+        Sofa
+        Bed
+        Pillow
+        Shelf
+    Appliance
+        Refrigerator
+        Washing Machine
+        Microwave
+        Oven
+        Dishwasher
+        Vacuum Cleaner
+        Air Conditioner
+        Heater
+        Industrial
+            Tool
+            Hammer
+            Saw
+            Chisel
+            Drill
+            Grinder
+        Machinery
+        Weapon
+        Melee
+        Gun/Firearm
+            Pistol
+            Rifle
+            Machine Gun
+        Explosive
+        Vehicle
+						Landcraft
+								Car
+								Motorcycle
+								Bicycle
+								Truck
+								Bus
+						Watercraft
+								Boat
+								Ship
+								Submarine
+						Aircraft
+								Airplane
+								Helicopter
+								Drone
+        # more groups...
 ```
 
 By separating Natural and Biological into different tags, I made space for natural non-biological entities/objects **whose sound is more than just the material they're made of**. I just can't think of an example at the moment, maybe a volcano.
@@ -195,20 +195,20 @@ Natural
     Geological
         Water
         Gas
-          Air
-          Vapor
-          Fire
+						Air
+						Vapor
+						Fire
     Snow
     Mud/Soil/Dirt               # Biological, Dampened
     Sand/Dust                   # Dusty
         Rock
-            Rubble                  # Rough
-            Pebble                  # Textured
-          Coal
-          Gravel                  # Grainy
+						Rubble                  # Rough
+						Pebble                  # Textured
+						Coal
+						Gravel                  # Grainy
         Mineral
-          Ice
-            Crystal                 # Sharp
+						Ice
+						Crystal                 # Sharp
         Metal                       # Sharp
     Biological
         Botanical
@@ -224,7 +224,7 @@ Natural
         Zoological
             Bone                    # Sharp
             Fur
-      Hair
+      			Hair
             Meat
             Skin
             Leather                 # Textured
@@ -247,54 +247,54 @@ Synthetic/Artificial
 
 ```yaml
 Traditional
-  String
-      Bowed
-          Violin
-          Viola
-          Cello
-          Double Bass
-      Plucked
-          Guitar
-              Acoustic
-              Electric
-              Bass
-      Ukelele
-      Banjo
-  Percussion
-      Drums
-          Kick
-          Snare
-          Tom
-          Cymbal
-              Hi-Hat
-                  Closed
-                  Open
-              Ride
-          Fill
-          Break
-  Wind
-      Woodwind
-          Flute
-          Clarinet
-          Zampoña
-      Brass
-          Trumpet
-          Trombone
-          Tuba
-  Keyboard
-      Piano
-          Upright Piano
-          Felt Piano
-      Organ
+		String
+				Bowed
+						Violin
+						Viola
+						Cello
+						Double Bass
+				Plucked
+						Guitar
+								Acoustic
+								Electric
+								Bass
+				Ukelele
+				Banjo
+		Percussion
+				Drums
+						Kick
+						Snare
+						Tom
+						Cymbal
+								Hi-Hat
+										Closed
+										Open
+								Ride
+						Fill
+						Break
+		Wind
+				Woodwind
+						Flute
+						Clarinet
+						Zampoña
+				Brass
+						Trumpet
+						Trombone
+						Tuba
+		Keyboard
+				Piano
+						Upright Piano
+						Felt Piano
+				Organ
 Synth
-  Drum Machine
-      Clap
-  Bass
-      Reese
-      Neuro
-      Square 4
-      Growl
-      Sub
+		Drum Machine
+				Clap
+		Bass
+				Reese
+				Neuro
+				Square 4
+				Growl
+				Sub
 ```
 
 ## Properties
@@ -332,29 +332,29 @@ Panned
 
 ```yaml
 Solid/Rigid
-  Resonant
-  Damped
-  Brittle/Sharp
-  Elastic
-  Fibrous        # 
-  Crumplable     # paper, cardboard, foil, plastic bag, chip bag
-  Smooth         # glass, metal, plastic, ice, marble
-  Textured/Rough # 
-  Light          # foam, cork, snow, cotton
-  Gritty
+		Resonant
+		Damped
+		Brittle/Sharp
+		Elastic
+		Fibrous        # 
+		Crumplable     # paper, cardboard, foil, plastic bag, chip bag
+		Smooth         # glass, metal, plastic, ice, marble
+		Textured/Rough # 
+		Light          # foam, cork, snow, cotton
+		Gritty
 Liquid
-  Watery
-  Carbonated
-  Creamy/Gory
-  Oily
-  Steamy
-  Molten
+		Watery
+		Carbonated
+		Creamy/Gory
+		Oily
+		Steamy
+		Molten
 Amorphous
-  Gaseous
-  Grainy
-  Dusty
-  Fuzzy
-  Plasmatic
+		Gaseous
+		Grainy
+		Dusty
+		Fuzzy
+		Plasmatic
 ```
 
 - Oily: Low viscosity
@@ -364,80 +364,80 @@ Amorphous
 
 ```yaml
 Strike
-  Hit
-  Clap
-  Snap
-  Drop
-  Crash       # Break
-  Shoot
-  Explode     # Combust
-  Walk
-  Stomp
+		Hit
+		Clap
+		Snap
+		Drop
+		Crash       # Break
+		Shoot
+		Explode     # Combust
+		Walk
+		Stomp
 Break
-  Crush
-  Cut
-  Split
-  Bite
-  Tear/Rip
+		Crush
+		Cut
+		Split
+		Bite
+		Tear/Rip
 Friction
-  Rub
-  Roll
-  Slide
-  Scratch
-  Squeak
+		Rub
+		Roll
+		Slide
+		Scratch
+		Squeak
 Deform
-  Press
-  Squeeze
-  Bend
-  Squash
-  Crumple
+		Press
+		Squeeze
+		Bend
+		Squash
+		Crumple
 Move
-  Swing
-  Shake
-  Jingle
-Fluid dynamics  # Liquid
-  Splash        # Strike
-  Drip
-  Flow
-  Bubble
-  Gurgle
-  Sizzle
+		Swing
+		Shake
+		Jingle
+Fluid dynamics    # Liquid
+		Splash        # Strike
+		Drip
+		Flow
+		Bubble
+		Gurgle
+		Sizzle
 Aerodynamics
-  Flap        # Move
-  Whoosh
-  Whistle     # Vocalize
-  Hiss
-  Suck
-  Blow
-  Puff
-  Sigh        # Vocalize
-  Fart
-  Spray       # Fluid dynamics
+		Flap        # Move
+		Whoosh
+		Whistle     # Vocalize
+		Hiss
+		Suck
+		Blow
+		Puff
+		Sigh        # Vocalize
+		Fart
+		Spray       # Fluid dynamics
 Combust
-  Burn
-  Ignite
-  Smolder
+		Burn
+		Ignite
+		Smolder
 Vibrate
-  Hum
-  Buzz
-  Ring
-  Rattle
+		Hum
+		Buzz
+		Ring
+		Rattle
 Vocalize
-  Speak
-  Shout
-  Sing
-  Rap
-  Yawn
-  Whisper
-  Moan
-  Babble
-  Cry
-  Laugh
-  Sneeze
-  Growl
-  Chirp
-  Bark
-  Howl
+		Speak
+		Shout
+		Sing
+		Rap
+		Yawn
+		Whisper
+		Moan
+		Babble
+		Cry
+		Laugh
+		Sneeze
+		Growl
+		Chirp
+		Bark
+		Howl
 ```
 
 ## Music Info
@@ -446,28 +446,28 @@ Vocalize
 
 ```yaml
 Percussive
-  Base
-  Top
-  Perif
-  Cym
+		Base
+		Top
+		Perif
+		Cym
 Tonal
-  Key
-  Pluck
-  Swell
-  Stab
-  Pad
+		Key
+		Pluck
+		Swell
+		Stab
+		Pad
 Riser
 Downer
 Texture
 Ear candy
-  Swoosh
-  Pulsation
-  Spillover
+		Swoosh
+		Pulsation
+		Spillover
 One-shot
 Loop
-  Vocal Chop
-  Break
-  Fill
+		Vocal Chop
+		Break
+		Fill
 ```
 
 These tags roughly describe how volume changes over time, but most importantly, they define a sound's function in a song. You might recognize some of these names from preset categories in synthesizers, but some of them are more esoteric.
@@ -486,13 +486,13 @@ These tags roughly describe how volume changes over time, but most importantly, 
 
 ```yaml
 Polyphony
-  Monophonic
-  Polyphonic
-    Major chord
-    Minor chord
-    Augmented
-    Diminished
-    Extended
+		Monophonic
+		Polyphonic
+				Major chord
+				Minor chord
+				Augmented
+				Diminished
+				Extended
 Scale
     Major scale
     Minor scale
@@ -550,18 +550,18 @@ Tremolo
 ```yaml
 Classical
 Electronic
-  Dubstep
-    Riddim
-    Brostep
-  Breakbeat
-  Jungle
-  Hyperglitch
+		Dubstep
+				Riddim
+				Brostep
+		Breakbeat
+		Jungle
+		Hyperglitch
 #   ...
 International
-  Latin
-    Merengue
-    Afro-Cuban
-    Salsa
+		Latin
+				Merengue
+				Afro-Cuban
+				Salsa
 #       ...
 #   ...
 ```
@@ -570,25 +570,25 @@ International
 
 ```yaml
 Intent
-  Narration
-  Lecture
-  Question
-  Insult
-  Presentation
-  Speech
+		Narration
+		Lecture
+		Question
+		Insult
+		Presentation
+		Speech
 #   ...
 Topic
-  Politics
-  Love
-  Weather
-  History
-  Religion
+		Politics
+		Love
+		Weather
+		History
+		Religion
 #   ...
 Sentiment
-  Angry
-  Remorseful
-  Romantic
-  Ironic
+		Angry
+		Remorseful
+		Romantic
+		Ironic
 #   ...
 ```
 
@@ -601,15 +601,15 @@ Unprocessed
 Subtractive/Analog
 Physical Modelling
 Granular
-  Concatenative
+  	Concatenative
 Spectral
-  Spectral Gate
-  Spectral Resynthesis
+		Spectral Gate
+		Spectral Resynthesis
 #   ...
 Modulation
-  Flanger
-  Phaser
-  Chorus
+		Flanger
+		Phaser
+		Chorus
 Sine Compression
 FM/AM
 Stutter
@@ -620,16 +620,16 @@ Stutter
 
 ```yaml
 Hardware
-  Eurorack
-  Guitar Pedal
-  Analog
+  	Eurorack
+		Guitar Pedal
+		Analog
 Digital
-  Software
-    Cardinal
-    Vitalium
-    Surge XT
-    SoundThread
-    Cecilia
+		Software
+				Cardinal
+				Vitalium
+				Surge XT
+				SoundThread
+				Cecilia
 #       ...
 ```
 
@@ -640,16 +640,16 @@ Gear used to make the sound.
 ```yaml
 Asia
 Americas
-  Northern America
-    USA
-    Canada
-  Latin America
-    Mexico
-    Central America
-    Caribbean
-    South America
-      Peru
-        Lima
+		Northern America
+				USA
+				Canada
+		Latin America
+				Mexico
+				Central America
+				Caribbean
+				South America
+						Peru
+								Lima
 #       ...
 #     ..
 Europe
@@ -661,18 +661,18 @@ Oceania
 
 ```yaml
 English
-  American
-  British
+		American
+		British
 #   ...
 Spanish
-  Peruvian
-    Limeño
+  	Peruvian
+    		Limeño
 #     ...
-  Spaniard
+  	Spaniard
 # ...
 Portuguese
-  Brazillian
-  Portugal
+		Brazillian
+		Portugal
 # ...
 ```
 
@@ -680,21 +680,21 @@ Portuguese
 
 ```yaml
 File
-  Wavetable
-  IR
-  Render
-    Stem
-    Track
-  Preset/Patch
+		Wavetable
+		IR
+		Render
+				Stem
+				Track
+		Preset/Patch
 Authorship
-  Original
-  Derived
-  Downloaded
+		Original
+		Derived
+		Downloaded
 License
-  Creative Commons
-    CC0
-    CC-BY
-  Copyrighted
+		Creative Commons
+				CC0
+				CC-BY
+		Copyrighted
 ```
 
 Some clarifications:
