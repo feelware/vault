@@ -1,80 +1,41 @@
 {
   "main": {
-    "id": "fb9a19c6e4eb06a6",
+    "id": "43eeceb5111199e1",
     "type": "split",
     "children": [
       {
-        "id": "ca46058ac1563c24",
+        "id": "930e493e523aebb4",
         "type": "tabs",
         "children": [
           {
-            "id": "da600fd7a36c5c1d",
+            "id": "813818f9f165ce47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/unmsm-2025-2/tesis-marco-teorico.md",
+                "file": "other-notes/staging/preguntas-junior.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tesis-marco-teorico"
-            }
-          },
-          {
-            "id": "9d733bdbd05dd508",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "other-notes/staging/estado-del-arte.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "estado-del-arte"
-            }
-          },
-          {
-            "id": "4e9081683796d7e7",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/lectures/pdf/Estado del Arte_2024.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Estado del Arte_2024"
-            }
-          },
-          {
-            "id": "fb5da78dddddff63",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "source-material/papers/pdf/pico-framework-application.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "pico-framework-application"
+              "title": "preguntas-junior"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c6b9871631b35e0d",
+    "id": "210c40df12fce30b",
     "type": "split",
     "children": [
       {
-        "id": "3d2d9dda6ce9c118",
+        "id": "f292186deaf4cb3d",
         "type": "tabs",
         "children": [
           {
-            "id": "58f5db9b0c939ad0",
+            "id": "c780501c8ee85743",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -87,12 +48,12 @@
             }
           },
           {
-            "id": "c831ccfa881c685f",
+            "id": "3d7f350fcb6c988e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#hw",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +65,7 @@
             }
           },
           {
-            "id": "cc37d9896835eb19",
+            "id": "0d602e327279337b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -117,26 +78,25 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5,
+    "width": 300,
     "collapsed": true
   },
   "right": {
-    "id": "8090f1a6a0490b1c",
+    "id": "13f692d09b22e40a",
     "type": "split",
     "children": [
       {
-        "id": "a34e118df0550330",
+        "id": "bfa9b8420618477f",
         "type": "tabs",
         "children": [
           {
-            "id": "0c52eb39ce34581d",
+            "id": "3281efe7ddb8257c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/unmsm-2025-0/hw-pm-final-test.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -144,25 +104,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for hw-pm-final-test"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "5b49ef0557b42f4a",
+            "id": "df157315e42b8c46",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source-material/misc/pdf/Cap2_Agentes_Inteligentes_libro_Russell-Norvig.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Cap2_Agentes_Inteligentes_libro_Russell-Norvig"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "7bc95cafa911f004",
+            "id": "ba08eb7b72366cac",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -177,18 +136,18 @@
             }
           },
           {
-            "id": "449fca97fc985ec5",
+            "id": "7a9a1175f8c7a8c7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "other-notes/ideas/sound-tagging-docs.md",
+                "file": "source-material/lectures/pdf/Estado del Arte_2024.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of sound-tagging-docs"
+              "title": "Outline of Estado del Arte_2024"
             }
           }
         ],
@@ -196,69 +155,54 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
+    "width": 410.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "header-adjuster:Adjust Headers": false,
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "9d733bdbd05dd508",
+  "active": "813818f9f165ce47",
   "lastOpenFiles": [
-    "source-material/lectures/pdf/Estado del Arte_2024.pdf",
-    "source-material/papers/pdf/pico-framework-application.pdf",
-    "projects/unmsm-2025-2/tesis-marco-teorico.md",
-    "other-notes/staging/estado-del-arte.md",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Quinteros_nd.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf",
-    "source-material/papers/pdf/pico-framework.pdf",
+    "other-notes/staging/preguntas-junior.md",
+    "other-notes/staging/huevada-bartra-2.md",
+    "other-notes/staging/huevada-ugaz.md",
     "other-notes/staging/contingency.md",
-    "projects/unmsm-2025-2/pdf/tesis/sources/desarrollo-sentido-auditov-musicos-aspirantes-aplicativo-movil-ios-archivos-audio-realidad-aumentada.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/desarrollo-app-web-entrenamiento-auditivo-club-musica-puce-ibarra.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Desarrollo del sentido auditivo para músicos aspirantes mediante un aplicativo móvil iOS utilizando archivos de audio y realidad aumentada.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/DESARROLLO DE UNA APLICACIÓN WEB PARA EL ENTRENAMIENTO AUDITIVO Y ENSEÑANZA MUSICAL PARA MIEMBROS DEL CLUB DE MÚSICA DE LA PUCE IBARRA.pdf",
-    "other-notes/ideas/thesis-idea.md",
-    "other-notes/ideas/sound-tagging-docs.md",
-    "other-notes/staging/holaxdxd.md",
-    "other-notes/staging/expo-ugaz-bbva.md",
-    "other-notes/staging/expo-ugaz-iso.md",
+    "tesis-sota.md",
+    "projects/unmsm-2025-2/pdf/tesis/sources/Troubadour_A_Gamified_e-Learning_Platform_for_Ear_Training.pdf",
+    "other-notes/staging/huevada-bartra.md",
+    "other-notes/staging/g4s observaciones cotizacion.md",
+    "other-notes/staging/huevada-hoy.md",
+    "source-material/courses/foundations-ux-design.md",
+    "ia-papers-videos.md",
+    "ia-repasar.md",
+    "ia-proyecto-50%.md",
+    "ia-repaso.md",
+    "utilities/templates/task.md",
+    "projects/unmsm-2025-2/pdf/tesis/sources/A Quasi-Experimental Study on the Application of MuseScore Software to Improve Sight-Singing and Ear-Training Abilities in Music Education at Chuzhou University.pdf",
     "other-notes/ideas/thesis-intro-2.md",
-    "source-material/misc/ics-bomb-lab.md",
-    "source-material/lectures/ics-8-machine-level-iv.md",
-    "source-material/lectures/ics-7-machine-level-iii.md",
-    "other-notes/staging/seguridad-software.md",
-    "source-material/lectures/ics-5-machine-level-i.md",
-    "source-material/lectures/ics-1-bits-bytes-integers.md",
-    "source-material/lectures/ics-6-machine-level-ii.md",
-    "source-material/textbooks/computer-systems-programmer-perspective.md",
-    "source-material/lectures/ics-2-bits-bytes-integers-cont.md",
-    "other-notes/staging/ics-5-machine-level-ii.md",
-    "utilities/attachments/Pasted image 20251023142525.png",
-    "utilities/attachments/Pasted image 20251023142508.png",
-    "projects/unmsm-2025-2/inv-avance-intro.md",
-    "other-notes/ideas/granular synth.md",
-    "projects/unmsm-2025-2/verif-expo-parcial.md",
-    "projects/unmsm-2025-2/web-vision-empresa-proyecto.md",
-    "other-notes/staging/prompt-tombo.md",
-    "projects/unmsm-2025-2/web-tombo-mobile-setup.md",
-    "utilities/attachments/Pasted image 20251008165413.png",
-    "utilities/attachments/Pasted image 20250925161354.png",
-    "utilities/attachments/Pasted image 20250925160818.png",
-    "utilities/attachments/Pasted image 20250925160704.png",
-    "utilities/attachments/Pasted image 20250910220409.png",
-    "utilities/attachments/Pasted image 20250814201346.png",
-    "utilities/attachments/Pasted image 20250814201324.png",
-    "utilities/attachments/Pasted image 20250814200956.png"
+    "other-notes/staging/thesis-introduction.md",
+    "projects/unmsm-2025-2/tesis-marco-teorico.md",
+    "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf",
+    "other-notes/staging/derek.md",
+    "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf",
+    "projects/unmsm-2025-2/inv-hw-planificacion.md",
+    "other-notes/staging/expo-lopez.md",
+    "projects/unmsm-2025-2/pdf/tesis/sources/Designing Music App for Aural Training.pdf",
+    "other-notes/staging/tro.md",
+    "source-material/lectures/pdf/Estado del Arte_2024.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
+    "other-notes/staging/tasks.md"
   ]
 }

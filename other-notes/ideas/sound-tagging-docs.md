@@ -198,22 +198,21 @@ Natural
 	        Air
 	        Vapor
 	        Fire
-	    Aggregate
-			Snow
-	        Mud/Soil/Dirt               # Dampened
-	        Sand                        # Dusty
-	        Gravel                      # Rock, Grainy
+		Snow
+		Mud/Soil/Dirt               # Biological, Dampened
+		Sand/Dust                   # Dusty
         Rock
             Rubble                  # Rough
             Pebble                  # Textured
 	        Coal
+	        Gravel                  # Grainy
         Mineral
 	        Ice
             Crystal                 # Sharp
         Metal                       # Sharp
     Biological
         Botanical
-            Bark                    # Rough
+            Tree bark               # Rough
             Wood                    # Textured
             Paper                   # Textured
             Cardboard               # Textured
@@ -318,6 +317,7 @@ Compressed
 # Inharmonicity
 Inharmonic
 Harmonic
+Noisy
 # Depth
 ASMR
 Close
@@ -341,6 +341,7 @@ Solid/Rigid
 	Smooth         # glass, metal, plastic, ice, marble
 	Textured/Rough # 
 	Light          # foam, cork, snow, cotton
+	Gritty
 Liquid
 	Watery
 	Carbonated
@@ -353,6 +354,7 @@ Amorphous
 	Grainy
 	Dusty
 	Fuzzy
+	Plasmatic
 ```
 
 - Oily: Low viscosity
@@ -392,7 +394,6 @@ Deform
 Move
     Swing
     Shake
-    Rattle
     Jingle
 Fluid dynamics  # Liquid
     Splash      # Strike
@@ -406,6 +407,7 @@ Aerodynamics
     Whoosh
     Whistle     # Vocalize
     Hiss
+    Suck
     Blow
     Puff
     Sigh        # Vocalize
@@ -419,6 +421,7 @@ Vibrate
     Hum
     Buzz
     Ring
+    Rattle
 Vocalize
     Speak
     Shout
@@ -457,9 +460,11 @@ Riser
 Downer
 Texture
 Ear candy
+	Swoosh
+	Pulsation
+	Spillover
 One-shot
 Loop
-	Pulse
 	Vocal Chop
 	Break
 	Fill
@@ -557,7 +562,6 @@ International
 		Merengue
 		Afro-Cuban
 		Salsa
-		Samba
 #       ...
 #   ...
 ```

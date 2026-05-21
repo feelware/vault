@@ -207,7 +207,8 @@ void phase_3(char* rdi) {
 	
 	rsp += 24;
 }
-moving to phase 4 now```
+moving to phase 4 now
+```
 
 > [!note]
 > `jmp *0x402470(,%rax,8)`

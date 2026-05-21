@@ -95,7 +95,7 @@ SELECT first_name, last_name, gender
 FROM patients
 WHERE gender = 'M';
 ```
-
+	
 ### `BETWEEN`
 
 - Expresa rangos de valores

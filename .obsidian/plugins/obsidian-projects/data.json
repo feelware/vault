@@ -379,7 +379,7 @@
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
-      "isDefault": true,
+      "isDefault": false,
       "dataSource": {
         "kind": "folder",
         "config": {
@@ -668,6 +668,184 @@
       ],
       "id": "fbe24491-8c1b-44d8-abc1-8350d2671f32",
       "name": "unmsm-2025-2"
+    },
+    {
+      "fieldConfig": {
+        "status": {
+          "options": [
+            "backlog",
+            "to do",
+            "doing",
+            "done"
+          ]
+        },
+        "class": {
+          "options": [
+            "iot",
+            "ia",
+            "tesis",
+            "ti",
+            "mant",
+            "movil",
+            "gar"
+          ]
+        }
+      },
+      "defaultName": "",
+      "templates": [
+        "utilities/templates/task.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "groupByField": "status",
+            "columnWidth": 300,
+            "columns": {
+              "done": {
+                "records": [
+                  "sint-repaso-ia.md"
+                ]
+              },
+              "to do": {
+                "records": []
+              }
+            },
+            "includeFields": [
+              "deadline"
+            ],
+            "headerField": "name"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "d775a89a-88b7-4965-ac57-046f1af1d791",
+          "name": "Kanban",
+          "type": "board"
+        },
+        {
+          "config": {
+            "groupByField": "class",
+            "columnWidth": 200,
+            "includeFields": [
+              "deadline",
+              "status"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "field": "status",
+                "operator": "is-not",
+                "enabled": true,
+                "value": "done"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#ff0059",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "to do"
+                }
+              },
+              {
+                "color": "#ff9500",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "doing"
+                }
+              },
+              {
+                "color": "#00ff91",
+                "condition": {
+                  "field": "status",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "b0e4cea9-ad58-4193-8de1-b3c36c903df9",
+          "name": "Classes",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c1e2d443-fcd0-4d8a-9bdd-3ae04c7b2ce3",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "status",
+              "deadline",
+              "class"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "62aea3a9-b834-477a-b8a8-5d03d0c22493",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "60f21fc1-8e90-4ca8-8140-ca7d0095b501",
+      "name": "unmsm-2026-1"
     }
   ],
   "archives": [],
