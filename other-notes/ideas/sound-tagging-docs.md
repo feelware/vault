@@ -364,80 +364,80 @@ Amorphous
 
 ```yaml
 Strike
-	Hit
-	Clap
-	Snap
-	Drop
-	Crash       # Break
-	Shoot
-	Explode     # Combust
-	Walk
-	Stomp
+  Hit
+  Clap
+  Snap
+  Drop
+  Crash       # Break
+  Shoot
+  Explode     # Combust
+  Walk
+  Stomp
 Break
-	Crush
-	Cut
-	Split
-	Bite
-	Tear/Rip
+  Crush
+  Cut
+  Split
+  Bite
+  Tear/Rip
 Friction
-	Rub
-	Roll
-	Slide
-	Scratch
-	Squeak
+  Rub
+  Roll
+  Slide
+  Scratch
+  Squeak
 Deform
-	Press
-	Squeeze
-	Bend
-	Squash
-	Crumple
+  Press
+  Squeeze
+  Bend
+  Squash
+  Crumple
 Move
-	Swing
-	Shake
-	Jingle
+  Swing
+  Shake
+  Jingle
 Fluid dynamics  # Liquid
-	Splash        # Strike
-	Drip
-	Flow
-	Bubble
-	Gurgle
-	Sizzle
+  Splash        # Strike
+  Drip
+  Flow
+  Bubble
+  Gurgle
+  Sizzle
 Aerodynamics
-	Flap        # Move
-	Whoosh
-	Whistle     # Vocalize
-	Hiss
-	Suck
-	Blow
-	Puff
-	Sigh        # Vocalize
-	Fart
-	Spray       # Fluid dynamics
+  Flap        # Move
+  Whoosh
+  Whistle     # Vocalize
+  Hiss
+  Suck
+  Blow
+  Puff
+  Sigh        # Vocalize
+  Fart
+  Spray       # Fluid dynamics
 Combust
-	Burn
-	Ignite
-	Smolder
+  Burn
+  Ignite
+  Smolder
 Vibrate
-	Hum
-	Buzz
-	Ring
-	Rattle
+  Hum
+  Buzz
+  Ring
+  Rattle
 Vocalize
-	Speak
-	Shout
-	Sing
-	Rap
-	Yawn
-	Whisper
-	Moan
-	Babble
-	Cry
-	Laugh
-	Sneeze
-	Growl
-	Chirp
-	Bark
-	Howl
+  Speak
+  Shout
+  Sing
+  Rap
+  Yawn
+  Whisper
+  Moan
+  Babble
+  Cry
+  Laugh
+  Sneeze
+  Growl
+  Chirp
+  Bark
+  Howl
 ```
 
 ## Music Info
@@ -570,25 +570,25 @@ International
 
 ```yaml
 Intent
-	Narration
-	Lecture
-	Question
-	Insult
-	Presentation
-	Speech
+  Narration
+  Lecture
+  Question
+  Insult
+  Presentation
+  Speech
 #   ...
 Topic
-	Politics
-	Love
-	Weather
-	History
-	Religion
+  Politics
+  Love
+  Weather
+  History
+  Religion
 #   ...
 Sentiment
-	Angry
-	Remorseful
-	Romantic
-	Ironic
+  Angry
+  Remorseful
+  Romantic
+  Ironic
 #   ...
 ```
 
@@ -601,15 +601,15 @@ Unprocessed
 Subtractive/Analog
 Physical Modelling
 Granular
-	Concatenative
+  Concatenative
 Spectral
-	Spectral Gate
-	Spectral Resynthesis
+  Spectral Gate
+  Spectral Resynthesis
 #   ...
 Modulation
-	Flanger
-	Phaser
-	Chorus
+  Flanger
+  Phaser
+  Chorus
 Sine Compression
 FM/AM
 Stutter
@@ -620,16 +620,16 @@ Stutter
 
 ```yaml
 Hardware
-	Eurorack
-	Guitar Pedal
-	Analog
+  Eurorack
+  Guitar Pedal
+  Analog
 Digital
-	Software
-		Cardinal
-		Vitalium
-		Surge XT
-		SoundThread
-		Cecilia
+  Software
+    Cardinal
+    Vitalium
+    Surge XT
+    SoundThread
+    Cecilia
 #       ...
 ```
 
@@ -640,16 +640,16 @@ Gear used to make the sound.
 ```yaml
 Asia
 Americas
-	Northern America
-		USA
-		Canada
-	Latin America
-		Mexico
-		Central America
-		Caribbean
-		South America
-			Peru
-				Lima
+  Northern America
+    USA
+    Canada
+  Latin America
+    Mexico
+    Central America
+    Caribbean
+    South America
+      Peru
+        Lima
 #       ...
 #     ..
 Europe
@@ -661,18 +661,18 @@ Oceania
 
 ```yaml
 English
-	American
-	British
+  American
+  British
 #   ...
 Spanish
-	Peruvian
-		Limeño
+  Peruvian
+    Limeño
 #     ...
-	Spaniard
+  Spaniard
 # ...
 Portuguese
-	Brazillian
-	Portugal
+  Brazillian
+  Portugal
 # ...
 ```
 
@@ -692,8 +692,8 @@ Authorship
   Downloaded
 License
   Creative Commons
-		CC0
-		CC-BY
+    CC0
+    CC-BY
   Copyrighted
 ```
 
