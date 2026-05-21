@@ -4,53 +4,53 @@
 
 ```yaml
 Natural/Nature
-    Body of water
-        Ocean
-        Stream
-        Waterfall
-        Underwater
-        Rain
-	Open air
-		Fields
-		Deserts
-		Farm
-		# ...
-	Storm/Thunder
-	Forest
-	Cave
-	# ...
+  Body of water
+    Ocean
+    Stream
+    Waterfall
+    Underwater
+    Rain
+  Open air
+    Fields
+    Deserts
+    Farm
+    # ...
+  Storm/Thunder
+  Forest
+  Cave
+  # ...
 Social/Artificial
-	Everyday
-		Urban
-			Park
-			Traffic
-			Street market
-			Onboard
-			# ...
-		Building
-			Home
-				Kitchen
-				Bathroom
-				Living room
-			Restaurant
-			Office
-			Classroom
-			Hospital
-			Library
-			# ...
-	Event
-		Amusement Ride
-		Beach
-		Carnival
-		Festival
-		Party
-		Protest
-		Sports
-		# ...
-	Industrial
-		Factory
-		Construction Site
-		# ...
+  Everyday
+    Urban
+      Park
+      Traffic
+      Street market
+      Onboard
+      # ...
+    Building
+      Home
+        Kitchen
+        Bathroom
+        Living room
+      Restaurant
+      Office
+      Classroom
+      Hospital
+      Library
+      # ...
+  Event
+    Amusement Ride
+    Beach
+    Carnival
+    Festival
+    Party
+    Protest
+    Sports
+    # ...
+  Industrial
+    Factory
+    Construction Site
+    # ...
 ```
 
 - Building: Everyday indoor spaces (e.g. home, businesses)
@@ -63,85 +63,85 @@ Social/Artificial
 
 ```yaml
 Natural/Nature
-	Biological
-		Botanical/Plant
-			Stick
-			Leaf
-				Celery
-				Cabbage
-			Fruit
-				Tomato
-			Root
-				Leek
-				Potato
-			Nut/Seed
-				Pistachio
-		Zoological
-			Body
-				Beak
-				Nail/Claw
-				Teeth
-				Feather
-				Mouth
-				Lungs
-				Heart
-				Intestines
-			Animal
-				Amphibian
-				Fish
-				Bear
-				Bird
-					Corvids
-					Songbird
-					Shoebill
-				Feline
-					Cat
-				Canine
-					Dog
-				Insect
-				Primate
-				Reptile
-				Horse
-				Rodent
+  Biological
+    Botanical/Plant
+      Stick
+      Leaf
+        Celery
+        Cabbage
+      Fruit
+        Tomato
+      Root
+        Leek
+        Potato
+      Nut/Seed
+        Pistachio
+    Zoological
+      Body
+        Beak
+        Nail/Claw
+        Teeth
+        Feather
+        Mouth
+        Lungs
+        Heart
+        Intestines
+      Animal
+        Amphibian
+        Fish
+        Bear
+        Bird
+          Corvids
+          Songbird
+          Shoebill
+        Feline
+          Cat
+        Canine
+          Dog
+        Insect
+        Primate
+        Reptile
+        Horse
+        Rodent
 Human
-	Man/Male
-	Woman/Female
-	Baby
-	Child
-	Elderly
-	Multitude
+  Man/Male
+  Woman/Female
+  Baby
+  Child
+  Elderly
+  Multitude
 Fabricated/Artificial
-	Furniture
-		Chair
-		Desk/Table
-		Sofa
-		Bed
-		Pillow
-		Shelf
-	Appliance
-		Refrigerator
-		Washing Machine
-		Microwave
-		Oven
-		Dishwasher
-		Vacuum Cleaner
-		Air Conditioner
-		Heater
+  Furniture
+    Chair
+    Desk/Table
+    Sofa
+    Bed
+    Pillow
+    Shelf
+  Appliance
+    Refrigerator
+    Washing Machine
+    Microwave
+    Oven
+    Dishwasher
+    Vacuum Cleaner
+    Air Conditioner
+    Heater
     Industrial
-	    Tool
-			Hammer
-			Saw
-			Chisel
-			Drill
-			Grinder
-		Machinery
+      Tool
+      Hammer
+      Saw
+      Chisel
+      Drill
+      Grinder
+    Machinery
     Weapon
-		Melee
-		Gun/Firearm
-			Pistol
-			Rifle
-			Machine Gun
-		Explosive
+    Melee
+    Gun/Firearm
+      Pistol
+      Rifle
+      Machine Gun
+    Explosive
     Vehicle
         Landcraft
             Car
@@ -195,19 +195,19 @@ Natural
     Geological
         Water
         Gas
-	        Air
-	        Vapor
-	        Fire
-		Snow
-		Mud/Soil/Dirt               # Biological, Dampened
-		Sand/Dust                   # Dusty
+          Air
+          Vapor
+          Fire
+    Snow
+    Mud/Soil/Dirt               # Biological, Dampened
+    Sand/Dust                   # Dusty
         Rock
             Rubble                  # Rough
             Pebble                  # Textured
-	        Coal
-	        Gravel                  # Grainy
+          Coal
+          Gravel                  # Grainy
         Mineral
-	        Ice
+          Ice
             Crystal                 # Sharp
         Metal                       # Sharp
     Biological
@@ -224,7 +224,7 @@ Natural
         Zoological
             Bone                    # Sharp
             Fur
-			Hair
+      Hair
             Meat
             Skin
             Leather                 # Textured
@@ -247,54 +247,54 @@ Synthetic/Artificial
 
 ```yaml
 Traditional
-	String
-	    Bowed
-	        Violin
-	        Viola
-	        Cello
-	        Double Bass
-	    Plucked
-	        Guitar
-	            Acoustic
-	            Electric
-	            Bass
-	    Ukelele
-	    Banjo
-	Percussion
-	    Drums
-	        Kick
-	        Snare
-	        Tom
-	        Cymbal
-	            Hi-Hat
-	                Closed
-	                Open
-	            Ride
-	        Fill
-	        Break
-	Wind
-	    Woodwind
-	        Flute
-	        Clarinet
-	        Zampoña
-	    Brass
-	        Trumpet
-	        Trombone
-	        Tuba
-	Keyboard
-	    Piano
-	        Upright Piano
-	        Felt Piano
-	    Organ
+  String
+      Bowed
+          Violin
+          Viola
+          Cello
+          Double Bass
+      Plucked
+          Guitar
+              Acoustic
+              Electric
+              Bass
+      Ukelele
+      Banjo
+  Percussion
+      Drums
+          Kick
+          Snare
+          Tom
+          Cymbal
+              Hi-Hat
+                  Closed
+                  Open
+              Ride
+          Fill
+          Break
+  Wind
+      Woodwind
+          Flute
+          Clarinet
+          Zampoña
+      Brass
+          Trumpet
+          Trombone
+          Tuba
+  Keyboard
+      Piano
+          Upright Piano
+          Felt Piano
+      Organ
 Synth
-	Drum Machine
-	    Clap
-	Bass
-	    Reese
-	    Neuro
-	    Square 4
-	    Growl
-	    Sub
+  Drum Machine
+      Clap
+  Bass
+      Reese
+      Neuro
+      Square 4
+      Growl
+      Sub
 ```
 
 ## Properties
@@ -332,29 +332,29 @@ Panned
 
 ```yaml
 Solid/Rigid
-	Resonant
-	Damped
-	Brittle/Sharp
-	Elastic
-	Fibrous        # 
-	Crumplable     # paper, cardboard, foil, plastic bag, chip bag
-	Smooth         # glass, metal, plastic, ice, marble
-	Textured/Rough # 
-	Light          # foam, cork, snow, cotton
-	Gritty
+  Resonant
+  Damped
+  Brittle/Sharp
+  Elastic
+  Fibrous        # 
+  Crumplable     # paper, cardboard, foil, plastic bag, chip bag
+  Smooth         # glass, metal, plastic, ice, marble
+  Textured/Rough # 
+  Light          # foam, cork, snow, cotton
+  Gritty
 Liquid
-	Watery
-	Carbonated
-	Creamy/Gory
-	Oily
-	Steamy
-	Molten
+  Watery
+  Carbonated
+  Creamy/Gory
+  Oily
+  Steamy
+  Molten
 Amorphous
-	Gaseous
-	Grainy
-	Dusty
-	Fuzzy
-	Plasmatic
+  Gaseous
+  Grainy
+  Dusty
+  Fuzzy
+  Plasmatic
 ```
 
 - Oily: Low viscosity
@@ -446,28 +446,28 @@ Vocalize
 
 ```yaml
 Percussive
-	Base
-	Top
-	Perif
-	Cym
+  Base
+  Top
+  Perif
+  Cym
 Tonal
-	Key
-	Pluck
-	Swell
-	Stab
-	Pad
+  Key
+  Pluck
+  Swell
+  Stab
+  Pad
 Riser
 Downer
 Texture
 Ear candy
-	Swoosh
-	Pulsation
-	Spillover
+  Swoosh
+  Pulsation
+  Spillover
 One-shot
 Loop
-	Vocal Chop
-	Break
-	Fill
+  Vocal Chop
+  Break
+  Fill
 ```
 
 These tags roughly describe how volume changes over time, but most importantly, they define a sound's function in a song. You might recognize some of these names from preset categories in synthesizers, but some of them are more esoteric.
@@ -486,13 +486,13 @@ These tags roughly describe how volume changes over time, but most importantly, 
 
 ```yaml
 Polyphony
-	Monophonic
-	Polyphonic
-		Major chord
-		Minor chord
-		Augmented
-		Diminished
-		Extended
+  Monophonic
+  Polyphonic
+    Major chord
+    Minor chord
+    Augmented
+    Diminished
+    Extended
 Scale
     Major scale
     Minor scale
@@ -507,17 +507,17 @@ Root
 These tags are very useful for finding material to feed granular synths with. If I want anything pitched, the "Tonality" tag is often enough, or a specific scale and root if I'm doing it in the context of a song. In fact, scale tags should be used *only* for melodies and chord progressions. It wouldn't make sense to tag a sample containing a single chord with a specific scale, since that chord can be used in multiple scales.
 
 - Root tags can be used to define:
-	- the root of the scale of a **melody, chord progression, or full song**
-	- the note of a **single-note sample**
-	- the root of the chord of a **single-chord sample**
+  - the root of the scale of a **melody, chord progression, or full song**
+  - the note of a **single-note sample**
+  - the root of the chord of a **single-chord sample**
 - If using both Scale, Chord, and Root tags simultaneously (e.g. to tag a song in D minor with the chords Dm, Bb, and C), the root tag should be interpreted as the root of the *scale*, **not the root of any of the chords**, so in this case the root tag would be "D", not Bb nor C. In total, only these tags must be used:
-	- D (Root)
-	- Minor scale
-	- Major chord
-	- Minor chord
+  - D (Root)
+  - Minor scale
+  - Major chord
+  - Minor chord
 - This also applies for melodies. For example, a melody in D minor with notes D, F, and A must have *only* the following tags:
-	- D (Root)
-	- Minor scale
+  - D (Root)
+  - Minor scale
 
 In the future, I envision encoding more specific music information (such as all notes and chords played in the file) as some sort of metadata.
 
@@ -550,18 +550,18 @@ Tremolo
 ```yaml
 Classical
 Electronic
-	Dubstep
-		Riddim
-		Brostep
-	Breakbeat
-	Jungle
-	Hyperglitch
+  Dubstep
+    Riddim
+    Brostep
+  Breakbeat
+  Jungle
+  Hyperglitch
 #   ...
 International
-	Latin
-		Merengue
-		Afro-Cuban
-		Salsa
+  Latin
+    Merengue
+    Afro-Cuban
+    Salsa
 #       ...
 #   ...
 ```
@@ -666,7 +666,7 @@ English
 #   ...
 Spanish
     Peruvian
-	    Limeño
+      Limeño
 #       ...
     Spaniard
 #   ...
@@ -680,21 +680,21 @@ Portuguese
 
 ```yaml
 File
-	Wavetable
-	IR
-	Render
-		Stem
-		Track
-	Preset/Patch
+  Wavetable
+  IR
+  Render
+    Stem
+    Track
+  Preset/Patch
 Authorship
-	Original
-	Derived
-	Downloaded
+  Original
+  Derived
+  Downloaded
 License
-	Creative Commons
-	    CC0
-	    CC-BY
-	Copyrighted
+  Creative Commons
+      CC0
+      CC-BY
+  Copyrighted
 ```
 
 Some clarifications:
