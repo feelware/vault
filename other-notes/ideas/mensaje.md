@@ -63,6 +63,6 @@ This is the result of multiplying it by `c(t)`, for `f` equal to 1
 
 ![](../../utilities/attachments/Pasted%20image%2020260616023703.png)
 
-Notice how different the curve looks when `f` matches the frequency of the signal we wish to analyze. This property will come in handy later on. For now, the main point is that `f`, also called the winding frequency, massively alters the curve resulting from `w(t)`.
+Notice how different the curve looks when `f` matches the frequency of the signal we wish to analyze, which in this case is 3. This property will come in handy later on. For now, the main point is that `f`, also known as the winding frequency, significantly alters the curve resulting from `w(t)`.
 
 [ft-w-f.mp4]
