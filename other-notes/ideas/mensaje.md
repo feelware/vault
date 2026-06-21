@@ -1,6 +1,6 @@
 Most of what I did is based on 3Blue1Brown's video on the Fourier transform. The whole process can be described at a very high level:
 
-1. Take the signal you want to analyze and "wrap it" around a circle at a rate `f`
+1. Take the signal you want to analyze and "wrap it" around a circle at a certain "winding rate" named `f`
 2. Each value of `f` will yield a different curve, try plugging in every frequency you wish to analyze: 1 Hz, 2 Hz, 3 Hz, and so on
 3. For each resulting curve find its "center of mass", that is, the point that roughly represents the center of that curve. Like any 2D point, you can think of it as a coordinate with two values: `x` and `y`
 4. Eureka! Those two values are the amplitude and phase for that specific frequency `f`
@@ -21,11 +21,15 @@ There's a series of operations you can do on complex numbers. For instance, to s
 
 ![](../../utilities/attachments/Pasted%20image%2020260615234801.png)
 
-You can multiply them too, though it's a bit trickier to understand intuitively. Don't worry about it. Here, the orange dot represents the product of the blue and green ones.
+You can multiply them too, though it's a bit trickier to understand intuitively. Don't worry about it though.
+
+Here, the orange dot represents the product of the blue and green ones.
 
 ![](../../utilities/attachments/Pasted%20image%2020260615235956.png)
 
-I'm gonna tell you something that's very likely not to be intuitive: **you can raise numbers to complex powers**. This is particularly hard to grasp if your only conception of exponentiation is "multiplying a number by itself a certain number of times", which is how's usually taught in school. You don't really need to understand the underlying math! All I want you to know is this:
+I'm gonna tell you something that's very likely not to be intuitive: **you can raise numbers to complex powers**. This is particularly hard to grasp if your only conception of exponentiation is "multiplying a number by itself a certain number of times", which is how's usually taught in school.
+
+You don't really need to understand the underlying math! All I want you to know is this:
 
 Let's say you have a real number, different from 0 or 1, that's being raised to a complex power `ai`. If you continuously change the value of `a`, you will notice that **the resulting dot oscillates around the origin (0, 0)**.
 
@@ -39,30 +43,54 @@ Let's say we're not interested in the dot itself, but rather in the "trajectory"
 
 [ft-complex-valued-function.mp4]
 
-Naturally, we've replaced `a` by the variable `t`, which represents time. Notice that increasing `f` extends the curve's range, though it doesn't seem to do anything once it comes full circle. We'll come back to this. Right now, the main idea is that you can effectively represent oscillations in function of time using complex-valued functions.
+Naturally, we've replaced `a` by the variable `t`, which represents time. Notice how increasing `f` extends the curve's range, though it doesn't seem to do anything once it comes full circle. It's actually more interesting that this, like we'll see later. Right now, the main idea is that you can effectively represent oscillations in function of time using complex-valued functions.
 
-Side note: Rather than 2, the base we usually choose is the number `e`, which is roughly equal to 2.718. On the other hand, we multiply the exponent by `-2π`. Don't think too much of this, it just helps with the units.
+> [!Side note]
+> Rather than 2, the base we usually choose for `c(t)` is the number `e`, which is roughly equal to 2.718. The exponent `fti` is usually multiplied by `-2π`. With these considerations, we redefine `c(t)` as `e^(-2πfti)`. Don't think too much of this, it just helps with the units.
 
-We first mentioned that the first step of the Fourier transform is to "wrap" the signal we want to analyze around a circle. More formally, this means multiplying that signal, which we'll represent as a real-valued function `g(t)`, by the complex-valued function `c(t)` we just constructed.
+We first mentioned that the first step of the Fourier transform is to "wrap" the signal we want to analyze around a circle. More formally, this means multiplying that signal, which we'll represent as a real-valued function `g(t)`, by the complex-valued function `c(t)` we constructed earlier. We'll call this product `w(t)`.
 
-We'll call this product `w(t) = g(t)c(t) = g(t)e^(-2πfti)`
+So, in other words:
 
-Let's say `g(t)` is a simple 3 Hz sine wave.
+`w(t) = g(t)c(t) = g(t)e^(-2πfti)`
+
+Let's say that `g(t)`, the signal you want to analyze, is a simple 3 Hz sine wave.
 
 ![](../../utilities/attachments/Pasted%20image%2020260615220407.png)
 
-This is the result of multiplying it by `c(t)`, for `f` equal to 1
+This is what the resulting curve `w(t)` looks like when `f` is equal to 1:
 
 ![](../../utilities/attachments/Pasted%20image%2020260616023404.png)
 
-`f` equal to 2
+When `f` is equal to 2
 
 ![](../../utilities/attachments/Pasted%20image%2020260616023651.png)
 
-`f` equal to 3
+And when `f` is equal to 3
 
 ![](../../utilities/attachments/Pasted%20image%2020260616023703.png)
 
-Notice how different the curve looks when `f` matches the frequency of the signal we wish to analyze, which in this case is 3. This property will come in handy later on. For now, the main point is that `f`, also known as the winding frequency, significantly alters the curve resulting from `w(t)`.
+Notice how the curve becomes a perfect circle once `f` matches the exact frequency of `g(t)` (3 Hz).
+
+When `f` becomes 4, `w(t)` is not a circle anymore.
+
+![](../../utilities/attachments/Pasted%20image%2020260621012557.png)
+
+You can think of `f` as the rate at which we're "winding" `g(t)` around the origin (0, 0). When it matches certain values, you get interesting curves with special properties.
 
 [ft-w-f.mp4]
+
+Now it's time to calculate the center of mass we talked about: the point that represents the "average" of the curve. One way to do this is to evaluate `w(t)` at multiple values of `t` and literally calculate the results' mean.
+
+> [!Side note]
+> The mean of a collection of numbers is just their sum divided by the number of elements in the collection. In other words: $\bar{x} = \dfrac{\sum x}{n}$ 
+
+For example, let's try evaluating `w(t)` at five values of `t`: `0.2`, `0.4`, `0.6`, `0.8`, and `1`. The five blue dots represent the evaluation results; and the red one, their mean. In this example, `f` is equal to `10.5`.
+
+![](../../utilities/attachments/Pasted%20image%2020260621183150.png)
+
+It makes sense to think that, the more values of `t` we consider, the closer the red dot will be to the actual center of mass. Five values seems like too little, so let's increase it to ten instead. Let's choose `0.1`, `0.2`, `0.3`... all the way up to `1`.
+
+![](../../utilities/attachments/Pasted%20image%2020260621181527.png)
+
+Notice how far the red dot has moved from its previous position. 
