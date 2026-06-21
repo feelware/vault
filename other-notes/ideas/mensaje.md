@@ -83,14 +83,24 @@ You can think of `f` as the rate at which we're "winding" `g(t)` around the orig
 Now it's time to calculate the center of mass we talked about: the point that represents the "average" of the curve. One way to do this is to evaluate `w(t)` at multiple values of `t` and literally calculate the results' mean.
 
 > [!Side note]
-> The mean of a collection of numbers is just their sum divided by the number of elements in the collection. In other words: $\bar{x} = \dfrac{\sum x}{n}$ 
+> The mean of a collection of numbers is just their sum divided by the number of elements in the collection.
 
-For example, let's try evaluating `w(t)` at five values of `t`: `0.2`, `0.4`, `0.6`, `0.8`, and `1`. The five blue dots represent the evaluation results; and the red one, their mean. In this example, `f` is equal to `10.5`.
+As an example, let's try evaluating `w(t)` at five values of `t`: `0.2`, `0.4`, `0.6`, `0.8`, and `1`. The five blue dots represent the evaluation results; and the red one, their mean. In this example, `f` is equal to `10.5`.
 
 ![](../../utilities/attachments/Pasted%20image%2020260621183150.png)
 
 It makes sense to think that, the more values of `t` we consider, the closer the red dot will be to the actual center of mass. Five values seems like too little, so let's increase it to ten instead. Let's choose `0.1`, `0.2`, `0.3`... all the way up to `1`.
 
-![](../../utilities/attachments/Pasted%20image%2020260621181527.png)
+![](../../utilities/attachments/Pasted%20image%2020260621184521.png)
 
-Notice how far the red dot has moved from its previous position. 
+Notice how the red dot went from the left side of the plane to the right. More specifically, the real component went from `-0.073` to `0.076` Let's see what happens with 20 values of `t`.
+
+![](../../utilities/attachments/Pasted%20image%2020260621184856.png)
+
+The red dot is on the left side again, the real component being `-0.026`. Let's try 30 values.
+
+![](../../utilities/attachments/Pasted%20image%2020260621185202.png)
+
+Still on the left side (`-0.014`).
+
+After a while.
