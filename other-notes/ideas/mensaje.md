@@ -33,15 +33,15 @@ You don't really need to understand the underlying math! All I want you to know 
 
 Let's say you have a real number, different from 0 or 1, that's being raised to a complex power `ai`. If you continuously change the value of `a`, you will notice that **the resulting dot oscillates around the origin (0, 0)**.
 
-[ft-complex-power.mp4]
+![ft-complex-power](../../utilities/attachments/ft-complex-power.mp4)
 
 Furthermore, if you multiply the exponent by yet another number `f`, you can use it to control the rate at which the dot oscillates.
 
-[ft-complex-power-rate.mp4]
+![ft-complex-power-rate](../../utilities/attachments/ft-complex-power-rate.mp4)
 
 Let's say we're not interested in the dot itself, but rather in the "trajectory" that it'd take. In this case, it'd be more convenient to define a **function** `c(t)` that maps every moment in time to the position of the dot at that moment. More formally: `c(t) = 2^(fti)`
 
-[ft-complex-valued-function.mp4]
+![ft-complex-valued-function](../../utilities/attachments/ft-complex-valued-function.mp4)
 
 Naturally, we've replaced `a` by the variable `t`, which represents time. Notice how increasing `f` extends the curve's range, though it doesn't seem to do anything once it comes full circle. It's actually more interesting that this, like we'll see later. Right now, the main idea is that you can effectively represent oscillations in function of time using complex-valued functions.
 
@@ -78,7 +78,7 @@ When `f` becomes 4, `w(t)` is not a circle anymore.
 
 You can think of `f` as the rate at which we're "winding" `g(t)` around the origin (0, 0). When it matches certain values, you get interesting curves with special properties.
 
-[ft-w-f.mp4]
+![ft-w-f](../../utilities/attachments/ft-w-f.mp4)
 
 Now it's time to calculate the center of mass we talked about: the point that represents the "average" of the curve. One way to do this is to evaluate `w(t)` at multiple values of `t` and literally calculate the results' mean.
 
@@ -107,7 +107,7 @@ Still on the left side (`-0.01`).
 
 The red dot seems to converge towards a certain position once `p` gets large enough.
 
-[ft-center-of-mass-p-animated.mp4]
+![ft-center-of-mass-p-animated](../../utilities/attachments/ft-center-of-mass-p-animated.mp4)
 
 This graph shows exactly that by comparing each value of `p` to the real component of the red dot. It starts a little weird, but you can tell how it eventually settles.
 
