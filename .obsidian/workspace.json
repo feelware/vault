@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "mensaje"
             }
+          },
+          {
+            "id": "a69e65d74fc42b80",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "utilities/attachments/Pasted image 20260621190038.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260621190038"
+            }
           }
         ]
       }
@@ -174,8 +186,16 @@
   },
   "active": "6070593838e3ca0c",
   "lastOpenFiles": [
-    "utilities/attachments/Pasted image 20260621185202.png",
+    "utilities/attachments/ft-w-f.mp4",
+    "utilities/attachments/ft-complex-valued-function.mp4",
+    "utilities/attachments/ft-complex-power-rate.mp4",
+    "utilities/attachments/ft-complex-power.mp4",
+    "utilities/attachments/ft-center-of-mass-summation.mp4",
+    "utilities/attachments/ft-center-of-mass-p-animated.mp4",
+    "utilities/attachments/Pasted image 20260621192056.png",
+    "utilities/attachments/Pasted image 20260621190038.png",
     "other-notes/ideas/mensaje.md",
+    "utilities/attachments/Pasted image 20260621185202.png",
     "utilities/attachments/Pasted image 20260621184856.png",
     "utilities/attachments/Pasted image 20260621184521.png",
     "utilities/attachments/Pasted image 20260621183150.png",
@@ -183,8 +203,6 @@
     "utilities/attachments/Pasted image 20260621180816.png",
     "utilities/attachments/Pasted image 20260621180103.png",
     "utilities/attachments/Pasted image 20260621012557.png",
-    "utilities/attachments/Pasted image 20260621001722.png",
-    "utilities/attachments/Pasted image 20260616023703.png",
     "other-notes/staging/huevada-bratra.md",
     "source-material/papers/pdf/Choosing a Design Science Research Methodology.pdf",
     "other-notes/staging/afnasuiofnsaoifn.md",
@@ -213,10 +231,6 @@
     "utilities/templates/task.md",
     "other-notes/ideas/thesis-intro-2.md",
     "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf",
-    "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Designing Music App for Aural Training.pdf",
-    "source-material/lectures/pdf/Estado del Arte_2024.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
-    "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf"
+    "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf"
   ]
 }

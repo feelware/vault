@@ -89,18 +89,30 @@ As an example, let's try evaluating `w(t)` at five values of `t`: `0.2`, `0.4`, 
 
 ![](../../utilities/attachments/Pasted%20image%2020260621183150.png)
 
-It makes sense to think that, the more values of `t` we consider, the closer the red dot will be to the actual center of mass. Five values seems like too little, so let's increase it to ten instead. Let's choose `0.1`, `0.2`, `0.3`... all the way up to `1`.
+It makes sense to think that, the more values of `t` we consider, the closer the red dot will be to the actual center of mass. For convenience, let's call that number of values "`p`".
+
+`p = 5` seems like too little, so let's increase it to 10 instead, the values chosen for `t` being `0.1`, `0.2`, `0.3`... all the way up to `1`.
 
 ![](../../utilities/attachments/Pasted%20image%2020260621184521.png)
 
-Notice how the red dot went from the left side of the plane to the right. More specifically, the real component went from `-0.073` to `0.076` Let's see what happens with 20 values of `t`.
+Notice how the red dot went from the left side of the plane to the right. More specifically, the real component went from `-0.073` to `0.076` Let's see what happens with `p = 20`.
 
 ![](../../utilities/attachments/Pasted%20image%2020260621184856.png)
 
-The red dot is on the left side again, the real component being `-0.026`. Let's try 30 values.
+The red dot is on the left side again, the real component being `-0.026`. Let's try  `p = 100`
 
-![](../../utilities/attachments/Pasted%20image%2020260621185202.png)
+![](../../utilities/attachments/Pasted%20image%2020260621190038.png)
 
-Still on the left side (`-0.014`).
+Still on the left side (`-0.01`).
 
-After a while.
+The red dot seems to converge towards a certain position once `p` gets large enough.
+
+[ft-center-of-mass-p-animated.mp4]
+
+This graph shows exactly that by comparing each value of `p` to the real component of the red dot. It starts a little weird, but you can tell how it eventually settles.
+
+![](../../utilities/attachments/Pasted%20image%2020260621192056.png)
+
+Wouldn't it be great if `p` was somehow equal to infinity? Right now, all values of `t` are equally spaced from each other. The greater `p` becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. `p` being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
+
+ The good thing is that we have a mathematical tool that allows us to do exactly that: the integral.
