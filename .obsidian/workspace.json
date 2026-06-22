@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6a8b97557d00f7e6",
+        "id": "5d8da5cf7b507316",
         "type": "tabs",
         "children": [
           {
-            "id": "a69e65d74fc42b80",
+            "id": "d3044e336b62214a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "utilities/attachments/Pasted image 20260621190038.png"
+                "file": "other-notes/ideas/mensaje.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260621190038"
+              "icon": "lucide-file",
+              "title": "mensaje"
             }
           }
         ]
@@ -170,8 +172,15 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "a69e65d74fc42b80",
+  "active": "d3044e336b62214a",
   "lastOpenFiles": [
+    "utilities/attachments/ft-w-f.gif",
+    "utilities/attachments/ft-complex-valued-function.gif",
+    "utilities/attachments/ft-complex-power-rate.gif",
+    "utilities/attachments/ft-complex-power.gif",
+    "utilities/attachments/ft-center-of-mass-summation.gif",
+    "utilities/attachments/ft-center-of-mass-p-animated.gif",
+    "utilities/attachments/Pasted image 20260621190038.png",
     "other-notes/ideas/mensaje.md",
     "utilities/attachments/ft-w-f.mp4",
     "utilities/attachments/ft-complex-valued-function.mp4",
@@ -180,15 +189,9 @@
     "utilities/attachments/ft-center-of-mass-summation.mp4",
     "utilities/attachments/ft-center-of-mass-p-animated.mp4",
     "utilities/attachments/Pasted image 20260621192056.png",
-    "utilities/attachments/Pasted image 20260621190038.png",
     "utilities/attachments/Pasted image 20260621185202.png",
     "utilities/attachments/Pasted image 20260621184856.png",
     "utilities/attachments/Pasted image 20260621184521.png",
-    "utilities/attachments/Pasted image 20260621183150.png",
-    "utilities/attachments/Pasted image 20260621181527.png",
-    "utilities/attachments/Pasted image 20260621180816.png",
-    "utilities/attachments/Pasted image 20260621180103.png",
-    "utilities/attachments/Pasted image 20260621012557.png",
     "other-notes/staging/huevada-bratra.md",
     "source-material/papers/pdf/Choosing a Design Science Research Methodology.pdf",
     "other-notes/staging/afnasuiofnsaoifn.md",
