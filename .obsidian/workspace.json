@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6070593838e3ca0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "other-notes/ideas/mensaje.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mensaje"
-            }
-          },
-          {
             "id": "a69e65d74fc42b80",
             "type": "leaf",
             "state": {
@@ -184,8 +170,9 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "6070593838e3ca0c",
+  "active": "a69e65d74fc42b80",
   "lastOpenFiles": [
+    "other-notes/ideas/mensaje.md",
     "utilities/attachments/ft-w-f.mp4",
     "utilities/attachments/ft-complex-valued-function.mp4",
     "utilities/attachments/ft-complex-power-rate.mp4",
@@ -194,7 +181,6 @@
     "utilities/attachments/ft-center-of-mass-p-animated.mp4",
     "utilities/attachments/Pasted image 20260621192056.png",
     "utilities/attachments/Pasted image 20260621190038.png",
-    "other-notes/ideas/mensaje.md",
     "utilities/attachments/Pasted image 20260621185202.png",
     "utilities/attachments/Pasted image 20260621184856.png",
     "utilities/attachments/Pasted image 20260621184521.png",
@@ -230,7 +216,6 @@
     "ia-repaso.md",
     "utilities/templates/task.md",
     "other-notes/ideas/thesis-intro-2.md",
-    "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf",
-    "projects/unmsm-2025-2/pdf/Machine Learning Crime Prediction Models and the Gap Between Rese.pdf"
+    "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf"
   ]
 }

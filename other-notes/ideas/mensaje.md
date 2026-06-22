@@ -115,4 +115,4 @@ This graph shows exactly that by comparing each value of `p` to the real compone
 
 Wouldn't it be great if `p` was somehow equal to infinity? Right now, all values of `t` are equally spaced from each other. The greater `p` becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. `p` being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
 
- The good thing is that we have a mathematical tool that allows us to do exactly that: the integral.
+The good thing is that we have a mathematical tool that allows us to do exactly that: the integral.
