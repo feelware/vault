@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d8da5cf7b507316",
+        "id": "35ee38b2a18fcb17",
         "type": "tabs",
         "children": [
           {
-            "id": "d3044e336b62214a",
+            "id": "97403e8dfc1eae2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -172,8 +172,14 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "d3044e336b62214a",
+  "active": "97403e8dfc1eae2f",
   "lastOpenFiles": [
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
+    "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
+    "other-notes/staging/other-theses.md",
+    "other-notes/ideas/mensaje.md",
+    "utilities/attachments/Pasted image 20260623004808.png",
+    "utilities/attachments/Pasted image 20260623002947.png",
     "utilities/attachments/ft-w-f.gif",
     "utilities/attachments/ft-complex-valued-function.gif",
     "utilities/attachments/ft-complex-power-rate.gif",
@@ -181,7 +187,6 @@
     "utilities/attachments/ft-center-of-mass-summation.gif",
     "utilities/attachments/ft-center-of-mass-p-animated.gif",
     "utilities/attachments/Pasted image 20260621190038.png",
-    "other-notes/ideas/mensaje.md",
     "utilities/attachments/ft-w-f.mp4",
     "utilities/attachments/ft-complex-valued-function.mp4",
     "utilities/attachments/ft-complex-power-rate.mp4",
@@ -189,9 +194,6 @@
     "utilities/attachments/ft-center-of-mass-summation.mp4",
     "utilities/attachments/ft-center-of-mass-p-animated.mp4",
     "utilities/attachments/Pasted image 20260621192056.png",
-    "utilities/attachments/Pasted image 20260621185202.png",
-    "utilities/attachments/Pasted image 20260621184856.png",
-    "utilities/attachments/Pasted image 20260621184521.png",
     "other-notes/staging/huevada-bratra.md",
     "source-material/papers/pdf/Choosing a Design Science Research Methodology.pdf",
     "other-notes/staging/afnasuiofnsaoifn.md",
@@ -217,8 +219,6 @@
     "ia-repasar.md",
     "ia-proyecto-50%.md",
     "ia-repaso.md",
-    "utilities/templates/task.md",
-    "other-notes/ideas/thesis-intro-2.md",
-    "projects/unmsm-2025-2/pdf/tesis/tesis-directivas.pdf"
+    "utilities/templates/task.md"
   ]
 }

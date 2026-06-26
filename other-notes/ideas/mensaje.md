@@ -2,9 +2,9 @@ Most of what I did is based on 3Blue1Brown's video on the Fourier transform. The
 
 1. Take the signal you want to analyze and "wrap it" around a circle at a certain "winding rate" named `f`
 2. Each value of `f` will yield a different curve, try plugging in every frequency you wish to analyze: 1 Hz, 2 Hz, 3 Hz, and so on
-3. For each resulting curve find its "center of mass", that is, the point that roughly represents the center of that curve. Like any 2D point, you can think of it as a coordinate with two values: `x` and `y`
-4. Eureka! Those two values are the amplitude and phase for that specific frequency `f`
-5. If you plot every value of `f` versus its corresponding `x` value, you will get the frequency spectrum of that signal
+3. For each resulting curve, find its "center of mass", that is, the point that roughly represents the center of the curve
+4. The **distance** from that point to the origin (0, 0) will represent how strong the frequency `f` is for our signal
+5. If you plot every value of `f` versus the corresponding distance from the origin, you will get the **frequency spectrum** of our signal, or at least something proportional to it.
 
 Now let's go into more detail
 
@@ -115,4 +115,18 @@ This graph shows exactly that by comparing each value of `p` to the real compone
 
 Wouldn't it be great if `p` was somehow equal to infinity? Right now, all values of `t` are equally spaced from each other. The greater `p` becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. `p` being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
 
-The good thing is that we have a mathematical tool that allows us to do exactly that: the integral.
+The good thing is that we have a mathematical tool that allows us to do that: the integral.
+
+Imagine for a second that you have a certain function `f(x)`
+
+![](../../utilities/attachments/Pasted%20image%2020260623002947.png)
+
+Let's say you want to calculate the area between the orange curve and the horizontal axis. You've been taught how to calculate the area of simple shapes, like triangles and rectangles, but there isn't a general formula for arbitrary shapes like this one.
+
+Something you can do to get an approximate result is to try and fit multiple rectangles of equal width *inside* the area we're interested in.
+
+Here I tried to fit 10 rectangles. Since the function's domain goes from 0 to 1, each rectangle must have a width of 0.1.
+
+![](../../utilities/attachments/Pasted%20image%2020260623004808.png)
+
+
