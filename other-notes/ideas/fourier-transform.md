@@ -248,11 +248,11 @@ The integral is now equal to $-0.5i$
 
 Remember how setting $f = 3$ resulted in the curve of $w(t)$ being a circle? The value we just found is exactly at the center of that circle, which is what'd we expect from the center of mass.
 
-No other value of $f$ will result in a center of mass so far from the origin $(0, 0)$. In fact, if we plot the distance from the center of mass to the origin for every value of $f$, we get this:
+No other value of $f$ will result in a center of mass so far from the origin $(0, 0)$. In fact, if we plot every value of $f$ against the modulus of the resulting center of mass, we get this:
 
 ![](../../utilities/attachments/Pasted%20image%2020260627014910.png)
 
-Notice how there's a peak very close to $f = 3$. On the other hand, the values at $f = 10.5$ and other frequencies are very small. This plot behaves just like a frequency spectrum.
+This plot behaves just like a frequency spectrum. Notice how there's a peak very close to $f = 3$. while values at $f = 10.5$ and other frequencies are very small.
 
 Something also worth mentioning is the squiggles around the peak. By observing the signal over a longer interval (that is, extending the integral's bounds) the peaks become narrower and the artifacts around them decrease: the "frequency resolution" increases.
 
