@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "055a2d3af4401cb7",
+        "id": "a86a4379d78e331f",
         "type": "tabs",
         "children": [
           {
-            "id": "79175faf642d6c3a",
+            "id": "7b30532e88488e36",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -172,24 +172,25 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "79175faf642d6c3a",
+  "active": "7b30532e88488e36",
   "lastOpenFiles": [
-    "other-notes/staging/fourierç.md",
-    "utilities/attachments/Pasted image 20260626200011.png",
-    "other-notes/ideas/mensaje.md",
+    "utilities/attachments/Pasted image 20260627021854.png",
+    "other-notes/ideas/image.png",
+    "utilities/attachments/Pasted image 20260627021340.png",
+    "utilities/attachments/Pasted image 20260627020827.png",
+    "utilities/attachments/Pasted image 20260627015649.png",
+    "utilities/attachments/Pasted image 20260627014910.png",
+    "utilities/attachments/Pasted image 20260627014304.png",
+    "utilities/attachments/Pasted image 20260627012756.png",
+    "utilities/attachments/Pasted image 20260627012039.png",
+    "utilities/attachments/Pasted image 20260627012020.png",
+    "utilities/attachments/Pasted image 20260627003620.png",
     "other-notes/ideas/fourier-transform.md",
-    "utilities/attachments/Pasted image 20260626195456.png",
-    "utilities/attachments/Pasted image 20260626185732.png",
-    "utilities/attachments/Pasted image 20260623004808.png",
-    "utilities/attachments/Pasted image 20260626182307.png",
-    "utilities/attachments/Pasted image 20260626182217.png",
+    "other-notes/staging/fourierç.md",
+    "other-notes/ideas/mensaje.md",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
     "other-notes/staging/other-theses.md",
-    "utilities/attachments/Pasted image 20260623002947.png",
-    "utilities/attachments/ft-w-f.gif",
-    "utilities/attachments/ft-complex-valued-function.gif",
-    "utilities/attachments/ft-complex-power-rate.gif",
     "utilities/attachments/ft-w-f.mp4",
     "utilities/attachments/ft-complex-valued-function.mp4",
     "utilities/attachments/ft-complex-power-rate.mp4",
@@ -218,7 +219,6 @@
     "source-material/courses/foundations-ux-design.md",
     "ia-papers-videos.md",
     "ia-repasar.md",
-    "ia-proyecto-50%.md",
-    "ia-repaso.md"
+    "ia-proyecto-50%.md"
   ]
 }

@@ -3,8 +3,8 @@ Most of what I did is based on 3Blue1Brown's video on the Fourier transform. The
 1. Take the signal you want to analyze and "wrap it" around a circle at a certain "winding rate" named $f$
 2. Each value of $f$ will yield a different curve, try plugging in every frequency you wish to analyze: 1 Hz, 2 Hz, 3 Hz, and so on
 3. For each resulting curve, find its "center of mass", that is, the point that roughly represents the center of the curve
-4. The **distance** from that point to the origin $(0, 0)$ will represent how strong the frequency $f$ is for our signal
-5. If you plot every value of $f$ versus the corresponding distance from the origin, you will get the **frequency spectrum** of our signal, or at least something proportional to it.
+4. The **distance** from that point to the origin $(0, 0)$ will represent how strong the frequency $f$ is in our signal
+5. If you plot every value of $f$ versus its corresponding distance, you'll get something really similar to the frequency spectrum of our signal.
 
 Now let's go into more detail
 
@@ -100,35 +100,35 @@ Now it's time to calculate the center of mass we talked about: the point that re
 
 As an example, let's try evaluating $w(t)$ at five values of $t$: $0.2$, $0.4$, $0.6$, $0.8$, and $1$. The five blue dots represent the evaluation results; and the red one, their mean. In this example, $f$ is equal to $10.5$.
 
-![](../../utilities/attachments/Pasted%20image%2020260621183150.png)
+![](../../utilities/attachments/Pasted%20image%2020260627002452.png)
 
-It makes sense to think that, the more values of $t$ we consider, the closer the red dot will be to the actual center of mass. For convenience, let's call that number of values "$p$".
+It makes sense to think that, the more values of $t$ we consider, the closer the red dot will be to the actual center of mass. For convenience, let's call that number of values "$n$".
 
-$p = 5$ seems like too little, so let's increase it to 10 instead, the values chosen for $t$ being $0.1$, $0.2$, $0.3$... all the way up to $1$.
+$n = 5$ seems like too little, so let's increase it to 10 instead, the values chosen for $t$ being $0.1$, $0.2$, $0.3$... all the way up to $1$.
 
-![](../../utilities/attachments/Pasted%20image%2020260621184521.png)
+![](../../utilities/attachments/Pasted%20image%2020260627002509.png)
 
-Notice how the red dot went from the left side of the plane to the right. More specifically, the real component went from $-0.073$ to $0.076$ Let's see what happens with $p = 20$.
+Notice how the red dot went from the left side of the plane to the right. More specifically, the real component went from $-0.073$ to $0.076$ Let's see what happens with $n = 20$.
 
-![](../../utilities/attachments/Pasted%20image%2020260621184856.png)
+![](../../utilities/attachments/Pasted%20image%2020260627002526.png)
 
-The red dot is on the left side again, the real component being $-0.026$. Let's try  $p = 100$
+The red dot is on the left side again, the real component being $-0.026$. Let's try $n = 100$
 
-![](../../utilities/attachments/Pasted%20image%2020260621190038.png)
+![](../../utilities/attachments/Pasted%20image%2020260627002546.png)
 
 Still on the left side ($-0.01$).
 
-The red dot seems to converge towards a certain position once $p$ gets large enough.
+The red dot seems to converge towards a certain position once $n$ gets large enough.
 
 ![ft-center-of-mass-p-animated](../../utilities/attachments/ft-center-of-mass-p-animated.gif)
 
-This graph shows exactly that by comparing each value of $p$ to the real component of the red dot. It starts a little weird, but you can tell how it eventually settles.
+If you plot each value of $n$ against the real component of its resulting red dot, you'll notice how the values eventually settle.
 
-![](../../utilities/attachments/Pasted%20image%2020260621192056.png)
+![](../../utilities/attachments/Pasted%20image%2020260627003620.png)
 
-Wouldn't it be great if $p$ was somehow equal to infinity?
+Wouldn't it be great if $n$ was somehow equal to infinity?
 
-Like we said, all values of $t$ are equally spaced from each other. The greater $p$ becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. $p$ being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
+Like we said, all values of $t$ are equally spaced from each other. The greater $p$ becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. $n$ being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
 
 The good thing is that we have a mathematical tool that allows us to do that: the integral.
 
@@ -152,13 +152,13 @@ Like the picture shows, all rectangles have a width of $0.1$, or more generally 
 
 If you look closely, you'll notice that each rectangle "touches" the curve with its upper left corner. In other words, the length of each rectangle is equal to the value of $f(x)$ at the leftmost point of that rectangle. For instance, the first rectangle's length is equal to $f(0)$, the second one's to $f(0.1)$, and so on.
 
-Adding up all of their areas results in approximately $0.388$
+Adding up all of their areas results in $0.388$
 
 Let's try $n = 50$ this time
 
 ![](../../utilities/attachments/Pasted%20image%2020260626200011.png)
 
-With a width of $0.02$, the rectangles are now thinner and fill the region better. They almost start looking like lines. Their lengths are $f(0)$, $f(0.02)$, $f(0.04)$... all the way up to $f(0.98)$, respectively. The total area is now approximately equal to $0.428$.
+With a width of $0.02$, the rectangles are now thinner and fill the region better. They almost start looking like lines. Their lengths are $f(0)$, $f(0.02)$, $f(0.04)$... all the way up to $f(0.98)$, respectively. The total area is now equal to $0.428$.
 
 We mentioned that we can generalize the width of the rectangles as $\dfrac{1}{n}$. Then, the sum of all rectangle areas (width * length) can be expressed as:
 
@@ -212,4 +212,52 @@ $$
 \int_0^1 f(x) dx
 $$
 
-Notice that we're still multiplying $f$ by a differential, which is now denoted as $dx$.
+Notice that we're still multiplying $f$ by a differential, which is now denoted as $dx$. In general, the differencial must be in terms of the variable we're integrating over, which in this case is $x$.
+
+> In case you're curious, computing this integral results in $0.438$. Our sum of 50 rectangles was already a good approximation ($0.428$).
+
+Let's go back to the center of mass problem. We can now express it as the following integral:
+
+$$
+\int_0^1 w(t) dt
+$$
+
+Keep in mind that, since $w(t)$ is complex-valued, integrating over it will also result in a complex number, which is precisely our center of mass.
+
+We can also express it more explicitly by replacing $w(t)$ with its definition:
+
+$$
+\int_0^1 g(t)e^{-2πfti} dt
+$$
+
+Just as a reminder, $g(t)$ is the signal we want to analyze, and $e^{-2πfti}$ is the complex-valued function that "wraps" it in circles at a rate $f$.
+
+> So far, we've been considering 0 and 1 as our lower and upper bounds, mainly because it's easier on the CPU and it makes the explanations easier, but the Fourier transform usually considers the whole real line as the domain of $g(t)$, making the integral go from $-\infty$ to $+\infty$. We'll see how changing these bounds has a significant effect on the result, but for now, let's keep them as they are.
+
+![](../../utilities/attachments/Pasted%20image%2020260627012039.png)
+
+Computing this integral results in $-0.009$. You might be wondering why is it so small.
+
+Remember that we set $f = 10.5$, an arbitrary value.
+
+What would happen if we set $f = 3$? (the exact frequency of our signal $g(t)$, in Hertz)
+
+![](../../utilities/attachments/Pasted%20image%2020260627012756.png)
+
+The integral is now equal to $-0.5i$
+
+Remember how setting $f = 3$ resulted in $w(t)$ being a circle? The value we just found is exactly at the center of that circle, which is what'd we expect from the center of mass.
+
+No other value of $f$ will result in a center of mass so far from the origin $(0, 0)$. In fact, if we plot the distance from the center of mass to the origin for every value of $f$, we get this:
+
+![](../../utilities/attachments/Pasted%20image%2020260627014910.png)
+
+Notice how there's a peak very close to $f = 3$. On the other hand, the values at $f = 10.5$ and other frequencies are very small. This plot behaves just like a frequency spectrum.
+
+Something also worth mentioning is the squiggles around the peak. By extending the integral's bounds, we can reduce the squiggles and make the peak sharper. Here, we extended the bounds to $-2$ and $2$.
+
+![](../../utilities/attachments/Pasted%20image%2020260627021340.png)
+
+Let's make our input signal $g(x)$ richer by adding another sine wave to it. This time, a 7 Hz one, with half the amplitude. The resulting Fourier transform reflects this perfectly. 
+
+![](../../utilities/attachments/Pasted%20image%2020260627021854.png)
