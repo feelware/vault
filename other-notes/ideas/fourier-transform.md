@@ -31,7 +31,9 @@ I'm gonna tell you something that's very likely not to be intuitive: **you can r
 
 You don't really need to understand the underlying math! All I want you to know is this:
 
-Let's say you have a real number, different from 0 or 1, that's being raised to a complex power $ai$. If you continuously change the value of $a$, you will notice that **the resulting dot oscillates around the origin $(0, 0)$**.
+Let's say you have a real number, different from 0 or 1, that's being raised to a complex power $ai$. Let's choose 2 for no reason in particular.
+
+If you continuously change the value of $a$, you'll notice that the resulting dot oscillates around the origin $(0, 0)$.
 
 ![ft-complex-power](../../utilities/attachments/ft-complex-power.gif)
 
@@ -39,15 +41,20 @@ Furthermore, if you multiply the exponent by yet another number $f$, you can use
 
 ![ft-complex-power-rate](../../utilities/attachments/ft-complex-power-rate.gif)
 
-Let's say we're not interested in the dot itself, but rather in the "trajectory" that it'd take. In this case, it'd be more convenient to define a **function** $c(t)$ that maps every moment in time to the position of the dot at that moment. More formally: $c(t) = 2^{fti}$
+Let's say we're not interested in the dot itself, but rather in the "trajectory" that it would take. In this case, it'd be more convenient to define a **function** $c(t)$ that maps every moment in time to the position of the dot at that moment. More formally: $c(t) = 2^{fti}$
 
 ![ft-complex-valued-function](../../utilities/attachments/ft-complex-valued-function.gif)
 
-Naturally, we've replaced $a$ by the variable $t$, which represents time. Notice how increasing $f$ extends the curve's range, though it doesn't seem to do anything once it comes full circle. It's actually more interesting that this, like we'll see later. Right now, the main idea is that you can effectively represent oscillations in function of time using complex-valued functions.
+Naturally, we've replaced $a$ by the variable $t$, which represents time.
 
-> Rather than 2, the base we usually choose for $c(t)$ is the number $e$, which is roughly equal to 2.718. The exponent $fti$ is usually multiplied by $-2π$.
+Notice how increasing $f$ extends the curve's range, yet it doesn't seem to do anything once it comes full circle. We'll see in just a moment 
+
+> There's two considerations I want to point out:
 > 
-> With these considerations, we redefine $c(t)$ as $e^{-2πfti}$.
+> - Rather than 2, the base we'll choose for $c(t)$ is the number $e$, which is roughly equal to 2.718
+> - We'll multiply the exponent $fti$ by $-2π$
+> 
+> With this, we redefine $c(t)$ as $e^{-2πfti}$
 > 
 > Don't think too much of this, it just helps with the units. 
 
