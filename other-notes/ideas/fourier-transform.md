@@ -94,7 +94,7 @@ Now it's time to calculate the center of mass we talked about: the point that re
 
 > The mean of a collection of numbers is just the sum of all elements divided by how many there are. 
 >
-> $\overline{x} = \dfrac{(x_1 + x_2 + x_3 + \ldots + x_n)}{n}$
+> $\overline{x} = \dfrac{x_1 + x_2 + x_3 + \ldots + x_n}{n}$
 >
 > Like shown here, it's usually represented by a bar over the variable name.
 
@@ -122,9 +122,11 @@ The red dot seems to converge towards a certain position once $n$ gets large eno
 
 ![ft-center-of-mass-p-animated](../../utilities/attachments/ft-center-of-mass-p-animated.gif)
 
-If you plot each value of $n$ against the real component of its resulting red dot, you'll notice how the values eventually settle.
+If you plot each value of $n$ against the **distance** between the resulting center of mass and the origin, you'll notice how the distance eventually settles to a certain value.
 
-![](../../utilities/attachments/Pasted%20image%2020260627003620.png)
+![](../../utilities/attachments/Pasted%20image%2020260627035634.png)
+
+> The distance between a complex number and the origin $(0, 0)$ is often referred to as its **modulus**.
 
 Wouldn't it be great if $n$ was somehow equal to infinity?
 
@@ -175,7 +177,7 @@ Where $f_1$ is the length of the first rectangle, $f_2$ the second one, and so o
 If we factor out $\dfrac{1}{n}$, we get:
 
 $$
-\dfrac{(f_1 + f_2 + f_3 + \ldots + f_n)}{n}
+\dfrac{f_1 + f_2 + f_3 + \ldots + f_n}{n}
 $$
 
 Doesn't this look like the formula for the mean we mentioned earlier?
@@ -263,3 +265,11 @@ Let's make our input signal $g(x)$ richer by adding another sine wave to it. Thi
 ![](../../utilities/attachments/Pasted%20image%2020260627021854.png)
 
 Not only does the Fourier transform tell us the frequencies present in a signal, but it also gives us information about their amplitudes. The height of each peak corresponds to how strong that frequency is in the original signal.
+
+---
+
+Desmos links (graphic calculator):
+
+- 
+- [Area under a curve (Introduction to integrals)](https://www.desmos.com/calculator/iupkrya2sn)
+- [Final fourier transform](https://www.desmos.com/calculator/lcvdaqr9aa)
