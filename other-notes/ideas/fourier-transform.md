@@ -45,7 +45,6 @@ Let's say we're not interested in the dot itself, but rather in the "trajectory"
 
 Naturally, we've replaced $a$ by the variable $t$, which represents time. Notice how increasing $f$ extends the curve's range, though it doesn't seem to do anything once it comes full circle. It's actually more interesting that this, like we'll see later. Right now, the main idea is that you can effectively represent oscillations in function of time using complex-valued functions.
 
-> [!Side note]
 > Rather than 2, the base we usually choose for $c(t)$ is the number $e$, which is roughly equal to 2.718. The exponent $fti$ is usually multiplied by $-2π$.
 > 
 > With these considerations, we redefine $c(t)$ as $e^{-2πfti}$.
@@ -86,7 +85,6 @@ You can think of $f$ as the rate at which we're "winding" $g(t)$ around the orig
 
 Now it's time to calculate the center of mass we talked about: the point that represents the "average" of the curve. One way to do this is to evaluate $w(t)$ at multiple equally-spaced values of $t$, and then calculate mean of the results.
 
-> [!Side note]
 > The mean of a collection of numbers is just the sum of all elements divided by how many there are. 
 >
 > $\overline{x} = \dfrac{(x_1 + x_2 + x_3 + \ldots + x_n)}{n}$
