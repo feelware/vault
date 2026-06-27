@@ -8,12 +8,12 @@ Most of what I did is based on 3Blue1Brown's video on the Fourier transform. The
 
 Now let's go into more detail
 
-Before starting, there's a few things you need to know about complex numbers. Complex numbers have two components people refer to as "real" and "imaginary". A usual way to visualize them is as points in a 2D space where the X axis corresponds to the real component; and the Y axis, to the imaginary component.
+Before starting, there are a few things you need to know about complex numbers. Complex numbers have two components people refer to as "real" and "imaginary". A usual way to visualize them is as points in a 2D space where the X axis corresponds to the real component; and the Y axis, to the imaginary component.
 
 In notation, they're usually represented as a sum of two parts: $ai + b$.
 
 - $b$ is the real part. It's an everyday real number. Changing its value moves the point _along_ the number line, the one you've seen in school
-- $ai$ is the imaginary part. $i$ is the **imaginary unit**. $a$ is a real number that quite literally multiples the imaginary unit: the greater it is, the farther the point is from the number line. Think of $i$ as a "vertical" unit; as opposed to 1, which is "horizontal"
+- $ai$ is the imaginary part. $i$ is the **imaginary unit**. $a$ is a real number that quite literally multiplies the imaginary unit: the greater it is, the farther the point is from the number line. Think of $i$ as a "vertical" unit; as opposed to 1, which is "horizontal"
 
 ![](../../utilities/attachments/Pasted%20image%2020260615234629.png)
 
@@ -47,7 +47,7 @@ Let's say we're not interested in the dot itself, but rather in the "trajectory"
 
 Naturally, we've replaced $a$ by the variable $t$, which represents time.
 
-Notice how increasing $f$ extends the curve's range, yet it doesn't seem to do anything once it comes full circle. We'll see in just a moment 
+Notice how increasing $f$ extends the curve's range, yet it doesn't seem to do anything once it comes full circle. In just that a moment, we'll see that changing the value of $f$ does something more interesting.
 
 > There's two considerations I want to point out:
 > 
@@ -130,9 +130,9 @@ Wouldn't it be great if $n$ was somehow equal to infinity?
 
 Like we said, all values of $t$ are equally spaced from each other. The greater $p$ becomes, the smaller the gap is, but it's still non-zero, so you're still missing some of the curve. $n$ being equal to infinity would reduce the gap to 0, causing the whole curve to be averaged and making the center of mass perfectly accurate.
 
-The good thing is that we have a mathematical tool that allows us to do that: the integral.
+The good thing is that we have a mathematical tool that allows us to do that: the integral. To explain how it works, let's step back for a moment and consider a simpler problem: calculating the area under a curve.
 
-Imagine you have a certain function $f(x)$. For this example, imagine it's only defined for values of $x$ between 0 and 1.
+Imagine you have a certain function $f(x)$ which, for this example, is only defined for values of $x$ between 0 and 1.
 
 ![](../../utilities/attachments/Pasted%20image%2020260626182307.png)
 
@@ -236,17 +236,15 @@ Just as a reminder, $g(t)$ is the signal we want to analyze, and $e^{-2πfti}$ i
 
 ![](../../utilities/attachments/Pasted%20image%2020260627012039.png)
 
-Computing this integral results in $-0.009$. You might be wondering why is it so small.
+Computing this integral results in $-0.009$.
 
-Remember that we set $f = 10.5$, an arbitrary value.
-
-What would happen if we set $f = 3$? (the exact frequency of our signal $g(t)$, in Hertz)
+You might be wondering why is it so close to the origin. Remember that we set $f = 10.5$, an arbitrary value. What would happen if we set $f = 3$? (the exact frequency of our signal $g(t)$, in Hertz)
 
 ![](../../utilities/attachments/Pasted%20image%2020260627012756.png)
 
 The integral is now equal to $-0.5i$
 
-Remember how setting $f = 3$ resulted in $w(t)$ being a circle? The value we just found is exactly at the center of that circle, which is what'd we expect from the center of mass.
+Remember how setting $f = 3$ resulted in the curve of $w(t)$ being a circle? The value we just found is exactly at the center of that circle, which is what'd we expect from the center of mass.
 
 No other value of $f$ will result in a center of mass so far from the origin $(0, 0)$. In fact, if we plot the distance from the center of mass to the origin for every value of $f$, we get this:
 
@@ -254,10 +252,14 @@ No other value of $f$ will result in a center of mass so far from the origin $(0
 
 Notice how there's a peak very close to $f = 3$. On the other hand, the values at $f = 10.5$ and other frequencies are very small. This plot behaves just like a frequency spectrum.
 
-Something also worth mentioning is the squiggles around the peak. By extending the integral's bounds, we can reduce the squiggles and make the peak sharper. Here, we extended the bounds to $-2$ and $2$.
+Something also worth mentioning is the squiggles around the peak. By observing the signal over a longer interval (that is, extending the integral's bounds) the peaks become narrower and the artifacts around them decrease: the "frequency resolution" increases.
+
+Here, we have extended the bounds to $-2$ and $2$.
 
 ![](../../utilities/attachments/Pasted%20image%2020260627021340.png)
 
-Let's make our input signal $g(x)$ richer by adding another sine wave to it. This time, a 7 Hz one, with half the amplitude. The resulting Fourier transform reflects this perfectly. 
+Let's make our input signal $g(x)$ richer by adding another sine wave to it. This time, a 7 Hz one, with half the amplitude. The resulting Fourier transform reflects this perfectly.
 
 ![](../../utilities/attachments/Pasted%20image%2020260627021854.png)
+
+Not only does the Fourier transform tell us the frequencies present in a signal, but it also gives us information about their amplitudes. The height of each peak corresponds to how strong that frequency is in the original signal.
