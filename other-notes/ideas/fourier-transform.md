@@ -268,8 +268,10 @@ Not only does the Fourier transform tell us the frequencies present in a signal,
 
 ---
 
+- [Original 3b1b video](https://youtu.be/spUNpyF58BY)
+
 Desmos links (graphic calculator):
 
-- 
+- [Center of mass](https://www.desmos.com/calculator/bklkasrpju)
 - [Area under a curve (Introduction to integrals)](https://www.desmos.com/calculator/iupkrya2sn)
 - [Final fourier transform](https://www.desmos.com/calculator/lcvdaqr9aa)
