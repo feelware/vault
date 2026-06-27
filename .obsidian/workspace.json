@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "mensaje"
             }
+          },
+          {
+            "id": "e87a3261b8ca0090",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "utilities/attachments/Pasted image 20260626200011.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260626200011"
+            }
           }
         ]
       }
@@ -174,26 +186,26 @@
   },
   "active": "97403e8dfc1eae2f",
   "lastOpenFiles": [
+    "utilities/attachments/Pasted image 20260626200011.png",
+    "other-notes/ideas/mensaje.md",
+    "utilities/attachments/Pasted image 20260626195456.png",
+    "utilities/attachments/Pasted image 20260626185732.png",
+    "utilities/attachments/Pasted image 20260623004808.png",
+    "utilities/attachments/Pasted image 20260626182307.png",
+    "utilities/attachments/Pasted image 20260626182217.png",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Medina_zg.pdf",
     "projects/unmsm-2025-2/pdf/tesis/other-theses/Freire_vd.pdf",
     "other-notes/staging/other-theses.md",
-    "other-notes/ideas/mensaje.md",
-    "utilities/attachments/Pasted image 20260623004808.png",
     "utilities/attachments/Pasted image 20260623002947.png",
     "utilities/attachments/ft-w-f.gif",
     "utilities/attachments/ft-complex-valued-function.gif",
     "utilities/attachments/ft-complex-power-rate.gif",
-    "utilities/attachments/ft-complex-power.gif",
-    "utilities/attachments/ft-center-of-mass-summation.gif",
-    "utilities/attachments/ft-center-of-mass-p-animated.gif",
-    "utilities/attachments/Pasted image 20260621190038.png",
     "utilities/attachments/ft-w-f.mp4",
     "utilities/attachments/ft-complex-valued-function.mp4",
     "utilities/attachments/ft-complex-power-rate.mp4",
     "utilities/attachments/ft-complex-power.mp4",
     "utilities/attachments/ft-center-of-mass-summation.mp4",
     "utilities/attachments/ft-center-of-mass-p-animated.mp4",
-    "utilities/attachments/Pasted image 20260621192056.png",
     "other-notes/staging/huevada-bratra.md",
     "source-material/papers/pdf/Choosing a Design Science Research Methodology.pdf",
     "other-notes/staging/afnasuiofnsaoifn.md",
@@ -211,7 +223,6 @@
     "other-notes/staging/huevada-ugaz.md",
     "other-notes/staging/contingency.md",
     "tesis-sota.md",
-    "projects/unmsm-2025-2/pdf/tesis/sources/Troubadour_A_Gamified_e-Learning_Platform_for_Ear_Training.pdf",
     "other-notes/staging/g4s observaciones cotizacion.md",
     "other-notes/staging/huevada-hoy.md",
     "source-material/courses/foundations-ux-design.md",
